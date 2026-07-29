@@ -1,0 +1,4 @@
+D:\bb\博士课题组资料\新建文件夹\自己课题相关\Lung ST\codex agent\stereo_seq\stereo_seq\scripts\56_bin50_samplewise_hvg_reassessment.py:398: FutureWarning: `__version__` is deprecated, use `importlib.metadata.version('anndata')` instead.
+  "anndata": ad.__version__,
+D:\bb\博士课题组资料\新建文件夹\自己课题相关\Lung ST\codex agent\stereo_seq\stereo_seq\scripts\56_bin50_samplewise_hvg_reassessment.py:399: FutureWarning: `__version__` is deprecated, use `importlib.metadata.version('scanpy')` instead
+  "scanpy": sc.__version__,
