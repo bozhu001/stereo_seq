@@ -1,0 +1,112 @@
+﻿Render started: 2026-08-22T21:25:49.5592344+02:00
+Project root: D:\bb\博士课题组资料\新建文件夹\自己课题相关\Lung ST\codex agent\stereo_seq\stereo_seq
+Command: quarto render scripts/382_rook_adjacency_sensitivity_report.qmd --output rook_adjacency_sensitivity_report_260822212549.html --output-dir D:\bb\博士课题组资料\新建文件夹\自己课题相关\Lung ST\codex agent\stereo_seq\stereo_seq\results\reanalysis\bin50_all21_patient_pseudobulk_disease_signal_audit_260822\rook_adjacency_sensitivity_260822200142
+Analysis recomputation: disabled (report-only render)
+System.Management.Automation.RemoteException
+System.Management.Automation.RemoteException
+processing file: 382_rook_adjacency_sensitivity_report.qmd
+System.Management.Automation.RemoteException
+  |                                                         
+  |                                                   |   0%
+  |                                                         
+  |..                                                 |   3%                   
+  |                                                         
+  |....                                               |   7% [setup]           
+  |                                                         
+  |.....                                              |  10%                   
+  |                                                         
+  |.......                                            |  14% [status-table]    
+  |                                                         
+  |.........                                          |  17%                   
+  |                                                         
+  |...........                                        |  21% [metric-summary]  
+  |                                                         
+  |............                                       |  24%                   
+  |                                                         
+  |..............                                     |  28% [paired-figure]   
+  |                                                         
+  |................                                   |  31%                   
+  |                                                         
+  |..................                                 |  34% [program-summary] 
+  |                                                         
+  |...................                                |  38%                   
+  |                                                         
+  |.....................                              |  41% [disease-summary] 
+  |                                                         
+  |.......................                            |  45%                   
+  |                                                         
+  |.........................                          |  48% [all21-coordinate]
+  |                                                         
+  |..........................                         |  52%                   
+  |                                                         
+  |............................                       |  55% [k8-gene-map]     
+  |                                                         
+  |..............................                     |  59%                   
+  |                                                         
+  |................................                   |  62% [j2-gene-map]     
+  |                                                         
+  |.................................                  |  66%                   
+  |                                                         
+  |...................................                |  69% [j2-orientation]  
+  |                                                         
+  |.....................................              |  72%                   
+  |                                                         
+  |.......................................            |  76% [l3-gene-map]     
+  |                                                         
+  |........................................           |  79%                   
+  |                                                         
+  |..........................................         |  83% [validation-table]
+  |                                                         
+  |............................................       |  86%                   
+  |                                                         
+  |..............................................     |  90% [provenance-table]
+  |                                                         
+  |...............................................    |  93%                   
+  |                                                         
+  |.................................................  |  97% [session-info]    
+  |                                                         
+  |...................................................| 100%                   
+                                                                                                             
+output file: 382_rook_adjacency_sensitivity_report.knit.md
+System.Management.Automation.RemoteException
+pandoc --output ..\rook_adjacency_sensitivity_report_260822212549.html
+  to: html
+  standalone: true
+  embed-resources: true
+  section-divs: true
+  html-math-method: mathjax
+  wrap: none
+  default-image-extension: png
+  toc: true
+  variables: {}
+  
+metadata
+  document-css: false
+  link-citations: true
+  date-format: long
+  lang: en
+  title: Bin50 frozen-program rook adjacency sensitivity audit
+  author: Codex
+  date: today
+  toc-float: true
+  theme: bootstrap
+  
+ERROR: 鍙︿竴涓▼搴忔鍦ㄤ娇鐢ㄦ鏂囦欢锛岃繘绋嬫棤娉曡闂€?(os error 32): remove 'D:\bb\鍗氬＋璇鹃缁勮祫鏂橽鏂板缓鏂囦欢澶筡鑷繁璇鹃鐩稿叧\Lung ST\codex agent\stereo_seq\stereo_seq\scripts\.quarto'
+System.Management.Automation.RemoteException
+Stack trace:
+    at Object.removeSync (ext:deno_fs/30_fs.js:250:3)
+    at safeRemoveSync (file:///D:/bb/RSTUDIO/resources/app/bin/quarto/bin/quarto.js:2369:14)
+    at renderProject (file:///D:/bb/RSTUDIO/resources/app/bin/quarto/bin/quarto.js:87588:13)
+    at eventLoopTick (ext:core/01_core.js:175:7)
+    at async Command.actionHandler (file:///D:/bb/RSTUDIO/resources/app/bin/quarto/bin/quarto.js:91975:32)
+    at async Command.execute (file:///D:/bb/RSTUDIO/resources/app/bin/quarto/bin/quarto.js:8253:13)
+    at async Command.parseCommand (file:///D:/bb/RSTUDIO/resources/app/bin/quarto/bin/quarto.js:8143:20)
+    at async quarto (file:///D:/bb/RSTUDIO/resources/app/bin/quarto/bin/quarto.js:133948:9)
+    at async file:///D:/bb/RSTUDIO/resources/app/bin/quarto/bin/quarto.js:133978:9
+    at async file:///D:/bb/RSTUDIO/resources/app/bin/quarto/bin/quarto.js:133830:20
+Render finished: 2026-08-22T21:25:55.5581271+02:00
+Elapsed seconds: 5.999
+Output: D:\bb\博士课题组资料\新建文件夹\自己课题相关\Lung ST\codex agent\stereo_seq\stereo_seq\results\reanalysis\bin50_all21_patient_pseudobulk_disease_signal_audit_260822\rook_adjacency_sensitivity_260822200142\rook_adjacency_sensitivity_report_260822212549.html
+Output bytes: 20871077
+Recovered after Quarto cleanup-only failure: True
+Locally embedded images: 6

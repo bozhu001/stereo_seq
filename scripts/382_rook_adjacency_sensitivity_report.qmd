@@ -1,0 +1,283 @@
+---
+title: "Bin50 frozen-program rook adjacency sensitivity audit"
+author: "Codex"
+date: today
+format:
+  html:
+    toc: true
+    toc-float: true
+    df-print: paged
+    code-fold: true
+    theme: bootstrap
+    embed-resources: true
+engine: knitr
+execute:
+  echo: true
+  warning: false
+  message: false
+---
+
+```powershell
+# Run from the repository root after the analysis-approval gate.
+powershell.exe -NoProfile -ExecutionPolicy Bypass `
+  -File scripts/383_render_rook_adjacency_report.ps1
+```
+
+```{r setup}
+#| include: false
+options(stringsAsFactors = FALSE, scipen = 999)
+script_path <- normalizePath(
+  knitr::current_input(dir = TRUE),
+  winslash = "/",
+  mustWork = TRUE
+)
+project_root <- dirname(dirname(script_path))
+audit_root <- file.path(
+  project_root,
+  "results/reanalysis/bin50_all21_patient_pseudobulk_disease_signal_audit_260822"
+)
+output_dir <- file.path(
+  audit_root,
+  "rook_adjacency_sensitivity_260822200142"
+)
+coordinate_dir <- file.path(
+  audit_root,
+  "minimal_abundance_coordinate_qc_260822193323",
+  "figures"
+)
+read_tsv <- function(name) {
+  read.delim(
+    file.path(output_dir, name),
+    sep = "\t",
+    check.names = FALSE,
+    quote = "",
+    comment.char = ""
+  )
+}
+status <- jsonlite::fromJSON(file.path(output_dir, "06_final_qc_status.json"))
+validation <- jsonlite::fromJSON(file.path(output_dir, "output_validation.json"))
+parameters <- jsonlite::fromJSON(file.path(output_dir, "parameters_manifest.json"))
+metric_summary <- read_tsv("07_queen_rook_metric_distribution_summary.tsv")
+program_summary <- read_tsv("04_program_spatial_reproducibility_comparison.tsv")
+disease_compare <- read_tsv("03_queen_rook_adjacency_disease_test_comparison.tsv")
+figure_inventory <- read_tsv("05_existing_coordinate_validation_figure_inventory.tsv")
+provenance <- read_tsv("00_input_provenance.tsv")
+stopifnot(
+  validation$status == "PASS",
+  validation$rook_metric_rows == 105L,
+  validation$adjacency_test_comparison_rows == 45L,
+  validation$all_coordinate_figures_present,
+  status[["BIN-SCORE ALIGNMENT"]] == "PASS",
+  status[["COORDINATE ORIENTATION"]] == "PASS",
+  status[["SPATIAL ADJACENCY"]] == "PASS",
+  !parameters$score_recomputed,
+  !parameters$gene_panel_modified,
+  !parameters$gsea_or_de_run
+)
+```
+
+## Scope and approved conclusion
+
+This sensitivity audit retained the completed five frozen gene panels and all
+existing Bin50 program scores. It changed only the spatial graph from the
+historical queen eight-neighborhood to a rook four-neighborhood with an actual
+orthogonal coordinate step of 50 native units (25 µm). It did not rerun
+differential expression, GSEA, scoring, panel selection, or any additional
+spatial analysis.
+
+The user approved the following final QC status:
+
+```{r status-table}
+status_table <- data.frame(
+  qc_domain = c(
+    "BIN-SCORE ALIGNMENT",
+    "COORDINATE ORIENTATION",
+    "SPATIAL ADJACENCY"
+  ),
+  status = c(
+    status[["BIN-SCORE ALIGNMENT"]],
+    status[["COORDINATE ORIENTATION"]],
+    status[["SPATIAL ADJACENCY"]]
+  )
+)
+knitr::kable(status_table, format = "html")
+```
+
+## Frozen sensitivity definition
+
+- Existing within-sample program z-scores were read without modification.
+- High-score Bin50 threshold remained `z >= 1`.
+- A hotspot remained a connected high-score component with at least 4 Bin50.
+- Bin area remained 0.000625 mm².
+- Rook edges required an orthogonal 50-native-unit displacement and membership
+  in the same patient and the same authoritative source-tissue component.
+- Moran's I used 999 within-source-component permutations and the original
+  fixed seed scheme.
+- Patient disease models and the formal BH family of 75 tests were unchanged;
+  only Moran's I, hotspot count, and largest hotspot area were substituted by
+  their rook values.
+
+## Patient-level queen versus rook metrics
+
+The table reports the median across 21 patients for each program and metric.
+
+```{r metric-summary}
+metric_display <- metric_summary
+numeric_columns <- c(
+  "queen_patient_median",
+  "rook_patient_median",
+  "median_delta_rook_minus_queen",
+  "maximum_absolute_patient_delta"
+)
+metric_display[numeric_columns] <- lapply(
+  metric_display[numeric_columns],
+  function(value) sprintf("%.6f", value)
+)
+knitr::kable(metric_display, format = "html")
+```
+
+```{r paired-figure}
+#| echo: false
+knitr::include_graphics(
+  file.path(output_dir, "figures/queen_rook_patient_metric_comparison.png")
+)
+```
+
+Rook adjacency generally reduced hotspot size because diagonal links no longer
+merged high-score components. Moran's I remained close to the queen result.
+These numerical changes did not alter any formal program-level spatial QC call.
+
+## Formal spatial reproducibility calls
+
+The original formal gate requires a positive BH-significant Moran result, at
+least one hotspot, and multigene support in the high-score area. At least 11 of
+21 coherent samples and at least two per chip are required.
+
+```{r program-summary}
+program_display <- program_summary[c(
+  "program",
+  "queen_positive_moran_sample_n",
+  "rook_positive_moran_sample_n",
+  "queen_hotspot_present_sample_n",
+  "rook_hotspot_present_sample_n",
+  "queen_coherent_spatial_sample_n",
+  "rook_coherent_spatial_sample_n",
+  "queen_spatial_qc_pass",
+  "rook_spatial_qc_pass",
+  "spatial_qc_conclusion_changed"
+)]
+knitr::kable(program_display, format = "html")
+```
+
+`B_core` was the only borderline structure program: positive Moran samples
+changed from 13 to 12 and hotspot-present samples from 15 to 13. Its coherent
+multigene support was zero under both graph definitions, so its formal spatial
+QC remained failed. The other four program calls remained passed.
+
+## Patient-level disease tests
+
+```{r disease-summary}
+disease_summary <- data.frame(
+  item = c(
+    "Adjacency-related tests",
+    "Queen BH-FDR < 0.05",
+    "Rook BH-FDR < 0.05",
+    "FDR conclusion changes",
+    "Nonsignificant effect-direction changes"
+  ),
+  value = c(
+    nrow(disease_compare),
+    sum(disease_compare$BH_FDR_all_75_tests_queen < 0.05),
+    sum(disease_compare$BH_FDR_all_75_tests_rook < 0.05),
+    sum(tolower(disease_compare$FDR05_conclusion_changed) == "true"),
+    sum(tolower(disease_compare$effect_direction_changed) == "true")
+  )
+)
+knitr::kable(disease_summary, format = "html")
+```
+
+No adjacency-related patient disease conclusion changed. Direction changes
+were confined to very small, strongly nonsignificant effects and are not used
+for biological interpretation.
+
+## Coordinate and orientation validation figures
+
+The all-21 contact sheet shows the authoritative H5AD outline, current keyed
+coordinates, and their overlay for every patient.
+
+```{r all21-coordinate}
+#| echo: false
+knitr::include_graphics(
+  file.path(coordinate_dir, "coordinate_alignment_contact_sheet_all21.png")
+)
+```
+
+### K8 source-versus-current gene maps
+
+```{r k8-gene-map}
+#| echo: false
+knitr::include_graphics(
+  file.path(coordinate_dir, "gene_map_comparison_K8_SSC_24_1_18170A2.png")
+)
+```
+
+### J2 source-versus-current gene maps and orientation
+
+```{r j2-gene-map}
+#| echo: false
+knitr::include_graphics(
+  file.path(coordinate_dir, "gene_map_comparison_J2_SSC_23_105334B1.png")
+)
+```
+
+```{r j2-orientation}
+#| echo: false
+knitr::include_graphics(
+  file.path(coordinate_dir, "J2_source_current_prior_orientation_audit.png")
+)
+```
+
+J2 uses the identity orientation: no mirror, rotation, scaling, or affine
+transform was applied. The current coordinates agree with the previously
+validated J2 tissue/mask orientation.
+
+### L3 source-versus-current gene maps
+
+```{r l3-gene-map}
+#| echo: false
+knitr::include_graphics(
+  file.path(coordinate_dir, "gene_map_comparison_L3_SSC_15491_14.png")
+)
+```
+
+All gene-map comparisons use SFTPC, COL1A1, and PTPRC with identical coordinate
+limits, point sizes, and color scales between the authoritative source object
+and current keyed table.
+
+## Output validation and provenance
+
+```{r validation-table}
+validation_table <- data.frame(
+  check = names(validation),
+  value = unlist(validation, use.names = FALSE)
+)
+knitr::kable(validation_table, format = "html")
+```
+
+```{r provenance-table}
+knitr::kable(provenance, format = "html")
+```
+
+## Explicit next-analysis boundary
+
+The next task is a separate visual registration audit between expression
+coordinates and ssDNA/H&E tissue images for K8, J2, and L3. It must assess
+rotation, mirroring, scaling, tissue-block mismatch, and local displacement.
+No new pathological partitioning, boundary-gradient analysis, or cell-neighbor
+analysis is allowed before that audit passes.
+
+## Session information
+
+```{r session-info}
+sessionInfo()
+```
