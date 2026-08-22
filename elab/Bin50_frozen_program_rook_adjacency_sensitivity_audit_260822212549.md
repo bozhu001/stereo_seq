@@ -66,18 +66,30 @@ expression result was recomputed.
 
 Repository: <https://github.com/bozhu001/stereo_seq>
 
-Committed code/report snapshot:
-<https://github.com/bozhu001/stereo_seq/commit/5ac59c94254242bb4fc667e2fa9e36c7d0e2316c>
+Local commit: `5ac59c94254242bb4fc667e2fa9e36c7d0e2316c`
+
+Remote status: not pushed as of 2026-08-22.
 
 ## Output summary
 
 All three final QC domains passed: bin-score alignment, coordinate orientation,
-and spatial adjacency. Rook versus queen adjacency changed 0/5 formal
-program-level spatial-QC conclusions and 0/45 adjacency-related patient disease
-FDR conclusions. `B_core` remained the only borderline structural program and
-remained failed because coherent multigene support was absent under both graph
-definitions. J2 retained the identity orientation with no mirror, rotation,
-scale, or affine transform.
+and spatial adjacency. The four programs that passed formal spatial QC under
+both queen and rook adjacency were `Fibroblast_ECM`, `Cilia_Axoneme`, `AT2`,
+and `TNF_NFkB_Oxidative_Stress`. `B_core` failed formal spatial QC under both
+graphs because coherent multigene support was absent. Queen and rook adjacency
+each had 0/45 adjacency-related patient disease tests with BH-FDR < 0.05, and
+no formal disease conclusion changed.
+
+Interpretation: **存在样本内空间组织，但未发现稳定疾病特异空间差异。**
+
+J2 retained the identity orientation with no mirror, rotation, scale, or
+affine transform.
+
+## Next step and analysis boundary
+
+The next step is an ssDNA/H&E image-registration audit. No pathological
+compartment analysis, boundary-gradient analysis, or cell-neighborhood analysis
+will be undertaken before the registration audit passes.
 
 Result directory:
 `results/reanalysis/bin50_all21_patient_pseudobulk_disease_signal_audit_260822/rook_adjacency_sensitivity_260822200142/`

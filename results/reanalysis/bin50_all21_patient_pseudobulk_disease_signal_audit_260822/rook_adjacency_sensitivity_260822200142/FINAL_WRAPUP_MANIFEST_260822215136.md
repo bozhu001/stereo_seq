@@ -50,9 +50,23 @@ reports.
 The ELN project tag remains `TODO_PROJECT_TAG`. No input entry IDs were linked,
 no remote eLabFTW entry was created, and no Git push was performed.
 
+## Final ELN interpretation and next boundary
+
+- Formal spatial-QC pass under both queen and rook adjacency:
+  `Fibroblast_ECM`, `Cilia_Axoneme`, `AT2`, and
+  `TNF_NFkB_Oxidative_Stress`.
+- Formal spatial-QC fail under both graphs: `B_core`.
+- Queen BH-FDR < 0.05: 0/45 adjacency-related patient disease tests.
+- Rook BH-FDR < 0.05: 0/45 adjacency-related patient disease tests.
+- Interpretation: 存在样本内空间组织，但未发现稳定疾病特异空间差异。
+- Next step: ssDNA/H&E image-registration audit.
+- Until registration passes, do not undertake pathological-compartment,
+  boundary-gradient, or cell-neighborhood analysis.
+
 ## Git provenance
 
 - Analysis/report local commit:
   `5ac59c94254242bb4fc667e2fa9e36c7d0e2316c`
+- Remote status: not pushed as of 2026-08-22.
 - Local wrap-up commit: the commit containing this manifest, the ELN copy,
   project memory update, and session summary; see the final `git log` record.
