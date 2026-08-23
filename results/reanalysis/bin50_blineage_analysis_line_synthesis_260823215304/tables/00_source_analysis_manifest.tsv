@@ -1,0 +1,9 @@
+stage	result_directory	role	status	included_in_synthesis
+"project_existing_marker_capture_qc"	"results/reanalysis/bin50_all_existing_bcell_marker_capture_qc_260823170058"	"21-sample descriptive capture audit of the 219-gene project-existing union"	"completed descriptive QC"	TRUE
+"frozen_49_gene_six_panel_qc"	"results/reanalysis/bin50_hq_frozen_blineage_descriptive_qc_260823180725"	"independently selected 16-sample high-quality cohort; frozen six panels and strict support"	"completed descriptive QC"	TRUE
+"fo22_extreme_depth_sensitivity"	"results/reanalysis/bin50_hq_blineage_extreme_depth_loo_sensitivity_260823185322"	"16-versus-15 descriptive sensitivity; no disease test"	"completed sensitivity QC"	TRUE
+"cleaned_patient_disease_comparison"	"results/reanalysis/bin50_cleaned_blineage_patient_disease_comparison_260823192715"	"15-sample primary and 13-sample J2/L3-only exploratory disease models"	"approved; negative inferential result"	TRUE
+"l3_focal_spatial_review"	"results/reanalysis/bin50_l3_mature_b_focal_spatial_review_260823202319"	"six fixed L3 samples and two prespecified patient-specific detailed reviews"	"completed descriptive spatial review"	TRUE
+"l3_matched_spatial_null"	"results/reanalysis/bin50_l3_mature_b_depth_ptprc_matched_spatial_null_260823211809"	"depth/n_genes/PTPRC-status matched null for frozen same-bin and rook support"	"calculation and interpretation approved"	TRUE
+"MS4A4A"	"not_applicable"	"explicitly excluded from this B-lineage synthesis"	"out of scope"	FALSE
+

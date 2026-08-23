@@ -1,0 +1,16 @@
+check	passed	detail
+final_html_exists	TRUE	report/FINAL_399_bin50_blineage_analysis_line_synthesis_report_260823215304.html
+html_size_positive	TRUE	13794494 bytes
+sha256_recorded	TRUE	B97384DE5636CCF29F59D607CD4768AF139FB2A281DB9851A1A754CB72FB52F5
+complete_closing_html	TRUE	one closing html tag and document ends with closing html
+embedded_existing_png_images	TRUE	14 embedded PNG data URIs
+rendered_html_tables	TRUE	12 table tags
+final_title	TRUE	FINAL title present
+frozen_rule_table	TRUE	6 of 6 panel rows present
+percentile_interpretation	TRUE	exact requested 1000-draw interpretation present
+conditional_histology_wording	TRUE	exact requested conditional H&E wording present
+patient_specific_limit	TRUE	patient-specific wording retained
+prohibited_labels_limit	TRUE	niche, aggregate, TLS and disease-specific restrictions retained
+ms4a4a_excluded	TRUE	explicit out-of-scope statement retained
+no_escaped_kable_string	TRUE	0 escaped table patterns
+

@@ -1,0 +1,5 @@
+Quarto created the requested standalone HTML successfully. PowerShell reported a
+nonzero native-command wrapper status because Quarto progress and the existing
+sessioninfo/Quarto environment warning were written to stderr. The HTML was
+copied and independently validated after Quarto reported "Output created".
+

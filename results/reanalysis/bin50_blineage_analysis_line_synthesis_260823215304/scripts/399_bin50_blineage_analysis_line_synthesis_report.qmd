@@ -1,0 +1,290 @@
+---
+title: "FINAL — B-lineage analysis-line synthesis"
+subtitle: "Existing results only; approved synthesis"
+date: today
+format:
+  html:
+    embed-resources: true
+    self-contained-math: true
+    toc: true
+    toc-depth: 3
+    code-fold: true
+    theme: cosmo
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r}
+library(data.table)
+library(knitr)
+library(jsonlite)
+
+result_dir <- Sys.getenv("BLINEAGE_SYNTHESIS_DIR")
+if (!nzchar(result_dir)) stop("BLINEAGE_SYNTHESIS_DIR is not set")
+result_dir <- normalizePath(result_dir, winslash = "/", mustWork = TRUE)
+repo <- normalizePath(file.path(result_dir, "../../.."), winslash = "/", mustWork = TRUE)
+
+source_dir <- function(path) file.path(repo, path)
+read_tsv <- function(path) fread(source_dir(path))
+read_json <- function(path) fromJSON(source_dir(path), simplifyVector = TRUE)
+
+marker_root <- "results/reanalysis/bin50_all_existing_bcell_marker_capture_qc_260823170058"
+hq_root <- "results/reanalysis/bin50_hq_frozen_blineage_descriptive_qc_260823180725"
+loo_root <- "results/reanalysis/bin50_hq_blineage_extreme_depth_loo_sensitivity_260823185322"
+disease_root <- "results/reanalysis/bin50_cleaned_blineage_patient_disease_comparison_260823192715"
+l3_root <- "results/reanalysis/bin50_l3_mature_b_focal_spatial_review_260823202319"
+null_root <- "results/reanalysis/bin50_l3_mature_b_depth_ptprc_matched_spatial_null_260823211809"
+
+source_manifest <- fread(file.path(result_dir, "tables/00_source_analysis_manifest.tsv"))
+evidence_matrix <- fread(file.path(result_dir, "tables/01_evidence_interpretation_matrix.tsv"))
+strict_rules <- fread(file.path(result_dir, "tables/03_frozen_strict_panel_rule_reference.tsv"))
+
+marker_category <- read_tsv(file.path(marker_root, "tables/02_marker_category_inventory.tsv"))
+marker_union <- read_tsv(file.path(marker_root, "tables/03_marker_union_gene_inventory.tsv"))
+marker_detectability <- read_tsv(file.path(marker_root, "tables/08_marker_detectability_summary.tsv"))
+capture_depth <- read_tsv(file.path(marker_root, "tables/09_capture_depth_descriptive_correlations.tsv"))
+
+panel_manifest <- read_tsv(file.path(hq_root, "tables/00_frozen_panel_manifest.tsv"))
+sample_qc <- read_tsv(file.path(hq_root, "tables/01_sample_qc_eligibility.tsv"))
+feature_status <- read_tsv(file.path(hq_root, "tables/02_gene_feature_space_status.tsv"))
+gene_detectability <- read_tsv(file.path(hq_root, "tables/04_gene_patient_detectability.tsv"))
+same_bin <- read_tsv(file.path(hq_root, "tables/06_panel_same_bin_strict_support.tsv"))
+
+fo22_audit <- read_tsv(file.path(loo_root, "tables/00_extreme_depth_exclusion_audit.tsv"))
+fo22_influence <- read_tsv(file.path(loo_root, "tables/06_fo22_panel_metric_influence.tsv"))
+k8_summary <- read_tsv(file.path(loo_root, "tables/08_remaining_k8_systematic_summary.tsv"))
+
+disease_summary <- read_json(file.path(disease_root, "analysis_summary.json"))
+disease_results <- read_tsv(file.path(disease_root, "tables/08_primary15_18_test_bh_fdr_results.tsv"))
+direction_stability <- read_tsv(file.path(disease_root, "tables/11_primary15_vs_j2_l3_only13_direction_stability.tsv"))
+loo_summary <- read_tsv(file.path(disease_root, "tables/15_leave_one_patient_out_summary.tsv"))
+
+l3_candidate <- read_tsv(file.path(l3_root, "tables/09_candidate_descriptive_summary.tsv"))
+matched_focus <- read_tsv(file.path(null_root, "tables/12_focus_candidate_summary.tsv"))
+matched_same <- matched_focus[support_mode == "same_bin"]
+
+table_html <- function(x, caption = NULL, digits = 4) {
+  html <- kable(
+    x, format = "html", caption = caption, digits = digits, escape = TRUE,
+    table.attr = 'class="table table-striped table-hover table-sm"'
+  )
+  knitr::asis_output(
+    paste0('<div style="width:100%;max-height:560px;overflow:auto;">', html, '</div>')
+  )
+}
+source_image <- function(root, name, alt) {
+  src <- knitr::image_uri(source_dir(file.path(root, "figures", name)))
+  sprintf('<img src="%s" alt="%s" style="width:100%%;height:auto;"/>', src, alt)
+}
+```
+
+::: {.callout-important}
+## FINAL — approved synthesis
+
+This is a report-only synthesis of previously saved and approved outputs. The synthesis and the minimal completeness revisions were approved for final local reporting. No new statistic, model, score, randomization, spatial test or image analysis was run. **MS4A4A is explicitly out of scope.**
+:::
+
+## Executive synthesis
+
+### 1. Confirmed technical and descriptive results
+
+- The project-existing marker audit retained a union of `r nrow(marker_union)` genes from existing project sources. `r sum(marker_union$available_in_g15)` were present in G15 and `r sum(!marker_union$available_in_g15)` were absent; absent and zero-capture genes were not deleted.
+- Across all 21 samples, the number of detected union markers was strongly associated with sample total counts descriptively (Spearman rho `r sprintf("%.3f", capture_depth[capture_metric == "detected_union_marker_n" & depth_metric == "sample_total_counts", spearman_rho])`; no P value). CPM summaries for B-lineage, plasma/plasmablast and immunoglobulin categories had much weaker depth correlations.
+- The later literature-driven check froze 49 non-exclusive genes across six B-lineage panels plus `TLS_context`. `TCL1A` and `FDCSP` were absent from G15; the other `r sum(feature_status$in_g15_feature_space)` genes were present. `TLS_context` remained separate and never entered a B-lineage abundance/support area.
+- Independent global technical QC retained `r sum(sample_qc$high_quality_included)` of 21 patients: HC `r sample_qc[high_quality_included == TRUE, sum(group == "HC")]`, IPF `r sample_qc[high_quality_included == TRUE, sum(group == "IPF")]`, SSc-ILD `r sample_qc[high_quality_included == TRUE, sum(group == "SSc-ILD")]`. The five exclusions were fixed before inspecting B-lineage expression.
+- Six panel-specific strict rules were frozen. No cross-panel 49-gene union was used as a common B-lineage support area. Strict same-bin is the primary spatial evidence; strict rook is auxiliary wherever reported.
+
+### 2. Negative disease-group comparison
+
+After excluding the independently specified extreme-depth `IPF/FO22-1-09404`, the primary cohort contained 15 patients (HC 4, IPF 4, SSc-ILD 7). The J2/L3-only sensitivity contained 13 patients (HC 3, IPF 4, SSc-ILD 6).
+
+All **18/18** primary 95% confidence intervals crossed zero and **0/18** reached BH-FDR < 0.05. The disease comparison is therefore negative. The six SSc-ILD-versus-IPF point estimates were negative in both complete-cohort fits, but this is only an exploratory direction: small samples, patient influence and leave-one-out direction changes prevent an established disease claim.
+
+### 3. Two patient-specific focal B-lineage candidates
+
+The fixed L3 review retained one IPF patient (`IPF/FO23-1-06168`) and one SSc-ILD patient (`SSC/15491/14`) as **depth/n_genes/PTPRC-status–matched focal multi-marker B-lineage candidates**.
+
+- Their strict same-bin sets contained `r l3_candidate[sample_id == "IPF/FO23-1-06168", same_bin_supported_n]` and `r l3_candidate[sample_id == "SSC/15491/14", same_bin_supported_n]` Bins, respectively.
+- Both were supported locally by CD79A, MS4A1, CD22, BANK1 and PAX5 and were not BANK1-only signals.
+- Initial same-bin support overlapped the highest-depth/complexity regions strongly, so the first review treated depth as a major confounder.
+- After exact matching on sample-specific depth, `n_genes` and PTPRC status, all four strict same-bin clustering metrics for both candidates were at the clustering-direction 100th empirical percentile of the 1,000-draw matched null.
+- The approved conclusion is **not fully explained by the matched technical/immune background**. This is patient-specific evidence, not disease-specific evidence.
+
+Strict rook support uses adjacency in its construction. Its clustering is therefore **construction-dependent auxiliary evidence** and cannot serve as an independent spatial validation.
+
+### 4. What still requires H&E/pathology or protein validation
+
+- **若取得对应H&E且能够完成可靠的组织轮廓或粗区域配准，则核对候选坐标对应的解剖与病理结构。**
+- Confirm whether multiple B-lineage cells—not merely transcripts captured within Bin50—occupy the focal region.
+- Use orthogonal RNA/protein evidence on the same or adjacent section, prioritizing the specific markers that supported the candidate (for example CD79A, MS4A1/CD20 and PAX5) together with a pan-leukocyte context marker.
+- Plasma/IgA signals require particular caution because high-abundance transcripts such as JCHAIN and IGHA1 can dominate capture.
+- Any proposed organized lymphoid structure requires dedicated morphology and cellular-organization evidence beyond this transcript co-capture line.
+
+### 5. Language that cannot currently be used
+
+The current evidence does **not** support the terms **B-cell niche**, **B-cell aggregate**, **TLS**, or **disease-specific B-lineage structure**. Marker co-capture fraction is not actual B-cell area. `GC_activated_B` is not a germinal-center or TLS call. One IPF candidate plus one SSc-ILD candidate cannot establish a group difference.
+
+```{r, results='asis'}
+table_html(evidence_matrix, "Approved evidence and interpretation boundary")
+```
+
+## Analysis-line provenance
+
+```{r, results='asis'}
+table_html(source_manifest, "Immutable existing analyses included in this synthesis")
+```
+
+No directory containing the MS4A4A audit was read into the synthesis report.
+
+## Project-existing marker capture QC
+
+The 219-gene union is a provenance-preserving inventory of markers already present in project files. Categories are non-exclusive; category counts therefore do not sum to the union size. This table documents capture feasibility and sparsity, not a single biological program.
+
+```{r, results='asis'}
+table_html(marker_category, "Existing marker categories")
+```
+
+```{r, results='asis'}
+table_html(capture_depth, "Previously saved descriptive capture-depth correlations")
+```
+
+```{r, results='asis'}
+cat(source_image(marker_root, "03_patient_detected_marker_count.png", "Detected project-existing marker count by patient"))
+```
+
+```{r, results='asis'}
+cat(source_image(marker_root, "05_category_capture_vs_depth.png", "Category capture versus depth"))
+```
+
+The complete provenance, sample-by-marker raw counts/CPM, 21-patient detectability and all zero rows remain in the source result directory. No marker was selected or removed for this synthesis.
+
+## Frozen 49-gene panels and the 16-sample cohort
+
+```{r, results='asis'}
+table_html(panel_manifest, "Frozen non-exclusive marker panels")
+```
+
+### Frozen strict support rules
+
+The table below is a direct reporting transcription of the approved frozen `strict_panel_rules`, `strict_rule` and `strict_rook_definition`. It does not select a marker, change a threshold or define a new support rule. “Mature_B core” in dependency clauses uses the frozen minimum-condition set CD79A, CD79B, MS4A1, CD22, BANK1 and PAX5; CD37 remains auxiliary.
+
+```{r, results='asis'}
+table_html(strict_rules, "Frozen strict same-bin and auxiliary rook rules for all six panels")
+```
+
+```{r, results='asis'}
+table_html(feature_status, "G15 feature-space status for all 49 genes")
+```
+
+```{r, results='asis'}
+table_html(sample_qc[, .(sample_id, chip_id, group, sample_total_counts, median_total_counts, median_n_genes, low_quality_sample_watch, high_quality_included)], "Independent global-QC sample selection")
+```
+
+```{r, results='asis'}
+cat(source_image(hq_root, "01_gene_cpm_heatmap.png", "Frozen 49-gene CPM heatmap"))
+```
+
+```{r, results='asis'}
+cat(source_image(hq_root, "05_panel_same_bin_strict_support_scatter.png", "Panel-specific strict same-bin support"))
+```
+
+The panel rules are non-interchangeable and non-exclusive. A positive transcript does not prove a cell identity, and zero capture does not prove biological absence.
+
+## FO22 extreme-depth sensitivity and residual K8 effect
+
+`IPF/FO22-1-09404` was excluded only because sample total counts, median total counts and median `n_genes` were extreme. No other patient was removed in response to B-lineage results.
+
+FO22 set many raw-count and support-fraction maxima, while most 16-to-15 cohort medians changed little relative to the original IQR. Its removal reduced the upper extreme but did not remove the technical chip pattern: the remaining K8 patients `HC/NL-50` and `SSC/24-1-18170A2` were both above the J2/L3 median for all six panels in raw counts, positive-Bin fraction, strict same-bin fraction and strict rook fraction; five of six panels were above for CPM.
+
+```{r, results='asis'}
+table_html(k8_summary, "Previously saved remaining-K8 versus J2/L3 descriptive summary", digits = 3)
+```
+
+```{r, results='asis'}
+cat(source_image(loo_root, "01_extreme_depth_exclusion_audit.png", "FO22 extreme-depth audit"))
+```
+
+```{r, results='asis'}
+cat(source_image(loo_root, "03_fo22_influence_heatmaps.png", "FO22 influence across frozen panel metrics"))
+```
+
+```{r, results='asis'}
+cat(source_image(loo_root, "04_remaining_k8_vs_j2_l3_heatmap.png", "Remaining K8 versus J2/L3 descriptive comparison"))
+```
+
+## Patient-level disease comparison: negative result
+
+The primary endpoint was the corrected-logit strict same-bin fraction. Patients—not Bins—were independent units. The prespecified model adjusted for disease group, log sample total counts and chip, with HC3 covariance and one BH correction across 18 tests.
+
+```{r, results='asis'}
+table_html(disease_results, "All 18 primary disease contrasts", digits = 3)
+```
+
+```{r, results='asis'}
+cat(source_image(disease_root, "01_primary15_patient_scatter.png", "Primary 15-patient scatter"))
+```
+
+```{r, results='asis'}
+cat(source_image(disease_root, "03_primary15_forest_18_contrasts.png", "Forest plot of all 18 adjusted contrasts"))
+```
+
+```{r, results='asis'}
+cat(source_image(disease_root, "04_primary15_vs_j2_l3_only13_effect_direction.png", "Primary15 versus J2/L3-only13 direction comparison"))
+```
+
+Four panels retained all three complete-cohort effect directions after K8 removal (`GC_activated_B`, `ILD_plasma_cell`, `Memory_tissue_B`, `Naive_B`); `IgA_mucosal_plasma` and `Mature_B_core` each had one flip. These direction summaries do not override the negative 18-test result.
+
+## L3 focal review and matched spatial null
+
+```{r, results='asis'}
+table_html(l3_candidate, "Initial focal review of the two prespecified candidates", digits = 3)
+```
+
+```{r, results='asis'}
+cat(source_image(l3_root, "02_l3_six_sample_contact_sheet_common_cpm_scale.png", "Six fixed L3 samples on common CPM scales"))
+```
+
+```{r, results='asis'}
+cat(source_image(l3_root, "03_detail_IPF_FO23-1-06168.png", "Detailed IPF candidate map"))
+```
+
+```{r, results='asis'}
+cat(source_image(l3_root, "03_detail_SSC_15491_14.png", "Detailed SSc-ILD candidate map"))
+```
+
+```{r, results='asis'}
+table_html(matched_same, "Strict same-bin matched-null results for the two candidates", digits = 3)
+```
+
+**100th empirical percentile表示在现有1000次匹配随机抽样中，没有随机集合达到观察到的空间集中程度；它不是正式的疾病比较P值，也不能用于疾病组推断。**
+
+```{r, results='asis'}
+cat(source_image(null_root, "02_focus_candidate_null_distributions.png", "Matched and unmatched focus-candidate null distributions"))
+```
+
+The same-bin findings are the primary spatial evidence. The rook results remain visible in the source report but are not used here as independent validation because the rook support definition already contains adjacency.
+
+## Current decision and next evidence gate
+
+The B-lineage transcript-capture line is technically feasible and well audited, but it has **no positive patient-level disease-group result**. It has two patient-specific focal multi-marker candidates that survived matched technical/immune-background comparison on the primary same-bin evidence.
+
+The next admissible evidence is morphology and orthogonal cellular/protein validation. No further statistical or spatial refinement should be used to upgrade these candidates before that evidence is reviewed.
+
+## Reproducibility
+
+This QMD is a read-only synthesis. It does not source or run scripts 387, 389, 391, 393, 395 or 397. It reads their saved TSV/JSON/PNG outputs only.
+
+```powershell
+$env:BLINEAGE_SYNTHESIS_DIR = (Resolve-Path "results/reanalysis/bin50_blineage_analysis_line_synthesis_260823215304").Path
+quarto render scripts/399_bin50_blineage_analysis_line_synthesis_report.qmd --to html
+```
+
+The synthesis workflow is confirmed as a one-off audit/report. No reusable skill or GitHub issue will be created.
+
+## Session information
+
+```{r}
+sessioninfo::session_info()
+```

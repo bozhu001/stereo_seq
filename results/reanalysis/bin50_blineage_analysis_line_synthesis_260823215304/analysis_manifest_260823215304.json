@@ -1,0 +1,73 @@
+{
+  "analysis": "B-lineage analysis-line synthesis",
+  "timestamp": "260823215304",
+  "status": "approved synthesis; final HTML rendered",
+  "workflow_type": "read-only one-off synthesis report",
+  "new_statistics_or_spatial_analysis_run": false,
+  "ms4a4a_included": false,
+  "source_analyses": [
+    {
+      "stage": "project-existing marker capture QC",
+      "path": "results/reanalysis/bin50_all_existing_bcell_marker_capture_qc_260823170058",
+      "key_file": "key_results.json",
+      "key_file_sha256": "EDECDF3E9D0140B4354F5BD32D3553CE30D3D974C9194E7EE56CF6B10C2D6F1E"
+    },
+    {
+      "stage": "frozen 49-gene / 16-sample panel QC",
+      "path": "results/reanalysis/bin50_hq_frozen_blineage_descriptive_qc_260823180725",
+      "report_sha256": "6C9D62E14FA86DC9DEA4E44D2054FA0ECC874E3515211CD82970782444A3A78E"
+    },
+    {
+      "stage": "FO22 extreme-depth sensitivity",
+      "path": "results/reanalysis/bin50_hq_blineage_extreme_depth_loo_sensitivity_260823185322",
+      "report_sha256": "A6BDC17766AB5B93E1938A058D3AF2F59CE626601A731A52689A9C886AAA2814"
+    },
+    {
+      "stage": "15/13-patient disease comparison",
+      "path": "results/reanalysis/bin50_cleaned_blineage_patient_disease_comparison_260823192715",
+      "report_sha256": "0CE6E37D4B98CF6358F65772D5129449C951C8F5AB835C6A2116869FEC2F44CC"
+    },
+    {
+      "stage": "L3 focal review",
+      "path": "results/reanalysis/bin50_l3_mature_b_focal_spatial_review_260823202319",
+      "report_sha256": "9E5A63360743AB48FFBE1E364C8904D88A6709FA2B3734CBAF1864ECFC19A8A1"
+    },
+    {
+      "stage": "L3 matched spatial null",
+      "path": "results/reanalysis/bin50_l3_mature_b_depth_ptprc_matched_spatial_null_260823211809",
+      "report_sha256": "D32E7F4E5E854794F38B227D5D393767A7C6AE966FA6854242385401CFFC90B4"
+    }
+  ],
+  "approved_evidence_hierarchy": {
+    "technical_descriptive": "confirmed",
+    "disease_comparison": "negative; 18/18 confidence intervals cross zero and 0/18 BH-FDR below 0.05",
+    "focal_candidates": "one patient-specific IPF and one patient-specific SSc-ILD candidate",
+    "primary_spatial_evidence": "strict same-bin",
+    "rook_role": "construction-dependent auxiliary evidence",
+    "next_gate": "H&E/pathology and orthogonal RNA/protein validation"
+  },
+  "frozen_rule_reference": {
+    "table": "tables/03_frozen_strict_panel_rule_reference.tsv",
+    "source": "bin50_hq_frozen_blineage_descriptive_qc_260823180725/parameters_manifest.json and script 389 strict_rule/strict_rook_definition",
+    "panel_n": 6,
+    "marker_or_threshold_change": false
+  },
+  "empirical_percentile_interpretation": "100th empirical percentile means no set among the existing 1000 matched random draws reached the observed spatial concentration; it is not a formal disease-comparison P value and cannot support disease-group inference",
+  "conditional_histology_statement": "若取得对应H&E且能够完成可靠的组织轮廓或粗区域配准，则核对候选坐标对应的解剖与病理结构。",
+  "prohibited_interpretations": [
+    "B-cell niche",
+    "B-cell aggregate",
+    "TLS",
+    "disease-specific B-lineage structure"
+  ],
+  "draft_html": "report/DRAFT_399_bin50_blineage_analysis_line_synthesis_report_260823215304.html",
+  "draft_html_size_bytes": 13788857,
+  "draft_html_sha256": "F4BFB5C2AFDA604F1341584E7CD52544682D71D0D6E4987394A50579C1A86737",
+  "final_html": "report/FINAL_399_bin50_blineage_analysis_line_synthesis_report_260823215304.html",
+  "final_html_size_bytes": 13794494,
+  "final_html_sha256": "B97384DE5636CCF29F59D607CD4768AF139FB2A281DB9851A1A754CB72FB52F5",
+  "eln_status": "local draft pending separate approval",
+  "skill_or_github_issue": "not created; workflow confirmed one-off",
+  "git_commit_created": false,
+  "git_push_performed": false
+}

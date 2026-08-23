@@ -1,0 +1,16 @@
+check	passed	detail
+html_exists	TRUE	report/DRAFT_399_bin50_blineage_analysis_line_synthesis_report_260823215304.html
+html_size_positive	TRUE	13788857 bytes
+sha256_recorded	TRUE	F4BFB5C2AFDA604F1341584E7CD52544682D71D0D6E4987394A50579C1A86737
+complete_closing_html	TRUE	one closing html tag and document ends with closing html
+embedded_existing_png_images	TRUE	14 embedded PNG data URIs
+rendered_html_tables	TRUE	11 table tags
+draft_review_marker	TRUE	DRAFT — pending manual review present
+no_new_analysis_statement	TRUE	read-only synthesis statement present
+ms4a4a_excluded	TRUE	explicit out-of-scope statement present
+negative_disease_result	TRUE	18/18 CI and 0/18 BH-FDR summary present
+candidate_label	TRUE	approved matched focal multi-marker label present
+rook_construction_dependency	TRUE	construction-dependent auxiliary evidence statement present
+session_information	TRUE	session information embedded
+no_escaped_kable_string	TRUE	0 escaped table patterns
+
