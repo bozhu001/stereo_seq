@@ -27,8 +27,7 @@
     "B-cell niche",
     "aggregate",
     "TLS",
-    "disease-specific structure",
-    "completely depth-independent"
+    "disease-specific structure"
   ],
   "analysis_manifest_sha256": "F8AFE0EFB4148FB738D9C5C2C182538EAD886CC0E816A63EF31C27D8A10368A7",
   "analysis_script_sha256": "158F9B96FB55F05B8340D96DBADB3A859CB4E31F6265668FDC9731C042889E5B",
@@ -39,4 +38,3 @@
   "eln_status": "local draft pending separate approval",
   "git_push": false
 }
-

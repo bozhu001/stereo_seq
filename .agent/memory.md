@@ -287,3 +287,36 @@
 - Session summary:
   `.agent/blineage_patient_disease_comparison_wrapup_260823200656.md`.
 - No push was performed.
+
+## 2026-08-23 — L3 Mature_B_core depth/PTPRC-matched spatial null
+
+- Reused persisted frozen same-bin and rook support flags for all six fixed L3
+  samples; no raw-object read, rescoring, marker/threshold change or
+  expression-based sample selection was performed.
+- Ran 1,000 exact stratum-matched random draws per sample and support mode,
+  matching sample-specific `log1p(total_counts)` quintile, `n_genes` quintile
+  and PTPRC raw-positive/raw-zero status. All 12 combinations passed exact
+  composition validation.
+- Final evidence hierarchy: strict same-bin is primary. Strict rook clustering
+  is construction-dependent auxiliary evidence because adjacency is part of
+  the support definition; it is not an independent spatial validation.
+- `IPF/FO23-1-06168` and `SSC/15491/14` are retained as
+  depth/n_genes/PTPRC-status–matched focal multi-marker B-lineage candidates:
+  one patient-specific IPF candidate and one patient-specific SSc-ILD
+  candidate. Their same-bin clustering was not fully explained by the matched
+  technical/immune background.
+- The candidates are not B-cell niches, aggregates, TLS or disease-specific
+  structures; the technical wording is limited to “not fully explained by the
+  matched technical/immune background,” with no disease difference claimed.
+- Final HTML:
+  `results/reanalysis/bin50_l3_mature_b_depth_ptprc_matched_spatial_null_260823211809/report/FINAL_398_l3_mature_b_depth_ptprc_matched_spatial_null_report_260823211809.html`
+  (2,932,894 bytes; SHA-256
+  `D32E7F4E5E854794F38B227D5D393767A7C6AE966FA6854242385401CFFC90B4`).
+- Analysis/report commit:
+  `f4a09b9959ad50f88ca4a097fee37d7d391eaa7a`.
+- Local ELN draft:
+  `elab/L3_Mature_B_core_depth_PTPRC_matched_spatial_null_260823211809.md`;
+  separate ELN approval remains pending and no remote entry was created.
+- Session summary:
+  `.agent/l3_mature_b_depth_ptprc_matched_spatial_null_wrapup_260823214027.md`.
+- No push was performed.
