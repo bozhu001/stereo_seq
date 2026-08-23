@@ -1,0 +1,260 @@
+---
+title: "FINAL — Cleaned B-lineage patient-level disease comparison"
+subtitle: "Exploratory analysis approved after manual review"
+format:
+  html:
+    embed-resources: true
+    self-contained-math: true
+    toc: true
+    toc-depth: 3
+    code-fold: true
+    code-tools: false
+    theme: cosmo
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r}
+library(data.table)
+library(jsonlite)
+library(knitr)
+
+result_dir <- Sys.getenv("BLINEAGE_DISEASE_RESULT_DIR")
+if (!nzchar(result_dir)) stop("BLINEAGE_DISEASE_RESULT_DIR is not set")
+result_dir <- normalizePath(result_dir, winslash = "/", mustWork = TRUE)
+table_dir <- file.path(result_dir, "tables")
+figure_dir <- file.path(result_dir, "figures")
+
+read_table <- function(name) fread(file.path(table_dir, name))
+primary <- read_table("07_primary15_model_results_with_global_bh_fdr.tsv")
+sensitivity <- read_table("09_j2_l3_only13_sensitivity_model_results.tsv")
+stability <- read_table("11_primary15_vs_j2_l3_only13_direction_stability.tsv")
+panel_stability <- read_table("17_panel_level_direction_consistency_summary.tsv")
+group_stats <- read_table("06_group_descriptive_statistics.tsv")
+patients <- read_table("05_patient_level_raw_metrics.tsv")
+predictions <- read_table("10_adjusted_group_predictions.tsv")
+diagnostics <- read_table("12_model_diagnostics.tsv")
+influence <- read_table("13_patient_influence_diagnostics.tsv")
+loo <- read_table("15_leave_one_patient_out_summary.tsv")
+direction <- read_table("16_same_bin_rook_cpm_descriptive_direction_consistency.tsv")
+validation <- read_table("19_output_validation.tsv")
+
+fdr_n <- primary[bh_fdr_18 < 0.05, .N]
+ci_cross_zero_n <- primary[ci_low <= 0 & ci_high >= 0, .N]
+all_consistent <- panel_stability[all_three_direction_consistent == TRUE, panel]
+flipped <- stability[stability_class == "direction_flipped"]
+ssc_ipf_primary_all_negative <- primary[
+  contrast == "SSc-ILD vs IPF",
+  all(effect_logit < 0)
+]
+ssc_ipf_sensitivity_all_negative <- sensitivity[
+  contrast == "SSc-ILD vs IPF",
+  all(effect_logit < 0)
+]
+ssc_ipf_loo_stable_panel_n <- loo[
+  contrast == "SSc-ILD vs IPF",
+  .(no_flip_in_both_cohorts = all(direction_flip_n == 0)),
+  by = panel
+][no_flip_in_both_cohorts == TRUE, .N]
+ssc_ipf_loo_flip_rows <- loo[
+  contrast == "SSc-ILD vs IPF" & direction_flip_n > 0
+]
+stopifnot(
+  ci_cross_zero_n == 18L,
+  fdr_n == 0L,
+  ssc_ipf_primary_all_negative,
+  ssc_ipf_sensitivity_all_negative,
+  ssc_ipf_loo_stable_panel_n == 5L,
+  all(ssc_ipf_loo_flip_rows$panel == "IgA_mucosal_plasma")
+)
+
+fmt <- function(x, digits = 3) {
+  ifelse(is.na(x), "NA", formatC(x, digits = digits, format = "f"))
+}
+table_html <- function(x, caption = NULL, digits = 4) {
+  html <- kable(x, format = "html", caption = caption, digits = digits, escape = TRUE,
+                table.attr = 'class="table table-striped table-hover table-sm"')
+  knitr::asis_output(
+    paste0('<div style="width:100%;max-height:480px;overflow:auto;">', html, '</div>')
+  )
+}
+image_tag <- function(name, alt) {
+  src <- knitr::image_uri(file.path(figure_dir, name))
+  sprintf('<img src="%s" alt="%s" style="width:100%%;height:auto;"/>', src, alt)
+}
+```
+
+::: {.callout-note}
+## FINAL — manually approved
+
+This exploratory patient-level comparison and its statistical interpretation were approved after manual review. The report reuses immutable frozen patient-level outputs and does **not** recalculate Bin-level scores, alter panels or thresholds, call TLS, or add samples/tests.
+:::
+
+## Executive audit summary
+
+The primary cohort contains 15 prespecified patients (HC = 4, IPF = 4, SSc-ILD = 7) after removing the five independently flagged low-quality samples and the independently identified extreme-depth sample `IPF/FO22-1-09404`. The J2/L3-only sensitivity cohort contains 13 patients (HC = 3, IPF = 4, SSc-ILD = 6) after additionally removing the two remaining K8 samples, `HC/NL-50` and `SSC/24-1-18170A2`.
+
+All six frozen panels and their existing strict same-bin/rook definitions were reused. The primary endpoint was transformed exactly as preregistered:
+
+`logit((strict_same_bin_supported_bin_n + 0.5) / (total_bin_n + 1))`.
+
+Each panel used the patient-level model `transformed_endpoint ~ disease_group + log(sample_total_counts) + chip_id`, with HC reference and HC3 robust standard errors. The 18 primary P values were adjusted once as one BH family.
+
+**All `r ci_cross_zero_n`/18 primary 95% confidence intervals crossed zero, and `r fdr_n`/18 tests reached BH-FDR < 0.05.** No nominal P value is interpreted alone as a reliable finding.
+
+For **SSc-ILD vs IPF**, the adjusted effect was negative in all six panels in both the Primary15 and J2/L3-only13 complete-cohort models. Leave-one-patient-out refits preserved that direction for five of six panels; `IgA_mucosal_plasma` was the exception, with three direction-flipping refits in each cohort. The cross-panel negative pattern is therefore an exploratory directional trend only and is not uniformly LOO-stable: it **cannot be interpreted as an established disease difference**.
+
+No further adjustment of the model, sample set, markers or thresholds will be made in response to these results.
+
+Panels with all three adjusted contrast directions preserved after excluding K8 were: **`r paste(all_consistent, collapse = ", ")`**. Direction flips occurred only for `r if (nrow(flipped)) paste(paste0(flipped$panel, " (", flipped$contrast, ")"), collapse = "; ") else "none"`; these estimates were close to zero and therefore especially sensitive to modest technical adjustment changes.
+
+## Frozen inputs and cohorts
+
+```{r}
+table_html(read_table("00_data_source_and_frozen_rules_manifest.tsv"), "Frozen analysis rules")
+```
+
+```{r}
+table_html(read_table("02_primary15_sample_list.tsv"), "Primary cohort: 15 patients")
+```
+
+```{r}
+table_html(read_table("03_j2_l3_only13_sample_list.tsv"), "J2/L3-only sensitivity cohort: 13 patients")
+```
+
+```{r}
+table_html(read_table("01_frozen_six_panel_marker_manifest.tsv"), "Frozen panel marker manifest")
+```
+
+## Patient-level descriptive data
+
+All points below are patients; there are no Bin-level pseudo-replicate error bars. Zero same-bin support is retained and receives only the prespecified 0.5 continuity correction for modeling. The fixed descriptive sparse flag is `supported_bin_n <= 1` and is not used for exclusion.
+
+```{r, results='asis'}
+cat(image_tag("01_primary15_patient_scatter.png", "Primary15 patient-level scatter"))
+```
+
+```{r, results='asis'}
+cat(image_tag("02_j2_l3_only13_patient_scatter.png", "J2/L3-only13 patient-level scatter"))
+```
+
+```{r}
+table_html(
+  group_stats,
+  "Group descriptive statistics: median, IQR, minimum, maximum and zero count"
+)
+```
+
+```{r}
+table_html(
+  patients[, .(
+    cohort, sample_id, group, chip_id, sample_total_counts, panel,
+    strict_same_bin_supported_bin_n, total_bin_n, strict_same_bin_fraction,
+    strict_rook_fraction, panel_cpm_total, same_bin_zero,
+    extremely_sparse_predefined
+  )],
+  "Complete patient-level endpoints"
+)
+```
+
+## Primary15 adjusted disease contrasts
+
+`Mature_B_core` is the primary biological endpoint. The other five panels are secondary exploratory endpoints. Effects and confidence intervals are on the corrected-logit scale. Adjusted fraction differences are standardized over the observed cohort technical covariates and are included only as an aid to interpretation.
+
+```{r, results='asis'}
+cat(image_tag("03_primary15_forest_18_contrasts.png", "Primary15 forest plot"))
+```
+
+```{r}
+primary_display <- primary[, .(
+  panel, endpoint_role, contrast,
+  effect_logit, ci_low, ci_high, p_value, bh_fdr_18,
+  adjusted_fraction_numerator, adjusted_fraction_denominator,
+  adjusted_fraction_difference, fraction_difference_ci_low,
+  fraction_difference_ci_high
+)]
+table_html(primary_display, "Primary15 model: all 18 prespecified contrasts")
+```
+
+```{r}
+table_html(predictions, "Adjusted group predictions / marginal means")
+```
+
+## J2/L3-only sensitivity and K8 assessment
+
+The 13-patient model is unchanged except that K8 is absent and `chip_id` therefore contains only J2 and L3. Nominal P values are shown descriptively; they are not used for a new significance screen.
+
+```{r, results='asis'}
+cat(image_tag("04_primary15_vs_j2_l3_only13_effect_direction.png", "Primary15 versus J2/L3-only13 effects"))
+```
+
+```{r}
+table_html(stability, "Primary15 versus J2/L3-only13 effect-direction stability")
+```
+
+```{r}
+table_html(sensitivity, "J2/L3-only13 sensitivity model results")
+```
+
+The K8 sensitivity is not uniformly null: four panels retain all three directions, whereas `Mature_B_core` (`SSc-ILD vs HC`) and `IgA_mucosal_plasma` (`IPF vs HC`) flip direction. Both flipped primary15 estimates are small relative to their confidence intervals. Thus those particular comparisons are K8-sensitive, while the remaining directions are not dependent on K8 inclusion by this check. Direction preservation does not imply biological validation.
+
+## Same-bin, rook and CPM descriptive direction checks
+
+Rook support and panel CPM are descriptive sensitivities only. No additional P values were generated.
+
+```{r, results='asis'}
+cat(image_tag("05_same_bin_rook_cpm_direction_consistency.png", "Same-bin rook CPM directions"))
+```
+
+```{r}
+table_html(direction, "Disease-group median directions for same-bin, rook and CPM")
+```
+
+## Diagnostics and patient influence
+
+All 12 full models were full-rank and yielded finite HC3 covariance estimates. Influence flags use fixed conventional cutoffs (leverage > 2p/n, Cook distance > 4/n, or |studentized residual| > 2); they trigger review, not deletion.
+
+```{r, results='asis'}
+cat(image_tag("06_model_influence_diagnostics.png", "Patient influence diagnostics"))
+```
+
+```{r}
+table_html(diagnostics, "Model diagnostics")
+```
+
+```{r}
+table_html(influence[flagged_any == TRUE], "Patients flagged by at least one influence diagnostic")
+```
+
+```{r}
+table_html(loo, "Leave-one-patient-out effect stability")
+```
+
+Several near-zero contrasts change direction under leave-one-patient-out refitting, particularly IPF-vs-HC estimates for IgA, GC and ILD-plasma panels. The most recurrent high-influence labels include `SSC/05957/17B`, `SSC/23-105334B1` and `IPF/FO23-1-09473`, but no patient was removed. Two primary15 leave-one-out refits per contrast are rank-deficient because dropping either of the two remaining K8 patients leaves the K8 chip represented by only one disease group; these failed refits are explicitly retained as unstable rather than silently omitted. Overall, the wide confidence intervals, diagnostic flags and leave-one-out changes argue against a claim that any observed contrast is robustly established.
+
+## Interpretation boundaries
+
+- Marker co-capture fraction is a technical/descriptive endpoint and is not the physical area occupied by B cells.
+- Plasma and IgA panels may be dominated by abundant transcripts such as `JCHAIN` and `IGHA1`.
+- `GC_activated_B` cannot be interpreted directly as a germinal center or TLS.
+- K8 previously showed systematically higher capture; the J2/L3-only13 analysis is therefore a key sensitivity analysis, not a replacement cohort selected by outcome.
+- Sample sizes are small. Effect size, 95% CI, patient scatter, influence diagnostics and 15/13 direction stability take precedence over nominal P values.
+- Only effects that are direction-stable, not driven by a single patient and persistent after technical adjustment would be eligible for a later spatial review. This DRAFT does not identify such effects as validated biology.
+
+## Output validation
+
+```{r}
+table_html(validation, "Automated output checks")
+```
+
+This is the approved final local report. The corresponding ELN document remains a draft pending its separate approval gate; no remote ELN entry or Git push was created.
+
+```{bash render}
+#| eval: false
+# Run from the project scripts directory. This renders the report only and
+# reads existing TSV/PNG outputs; it does not execute the analysis model.
+$env:BLINEAGE_DISEASE_RESULT_DIR = (Resolve-Path "..\results\reanalysis\bin50_cleaned_blineage_patient_disease_comparison_260823192715").Path
+quarto render 394_cleaned_blineage_patient_disease_comparison_report.qmd --output FINAL_394_cleaned_blineage_patient_disease_comparison_report_260823192715.html
+```

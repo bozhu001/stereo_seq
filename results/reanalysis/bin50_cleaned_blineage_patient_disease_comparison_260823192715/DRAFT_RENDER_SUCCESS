@@ -1,0 +1,15 @@
+DRAFT_RENDER_SUCCESS
+rendered_at=2026-08-23 19:56:34 Europe/Berlin
+html=report/DRAFT_394_cleaned_blineage_patient_disease_comparison_report_260823192715.html
+html_size_bytes=3458176
+embedded_image_n=6
+closing_html_tag=true
+draft_pending_manual_review_label=true
+normal_html_table_n=15
+escaped_table_n=0
+literal_output_prefix_n=0
+executive_summary_ci_cross_zero=18/18
+executive_summary_bh_fdr_lt_0.05=0/18
+eln_created=false
+git_commit=false
+git_push=false

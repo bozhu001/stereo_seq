@@ -1,0 +1,14 @@
+check	passed
+"frozen_source_validation_passed"	TRUE
+"primary15_exact_membership"	TRUE
+"primary15_group_counts_4_4_7"	TRUE
+"j2_l3_only13_exact_membership"	TRUE
+"j2_l3_group_counts_3_4_6"	TRUE
+"six_frozen_panels_only"	TRUE
+"primary18_contrasts"	TRUE
+"sensitivity18_contrasts"	TRUE
+"global_bh_over_18"	TRUE
+"all_models_full_rank"	TRUE
+"all_hc3_covariances_finite"	TRUE
+"png_svg_pairs_present"	TRUE
+"no_bin_level_recalculation"	TRUE

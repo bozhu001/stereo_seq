@@ -1,0 +1,13 @@
+cohort	panel	n	parameter_n	residual_df	model_rank	full_rank	condition_number	hc3_finite	model_stable	high_leverage_n	high_cook_n	large_studentized_residual_n
+"primary15"	"Mature_B_core"	15	6	9	6	TRUE	463.392198261984	TRUE	TRUE	0	2	1
+"primary15"	"ILD_plasma_cell"	15	6	9	6	TRUE	463.392198261984	TRUE	TRUE	0	3	1
+"primary15"	"IgA_mucosal_plasma"	15	6	9	6	TRUE	463.392198261984	TRUE	TRUE	0	2	1
+"primary15"	"GC_activated_B"	15	6	9	6	TRUE	463.392198261984	TRUE	TRUE	0	2	2
+"primary15"	"Naive_B"	15	6	9	6	TRUE	463.392198261984	TRUE	TRUE	0	0	0
+"primary15"	"Memory_tissue_B"	15	6	9	6	TRUE	463.392198261984	TRUE	TRUE	0	2	1
+"j2_l3_only13"	"Mature_B_core"	13	5	8	5	TRUE	394.189136546168	TRUE	TRUE	0	3	1
+"j2_l3_only13"	"ILD_plasma_cell"	13	5	8	5	TRUE	394.189136546168	TRUE	TRUE	0	2	1
+"j2_l3_only13"	"IgA_mucosal_plasma"	13	5	8	5	TRUE	394.189136546168	TRUE	TRUE	0	2	1
+"j2_l3_only13"	"GC_activated_B"	13	5	8	5	TRUE	394.189136546168	TRUE	TRUE	0	2	2
+"j2_l3_only13"	"Naive_B"	13	5	8	5	TRUE	394.189136546168	TRUE	TRUE	0	1	0
+"j2_l3_only13"	"Memory_tissue_B"	13	5	8	5	TRUE	394.189136546168	TRUE	TRUE	0	2	1

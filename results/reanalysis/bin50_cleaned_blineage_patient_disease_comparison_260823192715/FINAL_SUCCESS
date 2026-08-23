@@ -1,0 +1,14 @@
+FINAL_SUCCESS
+approved_analysis=true
+approved_statistical_interpretation=true
+model_rerun=false
+conclusion_modified=false
+final_html=report/FINAL_394_cleaned_blineage_patient_disease_comparison_report_260823192715.html
+final_html_size_bytes=3458257
+final_html_sha256=0CE6E37D4B98CF6358F65772D5129449C951C8F5AB835C6A2116869FEC2F44CC
+closing_html_tag=true
+normal_html_table_n=15
+escaped_table_n=0
+embedded_image_n=6
+eln_status=draft_only
+push=false

@@ -1,0 +1,7 @@
+panel	contrast_n	direction_flip_after_k8_removal_n	weakened_after_k8_removal_n	strengthened_after_k8_removal_n	similar_after_k8_removal_n
+"GC_activated_B"	3	0	0	0	3
+"ILD_plasma_cell"	3	0	1	1	1
+"IgA_mucosal_plasma"	3	1	1	0	1
+"Mature_B_core"	3	1	0	1	1
+"Memory_tissue_B"	3	0	1	1	1
+"Naive_B"	3	0	2	0	1

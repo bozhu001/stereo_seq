@@ -1,0 +1,13 @@
+item	frozen_value
+"analysis_label"	"exploratory cleaned B-lineage patient-level disease comparison"
+"source_directory"	"D:/bb/博士课题组资料/新建文件夹/自己课题相关/Lung ST/codex agent/stereo_seq/stereo_seq/results/reanalysis/bin50_hq_frozen_blineage_descriptive_qc_260823180725"
+"statistical_unit"	"patient"
+"primary_endpoint"	"strict same-bin co-capture fraction"
+"transformation"	"logit((supported_bin_n + 0.5)/(total_bin_n + 1))"
+"primary_model"	"transformed_endpoint ~ disease_group + log(sample_total_counts) + chip_id"
+"robust_se"	"HC3"
+"primary_multiplicity"	"single BH adjustment over 6 panels x 3 contrasts = 18 tests"
+"sensitivity_model"	"same formula in J2/L3-only13"
+"panel_scope"	"Mature_B_core;ILD_plasma_cell;IgA_mucosal_plasma;GC_activated_B;Naive_B;Memory_tissue_B"
+"extreme_sparse_flag"	"strict_same_bin_supported_bin_n <= 1; descriptive flag only"
+"result_adaptation"	"none: no sample, marker, threshold, panel, or model changes based on results"

@@ -1,0 +1,7 @@
+panel	contrast_n	direction_consistent_n	direction_flipped_n	model_unstable_n	all_three_direction_consistent
+"GC_activated_B"	3	3	0	0	TRUE
+"ILD_plasma_cell"	3	3	0	0	TRUE
+"IgA_mucosal_plasma"	3	2	1	0	FALSE
+"Mature_B_core"	3	2	1	0	FALSE
+"Memory_tissue_B"	3	3	0	0	TRUE
+"Naive_B"	3	3	0	0	TRUE

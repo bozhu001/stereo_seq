@@ -1,0 +1,9 @@
+SUCCESS
+completed_at=2026-08-23 19:31:46 CEST
+scope=patient-level only; frozen Bin-level outputs reused
+primary_n=15
+j2_l3_only_n=13
+bh_fdr_lt_0.05_n=0
+eln_created=false
+git_commit=false
+git_push=false

@@ -1,0 +1,24 @@
+{
+  "analysis_label": "extreme-depth-cleaned patient-level exploratory disease comparison",
+  "timestamp": "260823192715",
+  "primary_n": 15,
+  "sensitivity_n": 13,
+  "primary_group_counts": {
+    "HC": 4,
+    "IPF": 4,
+    "SSc-ILD": 7
+  },
+  "sensitivity_group_counts": {
+    "HC": 3,
+    "IPF": 4,
+    "SSc-ILD": 6
+  },
+  "bh_fdr_lt_0_05_n": 0,
+  "all_three_contrasts_direction_consistent_panels": ["GC_activated_B", "ILD_plasma_cell", "Memory_tissue_B", "Naive_B"],
+  "any_direction_flip_panels": ["IgA_mucosal_plasma", "Mature_B_core"],
+  "primary_loo_sensitive_panel_contrast_n": 9,
+  "no_bin_level_recalculation": true,
+  "eln_created": false,
+  "git_commit_created": false,
+  "git_push_performed": false
+}

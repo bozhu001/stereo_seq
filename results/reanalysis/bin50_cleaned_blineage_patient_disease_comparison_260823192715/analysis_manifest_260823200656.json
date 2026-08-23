@@ -1,0 +1,67 @@
+{
+  "analysis_id": "bin50_cleaned_blineage_patient_disease_comparison_260823192715",
+  "wrapup_timestamp": "260823200656",
+  "status": "analysis_and_statistical_interpretation_manually_approved",
+  "analysis_type": "exploratory_patient_level_disease_comparison",
+  "statistical_unit": "patient",
+  "source_result_directory": "results/reanalysis/bin50_hq_frozen_blineage_descriptive_qc_260823180725",
+  "source_policy": "reuse frozen patient-level results only; no Bin-level scoring rerun",
+  "cohorts": {
+    "primary15": {
+      "n": 15,
+      "group_counts": {"HC": 4, "IPF": 4, "SSc-ILD": 7},
+      "excluded_low_quality_watch": ["HC/NL-53", "HC/NL-66", "IPF/FO23-1-06474", "SSC/15275/13", "SSC/3342/13"],
+      "excluded_extreme_depth": ["IPF/FO22-1-09404"]
+    },
+    "j2_l3_only13": {
+      "n": 13,
+      "group_counts": {"HC": 3, "IPF": 4, "SSc-ILD": 6},
+      "additional_k8_exclusions": ["HC/NL-50", "SSC/24-1-18170A2"]
+    }
+  },
+  "frozen_panels": ["Mature_B_core", "ILD_plasma_cell", "IgA_mucosal_plasma", "GC_activated_B", "Naive_B", "Memory_tissue_B"],
+  "primary_endpoint": "strict_same_bin_supported_bin_n / total_bin_n",
+  "transformation": "logit((strict_same_bin_supported_bin_n + 0.5)/(total_bin_n + 1))",
+  "model": "transformed_endpoint ~ disease_group + log(sample_total_counts) + chip_id",
+  "reference_group": "HC",
+  "robust_covariance": "HC3",
+  "contrasts": ["SSc-ILD vs HC", "IPF vs HC", "SSc-ILD vs IPF"],
+  "multiplicity": "one BH adjustment over all 18 primary tests",
+  "approved_summary": {
+    "ci_crossing_zero": "18/18",
+    "bh_fdr_lt_0_05": "0/18",
+    "ssc_ild_vs_ipf_complete_model_direction": "negative in all six panels in primary15 and j2_l3_only13",
+    "ssc_ild_vs_ipf_loo": "direction retained in five of six panels; IgA_mucosal_plasma had three direction-flipping refits per cohort",
+    "interpretation": "exploratory trend only; not an established disease difference",
+    "adaptation_after_results": "none"
+  },
+  "prohibited_and_not_run": [
+    "Bin-level rescoring", "marker selection", "threshold optimization", "new sample exclusion",
+    "TLS calling", "Moran's I", "hotspot analysis", "cell2location", "NMF", "GSEA",
+    "differential gene analysis", "ligand-receptor analysis"
+  ],
+  "key_files": {
+    "analysis_script": "scripts/393_cleaned_blineage_patient_disease_comparison.R",
+    "report_source": "scripts/394_cleaned_blineage_patient_disease_comparison_report.qmd",
+    "final_html": "report/FINAL_394_cleaned_blineage_patient_disease_comparison_report_260823192715.html",
+    "primary_model_results": "tables/07_primary15_model_results_with_global_bh_fdr.tsv",
+    "sensitivity_model_results": "tables/09_j2_l3_only13_sensitivity_model_results.tsv",
+    "direction_stability": "tables/11_primary15_vs_j2_l3_only13_direction_stability.tsv",
+    "final_render_log": "logs/quarto_final_render.log",
+    "final_html_validation": "logs/final_html_validation.tsv"
+  },
+  "sha256": {
+    "source_panel_metrics": "5402989D4F113D0B40F60029C40892D9746A81565CF733DC9CF2726221C4AAA3",
+    "source_same_bin_support": "8E0326583DD3E06D00819BE29B2B8C0531CB3BF67774C945B48557FEEB606F69",
+    "source_rook_support": "99CD4F28EFB4C9963B05BE8C6C19317AA4847348490026E870634757EA4D7187",
+    "source_sample_metadata": "6ED6798104B2FDEC438CA2D0D44940CA75F8D0088BE51AD0BB76086042B0A706",
+    "analysis_script": "464BE6B42176910615E304B16C31F0F7F904FF2392A65CC95B510C4513D61D23",
+    "report_source": "E32146BA3F5AB38A99448038349BBA1EA3835DA277C09A12D8602D0D6D4D2AE2",
+    "primary_model_results": "4C175202707170EEBCBA86052992E244ED92993BA917B2F9E63908CE76C36EED",
+    "sensitivity_model_results": "F31E7DE978DDBFC3CCB6CBCF623FBAD7C2E95EC18E0B3A2A57992DA8E0F6F458",
+    "direction_stability": "38D1C057335C28D2608310856F55B5B2372BF9800A0F92E6D63B1EB57805A9AF",
+    "final_html": "0CE6E37D4B98CF6358F65772D5129449C951C8F5AB835C6A2116869FEC2F44CC"
+  },
+  "remote_eln_created": false,
+  "push_performed": false
+}

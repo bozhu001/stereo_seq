@@ -1,0 +1,10 @@
+Analysis command:
+Rscript scripts/393_cleaned_blineage_patient_disease_comparison.R --timestamp=260823192715
+
+Render command (working directory: scripts/):
+quarto render 394_cleaned_blineage_patient_disease_comparison_report.qmd --output DRAFT_394_cleaned_blineage_patient_disease_comparison_report_260823192715.html
+
+Environment variable used for rendering:
+BLINEAGE_DISEASE_RESULT_DIR=<absolute path to this result directory>
+
+No ELN entry, Git commit, or push was created.
