@@ -259,3 +259,31 @@
   No push was performed per user instruction.
 - Session summary:
   `.agent/rook_adjacency_sensitivity_wrapup_260822215136.md`.
+
+## 2026-08-23 — Cleaned B-lineage patient-level disease comparison
+
+- Reused frozen patient-level outputs from
+  `results/reanalysis/bin50_hq_frozen_blineage_descriptive_qc_260823180725/`;
+  no Bin-level scoring, marker selection or threshold optimization was rerun.
+- Primary15 contained HC 4, IPF 4 and SSc-ILD 7 after the five independent
+  low-quality-watch exclusions plus extreme-depth `IPF/FO22-1-09404`.
+  J2/L3-only13 further removed the two remaining K8 samples.
+- Six frozen panels used corrected-logit strict same-bin fractions in the
+  patient-level model `disease_group + log(sample_total_counts) + chip_id`,
+  with HC3 covariance and one BH adjustment across 18 contrasts.
+- All 18/18 confidence intervals crossed zero and 0/18 reached BH-FDR < 0.05.
+  SSc-ILD versus IPF was negative for all six complete-cohort models in both
+  cohorts, but IgA had LOO direction flips; this remains an exploratory trend,
+  not an established disease difference.
+- Final HTML:
+  `results/reanalysis/bin50_cleaned_blineage_patient_disease_comparison_260823192715/report/FINAL_394_cleaned_blineage_patient_disease_comparison_report_260823192715.html`
+  (3,458,257 bytes; SHA-256
+  `0CE6E37D4B98CF6358F65772D5129449C951C8F5AB835C6A2116869FEC2F44CC`).
+- Analysis/report commit:
+  `446a30841cebf16d09c9094a3f251b6fff916679`.
+- Local ELN draft:
+  `elab/Bin50_cleaned_Blineage_patient_disease_comparison_260823192715.md`;
+  separate ELN approval remains pending and no remote entry was created.
+- Session summary:
+  `.agent/blineage_patient_disease_comparison_wrapup_260823200656.md`.
+- No push was performed.
