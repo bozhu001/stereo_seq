@@ -68,6 +68,7 @@
   "final_html_sha256": "B97384DE5636CCF29F59D607CD4768AF139FB2A281DB9851A1A754CB72FB52F5",
   "eln_status": "local draft pending separate approval",
   "skill_or_github_issue": "not created; workflow confirmed one-off",
-  "git_commit_created": false,
+  "git_commit_created": true,
+  "analysis_report_commit": "45f2672f14ec7dacce75930273241236e72f4b7b",
   "git_push_performed": false
 }

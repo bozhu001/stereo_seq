@@ -320,3 +320,34 @@
 - Session summary:
   `.agent/l3_mature_b_depth_ptprc_matched_spatial_null_wrapup_260823214027.md`.
 - No push was performed.
+
+## 2026-08-23 — B-lineage analysis-line synthesis
+
+- Integrated six existing B-lineage stages without running any new statistic,
+  score, randomization or spatial analysis. MS4A4A was excluded.
+- Confirmed technical/descriptive capture feasibility and strong depth/chip
+  effects, including FO22 upper-extreme influence and residual K8-high capture.
+- The 15/13-patient disease comparison remained negative: all 18 confidence
+  intervals crossed zero and 0/18 reached BH-FDR below 0.05.
+- `IPF/FO23-1-06168` and `SSC/15491/14` remain patient-specific
+  depth/n_genes/PTPRC-status–matched focal multi-marker B-lineage candidates.
+  Strict same-bin is primary; rook clustering is construction-dependent
+  auxiliary evidence and not independent spatial validation.
+- Added a six-row exact frozen-rule table. The 100th empirical percentile is
+  limited to the existing 1,000 matched draws and is not a disease P value.
+- H&E review is conditional on obtaining corresponding tissue and achieving
+  reliable outline or coarse-region registration.
+- Niche, aggregate, TLS and disease-specific structure language remains
+  prohibited.
+- Final HTML:
+  `results/reanalysis/bin50_blineage_analysis_line_synthesis_260823215304/report/FINAL_399_bin50_blineage_analysis_line_synthesis_report_260823215304.html`
+  (13,794,494 bytes; SHA-256
+  `B97384DE5636CCF29F59D607CD4768AF139FB2A281DB9851A1A754CB72FB52F5`).
+- Analysis/report commit:
+  `45f2672f14ec7dacce75930273241236e72f4b7b`.
+- ELN draft:
+  `elab/DRAFT_Bin50_Blineage_analysis_line_synthesis_260823215304.md`;
+  separate approval remains pending and no remote entry was created.
+- Session summary:
+  `.agent/blineage_analysis_line_synthesis_wrapup_260823222413.md`.
+- One-off classification retained; no skill or GitHub issue. No push.
