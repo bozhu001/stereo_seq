@@ -1,0 +1,8 @@
+check	passed	detail
+"all_expected_outputs_exist"	TRUE	"20 expected pre-report files"
+"fixed_six_samples"	TRUE	"HC/NL-72; IPF/FO23-1-06168; IPF/FO23-1-06170; SSC/05957/17B; SSC/07998/15A; SSC/15491/14"
+"frozen_support_exact"	TRUE	"persisted Bin flags equal frozen aggregate counts"
+"all_1000_matched_draws_exact"	TRUE	"1000 draws for each of 12 sample/support-mode combinations"
+"null_rows_complete"	TRUE	"96000"
+"focus_samples_retained"	TRUE	"IPF/FO23-1-06168; SSC/15491/14"
+"extremely_low_capture_sample_retained"	TRUE	"retained despite zero same-bin support"

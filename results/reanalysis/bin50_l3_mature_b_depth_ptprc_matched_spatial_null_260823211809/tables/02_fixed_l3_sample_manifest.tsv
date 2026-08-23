@@ -1,0 +1,7 @@
+sample_id	group	chip_id	total_bin_n	sample_total_counts	median_total_counts	median_n_genes	fixed_inclusion	candidate_detail_plot	capture_flag	selection_independent_of_b_expression
+"HC/NL-72"	"HC"	"Y40105L3"	9919	3812324	303	242	TRUE	FALSE	"retained_L3_background_or_candidate"	TRUE
+"IPF/FO23-1-06168"	"IPF"	"Y40105L3"	5358	1251687	146	119	TRUE	TRUE	"retained_L3_background_or_candidate"	TRUE
+"IPF/FO23-1-06170"	"IPF"	"Y40105L3"	7156	1196230	147	122	TRUE	FALSE	"retained_L3_background_or_candidate"	TRUE
+"SSC/05957/17B"	"SSc-ILD"	"Y40105L3"	7325	523877	44	37	TRUE	FALSE	"prespecified_extremely_low_capture"	TRUE
+"SSC/07998/15A"	"SSc-ILD"	"Y40105L3"	6477	1782165	184	146	TRUE	FALSE	"retained_L3_background_or_candidate"	TRUE
+"SSC/15491/14"	"SSc-ILD"	"Y40105L3"	10213	3551953	186	148	TRUE	TRUE	"retained_L3_background_or_candidate"	TRUE

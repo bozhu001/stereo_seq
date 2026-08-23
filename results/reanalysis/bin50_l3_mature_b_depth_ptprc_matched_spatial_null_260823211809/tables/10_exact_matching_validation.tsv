@@ -1,0 +1,13 @@
+sample_id	support_mode	supported_bin_n	random_draw_n	exact_stratum_composition_draw_n	all_draws_exact
+"HC/NL-72"	"same_bin"	34	1000	1000	TRUE
+"HC/NL-72"	"rook"	162	1000	1000	TRUE
+"IPF/FO23-1-06168"	"same_bin"	37	1000	1000	TRUE
+"IPF/FO23-1-06168"	"rook"	129	1000	1000	TRUE
+"IPF/FO23-1-06170"	"same_bin"	8	1000	1000	TRUE
+"IPF/FO23-1-06170"	"rook"	43	1000	1000	TRUE
+"SSC/05957/17B"	"same_bin"	0	1000	1000	TRUE
+"SSC/05957/17B"	"rook"	4	1000	1000	TRUE
+"SSC/07998/15A"	"same_bin"	12	1000	1000	TRUE
+"SSC/07998/15A"	"rook"	61	1000	1000	TRUE
+"SSC/15491/14"	"same_bin"	65	1000	1000	TRUE
+"SSC/15491/14"	"rook"	243	1000	1000	TRUE

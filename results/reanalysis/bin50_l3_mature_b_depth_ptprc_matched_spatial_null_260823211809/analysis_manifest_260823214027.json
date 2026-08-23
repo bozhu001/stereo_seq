@@ -1,0 +1,42 @@
+{
+  "analysis": "L3 Mature_B_core depth/PTPRC-matched spatial null",
+  "analysis_timestamp": "260823211809",
+  "finalization_timestamp": "260823214027",
+  "status": "calculation and final interpretation approved",
+  "scope": "report-only interpretation correction and local wrap-up",
+  "recalculation_performed_during_finalization": false,
+  "fixed_sample_n": 6,
+  "focus_candidates": [
+    {
+      "sample_id": "IPF/FO23-1-06168",
+      "group": "IPF",
+      "interpretation": "patient-specific depth/n_genes/PTPRC-status–matched focal multi-marker B-lineage candidate"
+    },
+    {
+      "sample_id": "SSC/15491/14",
+      "group": "SSc-ILD",
+      "interpretation": "patient-specific depth/n_genes/PTPRC-status–matched focal multi-marker B-lineage candidate"
+    }
+  ],
+  "evidence_hierarchy": {
+    "primary": "strict same-bin spatial result",
+    "auxiliary": "strict rook clustering; construction-dependent because rook support uses adjacency",
+    "background_interpretation": "not fully explained by the matched technical/immune background"
+  },
+  "prohibited_interpretations": [
+    "B-cell niche",
+    "aggregate",
+    "TLS",
+    "disease-specific structure",
+    "completely depth-independent"
+  ],
+  "analysis_manifest_sha256": "F8AFE0EFB4148FB738D9C5C2C182538EAD886CC0E816A63EF31C27D8A10368A7",
+  "analysis_script_sha256": "158F9B96FB55F05B8340D96DBADB3A859CB4E31F6265668FDC9731C042889E5B",
+  "report_source_sha256": "2B0EC0E8B8C1FD4EEA7D8B32FBD827BE267D8F295AEE94969B89D46ECF2D15F4",
+  "final_html": "report/FINAL_398_l3_mature_b_depth_ptprc_matched_spatial_null_report_260823211809.html",
+  "final_html_size_bytes": 2932894,
+  "final_html_sha256": "D32E7F4E5E854794F38B227D5D393767A7C6AE966FA6854242385401CFFC90B4",
+  "eln_status": "local draft pending separate approval",
+  "git_push": false
+}
+

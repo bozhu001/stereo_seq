@@ -1,0 +1,4 @@
+The analysis completed successfully and created SUCCESS plus all validated outputs.
+PowerShell reported Rscript exit status 1 only because sessioninfo queried Quarto
+with an incompatible environment-argument form after all analysis outputs had
+already been written. This package-reporting warning did not alter results.

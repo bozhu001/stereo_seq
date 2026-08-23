@@ -1,0 +1,15 @@
+check	passed	detail
+final_html_exists	TRUE	report/FINAL_398_l3_mature_b_depth_ptprc_matched_spatial_null_report_260823211809.html
+html_size_positive	TRUE	2932894 bytes
+sha256_recorded	TRUE	D32E7F4E5E854794F38B227D5D393767A7C6AE966FA6854242385401CFFC90B4
+complete_closing_html	TRUE	one closing html tag and document ends with closing html
+embedded_png_images	TRUE	4 embedded PNG data URIs
+rendered_html_tables	TRUE	11 table tags
+final_title_present	TRUE	FINAL title found
+same_bin_primary_statement	TRUE	strict same-bin identified as primary spatial evidence
+matched_background_statement	TRUE	not fully explained wording present
+approved_candidate_label	TRUE	approved depth/n_genes/PTPRC-status–matched label present
+rook_construction_dependency	TRUE	construction-dependent auxiliary evidence statement present
+forbidden_depth_independent_phrase_absent	TRUE	0 occurrences
+no_escaped_kable_string	TRUE	0 escaped table patterns
+

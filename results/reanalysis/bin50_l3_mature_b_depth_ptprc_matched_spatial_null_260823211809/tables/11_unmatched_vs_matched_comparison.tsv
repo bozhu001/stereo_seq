@@ -1,0 +1,49 @@
+sample_id	group	chip_id	support_mode	supported_bin_n	metric	metric_label	observed_value	null_median_depth_n_genes_PTPRC_matched	null_median_unmatched_uniform_tissue	clustering_direction_percentile_depth_n_genes_PTPRC_matched	clustering_direction_percentile_unmatched_uniform_tissue	percentile_change_matched_minus_unmatched
+"HC/NL-72"	"HC"	"Y40105L3"	"rook"	162	"connected_component_n"	"Connected components"	66	153	157	100	100	0
+"HC/NL-72"	"HC"	"Y40105L3"	"rook"	162	"max_component_support_fraction"	"Largest component / support"	0.0555555555555556	0.0185185185185185	0.0123456790123457	100	100	0
+"HC/NL-72"	"HC"	"Y40105L3"	"rook"	162	"max_rook_component_bin_n"	"Largest rook component (Bins)"	9	3	2	100	100	0
+"HC/NL-72"	"HC"	"Y40105L3"	"rook"	162	"median_nearest_neighbor_distance"	"Median nearest-neighbor distance"	50	150	200	100	100	0
+"HC/NL-72"	"HC"	"Y40105L3"	"same_bin"	34	"connected_component_n"	"Connected components"	34	34	34	63.2	79.1	-15.9
+"HC/NL-72"	"HC"	"Y40105L3"	"same_bin"	34	"max_component_support_fraction"	"Largest component / support"	0.0294117647058824	0.0294117647058824	0.0294117647058824	63.2	79.1	-15.9
+"HC/NL-72"	"HC"	"Y40105L3"	"same_bin"	34	"max_rook_component_bin_n"	"Largest rook component (Bins)"	1	1	1	63.2	79.1	-15.9
+"HC/NL-72"	"HC"	"Y40105L3"	"same_bin"	34	"median_nearest_neighbor_distance"	"Median nearest-neighbor distance"	292.743003186782	318.19198894424	427.200187265877	68.7	98.3	-29.6
+"IPF/FO23-1-06168"	"IPF"	"Y40105L3"	"rook"	129	"connected_component_n"	"Connected components"	33	110	123	100	100	0
+"IPF/FO23-1-06168"	"IPF"	"Y40105L3"	"rook"	129	"max_component_support_fraction"	"Largest component / support"	0.449612403100775	0.0310077519379845	0.0155038759689922	100	100	0
+"IPF/FO23-1-06168"	"IPF"	"Y40105L3"	"rook"	129	"max_rook_component_bin_n"	"Largest rook component (Bins)"	58	4	2	100	100	0
+"IPF/FO23-1-06168"	"IPF"	"Y40105L3"	"rook"	129	"median_nearest_neighbor_distance"	"Median nearest-neighbor distance"	50	100	158.113883008419	100	100	0
+"IPF/FO23-1-06168"	"IPF"	"Y40105L3"	"same_bin"	37	"connected_component_n"	"Connected components"	10	35	37	100	100	0
+"IPF/FO23-1-06168"	"IPF"	"Y40105L3"	"same_bin"	37	"max_component_support_fraction"	"Largest component / support"	0.756756756756757	0.0540540540540541	0.027027027027027	100	100	0
+"IPF/FO23-1-06168"	"IPF"	"Y40105L3"	"same_bin"	37	"max_rook_component_bin_n"	"Largest rook component (Bins)"	28	2	1	100	100	0
+"IPF/FO23-1-06168"	"IPF"	"Y40105L3"	"same_bin"	37	"median_nearest_neighbor_distance"	"Median nearest-neighbor distance"	50	158.113883008419	304.138126514911	100	100	0
+"IPF/FO23-1-06170"	"IPF"	"Y40105L3"	"rook"	43	"connected_component_n"	"Connected components"	21	42.5	43	100	100	0
+"IPF/FO23-1-06170"	"IPF"	"Y40105L3"	"rook"	43	"max_component_support_fraction"	"Largest component / support"	0.0697674418604651	0.0348837209302326	0.0232558139534884	100	99.8	0.200000000000003
+"IPF/FO23-1-06170"	"IPF"	"Y40105L3"	"rook"	43	"max_rook_component_bin_n"	"Largest rook component (Bins)"	3	1.5	1	100	99.8	0.200000000000003
+"IPF/FO23-1-06170"	"IPF"	"Y40105L3"	"rook"	43	"median_nearest_neighbor_distance"	"Median nearest-neighbor distance"	50	269.258240356725	320.156211871642	100	100	0
+"IPF/FO23-1-06170"	"IPF"	"Y40105L3"	"same_bin"	8	"connected_component_n"	"Connected components"	8	8	8	98.4	99.2	-0.799999999999997
+"IPF/FO23-1-06170"	"IPF"	"Y40105L3"	"same_bin"	8	"max_component_support_fraction"	"Largest component / support"	0.125	0.125	0.125	98.4	99.2	-0.799999999999997
+"IPF/FO23-1-06170"	"IPF"	"Y40105L3"	"same_bin"	8	"max_rook_component_bin_n"	"Largest rook component (Bins)"	1	1	1	98.4	99.2	-0.799999999999997
+"IPF/FO23-1-06170"	"IPF"	"Y40105L3"	"same_bin"	8	"median_nearest_neighbor_distance"	"Median nearest-neighbor distance"	850	636.423082081334	815.364002324535	15.1	44.9	-29.8
+"SSC/05957/17B"	"SSc-ILD"	"Y40105L3"	"rook"	4	"connected_component_n"	"Connected components"	2	4	4	100	100	0
+"SSC/05957/17B"	"SSc-ILD"	"Y40105L3"	"rook"	4	"max_component_support_fraction"	"Largest component / support"	0.5	0.25	0.25	100	100	0
+"SSC/05957/17B"	"SSc-ILD"	"Y40105L3"	"rook"	4	"max_rook_component_bin_n"	"Largest rook component (Bins)"	2	1	1	100	100	0
+"SSC/05957/17B"	"SSc-ILD"	"Y40105L3"	"rook"	4	"median_nearest_neighbor_distance"	"Median nearest-neighbor distance"	50	626.769641044313	1233.55129678391	100	100	0
+"SSC/05957/17B"	"SSc-ILD"	"Y40105L3"	"same_bin"	0	"connected_component_n"	"Connected components"	0	0	0	NA	NA	NA
+"SSC/05957/17B"	"SSc-ILD"	"Y40105L3"	"same_bin"	0	"max_component_support_fraction"	"Largest component / support"	NA	NA	NA	NA	NA	NA
+"SSC/05957/17B"	"SSc-ILD"	"Y40105L3"	"same_bin"	0	"max_rook_component_bin_n"	"Largest rook component (Bins)"	0	0	0	NA	NA	NA
+"SSC/05957/17B"	"SSc-ILD"	"Y40105L3"	"same_bin"	0	"median_nearest_neighbor_distance"	"Median nearest-neighbor distance"	NA	NA	NA	NA	NA	NA
+"SSC/07998/15A"	"SSc-ILD"	"Y40105L3"	"rook"	61	"connected_component_n"	"Connected components"	29	59	60	100	100	0
+"SSC/07998/15A"	"SSc-ILD"	"Y40105L3"	"rook"	61	"max_component_support_fraction"	"Largest component / support"	0.0491803278688525	0.0327868852459016	0.0327868852459016	98.6	100	-1.40000000000001
+"SSC/07998/15A"	"SSc-ILD"	"Y40105L3"	"rook"	61	"max_rook_component_bin_n"	"Largest rook component (Bins)"	3	2	2	98.6	100	-1.40000000000001
+"SSC/07998/15A"	"SSc-ILD"	"Y40105L3"	"rook"	61	"median_nearest_neighbor_distance"	"Median nearest-neighbor distance"	50	180.277563773199	254.950975679639	100	100	0
+"SSC/07998/15A"	"SSc-ILD"	"Y40105L3"	"same_bin"	12	"connected_component_n"	"Connected components"	12	12	12	93.2	96.4	-3.19999999999999
+"SSC/07998/15A"	"SSc-ILD"	"Y40105L3"	"same_bin"	12	"max_component_support_fraction"	"Largest component / support"	0.0833333333333333	0.0833333333333333	0.0833333333333333	93.2	96.4	-3.19999999999999
+"SSC/07998/15A"	"SSc-ILD"	"Y40105L3"	"same_bin"	12	"max_rook_component_bin_n"	"Largest rook component (Bins)"	1	1	1	93.2	96.4	-3.19999999999999
+"SSC/07998/15A"	"SSc-ILD"	"Y40105L3"	"same_bin"	12	"median_nearest_neighbor_distance"	"Median nearest-neighbor distance"	425.831751254187	500	628.031981996478	71.3	92.3	-21
+"SSC/15491/14"	"SSc-ILD"	"Y40105L3"	"rook"	243	"connected_component_n"	"Connected components"	71	206	232	100	100	0
+"SSC/15491/14"	"SSc-ILD"	"Y40105L3"	"rook"	243	"max_component_support_fraction"	"Largest component / support"	0.288065843621399	0.0205761316872428	0.0123456790123457	100	100	0
+"SSC/15491/14"	"SSc-ILD"	"Y40105L3"	"rook"	243	"max_rook_component_bin_n"	"Largest rook component (Bins)"	70	5	3	100	100	0
+"SSC/15491/14"	"SSc-ILD"	"Y40105L3"	"rook"	243	"median_nearest_neighbor_distance"	"Median nearest-neighbor distance"	50	100	158.113883008419	100	100	0
+"SSC/15491/14"	"SSc-ILD"	"Y40105L3"	"same_bin"	65	"connected_component_n"	"Connected components"	36	62	64	100	100	0
+"SSC/15491/14"	"SSc-ILD"	"Y40105L3"	"same_bin"	65	"max_component_support_fraction"	"Largest component / support"	0.446153846153846	0.0307692307692308	0.0307692307692308	100	100	0
+"SSC/15491/14"	"SSc-ILD"	"Y40105L3"	"same_bin"	65	"max_rook_component_bin_n"	"Largest rook component (Bins)"	29	2	2	100	100	0
+"SSC/15491/14"	"SSc-ILD"	"Y40105L3"	"same_bin"	65	"median_nearest_neighbor_distance"	"Median nearest-neighbor distance"	70.7106781186548	158.113883008419	304.138126514911	100	100	0

@@ -1,0 +1,200 @@
+---
+title: "FINAL — L3 Mature_B_core depth/PTPRC-matched spatial null"
+subtitle: "Six fixed L3 samples; approved descriptive spatial-QC interpretation"
+format:
+  html:
+    embed-resources: true
+    self-contained-math: true
+    toc: true
+    toc-depth: 3
+    code-fold: true
+    theme: cosmo
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r}
+library(data.table)
+library(knitr)
+
+result_dir <- Sys.getenv("L3_MATCHED_NULL_DIR")
+if (!nzchar(result_dir)) stop("L3_MATCHED_NULL_DIR is not set")
+result_dir <- normalizePath(result_dir, winslash = "/", mustWork = TRUE)
+table_dir <- file.path(result_dir, "tables")
+figure_dir <- file.path(result_dir, "figures")
+
+read_table <- function(name) fread(file.path(table_dir, name))
+manifest <- read_table("00_analysis_manifest.tsv")
+input_audit <- read_table("01_immutable_input_audit.tsv")
+samples <- read_table("02_fixed_l3_sample_manifest.tsv")
+support_validation <- read_table("03_frozen_support_flag_validation.tsv")
+strata <- read_table("04_matching_strata_summary.tsv")
+observed <- read_table("05_observed_spatial_metrics.tsv")
+null_summary <- read_table("09_empirical_percentile_summary.tsv")
+matching_validation <- read_table("10_exact_matching_validation.tsv")
+comparison <- read_table("11_unmatched_vs_matched_comparison.tsv")
+focus <- read_table("12_focus_candidate_summary.tsv")
+prior_unmatched <- read_table("13_prior_unmatched_depth_overlap_carryforward.tsv")
+validation <- read_table("14_output_validation.tsv")
+
+stopifnot(
+  all(validation$passed),
+  all(support_validation$total_n_exact),
+  all(support_validation$same_n_exact),
+  all(support_validation$rook_n_exact),
+  all(matching_validation$all_draws_exact)
+)
+
+table_html <- function(x, caption = NULL, digits = 4) {
+  html <- kable(
+    x, format = "html", caption = caption, digits = digits, escape = TRUE,
+    table.attr = 'class="table table-striped table-hover table-sm"'
+  )
+  knitr::asis_output(
+    paste0('<div style="width:100%;max-height:560px;overflow:auto;">', html, '</div>')
+  )
+}
+image_tag <- function(name, alt) {
+  src <- knitr::image_uri(file.path(figure_dir, name))
+  sprintf('<img src="%s" alt="%s" style="width:100%%;height:auto;"/>', src, alt)
+}
+focus_min_percentile <- function(sid, mode) {
+  min(focus[sample_id == sid & support_mode == mode,
+            clustering_direction_percentile_depth_n_genes_PTPRC_matched], na.rm = TRUE)
+}
+focus_metric_value <- function(sid, mode, metric, column) {
+  focus[sample_id == sid & support_mode == mode & get("metric") == metric, get(column)]
+}
+```
+
+::: {.callout-important}
+## FINAL — calculation and interpretation approved
+
+This report is a descriptive spatial-QC analysis. It is not a disease comparison and does not call a B-cell niche, aggregate, TLS or hotspot. The calculation and the interpretation below were approved for final local reporting.
+:::
+
+## Executive summary
+
+All six fixed L3 samples were retained without expression-based selection. `SSC/05957/17B` remains explicitly marked as an extremely low-capture sample. The analysis read the previously persisted `strict_same_bin` and `strict_rook` flags; it did not reconstruct a score, modify a marker or threshold, or inspect a new raw-count object.
+
+For **IPF/FO23-1-06168**, the clustering-direction percentile was at least `r sprintf("%.1f", focus_min_percentile("IPF/FO23-1-06168", "same_bin"))`% for all four same-bin spatial metrics and `r sprintf("%.1f", focus_min_percentile("IPF/FO23-1-06168", "rook"))`% for all four rook metrics after exact depth/n_genes/PTPRC matching. Its same-bin largest component contained `r focus_metric_value("IPF/FO23-1-06168", "same_bin", "max_rook_component_bin_n", "observed_value")` of `r focus_metric_value("IPF/FO23-1-06168", "same_bin", "max_rook_component_bin_n", "supported_bin_n")` supported Bins, versus a matched-null median of `r focus_metric_value("IPF/FO23-1-06168", "same_bin", "max_rook_component_bin_n", "null_median_depth_n_genes_PTPRC_matched")`.
+
+For **SSC/15491/14**, the corresponding minimum percentiles were `r sprintf("%.1f", focus_min_percentile("SSC/15491/14", "same_bin"))`% for same-bin and `r sprintf("%.1f", focus_min_percentile("SSC/15491/14", "rook"))`% for rook. Its same-bin largest component contained `r focus_metric_value("SSC/15491/14", "same_bin", "max_rook_component_bin_n", "observed_value")` of `r focus_metric_value("SSC/15491/14", "same_bin", "max_rook_component_bin_n", "supported_bin_n")` supported Bins, versus a matched-null median of `r focus_metric_value("SSC/15491/14", "same_bin", "max_rook_component_bin_n", "null_median_depth_n_genes_PTPRC_matched")`.
+
+The **strict same-bin result is the primary spatial evidence**. In both prespecified focus samples, the observed same-bin multi-marker clustering is **not fully explained by the matched technical/immune background**. The two results are therefore retained as **depth/n_genes/PTPRC-status–matched focal multi-marker B-lineage candidates**: one patient-specific candidate in IPF (`IPF/FO23-1-06168`) and one patient-specific candidate in SSc-ILD (`SSC/15491/14`).
+
+These are patient-specific candidates, not established disease-specific structures. Neither may be called a B-cell niche, aggregate or TLS, and the results do not establish any disease difference.
+
+The unmatched and matched nulls led to the same descriptive conclusion for both focus samples. Matching moved the null distributions toward greater clustering in several metrics, as expected, but the observed focus-sample values remained at or beyond the clustering-direction maximum of all 1,000 matched draws.
+
+**Construction-dependent auxiliary evidence:** strict rook support is itself defined using rook adjacency. The rook clustering result is therefore construction-dependent auxiliary evidence and cannot serve as an independent spatial validation. Strict same-bin is the primary spatial evidence; the six same-chip samples provide the relevant background context. Empirical percentiles are descriptive ranks, not P values.
+
+## Frozen scope and immutable inputs
+
+```{r, results='asis'}
+table_html(manifest, "Prespecified design and interpretation limits")
+```
+
+```{r, results='asis'}
+table_html(input_audit, "Immutable source-file audit")
+```
+
+```{r, results='asis'}
+table_html(samples, "All six fixed L3 samples")
+```
+
+The fixed matching layer for each tissue Bin was the cross-classification of sample-specific empirical quintiles of `log1p(total_counts)`, empirical quintiles of `n_genes`, and PTPRC raw-positive versus raw-zero status. Average ranks kept ties together. Each matched draw sampled without replacement and reproduced the observed stratum counts exactly.
+
+## Frozen support validation
+
+```{r, results='asis'}
+table_html(support_validation, "Persisted support flags versus frozen aggregate results")
+```
+
+```{r, results='asis'}
+table_html(matching_validation, "Exact matching validation for all 12 sample/support-mode combinations")
+```
+
+All `r sum(matching_validation$random_draw_n)` matched random sets passed exact stratum-composition validation. Same-bin and rook were randomized independently.
+
+## Spatial null results across all six samples
+
+```{r, results='asis'}
+cat(image_tag("01_all_samples_empirical_percentiles.png", "All-sample empirical percentiles"))
+```
+
+For largest-component size and fraction, larger values indicate stronger clustering. For component number and median nearest-neighbor distance, smaller values indicate stronger clustering. The “clustering-direction percentile” reverses the latter two so that higher always means more clustered than the null.
+
+```{r, results='asis'}
+table_html(null_summary, "Observed values and 1,000-draw null summaries", digits = 3)
+```
+
+`SSC/05957/17B` had zero same-bin supported Bins. Its observed zeros are retained, but spatial percentiles are reported as not estimable rather than treating an empty set as clustered.
+
+## Focused review: IPF/FO23-1-06168 and SSC/15491/14
+
+```{r, results='asis'}
+cat(image_tag("02_focus_candidate_null_distributions.png", "Focused matched and unmatched null distributions"))
+```
+
+```{r, results='asis'}
+table_html(focus, "Prespecified focus-sample spatial metrics", digits = 3)
+```
+
+The yellow diamonds are observed values. The matched distribution preserves support-set size and the exact joint depth/n_genes/PTPRC stratum counts. The unmatched distribution preserves only support-set size.
+
+## Did matching change the conclusion?
+
+```{r, results='asis'}
+cat(image_tag("03_unmatched_vs_matched_percentiles.png", "Unmatched versus matched clustering percentiles"))
+```
+
+```{r, results='asis'}
+table_html(comparison, "Metric-wise unmatched versus matched comparison", digits = 3)
+```
+
+The preceding L3 review used uniform same-count tissue-Bin draws to describe overlap with top-depth and top-n_genes regions. That original table is retained unchanged below. The newly generated unmatched spatial null uses the same uniform, without-replacement sampling concept but evaluates spatial metrics, allowing a like-for-like comparison with the matched spatial null.
+
+```{r, results='asis'}
+table_html(prior_unmatched, "Carried-forward prior unmatched depth-overlap result", digits = 3)
+```
+
+## Matching composition audit
+
+```{r, results='asis'}
+cat(image_tag("04_observed_support_matching_strata.png", "Observed support composition across fixed matching strata"))
+```
+
+```{r, results='asis'}
+table_html(strata, "Fixed matching strata and observed support counts", digits = 3)
+```
+
+The full Bin-to-stratum assignment and all 96,000 null metric rows are provided as compressed TSV files in `tables/`.
+
+## Interpretation boundary
+
+- Marker co-capture and its spatial clustering do not measure actual B-cell area.
+- Strict same-bin is the primary spatial evidence. In each focus patient, its focal multi-marker signal is **not fully explained by the matched technical/immune background**.
+- `IPF/FO23-1-06168` and `SSC/15491/14` are retained as **depth/n_genes/PTPRC-status–matched focal multi-marker B-lineage candidates**—one patient-specific IPF candidate and one patient-specific SSc-ILD candidate.
+- Strict rook support is adjacency-defined; its clustering is construction-dependent auxiliary evidence and is not an independent spatial validation.
+- No disease inference is made from six same-chip samples.
+- These candidates cannot be called B-cell niches, aggregates, TLS or disease-specific structures. No hotspot or Moran’s I result is reported.
+- No marker selection, threshold optimization, rescoring, clustering, cell2location or NMF was performed.
+
+## Output validation
+
+```{r, results='asis'}
+table_html(validation, "Pre-render output validation")
+```
+
+## Reproducibility
+
+The fixed random seed was `r manifest[field == "random_seed", value]`; each null used `r manifest[field == "random_draw_n", value]` draws. The exact analysis command was:
+
+```text
+Rscript scripts/397_l3_mature_b_depth_ptprc_matched_spatial_null.R --timestamp=260823211809
+```
+
+This report was rendered only after the persisted support flags, fixed sample membership, null-row count and every matched draw passed validation.

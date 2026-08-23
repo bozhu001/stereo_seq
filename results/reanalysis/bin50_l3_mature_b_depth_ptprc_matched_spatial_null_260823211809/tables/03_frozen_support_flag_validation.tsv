@@ -1,0 +1,7 @@
+sample_id	total_bin_n	strict_same_bin_supported_bin_n	strict_rook_supported_bin_n	frozen_total_bin_n	frozen_same_n	frozen_rook_n	total_n_exact	same_n_exact	rook_n_exact
+"HC/NL-72"	9919	34	162	9919	34	162	TRUE	TRUE	TRUE
+"IPF/FO23-1-06168"	5358	37	129	5358	37	129	TRUE	TRUE	TRUE
+"IPF/FO23-1-06170"	7156	8	43	7156	8	43	TRUE	TRUE	TRUE
+"SSC/05957/17B"	7325	0	4	7325	0	4	TRUE	TRUE	TRUE
+"SSC/07998/15A"	6477	12	61	6477	12	61	TRUE	TRUE	TRUE
+"SSC/15491/14"	10213	65	243	10213	65	243	TRUE	TRUE	TRUE

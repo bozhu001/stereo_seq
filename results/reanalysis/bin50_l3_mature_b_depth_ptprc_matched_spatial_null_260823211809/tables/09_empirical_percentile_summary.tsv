@@ -1,0 +1,97 @@
+sample_id	group	chip_id	support_mode	supported_bin_n	null_type	metric	metric_label	observed_value	null_draw_n	null_min	null_q1	null_median	null_q3	null_max	empirical_cdf_percentile	clustering_direction_percentile
+"HC/NL-72"	"HC"	"Y40105L3"	"rook"	162	"depth_n_genes_PTPRC_matched"	"connected_component_n"	"Connected components"	66	1000	143	151	153	155	161	0	100
+"HC/NL-72"	"HC"	"Y40105L3"	"rook"	162	"depth_n_genes_PTPRC_matched"	"max_component_support_fraction"	"Largest component / support"	0.0555555555555556	1000	0.0123456790123457	0.0123456790123457	0.0185185185185185	0.0185185185185185	0.037037037037037	100	100
+"HC/NL-72"	"HC"	"Y40105L3"	"rook"	162	"depth_n_genes_PTPRC_matched"	"max_rook_component_bin_n"	"Largest rook component (Bins)"	9	1000	2	2	3	3	6	100	100
+"HC/NL-72"	"HC"	"Y40105L3"	"rook"	162	"depth_n_genes_PTPRC_matched"	"median_nearest_neighbor_distance"	"Median nearest-neighbor distance"	50	1000	111.803398874989	145.710678118655	150	158.113883008419	180.277563773199	0	100
+"HC/NL-72"	"HC"	"Y40105L3"	"rook"	162	"unmatched_uniform_tissue"	"connected_component_n"	"Connected components"	66	1000	149	155	157	158	162	0	100
+"HC/NL-72"	"HC"	"Y40105L3"	"rook"	162	"unmatched_uniform_tissue"	"max_component_support_fraction"	"Largest component / support"	0.0555555555555556	1000	0.00617283950617284	0.0123456790123457	0.0123456790123457	0.0123456790123457	0.0308641975308642	100	100
+"HC/NL-72"	"HC"	"Y40105L3"	"rook"	162	"unmatched_uniform_tissue"	"max_rook_component_bin_n"	"Largest rook component (Bins)"	9	1000	1	2	2	2	5	100	100
+"HC/NL-72"	"HC"	"Y40105L3"	"rook"	162	"unmatched_uniform_tissue"	"median_nearest_neighbor_distance"	"Median nearest-neighbor distance"	50	1000	150	180.277563773199	200	206.155281280883	236.80339887499	0	100
+"HC/NL-72"	"HC"	"Y40105L3"	"same_bin"	34	"depth_n_genes_PTPRC_matched"	"connected_component_n"	"Connected components"	34	1000	31	33	34	34	34	100	63.2
+"HC/NL-72"	"HC"	"Y40105L3"	"same_bin"	34	"depth_n_genes_PTPRC_matched"	"max_component_support_fraction"	"Largest component / support"	0.0294117647058824	1000	0.0294117647058824	0.0294117647058824	0.0294117647058824	0.0588235294117647	0.0882352941176471	63.2	63.2
+"HC/NL-72"	"HC"	"Y40105L3"	"same_bin"	34	"depth_n_genes_PTPRC_matched"	"max_rook_component_bin_n"	"Largest rook component (Bins)"	1	1000	1	1	1	2	3	63.2	63.2
+"HC/NL-72"	"HC"	"Y40105L3"	"same_bin"	34	"depth_n_genes_PTPRC_matched"	"median_nearest_neighbor_distance"	"Median nearest-neighbor distance"	292.743003186782	1000	180.277563773199	283.046090374969	318.19198894424	353.553390593274	509.901951359279	31.5	68.7
+"HC/NL-72"	"HC"	"Y40105L3"	"same_bin"	34	"unmatched_uniform_tissue"	"connected_component_n"	"Connected components"	34	1000	31	34	34	34	34	100	79.1
+"HC/NL-72"	"HC"	"Y40105L3"	"same_bin"	34	"unmatched_uniform_tissue"	"max_component_support_fraction"	"Largest component / support"	0.0294117647058824	1000	0.0294117647058824	0.0294117647058824	0.0294117647058824	0.0294117647058824	0.0588235294117647	79.1	79.1
+"HC/NL-72"	"HC"	"Y40105L3"	"same_bin"	34	"unmatched_uniform_tissue"	"max_rook_component_bin_n"	"Largest rook component (Bins)"	1	1000	1	1	1	1	2	79.1	79.1
+"HC/NL-72"	"HC"	"Y40105L3"	"same_bin"	34	"unmatched_uniform_tissue"	"median_nearest_neighbor_distance"	"Median nearest-neighbor distance"	292.743003186782	1000	234.629120178363	381.960562294176	427.200187265877	471.69905660283	636.38397788848	1.7	98.3
+"IPF/FO23-1-06168"	"IPF"	"Y40105L3"	"rook"	129	"depth_n_genes_PTPRC_matched"	"connected_component_n"	"Connected components"	33	1000	97	107	110	113	123	0	100
+"IPF/FO23-1-06168"	"IPF"	"Y40105L3"	"rook"	129	"depth_n_genes_PTPRC_matched"	"max_component_support_fraction"	"Largest component / support"	0.449612403100775	1000	0.0155038759689922	0.0310077519379845	0.0310077519379845	0.0465116279069768	0.10077519379845	100	100
+"IPF/FO23-1-06168"	"IPF"	"Y40105L3"	"rook"	129	"depth_n_genes_PTPRC_matched"	"max_rook_component_bin_n"	"Largest rook component (Bins)"	58	1000	2	4	4	6	13	100	100
+"IPF/FO23-1-06168"	"IPF"	"Y40105L3"	"rook"	129	"depth_n_genes_PTPRC_matched"	"median_nearest_neighbor_distance"	"Median nearest-neighbor distance"	50	1000	70.7106781186548	100	100	111.803398874989	141.42135623731	0	100
+"IPF/FO23-1-06168"	"IPF"	"Y40105L3"	"rook"	129	"unmatched_uniform_tissue"	"connected_component_n"	"Connected components"	33	1000	115	122	123	125	129	0	100
+"IPF/FO23-1-06168"	"IPF"	"Y40105L3"	"rook"	129	"unmatched_uniform_tissue"	"max_component_support_fraction"	"Largest component / support"	0.449612403100775	1000	0.00775193798449612	0.0155038759689922	0.0155038759689922	0.0232558139534884	0.0387596899224806	100	100
+"IPF/FO23-1-06168"	"IPF"	"Y40105L3"	"rook"	129	"unmatched_uniform_tissue"	"max_rook_component_bin_n"	"Largest rook component (Bins)"	58	1000	1	2	2	3	5	100	100
+"IPF/FO23-1-06168"	"IPF"	"Y40105L3"	"rook"	129	"unmatched_uniform_tissue"	"median_nearest_neighbor_distance"	"Median nearest-neighbor distance"	50	1000	111.803398874989	150	158.113883008419	158.113883008419	206.155281280883	0	100
+"IPF/FO23-1-06168"	"IPF"	"Y40105L3"	"same_bin"	37	"depth_n_genes_PTPRC_matched"	"connected_component_n"	"Connected components"	10	1000	28	34	35	36	37	0	100
+"IPF/FO23-1-06168"	"IPF"	"Y40105L3"	"same_bin"	37	"depth_n_genes_PTPRC_matched"	"max_component_support_fraction"	"Largest component / support"	0.756756756756757	1000	0.027027027027027	0.0540540540540541	0.0540540540540541	0.0540540540540541	0.189189189189189	100	100
+"IPF/FO23-1-06168"	"IPF"	"Y40105L3"	"same_bin"	37	"depth_n_genes_PTPRC_matched"	"max_rook_component_bin_n"	"Largest rook component (Bins)"	28	1000	1	2	2	2	7	100	100
+"IPF/FO23-1-06168"	"IPF"	"Y40105L3"	"same_bin"	37	"depth_n_genes_PTPRC_matched"	"median_nearest_neighbor_distance"	"Median nearest-neighbor distance"	50	1000	100	150	158.113883008419	200	269.258240356725	0	100
+"IPF/FO23-1-06168"	"IPF"	"Y40105L3"	"same_bin"	37	"unmatched_uniform_tissue"	"connected_component_n"	"Connected components"	10	1000	33	36	37	37	37	0	100
+"IPF/FO23-1-06168"	"IPF"	"Y40105L3"	"same_bin"	37	"unmatched_uniform_tissue"	"max_component_support_fraction"	"Largest component / support"	0.756756756756757	1000	0.027027027027027	0.027027027027027	0.027027027027027	0.0540540540540541	0.0810810810810811	100	100
+"IPF/FO23-1-06168"	"IPF"	"Y40105L3"	"same_bin"	37	"unmatched_uniform_tissue"	"max_rook_component_bin_n"	"Largest rook component (Bins)"	28	1000	1	1	1	2	3	100	100
+"IPF/FO23-1-06168"	"IPF"	"Y40105L3"	"same_bin"	37	"unmatched_uniform_tissue"	"median_nearest_neighbor_distance"	"Median nearest-neighbor distance"	50	1000	180.277563773199	269.258240356725	304.138126514911	335.410196624968	460.977222864644	0	100
+"IPF/FO23-1-06170"	"IPF"	"Y40105L3"	"rook"	43	"depth_n_genes_PTPRC_matched"	"connected_component_n"	"Connected components"	21	1000	38	42	42.5	43	43	0	100
+"IPF/FO23-1-06170"	"IPF"	"Y40105L3"	"rook"	43	"depth_n_genes_PTPRC_matched"	"max_component_support_fraction"	"Largest component / support"	0.0697674418604651	1000	0.0232558139534884	0.0232558139534884	0.0348837209302326	0.0465116279069768	0.0697674418604651	100	100
+"IPF/FO23-1-06170"	"IPF"	"Y40105L3"	"rook"	43	"depth_n_genes_PTPRC_matched"	"max_rook_component_bin_n"	"Largest rook component (Bins)"	3	1000	1	1	1.5	2	3	100	100
+"IPF/FO23-1-06170"	"IPF"	"Y40105L3"	"rook"	43	"depth_n_genes_PTPRC_matched"	"median_nearest_neighbor_distance"	"Median nearest-neighbor distance"	50	1000	158.113883008419	250	269.258240356725	291.547594742265	380.788655293195	0	100
+"IPF/FO23-1-06170"	"IPF"	"Y40105L3"	"rook"	43	"unmatched_uniform_tissue"	"connected_component_n"	"Connected components"	21	1000	39	42	43	43	43	0	100
+"IPF/FO23-1-06170"	"IPF"	"Y40105L3"	"rook"	43	"unmatched_uniform_tissue"	"max_component_support_fraction"	"Largest component / support"	0.0697674418604651	1000	0.0232558139534884	0.0232558139534884	0.0232558139534884	0.0465116279069768	0.0930232558139535	99.8	99.8
+"IPF/FO23-1-06170"	"IPF"	"Y40105L3"	"rook"	43	"unmatched_uniform_tissue"	"max_rook_component_bin_n"	"Largest rook component (Bins)"	3	1000	1	1	1	2	4	99.8	99.8
+"IPF/FO23-1-06170"	"IPF"	"Y40105L3"	"rook"	43	"unmatched_uniform_tissue"	"median_nearest_neighbor_distance"	"Median nearest-neighbor distance"	50	1000	200	300	320.156211871642	353.553390593274	460.977222864644	0	100
+"IPF/FO23-1-06170"	"IPF"	"Y40105L3"	"same_bin"	8	"depth_n_genes_PTPRC_matched"	"connected_component_n"	"Connected components"	8	1000	6	8	8	8	8	100	98.4
+"IPF/FO23-1-06170"	"IPF"	"Y40105L3"	"same_bin"	8	"depth_n_genes_PTPRC_matched"	"max_component_support_fraction"	"Largest component / support"	0.125	1000	0.125	0.125	0.125	0.125	0.25	98.4	98.4
+"IPF/FO23-1-06170"	"IPF"	"Y40105L3"	"same_bin"	8	"depth_n_genes_PTPRC_matched"	"max_rook_component_bin_n"	"Largest rook component (Bins)"	1	1000	1	1	1	1	2	98.4	98.4
+"IPF/FO23-1-06170"	"IPF"	"Y40105L3"	"same_bin"	8	"depth_n_genes_PTPRC_matched"	"median_nearest_neighbor_distance"	"Median nearest-neighbor distance"	850	1000	104.05694150421	507.047790917601	636.423082081334	776.432064226439	1372.25662570464	85.2	15.1
+"IPF/FO23-1-06170"	"IPF"	"Y40105L3"	"same_bin"	8	"unmatched_uniform_tissue"	"connected_component_n"	"Connected components"	8	1000	7	8	8	8	8	100	99.2
+"IPF/FO23-1-06170"	"IPF"	"Y40105L3"	"same_bin"	8	"unmatched_uniform_tissue"	"max_component_support_fraction"	"Largest component / support"	0.125	1000	0.125	0.125	0.125	0.125	0.25	99.2	99.2
+"IPF/FO23-1-06170"	"IPF"	"Y40105L3"	"same_bin"	8	"unmatched_uniform_tissue"	"max_rook_component_bin_n"	"Largest rook component (Bins)"	1	1000	1	1	1	1	2	99.2	99.2
+"IPF/FO23-1-06170"	"IPF"	"Y40105L3"	"same_bin"	8	"unmatched_uniform_tissue"	"median_nearest_neighbor_distance"	"Median nearest-neighbor distance"	850	1000	277.069063257455	662.76533982013	815.364002324535	982.767918994138	1607.53873033149	55.2	44.9
+"SSC/05957/17B"	"SSc-ILD"	"Y40105L3"	"rook"	4	"depth_n_genes_PTPRC_matched"	"connected_component_n"	"Connected components"	2	1000	3	4	4	4	4	0	100
+"SSC/05957/17B"	"SSc-ILD"	"Y40105L3"	"rook"	4	"depth_n_genes_PTPRC_matched"	"max_component_support_fraction"	"Largest component / support"	0.5	1000	0.25	0.25	0.25	0.25	0.5	100	100
+"SSC/05957/17B"	"SSc-ILD"	"Y40105L3"	"rook"	4	"depth_n_genes_PTPRC_matched"	"max_rook_component_bin_n"	"Largest rook component (Bins)"	2	1000	1	1	1	1	2	100	100
+"SSC/05957/17B"	"SSc-ILD"	"Y40105L3"	"rook"	4	"depth_n_genes_PTPRC_matched"	"median_nearest_neighbor_distance"	"Median nearest-neighbor distance"	50	1000	100	466.236651327531	626.769641044313	834.930204096597	2056.86465142655	0	100
+"SSC/05957/17B"	"SSc-ILD"	"Y40105L3"	"rook"	4	"unmatched_uniform_tissue"	"connected_component_n"	"Connected components"	2	1000	4	4	4	4	4	0	100
+"SSC/05957/17B"	"SSc-ILD"	"Y40105L3"	"rook"	4	"unmatched_uniform_tissue"	"max_component_support_fraction"	"Largest component / support"	0.5	1000	0.25	0.25	0.25	0.25	0.25	100	100
+"SSC/05957/17B"	"SSc-ILD"	"Y40105L3"	"rook"	4	"unmatched_uniform_tissue"	"max_rook_component_bin_n"	"Largest rook component (Bins)"	2	1000	1	1	1	1	1	100	100
+"SSC/05957/17B"	"SSc-ILD"	"Y40105L3"	"rook"	4	"unmatched_uniform_tissue"	"median_nearest_neighbor_distance"	"Median nearest-neighbor distance"	50	1000	150	924.058957757995	1233.55129678391	1576.68937851403	2855.59823073943	0	100
+"SSC/05957/17B"	"SSc-ILD"	"Y40105L3"	"same_bin"	0	"depth_n_genes_PTPRC_matched"	"connected_component_n"	"Connected components"	0	1000	0	0	0	0	0	NA	NA
+"SSC/05957/17B"	"SSc-ILD"	"Y40105L3"	"same_bin"	0	"depth_n_genes_PTPRC_matched"	"max_component_support_fraction"	"Largest component / support"	NA	0	NA	NA	NA	NA	NA	NA	NA
+"SSC/05957/17B"	"SSc-ILD"	"Y40105L3"	"same_bin"	0	"depth_n_genes_PTPRC_matched"	"max_rook_component_bin_n"	"Largest rook component (Bins)"	0	1000	0	0	0	0	0	NA	NA
+"SSC/05957/17B"	"SSc-ILD"	"Y40105L3"	"same_bin"	0	"depth_n_genes_PTPRC_matched"	"median_nearest_neighbor_distance"	"Median nearest-neighbor distance"	NA	0	NA	NA	NA	NA	NA	NA	NA
+"SSC/05957/17B"	"SSc-ILD"	"Y40105L3"	"same_bin"	0	"unmatched_uniform_tissue"	"connected_component_n"	"Connected components"	0	1000	0	0	0	0	0	NA	NA
+"SSC/05957/17B"	"SSc-ILD"	"Y40105L3"	"same_bin"	0	"unmatched_uniform_tissue"	"max_component_support_fraction"	"Largest component / support"	NA	0	NA	NA	NA	NA	NA	NA	NA
+"SSC/05957/17B"	"SSc-ILD"	"Y40105L3"	"same_bin"	0	"unmatched_uniform_tissue"	"max_rook_component_bin_n"	"Largest rook component (Bins)"	0	1000	0	0	0	0	0	NA	NA
+"SSC/05957/17B"	"SSc-ILD"	"Y40105L3"	"same_bin"	0	"unmatched_uniform_tissue"	"median_nearest_neighbor_distance"	"Median nearest-neighbor distance"	NA	0	NA	NA	NA	NA	NA	NA	NA
+"SSC/07998/15A"	"SSc-ILD"	"Y40105L3"	"rook"	61	"depth_n_genes_PTPRC_matched"	"connected_component_n"	"Connected components"	29	1000	53	58	59	60	61	0	100
+"SSC/07998/15A"	"SSc-ILD"	"Y40105L3"	"rook"	61	"depth_n_genes_PTPRC_matched"	"max_component_support_fraction"	"Largest component / support"	0.0491803278688525	1000	0.0163934426229508	0.0327868852459016	0.0327868852459016	0.0327868852459016	0.0819672131147541	98.6	98.6
+"SSC/07998/15A"	"SSc-ILD"	"Y40105L3"	"rook"	61	"depth_n_genes_PTPRC_matched"	"max_rook_component_bin_n"	"Largest rook component (Bins)"	3	1000	1	2	2	2	5	98.6	98.6
+"SSC/07998/15A"	"SSc-ILD"	"Y40105L3"	"rook"	61	"depth_n_genes_PTPRC_matched"	"median_nearest_neighbor_distance"	"Median nearest-neighbor distance"	50	1000	111.803398874989	158.113883008419	180.277563773199	200	250	0	100
+"SSC/07998/15A"	"SSc-ILD"	"Y40105L3"	"rook"	61	"unmatched_uniform_tissue"	"connected_component_n"	"Connected components"	29	1000	56	59	60	61	61	0	100
+"SSC/07998/15A"	"SSc-ILD"	"Y40105L3"	"rook"	61	"unmatched_uniform_tissue"	"max_component_support_fraction"	"Largest component / support"	0.0491803278688525	1000	0.0163934426229508	0.0163934426229508	0.0327868852459016	0.0327868852459016	0.0491803278688525	100	100
+"SSC/07998/15A"	"SSc-ILD"	"Y40105L3"	"rook"	61	"unmatched_uniform_tissue"	"max_rook_component_bin_n"	"Largest rook component (Bins)"	3	1000	1	1	2	2	3	100	100
+"SSC/07998/15A"	"SSc-ILD"	"Y40105L3"	"rook"	61	"unmatched_uniform_tissue"	"median_nearest_neighbor_distance"	"Median nearest-neighbor distance"	50	1000	158.113883008419	250	254.950975679639	282.842712474619	350	0	100
+"SSC/07998/15A"	"SSc-ILD"	"Y40105L3"	"same_bin"	12	"depth_n_genes_PTPRC_matched"	"connected_component_n"	"Connected components"	12	1000	10	12	12	12	12	100	93.2
+"SSC/07998/15A"	"SSc-ILD"	"Y40105L3"	"same_bin"	12	"depth_n_genes_PTPRC_matched"	"max_component_support_fraction"	"Largest component / support"	0.0833333333333333	1000	0.0833333333333333	0.0833333333333333	0.0833333333333333	0.0833333333333333	0.25	93.2	93.2
+"SSC/07998/15A"	"SSc-ILD"	"Y40105L3"	"same_bin"	12	"depth_n_genes_PTPRC_matched"	"max_rook_component_bin_n"	"Largest rook component (Bins)"	1	1000	1	1	1	1	3	93.2	93.2
+"SSC/07998/15A"	"SSc-ILD"	"Y40105L3"	"same_bin"	12	"depth_n_genes_PTPRC_matched"	"median_nearest_neighbor_distance"	"Median nearest-neighbor distance"	425.831751254187	1000	160.849460005254	407.630862804668	500	583.09518948453	1054.75115548645	28.7	71.3
+"SSC/07998/15A"	"SSc-ILD"	"Y40105L3"	"same_bin"	12	"unmatched_uniform_tissue"	"connected_component_n"	"Connected components"	12	1000	11	12	12	12	12	100	96.4
+"SSC/07998/15A"	"SSc-ILD"	"Y40105L3"	"same_bin"	12	"unmatched_uniform_tissue"	"max_component_support_fraction"	"Largest component / support"	0.0833333333333333	1000	0.0833333333333333	0.0833333333333333	0.0833333333333333	0.0833333333333333	0.166666666666667	96.4	96.4
+"SSC/07998/15A"	"SSc-ILD"	"Y40105L3"	"same_bin"	12	"unmatched_uniform_tissue"	"max_rook_component_bin_n"	"Largest rook component (Bins)"	1	1000	1	1	1	1	2	96.4	96.4
+"SSC/07998/15A"	"SSc-ILD"	"Y40105L3"	"same_bin"	12	"unmatched_uniform_tissue"	"median_nearest_neighbor_distance"	"Median nearest-neighbor distance"	425.831751254187	1000	203.077640640442	517.968642610605	628.031981996478	741.594045141402	1159.75941390175	7.7	92.3
+"SSC/15491/14"	"SSc-ILD"	"Y40105L3"	"rook"	243	"depth_n_genes_PTPRC_matched"	"connected_component_n"	"Connected components"	71	1000	186	202	206	210	225	0	100
+"SSC/15491/14"	"SSc-ILD"	"Y40105L3"	"rook"	243	"depth_n_genes_PTPRC_matched"	"max_component_support_fraction"	"Largest component / support"	0.288065843621399	1000	0.0123456790123457	0.0164609053497942	0.0205761316872428	0.0246913580246914	0.0534979423868313	100	100
+"SSC/15491/14"	"SSc-ILD"	"Y40105L3"	"rook"	243	"depth_n_genes_PTPRC_matched"	"max_rook_component_bin_n"	"Largest rook component (Bins)"	70	1000	3	4	5	6	13	100	100
+"SSC/15491/14"	"SSc-ILD"	"Y40105L3"	"rook"	243	"depth_n_genes_PTPRC_matched"	"median_nearest_neighbor_distance"	"Median nearest-neighbor distance"	50	1000	70.7106781186548	100	100	100	111.803398874989	0	100
+"SSC/15491/14"	"SSc-ILD"	"Y40105L3"	"rook"	243	"unmatched_uniform_tissue"	"connected_component_n"	"Connected components"	71	1000	218	230	232	234	240	0	100
+"SSC/15491/14"	"SSc-ILD"	"Y40105L3"	"rook"	243	"unmatched_uniform_tissue"	"max_component_support_fraction"	"Largest component / support"	0.288065843621399	1000	0.00823045267489712	0.00823045267489712	0.0123456790123457	0.0123456790123457	0.0205761316872428	100	100
+"SSC/15491/14"	"SSc-ILD"	"Y40105L3"	"rook"	243	"unmatched_uniform_tissue"	"max_rook_component_bin_n"	"Largest rook component (Bins)"	70	1000	2	2	3	3	5	100	100
+"SSC/15491/14"	"SSc-ILD"	"Y40105L3"	"rook"	243	"unmatched_uniform_tissue"	"median_nearest_neighbor_distance"	"Median nearest-neighbor distance"	50	1000	141.42135623731	150	158.113883008419	158.113883008419	180.277563773199	0	100
+"SSC/15491/14"	"SSc-ILD"	"Y40105L3"	"same_bin"	65	"depth_n_genes_PTPRC_matched"	"connected_component_n"	"Connected components"	36	1000	54	60	62	63	65	0	100
+"SSC/15491/14"	"SSc-ILD"	"Y40105L3"	"same_bin"	65	"depth_n_genes_PTPRC_matched"	"max_component_support_fraction"	"Largest component / support"	0.446153846153846	1000	0.0153846153846154	0.0307692307692308	0.0307692307692308	0.0461538461538462	0.123076923076923	100	100
+"SSC/15491/14"	"SSc-ILD"	"Y40105L3"	"same_bin"	65	"depth_n_genes_PTPRC_matched"	"max_rook_component_bin_n"	"Largest rook component (Bins)"	29	1000	1	2	2	3	8	100	100
+"SSC/15491/14"	"SSc-ILD"	"Y40105L3"	"same_bin"	65	"depth_n_genes_PTPRC_matched"	"median_nearest_neighbor_distance"	"Median nearest-neighbor distance"	70.7106781186548	1000	100	150	158.113883008419	180.277563773199	250	0	100
+"SSC/15491/14"	"SSc-ILD"	"Y40105L3"	"same_bin"	65	"unmatched_uniform_tissue"	"connected_component_n"	"Connected components"	36	1000	60	64	64	65	65	0	100
+"SSC/15491/14"	"SSc-ILD"	"Y40105L3"	"same_bin"	65	"unmatched_uniform_tissue"	"max_component_support_fraction"	"Largest component / support"	0.446153846153846	1000	0.0153846153846154	0.0153846153846154	0.0307692307692308	0.0307692307692308	0.0461538461538462	100	100
+"SSC/15491/14"	"SSc-ILD"	"Y40105L3"	"same_bin"	65	"unmatched_uniform_tissue"	"max_rook_component_bin_n"	"Largest rook component (Bins)"	29	1000	1	1	2	2	3	100	100
+"SSC/15491/14"	"SSc-ILD"	"Y40105L3"	"same_bin"	65	"unmatched_uniform_tissue"	"median_nearest_neighbor_distance"	"Median nearest-neighbor distance"	70.7106781186548	1000	206.155281280883	291.547594742265	304.138126514911	335.410196624968	424.264068711929	0	100
