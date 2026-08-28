@@ -351,3 +351,43 @@
 - Session summary:
   `.agent/blineage_analysis_line_synthesis_wrapup_260823222413.md`.
 - One-off classification retained; no skill or GitHub issue. No push.
+
+## 2026-08-28 — L3 7/7 BCR/CDR3 finalization
+
+- Completed L3 for 7/7 patients from existing validated candidate inputs and
+  completed TRUST4 outputs. No patient or original FASTQ was rerun, K8 was not
+  scanned, and no PPT was created.
+- Verified exactly one completed TRUST4 attempt per patient with nonempty AIRR,
+  barcode AIRR, assembled-read, assignment and cached-R2 files plus completion
+  markers. The interrupted `SSC_05957_17B` directory remains preserved; its
+  completed attempt is `SSC_05957_17B_resume_260828_111831`.
+- Final L3 counts: 65 quality-corrected productive BCR/CDR3 molecules and 55
+  unique productive clonotypes: 26 singleton, 22 technical, 6 moderate and one
+  formal reliable-rule hit. Seven clonotypes had at least two corrected CID-UMI
+  molecules; maximum corrected expansion was three molecules.
+- `SSC/05957/17B` had no repeated clonotype. `SSC/07998/15A` had one
+  three-molecule IGK moderate candidate with 2 CID and 2 Bin, not a reliable
+  expanded clonotype.
+- `SSC_15491_14_TRUST4_0003` is restricted to **provisional expanded IGH
+  candidate**, never confirmed clonal expansion: although it had 3 corrected
+  molecules, 3 CID, 3 Bin and sufficient fragment support, all 6 supporting
+  reads carried the anomalously frequent `CGCTTGGCCT` motif and its exact CDR3
+  had a cross-patient warning.
+- Identical-threshold comparison: J2 had 94 corrected molecules, 68 clonotypes,
+  9 repeated corrected-molecule clonotypes and zero reliable-rule hits; L3 had
+  65, 55, 7 and one provisional formal hit. Approved overall conclusion: the
+  current unenriched Stereo-seq data provide no reliable evidence of B-cell
+  clonal expansion in J2 or L3, but do not prove biological expansion is absent.
+- Final report:
+  `results/reanalysis/l3_all7_bcr_cdr3_completion_260828_004934/L3_ALL7_FINAL_METRICS_REPORT_260828132341.html`
+  (SHA-256
+  `1B4F2942D635C4D15762F5086F742B59F590A5723D1278CB417C65A0BF2F8C9E`).
+- Analysis/report commit: `c4897b8`.
+- Approved local ELN draft:
+  `elab/DRAFT_L3_7of7_BCR_CDR3_finalization_260828132341.md`. It was not
+  submitted because the real eLabFTW project tag is not yet confirmed; the tag
+  is omitted and no placeholder is used.
+- Scripts 453/454 are retained as a project-reusable audit workflow. Per user
+  decision, no general skill-candidate issue was created.
+- Session summary:
+  `.agent/l3_all7_bcr_cdr3_finalization_260828133100.md`.
