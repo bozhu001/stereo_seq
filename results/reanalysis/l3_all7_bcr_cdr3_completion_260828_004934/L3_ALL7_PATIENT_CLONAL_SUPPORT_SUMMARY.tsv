@@ -1,0 +1,8 @@
+patient	disease_group	quality_corrected_productive_bcr_molecules	unique_productive_bcr_clonotypes	clonotypes_ge2_corrected_cid_umi_molecules	clonotypes_ge2_distinct_raw_umi_sequences	maximum_corrected_molecules_per_clonotype	maximum_clonotype_ids	maximum_clonotype_chains	maximum_clonotype_unique_cid	maximum_clonotype_unique_bin	repeated_clonotypes_with_ge2_cid_and_ge2_bin	formal_reliable_rule_clonotypes	formal_reliable_rule_molecules	reliable_expansion_interpretation
+HC/NL-66	HC	18	17	1	1	2	HC_NL-66_TRUST4_0002	IGK	1	1	0	0	0	no_reliable_clonal_expansion
+HC/NL-72	HC	10	8	2	2	2	HC_NL-72_TRUST4_0004|HC_NL-72_TRUST4_0005	IGK|IGK	2	2	1	0	0	no_reliable_clonal_expansion
+IPF/FO23-1-06168	IPF	4	4	0	0	1	IPF_FO23-1-06168_TRUST4_0001|IPF_FO23-1-06168_TRUST4_0002|IPF_FO23-1-06168_TRUST4_0003|IPF_FO23-1-06168_TRUST4_0004	IGL|IGK|IGK|IGH	1	1	0	0	0	no_reliable_clonal_expansion
+IPF/FO23-1-06170	IPF	7	5	1	1	3	IPF_FO23-1-06170_TRUST4_0001	IGK	2	2	1	0	0	no_reliable_clonal_expansion
+SSC/05957/17B	SSc-ILD	5	5	0	0	1	SSC_05957_17B_TRUST4_0001|SSC_05957_17B_TRUST4_0002|SSC_05957_17B_TRUST4_0003|SSC_05957_17B_TRUST4_0004|SSC_05957_17B_TRUST4_0005	IGK|IGL|IGH|IGK|IGK	1	1	0	0	0	no_reliable_clonal_expansion
+SSC/07998/15A	SSc-ILD	6	4	1	1	3	SSC_07998_15A_TRUST4_0002	IGK	2	2	1	0	0	no_reliable_clonal_expansion
+SSC/15491/14	SSc-ILD	15	12	2	1	3	SSC_15491_14_TRUST4_0003	IGH	3	3	1	1	3	formal_reliable_rule_hit_but_provisional_not_unqualified_expansion

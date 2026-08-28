@@ -1,0 +1,8 @@
+patient	disease_group	completion_status	trust4_complete	productive_bcr_clonotypes	productive_IGH	productive_IGK	productive_IGL	singleton	technical_candidate	moderate_candidate	reliable_expanded_clonotype	public_like_or_technical_warnings
+HC/NL-66	HC	complete	True	17	2	9	6	8	8	1	0	3
+HC/NL-72	HC	complete	True	8	4	3	1	3	3	2	0	4
+IPF/FO23-1-06168	IPF	complete	True	4	1	2	1	2	2	0	0	1
+IPF/FO23-1-06170	IPF	complete	True	5	2	2	1	3	1	1	0	3
+SSC/05957/17B	SSc-ILD	complete	True	5	1	3	1	3	2	0	0	3
+SSC/07998/15A	SSc-ILD	complete	True	4	1	3	0	2	1	1	0	2
+SSC/15491/14	SSc-ILD	complete	True	12	3	4	5	5	5	1	1	3

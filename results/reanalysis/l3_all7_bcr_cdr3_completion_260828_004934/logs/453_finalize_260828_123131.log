@@ -1,0 +1,6 @@
+L3_CLONOTYPES=55
+L3_CLASSES={'technical candidate': 22, 'moderate candidate': 6, 'singleton': 26, 'reliable expanded clonotype': 1}
+CGCTTGGCCT=430/462
+FINALIZER_SUPERVISOR_TRAILER_CORRECTION=PowerShell expanded shell status variables when constructing the detached tmux command; the two original trailer fields were malformed. The finalizer itself completed, printed all three summaries, created every required nonempty output, and created L3_ALL7_FINAL_COMPLETE.ok.
+FINALIZER_EXIT_STATUS=success
+FINALIZER_END=2026-08-28T13:20:55+02:00

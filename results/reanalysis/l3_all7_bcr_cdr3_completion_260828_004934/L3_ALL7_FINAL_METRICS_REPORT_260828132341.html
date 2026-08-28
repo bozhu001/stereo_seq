@@ -1,0 +1,36 @@
+<!doctype html><html><head><meta charset='utf-8'><title>L3 7/7 final metrics</title><style>body{font:14px Arial,sans-serif;max-width:1500px;margin:24px auto;line-height:1.5}table{border-collapse:collapse;font-size:11px}th,td{border:1px solid #bbb;padding:5px;vertical-align:top}th{background:#eaf2f8}.scroll{overflow:auto}.callout{border-left:5px solid #2b6cb0;background:#eef6ff;padding:12px}</style></head><body><h1>L3 7/7 final BCR/CDR3 support metrics</h1><div class='callout'>Single UMI, single CID, or sequence repetition is never interpreted as clonal expansion.</div><h2>L3 patient metrics</h2><div class='scroll'><table><thead><tr><th>patient</th><th>disease_group</th><th>quality_corrected_productive_bcr_molecules</th><th>unique_productive_bcr_clonotypes</th><th>clonotypes_ge2_corrected_cid_umi_molecules</th><th>clonotypes_ge2_distinct_raw_umi_sequences</th><th>maximum_corrected_molecules_per_clonotype</th><th>maximum_clonotype_ids</th><th>maximum_clonotype_chains</th><th>maximum_clonotype_unique_cid</th><th>maximum_clonotype_unique_bin</th><th>repeated_clonotypes_with_ge2_cid_and_ge2_bin</th><th>formal_reliable_rule_clonotypes</th><th>formal_reliable_rule_molecules</th><th>reliable_expansion_interpretation</th></tr></thead><tbody><tr><td>HC/NL-66</td><td>HC</td><td>18</td><td>17</td><td>1</td><td>1</td><td>2</td><td>HC_NL-66_TRUST4_0002</td><td>IGK</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>no_reliable_clonal_expansion</td></tr><tr><td>HC/NL-72</td><td>HC</td><td>10</td><td>8</td><td>2</td><td>2</td><td>2</td><td>HC_NL-72_TRUST4_0004|HC_NL-72_TRUST4_0005</td><td>IGK|IGK</td><td>2</td><td>2</td><td>1</td><td>0</td><td>0</td><td>no_reliable_clonal_expansion</td></tr><tr><td>IPF/FO23-1-06168</td><td>IPF</td><td>4</td><td>4</td><td>0</td><td>0</td><td>1</td><td>IPF_FO23-1-06168_TRUST4_0001|IPF_FO23-1-06168_TRUST4_0002|IPF_FO23-1-06168_TRUST4_0003|IPF_FO23-1-06168_TRUST4_0004</td><td>IGL|IGK|IGK|IGH</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>no_reliable_clonal_expansion</td></tr><tr><td>IPF/FO23-1-06170</td><td>IPF</td><td>7</td><td>5</td><td>1</td><td>1</td><td>3</td><td>IPF_FO23-1-06170_TRUST4_0001</td><td>IGK</td><td>2</td><td>2</td><td>1</td><td>0</td><td>0</td><td>no_reliable_clonal_expansion</td></tr><tr><td>SSC/05957/17B</td><td>SSc-ILD</td><td>5</td><td>5</td><td>0</td><td>0</td><td>1</td><td>SSC_05957_17B_TRUST4_0001|SSC_05957_17B_TRUST4_0002|SSC_05957_17B_TRUST4_0003|SSC_05957_17B_TRUST4_0004|SSC_05957_17B_TRUST4_0005</td><td>IGK|IGL|IGH|IGK|IGK</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>no_reliable_clonal_expansion</td></tr><tr><td>SSC/07998/15A</td><td>SSc-ILD</td><td>6</td><td>4</td><td>1</td><td>1</td><td>3</td><td>SSC_07998_15A_TRUST4_0002</td><td>IGK</td><td>2</td><td>2</td><td>1</td><td>0</td><td>0</td><td>no_reliable_clonal_expansion</td></tr><tr><td>SSC/15491/14</td><td>SSc-ILD</td><td>15</td><td>12</td><td>2</td><td>1</td><td>3</td><td>SSC_15491_14_TRUST4_0003</td><td>IGH</td><td>3</td><td>3</td><td>1</td><td>1</td><td>3</td><td>formal_reliable_rule_hit_but_provisional_not_unqualified_expansion</td></tr></tbody></table></div><h2>J2 versus L3: identical frozen threshold</h2><div class='scroll'><table><thead><tr><th>chip</th><th>patients</th><th>quality_corrected_productive_bcr_molecules</th><th>unique_productive_bcr_clonotypes</th><th>clonotypes_ge2_corrected_cid_umi_molecules</th><th>clonotypes_ge2_distinct_raw_umi_sequences</th><th>maximum_corrected_molecules_per_clonotype</th><th>repeated_clonotypes_with_ge2_cid_and_ge2_bin</th><th>singleton</th><th>technical_candidate</th><th>moderate_candidate</th><th>formal_reliable_rule_clonotypes</th><th>interpretation</th></tr></thead><tbody><tr><td>J2</td><td>7</td><td>94</td><td>68</td><td>9</td><td>8</td><td>11</td><td>6</td><td>34</td><td>25</td><td>9</td><td>0</td><td>no_reliable_expanded_clonotype</td></tr><tr><td>L3</td><td>7</td><td>65</td><td>55</td><td>7</td><td>6</td><td>3</td><td>4</td><td>26</td><td>22</td><td>6</td><td>1</td><td>one_formal_hit_reported_as_spatially_supported_provisional_expanded_IGH_candidate</td></tr></tbody></table></div><h2>Full interpretation and provenance</h2><pre># L3 7/7 final BCR/CDR3 support metrics
+
+Generated: 2026-08-28T13:23:41.664646+02:00
+
+## Definitions
+
+- A quality-corrected molecule is one unique CID plus corrected UMI within patient, chain and exact CDR3 nt.
+- Sequence repetition, a single UMI, or a single CID is not clonal expansion.
+- The uniform reliable rule requires IGH, at least 2 corrected molecules, at least 2 CID, at least 2 Bin, and at least 2 positional and strict R2 fragment signatures.
+- Distinct raw UMI sequence counts are shown separately because identical UMI sequences in distinct CID can still be distinct molecules but are not distinct UMI sequences.
+
+## L3 patient metrics
+
+| patient | quality_corrected_productive_bcr_molecules | unique_productive_bcr_clonotypes | clonotypes_ge2_corrected_cid_umi_molecules | clonotypes_ge2_distinct_raw_umi_sequences | maximum_corrected_molecules_per_clonotype | maximum_clonotype_unique_cid | maximum_clonotype_unique_bin | formal_reliable_rule_clonotypes | reliable_expansion_interpretation |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| HC/NL-66 | 18 | 17 | 1 | 1 | 2 | 1 | 1 | 0 | no_reliable_clonal_expansion |
+| HC/NL-72 | 10 | 8 | 2 | 2 | 2 | 2 | 2 | 0 | no_reliable_clonal_expansion |
+| IPF/FO23-1-06168 | 4 | 4 | 0 | 0 | 1 | 1 | 1 | 0 | no_reliable_clonal_expansion |
+| IPF/FO23-1-06170 | 7 | 5 | 1 | 1 | 3 | 2 | 2 | 0 | no_reliable_clonal_expansion |
+| SSC/05957/17B | 5 | 5 | 0 | 0 | 1 | 1 | 1 | 0 | no_reliable_clonal_expansion |
+| SSC/07998/15A | 6 | 4 | 1 | 1 | 3 | 2 | 2 | 0 | no_reliable_clonal_expansion |
+| SSC/15491/14 | 15 | 12 | 2 | 1 | 3 | 3 | 3 | 1 | formal_reliable_rule_hit_but_provisional_not_unqualified_expansion |
+
+## J2 versus L3 under the frozen identical classification threshold
+
+| chip | patients | quality_corrected_productive_bcr_molecules | unique_productive_bcr_clonotypes | clonotypes_ge2_corrected_cid_umi_molecules | clonotypes_ge2_distinct_raw_umi_sequences | maximum_corrected_molecules_per_clonotype | repeated_clonotypes_with_ge2_cid_and_ge2_bin | singleton | technical_candidate | moderate_candidate | formal_reliable_rule_clonotypes | interpretation |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| J2 | 7 | 94 | 68 | 9 | 8 | 11 | 6 | 34 | 25 | 9 | 0 | no_reliable_expanded_clonotype |
+| L3 | 7 | 65 | 55 | 7 | 6 | 3 | 4 | 26 | 22 | 6 | 1 | one_formal_hit_reported_as_spatially_supported_provisional_expanded_IGH_candidate |
+
+## Interpretation
+
+L3 has 55 productive BCR clonotypes: 26 singleton, 22 technical, 6 moderate, and 1 formal reliable-rule hit. The sole formal hit is SSC_15491_14_TRUST4_0003 (IGH; 3 corrected molecules; 3 CID; 3 Bin), retained as a spatially supported provisional expanded IGH candidate because all supporting reads carry the anomalously frequent CGCTTGGCCT motif and the exact CDR3 has a cross-patient warning. It is not reported as unqualified reliable clonal expansion.
+
+Python: 3.12.3 (Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39)
+</pre></body></html>
