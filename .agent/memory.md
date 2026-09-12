@@ -365,6 +365,36 @@
   unique productive clonotypes: 26 singleton, 22 technical, 6 moderate and one
   formal reliable-rule hit. Seven clonotypes had at least two corrected CID-UMI
   molecules; maximum corrected expansion was three molecules.
+## 2026-09-12 — CDR3 per-Bin Top20 heatmaps
+
+- Continued from the existing frozen per-Bin Top20 inputs without reading a
+  raw expression matrix or recomputing upstream IGH/CDR3 data.
+- Generated three RECURRENT main heatmaps followed by three FULL supplementary
+  heatmaps, each as PNG and PDF, in
+  `results/reanalysis/CDR3_PER_BIN_TOP20_HEATMAP_FINAL_20260912_141500/`.
+  Every completed file was logged immediately with its size and timestamp; the
+  complete verified run took about 25 seconds and no FULL heatmap timed out.
+- All69 contained 69 bins/604 full genes/93 recurrent genes; Shared7 contained
+  44/327/55; Repeated11 contained 33/226/52. Frozen counts remained 104
+  corrected IGH molecules and 79 patient-specific clonotypes.
+- Final QC passed 29/29 checks. Independent verification found 0/26 MANIFEST
+  path, size, or SHA-256 mismatches; all six PNGs decoded successfully and the
+  visual audit found no truncated or blank rendering.
+- Standalone HTML:
+  `results/CDR3_PER_BIN_TOP20_HEATMAP_REPORT_260912142534.html` (6,327,999
+  bytes; SHA-256
+  `BBBC42693147166B5B7EC22A060825AF6458EAFD3BAEADFEEB6753E0CB4302EB`).
+- Analysis/report commit:
+  `7aea87d49493dbd5d95c7ebb7a89c70d466e00e4`.
+- The user classified the workflow as a one-off; no skill-candidate issue was
+  created. The R script is retained for reproduction.
+- The user separately approved the ELN content and tags: project tag
+  `Stereo-seq`, plus `IGH`, `CDR3`, `Bin50`, `Top20`, `heatmap`, and `QC`.
+  Approved local entry:
+  `elab/CDR3_per_Bin_Top20_heatmaps_260912142534.md`. No remote entry ID/URL
+  exists because `ELABFTW_API_KEY` was unavailable.
+- Session summary:
+  `.agent/cdr3_per_bin_top20_heatmaps_wrapup_260912143417.md`.
 - `SSC/05957/17B` had no repeated clonotype. `SSC/07998/15A` had one
   three-molecule IGK moderate candidate with 2 CID and 2 Bin, not a reliable
   expanded clonotype.
