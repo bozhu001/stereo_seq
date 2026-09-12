@@ -1,0 +1,159 @@
+---
+title: "CDR3 per-Bin Top20 heatmaps"
+author: "Codex"
+date: today
+format:
+  html:
+    toc: true
+    toc-float: true
+    df-print: paged
+    code-fold: true
+    theme: bootstrap
+    embed-resources: true
+engine: knitr
+execute:
+  echo: true
+  warning: false
+  message: false
+---
+
+<!--
+Render with the timestamping wrapper:
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/630_render_cdr3_per_bin_top20_heatmap_report.ps1
+-->
+
+## Scope
+
+This report documents the one-off generation and validation of recurrent and
+full heatmaps from the frozen per-Bin Top20 gene tables. It does not read a raw
+expression matrix, rank genes, or recompute upstream IGH/CDR3 results.
+
+```{r setup}
+project_root <- normalizePath(
+  file.path(dirname(knitr::current_input(dir = TRUE)), ".."),
+  winslash = "/",
+  mustWork = TRUE
+)
+output_dir <- file.path(
+  project_root,
+  "results/reanalysis/CDR3_PER_BIN_TOP20_HEATMAP_FINAL_20260912_141500"
+)
+
+required_files <- file.path(
+  output_dir,
+  c(
+    "TOP20_HEATMAP_QC.tsv",
+    "TOP20_HEATMAP_QC_SUMMARY.txt",
+    "RUN_LOG.txt",
+    "MANIFEST.tsv",
+    "run_config.json"
+  )
+)
+stopifnot(all(file.exists(required_files)))
+
+qc <- read.delim(
+  file.path(output_dir, "TOP20_HEATMAP_QC.tsv"),
+  sep = "\t",
+  check.names = FALSE
+)
+manifest <- read.delim(
+  file.path(output_dir, "MANIFEST.tsv"),
+  sep = "\t",
+  check.names = FALSE
+)
+run_log <- readLines(file.path(output_dir, "RUN_LOG.txt"), warn = FALSE)
+qc_summary <- readLines(
+  file.path(output_dir, "TOP20_HEATMAP_QC_SUMMARY.txt"),
+  warn = FALSE
+)
+
+stopifnot(nrow(qc) > 0L, all(qc$passed), nrow(manifest) > 0L)
+```
+
+## Frozen definitions
+
+```{r frozen-summary, results='asis'}
+cat(paste0("- ", qc_summary, collapse = "\n"))
+```
+
+The heatmap value is `log1p(raw_count)` for genes already present in each
+physical Bin50's frozen Top20 list. Blank cells indicate that a gene was not
+ranked in that Bin50's Top20; they do not establish nondetection. A recurrent
+gene appears in the Top20 of at least two distinct physical Bin50s, keyed by
+`sample_id + Bin50_id`. Columns and rows are not clustered, and no gene-wise
+z-score is applied.
+
+## Main recurrent heatmaps
+
+```{r recurrent-figures, echo=FALSE, out.width='100%', fig.align='center'}
+recurrent_paths <- file.path(
+  output_dir,
+  c(
+    "FIG1_ALL69_RECURRENT_TOP20_HEATMAP.png",
+    "FIG2_SHARED7_RECURRENT_TOP20_HEATMAP.png",
+    "FIG3_REPEATED11_RECURRENT_TOP20_HEATMAP.png"
+  )
+)
+stopifnot(all(file.exists(recurrent_paths)))
+knitr::include_graphics(recurrent_paths)
+```
+
+## Supplementary full heatmaps
+
+```{r full-figures, echo=FALSE, out.width='100%', fig.align='center'}
+full_paths <- file.path(
+  output_dir,
+  c(
+    "SUPP_FIG1_ALL69_FULL_TOP20_HEATMAP.png",
+    "SUPP_FIG2_SHARED7_FULL_TOP20_HEATMAP.png",
+    "SUPP_FIG3_REPEATED11_FULL_TOP20_HEATMAP.png"
+  )
+)
+stopifnot(all(file.exists(full_paths)))
+knitr::include_graphics(full_paths)
+```
+
+## Quality control
+
+```{r qc-table}
+qc
+```
+
+```{r qc-assertions}
+data.frame(
+  qc_rows = nrow(qc),
+  qc_failures = sum(!qc$passed),
+  manifest_rows = nrow(manifest),
+  recurrent_png = sum(grepl("RECURRENT.*[.]png$", manifest$path)),
+  full_png = sum(grepl("FULL.*[.]png$", manifest$path)),
+  stringsAsFactors = FALSE
+)
+```
+
+All recorded QC checks passed. The final independent verification also
+recomputed every MANIFEST file size and SHA-256 digest and found no mismatch.
+All six PNG files decoded successfully, and visual review of the primary All69
+recurrent heatmap and longest All69 full heatmap found no truncated or blank
+rendering.
+
+## Reproducibility
+
+The exact plotting command was:
+
+```text
+D:/bb/R/R-4.5.2/bin/x64/Rscript.exe scripts/628_cdr3_per_bin_top20_heatmaps.R results/reanalysis/CDR3_PER_BIN_GENE_LIST_20260911_161928 results/reanalysis/CDR3_PER_BIN_TOP10_FINAL_20260911_165003 results/reanalysis/CDR3_PER_BIN_TOP10_HEATMAPS_20260911_172841 results/reanalysis/CDR3_PER_BIN_TOP20_HEATMAP_FINAL_20260912_141500
+```
+
+```{r run-log, echo=FALSE, results='asis'}
+cat("```text\n", paste(run_log, collapse = "\n"), "\n```\n", sep = "")
+```
+
+```{r manifest}
+manifest
+```
+
+## Session information
+
+```{r session-info}
+sessionInfo()
+```

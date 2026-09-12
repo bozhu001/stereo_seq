@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-09-12T14:05:45+0200",
+  "top_n": 20,
+  "value": "log1p(raw_count) for genes already ranked in each Bin50 Top20",
+  "blank_cell": "NA: not ranked in this Bin's Top20; not necessarily undetected",
+  "recurrent_rule": "gene enters Top20 of at least 2 distinct physical Bin50s",
+  "physical_bin_key": "sample_id + Bin50_id",
+  "column_clustering": false,
+  "gene_wise_z_score": false,
+  "source_top10_script": "D:/bb/博士课题组资料/新建文件夹/自己课题相关/Lung ST/codex agent/stereo_seq/stereo_seq/scripts/627_cdr3_per_bin_top10_heatmaps.R",
+  "frozen_counts": {
+    "corrected_IGH_molecules": 104,
+    "patient_specific_clonotypes": 79
+  },
+  "output_dir": "D:/bb/博士课题组资料/新建文件夹/自己课题相关/Lung ST/codex agent/stereo_seq/stereo_seq/results/reanalysis/CDR3_PER_BIN_TOP20_HEATMAP_FINAL_20260912_141500"
+}

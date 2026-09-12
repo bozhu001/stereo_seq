@@ -1,0 +1,2 @@
+﻿cd scripts
+quarto render 629_cdr3_per_bin_top20_heatmap_report.qmd --output CDR3_PER_BIN_TOP20_HEATMAP_REPORT_260912142534.html --output-dir ../results --no-clean

@@ -1,0 +1,30 @@
+analysis	check	observed	expected	passed	notes
+All69	input_rows	1183	1183	TRUE	physical key: sample_id + Bin50_id
+All69	unique_physical_bins	69	69	TRUE	physical key: sample_id + Bin50_id
+All69	duplicate_heatmap_columns	0	0	TRUE	physical key: sample_id + Bin50_id
+All69	maximum_genes_per_bin	20	20	TRUE	physical key: sample_id + Bin50_id
+All69	duplicate_bin_gene_keys	0	0	TRUE	physical key: sample_id + Bin50_id
+All69	full_gene_count	604	604	TRUE	physical key: sample_id + Bin50_id
+All69	recurrent_gene_count	93	93	TRUE	physical key: sample_id + Bin50_id
+All69	full_matrix_non_NA	1183	1183	TRUE	physical key: sample_id + Bin50_id
+Shared7	input_rows	740	740	TRUE	physical key: sample_id + Bin50_id
+Shared7	unique_physical_bins	44	44	TRUE	physical key: sample_id + Bin50_id
+Shared7	duplicate_heatmap_columns	0	0	TRUE	physical key: sample_id + Bin50_id
+Shared7	maximum_genes_per_bin	20	20	TRUE	physical key: sample_id + Bin50_id
+Shared7	duplicate_bin_gene_keys	0	0	TRUE	physical key: sample_id + Bin50_id
+Shared7	full_gene_count	327	327	TRUE	physical key: sample_id + Bin50_id
+Shared7	recurrent_gene_count	55	55	TRUE	physical key: sample_id + Bin50_id
+Shared7	full_matrix_non_NA	740	740	TRUE	physical key: sample_id + Bin50_id
+Repeated11	input_rows	587	587	TRUE	physical key: sample_id + Bin50_id
+Repeated11	unique_physical_bins	33	33	TRUE	physical key: sample_id + Bin50_id
+Repeated11	duplicate_heatmap_columns	0	0	TRUE	physical key: sample_id + Bin50_id
+Repeated11	maximum_genes_per_bin	20	20	TRUE	physical key: sample_id + Bin50_id
+Repeated11	duplicate_bin_gene_keys	0	0	TRUE	physical key: sample_id + Bin50_id
+Repeated11	full_gene_count	226	226	TRUE	physical key: sample_id + Bin50_id
+Repeated11	recurrent_gene_count	52	52	TRUE	physical key: sample_id + Bin50_id
+Repeated11	full_matrix_non_NA	587	587	TRUE	physical key: sample_id + Bin50_id
+Frozen	corrected_IGH_molecules	104	104	TRUE	unchanged frozen count
+Frozen	patient_specific_clonotypes	79	79	TRUE	read from frozen QC; not recomputed
+Frozen	multi_IGH_Bin50	6	6	TRUE	annotation only
+Output	PNG_files_valid	6	6	TRUE	signature and non-empty
+Output	PDF_files_valid	6	6	TRUE	PDF header, EOF and non-empty

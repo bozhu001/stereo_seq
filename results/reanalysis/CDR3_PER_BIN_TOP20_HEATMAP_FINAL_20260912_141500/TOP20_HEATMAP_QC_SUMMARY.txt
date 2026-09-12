@@ -1,0 +1,12 @@
+TOP20 HEATMAP QC SUMMARY
+Generated: 2026-09-12T14:06:09+0200
+Definition: each heatmap column is one unique sample_id + Bin50_id physical Bin50.
+Value: log1p(raw_count) only for genes already present in that Bin50's frozen Top20 list.
+Blank cells are NA: not ranked in this Bin's Top20; not necessarily undetected.
+All69: 1183 input rows; 69 bins; Full 604 genes; Recurrent 93 genes.
+Shared7: 740 input rows; 44 bins; Full 327 genes; Recurrent 55 genes.
+Repeated11: 587 input rows; 33 bins; Full 226 genes; Recurrent 52 genes.
+All bins contain at most 20 distinct gene symbols; duplicate physical Bin50-gene keys: 0.
+Frozen counts retained: 104 corrected IGH molecules and 79 patient-specific clonotypes.
+Compared with the Top10 heatmaps, only TopN changed from 10 to 20; all other definitions are unchanged.
+QC status: PASS
