@@ -1,0 +1,4 @@
+contrast	n_tests	expected_chance_hits	raw_p_lt_0_05	permutation_p_lt_0_05	either_p_lt_0_05	family_fdr_lt_0_05	global_fdr_lt_0_05
+SSc-ILD_vs_HC	2682	134.1	54	55	63	0	0
+IPF_vs_HC	2682	134.1	101	105	117	0	0
+SSc-ILD_vs_IPF	2682	134.1	111	123	129	0	0

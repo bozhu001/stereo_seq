@@ -1,0 +1,11 @@
+check	status	detail
+seven_distinct_hypotheses	PASS	7
+nine_contrast_records	PASS	9
+fdr_supported_zero	PASS	0
+basal_nk_frozen_shared_ild	PASS	not SSc-specific
+ciliated_dendritic_18_21_repeat	PASS	H04
+blood_endothelial_ipf_driver_documented	PASS	IPF-driven wording
+b_t_low_priority	PASS	H07
+html_states_hypothesis_generating_only	PASS	explicit
+no_new_neighborhood_statistics	PASS	reporting-only transformation of frozen rows
+forbidden_claims_only_negated	PASS	phrases occur only as explicit negations/guardrails
