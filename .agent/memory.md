@@ -729,3 +729,29 @@
   `.agent/voltron_unbiased_neighborhood_skill_candidate_261008115210.md`.
 - Session summary:
   `.agent/j2_unbiased_niche_resolution_wrapup_261008115210.md`.
+
+## 2026-10-08 – J2 K=5 spatial niche architecture and freeze
+
+- Reused the frozen Y40105J2 K=5 assignment for 58,772 evaluable Bin50 from
+  seven patients and seven ROIs; no clustering or upstream analysis was rerun.
+- The within-patient/ROI Queen graph contained 218,614 unique edges. All five
+  niches and all ten heterotypic pairs were analyzed symmetrically with 999
+  label permutations (seed `2026100811`).
+- N2, N4, and N1 had the highest median largest-component fractions, although
+  the overall niche fields remained fragmented. Nine of ten heterotypic pairs
+  were direction-consistent in at least 6/7 patients, all negative relative to
+  the exchangeable-label null; no recurrent positive pair was identified.
+- Final directory:
+  `results/reanalysis/J2_UNBIASED_NICHE_RESOLUTION_20261008_110522/K05_SPATIAL_ARCHITECTURE_20261008_120148/`.
+- Rendered HTML:
+  `results/J2_K5_SPATIAL_ARCHITECTURE_REPORT_261008121443.html`.
+- Analysis/report commit:
+  `793085cee696e2432ce055212a286229d4429232`.
+- Approved local ELN:
+  `elab/J2_K5_spatial_niche_architecture_261008121443.md`; no remote ID/URL
+  because `ELABFTW_API_KEY` is unavailable.
+- J2 discovery, composition, consistency, annotation, and spatial outputs are
+  frozen by `J2_NICHE_RESULTS_FREEZE_20261008.tsv` and `J2_FROZEN.ok`; the user
+  authorized no further J2 analysis.
+- Session summary:
+  `.agent/j2_k5_spatial_architecture_wrapup_261008122000.md`.
