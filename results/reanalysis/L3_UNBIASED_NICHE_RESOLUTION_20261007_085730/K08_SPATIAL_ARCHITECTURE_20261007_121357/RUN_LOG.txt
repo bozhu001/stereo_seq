@@ -1,0 +1,27 @@
+[2026-10-07T12:13:57+02:00] START
+SCRIPT=scripts/1011_l3_k8_spatial_architecture.R
+OUTPUT_DIR=results/reanalysis/L3_UNBIASED_NICHE_RESOLUTION_20261007_085730/K08_SPATIAL_ARCHITECTURE_20261007_121357
+[L3 K8 spatial architecture] read_and_validate_frozen_inputs
+[L3 K8 spatial architecture] build_queen_adjacency: four unique offsets; no cross-patient or cross-ROI edges
+[L3 K8 spatial architecture] spatial_maps: three multipage PDFs; one page per patient/ROI
+[L3 K8 spatial architecture] connected_component_continuity: 56 patient-by-niche summaries
+[L3 K8 spatial architecture] direct_adjacency_counts_and_fractions
+[L3 K8 spatial architecture] patient_roi_permutation_null: 999 label permutations within each patient and ROI
+[L3 K8 spatial architecture] permutation_patient_complete: 1/7: HC/NL-66
+[L3 K8 spatial architecture] permutation_patient_complete: 2/7: HC/NL-72
+[L3 K8 spatial architecture] permutation_patient_complete: 3/7: IPF/FO23-1-06168
+[L3 K8 spatial architecture] permutation_patient_complete: 4/7: IPF/FO23-1-06170
+[L3 K8 spatial architecture] permutation_patient_complete: 5/7: SSC/05957/17B
+[L3 K8 spatial architecture] permutation_patient_complete: 6/7: SSC/07998/15A
+[L3 K8 spatial architecture] permutation_patient_complete: 7/7: SSC/15491/14
+[L3 K8 spatial architecture] cross_patient_adjacency_consistency
+[L3 K8 spatial architecture] n3_component_boundary_context
+[L3 K8 spatial architecture] write_findings_and_audit
+[L3 K8 spatial architecture] complete: 19 required outputs passed
+RESULT_DIR=/mnt/d/bb/博士课题组资料/新建文件夹/自己课题相关/Lung ST/codex agent/stereo_seq/stereo_seq/results/reanalysis/L3_UNBIASED_NICHE_RESOLUTION_20261007_085730/K08_SPATIAL_ARCHITECTURE_20261007_121357
+TOP_CONTINUOUS_NICHES=N7;N4;N5
+N3_COMPONENTS=YES; median_largest_component_fraction=0.065
+N3_STABLE_RELATIONS=N4(depleted);N6(depleted);N2(depleted)
+PRIORITY_PAIRS=N4-N7;N2-N7;N7-N8
+PRIORITY_FILES=08_K08_SPATIAL_ARCHITECTURE_KEY_FINDINGS_ZH.md;06_K08_N3_NEIGHBOR_SUMMARY.tsv;05_K08_CROSS_PATIENT_ADJACENCY_SUMMARY.tsv;figures/03_K08_KEY_NICHES_SPATIAL_MAPS_EN.pdf;figures/08_K08_N3_NEIGHBOR_ENRICHMENT_EN.pdf
+[2026-10-07T12:14:27+02:00] COMPLETE

@@ -1,0 +1,18 @@
+timestamp	stage	detail
+2026-10-07 12:14:09 CEST	read_and_validate_frozen_inputs	""
+2026-10-07 12:14:10 CEST	build_queen_adjacency	four unique offsets; no cross-patient or cross-ROI edges
+2026-10-07 12:14:10 CEST	spatial_maps	three multipage PDFs; one page per patient/ROI
+2026-10-07 12:14:17 CEST	connected_component_continuity	56 patient-by-niche summaries
+2026-10-07 12:14:19 CEST	direct_adjacency_counts_and_fractions	""
+2026-10-07 12:14:19 CEST	patient_roi_permutation_null	999 label permutations within each patient and ROI
+2026-10-07 12:14:20 CEST	permutation_patient_complete	1/7: HC/NL-66
+2026-10-07 12:14:21 CEST	permutation_patient_complete	2/7: HC/NL-72
+2026-10-07 12:14:22 CEST	permutation_patient_complete	3/7: IPF/FO23-1-06168
+2026-10-07 12:14:22 CEST	permutation_patient_complete	4/7: IPF/FO23-1-06170
+2026-10-07 12:14:23 CEST	permutation_patient_complete	5/7: SSC/05957/17B
+2026-10-07 12:14:24 CEST	permutation_patient_complete	6/7: SSC/07998/15A
+2026-10-07 12:14:25 CEST	permutation_patient_complete	7/7: SSC/15491/14
+2026-10-07 12:14:25 CEST	cross_patient_adjacency_consistency	""
+2026-10-07 12:14:26 CEST	n3_component_boundary_context	""
+2026-10-07 12:14:26 CEST	write_findings_and_audit	""
+2026-10-07 12:14:27 CEST	complete	19 required outputs passed

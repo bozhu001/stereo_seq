@@ -1,0 +1,126 @@
+---
+title: "L3 K=8 Spatial Niche Architecture"
+author: "Codex"
+date: today
+format:
+  html:
+    toc: true
+    toc-float: true
+    df-print: paged
+    code-fold: true
+    theme: bootstrap
+    embed-resources: true
+engine: knitr
+execute:
+  echo: true
+---
+
+<!--
+Render command (PowerShell; set the timestamp immediately before rendering):
+quarto render scripts/1012_l3_k8_spatial_architecture_report.qmd --output-dir results
+Rename the generated HTML to results/L3_K8_SPATIAL_ARCHITECTURE_REPORT_<YYMMDDHHMMSS>.html.
+-->
+
+```{r setup}
+project_root <- normalizePath("..", mustWork = TRUE)
+candidate_dirs <- Sys.glob(file.path(
+  project_root,
+  "results",
+  "reanalysis",
+  "L3_UNBIASED_NICHE_RESOLUTION_20261007_085730",
+  "K08_SPATIAL_ARCHITECTURE_*"
+))
+candidate_dirs <- candidate_dirs[file.exists(file.path(candidate_dirs, "COMPLETE.ok"))]
+stopifnot(length(candidate_dirs) > 0)
+result_dir <- tail(sort(candidate_dirs), 1)
+
+read_tsv <- function(filename) {
+  read.delim(
+    file.path(result_dir, filename),
+    check.names = FALSE,
+    stringsAsFactors = FALSE
+  )
+}
+
+continuity <- read_tsv("01_K08_NICHE_SPATIAL_CONTINUITY.tsv")
+cross_patient <- read_tsv("05_K08_CROSS_PATIENT_ADJACENCY_SUMMARY.tsv")
+n3_summary <- read_tsv("06_K08_N3_NEIGHBOR_SUMMARY.tsv")
+priority <- read_tsv("07A_K08_GLOBAL_SPATIAL_PRIORITY.tsv")
+audit <- read_tsv("09_K08_SPATIAL_ARCHITECTURE_FINAL_AUDIT.tsv")
+```
+
+## Scope and provenance
+
+This report summarizes the completed L3 K=8 spatial architecture analysis. It reuses the frozen K=8 assignment, 39,982 neighborhood-evaluable Bin50, and physical `x_um`/`y_um` coordinates. Frozen aggregate labels and boundaries were not read.
+
+Direct Queen adjacency was defined only within the same patient and ROI. A pair of distinct Bin50 was adjacent when `abs(dx) <= 25 um` and `abs(dy) <= 25 um`. Each physical edge was counted once. The patient/ROI-stratified null used 999 label permutations while preserving niche counts.
+
+## Spatial continuity
+
+```{r continuity-summary}
+continuity_summary <- aggregate(
+  cbind(largest_component_fraction, fragmentation_index, median_component_size) ~ niche,
+  continuity,
+  median
+)
+continuity_summary <- continuity_summary[
+  order(-continuity_summary$largest_component_fraction),
+]
+knitr::kable(continuity_summary, digits = 3)
+```
+
+## All 28 heterotypic niche pairs
+
+```{r global-priority}
+priority_display <- priority[, c(
+  "global_priority_rank",
+  "niche_pair",
+  "median_log2_enrichment",
+  "positive_patient_n",
+  "negative_patient_n",
+  "consistent_direction_patient_n",
+  "single_patient_driven",
+  "both_endpoints_umi_robust",
+  "priority_interpretation"
+)]
+knitr::kable(priority_display, digits = 3)
+```
+
+The exchangeable-label null breaks niche-label spatial autocorrelation and does not preserve the overlap among adjacent 50 um input neighborhoods. Therefore, observed/expected adjacency describes departure from label exchangeability; it is not independent validation of a biological interface or cell-cell interaction.
+
+## N3 targeted follow-up
+
+```{r n3-summary}
+n3_display <- n3_summary[, c(
+  "neighboring_niche",
+  "all_l3_unique_direct_edge_count",
+  "median_log2_enrichment",
+  "positive_patient_n",
+  "negative_patient_n",
+  "direction_consistency",
+  "single_patient_driven"
+)]
+knitr::kable(n3_display, digits = 3)
+```
+
+## Validation
+
+```{r final-audit}
+knitr::kable(audit)
+stopifnot(all(audit$passed))
+```
+
+## Output files
+
+The full result directory is:
+
+```{r result-directory}
+result_dir
+list.files(result_dir, recursive = TRUE)
+```
+
+## Session information
+
+```{r session-info}
+sessionInfo()
+```

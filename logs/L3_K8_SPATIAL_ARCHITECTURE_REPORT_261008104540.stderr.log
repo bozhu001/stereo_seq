@@ -1,0 +1,42 @@
+
+
+processing file: 1012_l3_k8_spatial_architecture_report.qmd
+  |                                                         |                                                 |   0%  |                                                         |...                                              |   7%                       |                                                         |.......                                          |  13% [setup]               |                                                         |..........                                       |  20%                       |                                                         |.............                                    |  27% [continuity-summary]  |                                                         |................                                 |  33%                       |                                                         |....................                             |  40% [global-priority]     |                                                         |.......................                          |  47%                       |                                                         |..........................                       |  53% [n3-summary]          |                                                         |.............................                    |  60%                       |                                                         |.................................                |  67% [final-audit]         |                                                         |....................................             |  73%                       |                                                         |.......................................          |  80% [result-directory]    |                                                         |..........................................       |  87%                       |                                                         |..............................................   |  93% [session-info]        |                                                         |.................................................| 100%                                                                                                                                    
+output file: 1012_l3_k8_spatial_architecture_report.knit.md
+
+pandoc 
+  to: html
+  output-file: 1012_l3_k8_spatial_architecture_report.html
+  standalone: true
+  embed-resources: true
+  section-divs: true
+  html-math-method: mathjax
+  wrap: none
+  default-image-extension: png
+  toc: true
+  variables: {}
+  
+metadata
+  document-css: false
+  link-citations: true
+  date-format: long
+  lang: en
+  title: L3 K=8 Spatial Niche Architecture
+  author: Codex
+  date: today
+  toc-float: true
+  theme: bootstrap
+  
+ERROR: 另一个程序正在使用此文件，进程无法访问。 (os error 32): remove 'D:\bb\博士课题组资料\新建文件夹\自己课题相关\Lung ST\codex agent\stereo_seq\stereo_seq\scripts\.quarto'
+
+Stack trace:
+    at Object.removeSync (ext:deno_fs/30_fs.js:250:3)
+    at safeRemoveSync (file:///D:/bb/RSTUDIO/resources/app/bin/quarto/bin/quarto.js:2369:14)
+    at renderProject (file:///D:/bb/RSTUDIO/resources/app/bin/quarto/bin/quarto.js:87588:13)
+    at eventLoopTick (ext:core/01_core.js:175:7)
+    at async Command.actionHandler (file:///D:/bb/RSTUDIO/resources/app/bin/quarto/bin/quarto.js:91975:32)
+    at async Command.execute (file:///D:/bb/RSTUDIO/resources/app/bin/quarto/bin/quarto.js:8253:13)
+    at async Command.parseCommand (file:///D:/bb/RSTUDIO/resources/app/bin/quarto/bin/quarto.js:8143:20)
+    at async quarto (file:///D:/bb/RSTUDIO/resources/app/bin/quarto/bin/quarto.js:133948:9)
+    at async file:///D:/bb/RSTUDIO/resources/app/bin/quarto/bin/quarto.js:133978:9
+    at async file:///D:/bb/RSTUDIO/resources/app/bin/quarto/bin/quarto.js:133830:20

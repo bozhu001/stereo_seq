@@ -1,0 +1,8 @@
+role	path	used
+frozen Reference18 UMI>=50 input	/mnt/d/bb/博士课题组资料/新建文件夹/自己课题相关/Lung ST/codex agent/stereo_seq/stereo_seq/results/reanalysis/REFERENCE18_UMI50_VOLTRON_PER_CHIP_NICHE_20261005_153036/L3/01_FROZEN_REFERENCE18_INPUT.tsv.gz	TRUE
+fixed K8 assignment	/mnt/d/bb/博士课题组资料/新建文件夹/自己课题相关/Lung ST/codex agent/stereo_seq/stereo_seq/results/reanalysis/L3_UNBIASED_NICHE_RESOLUTION_20261007_085730/K08/02_BIN_NICHE_ASSIGNMENTS.tsv.gz	TRUE
+K8 color key	/mnt/d/bb/博士课题组资料/新建文件夹/自己课题相关/Lung ST/codex agent/stereo_seq/stereo_seq/results/reanalysis/L3_UNBIASED_NICHE_RESOLUTION_20261007_085730/K08/00_NICHE_COLOR_KEY.tsv	TRUE
+zero-neighbor audit	/mnt/d/bb/博士课题组资料/新建文件夹/自己课题相关/Lung ST/codex agent/stereo_seq/stereo_seq/results/reanalysis/L3_UNBIASED_NICHE_RESOLUTION_20261007_085730/00_ZERO_NEIGHBOR_NOT_EVALUABLE.tsv	TRUE
+K8 conservative annotation	/mnt/d/bb/博士课题组资料/新建文件夹/自己课题相关/Lung ST/codex agent/stereo_seq/stereo_seq/results/reanalysis/L3_UNBIASED_NICHE_RESOLUTION_20261007_085730/K08_HIGH_RESOLUTION_SENSITIVITY_20261007_104602/08_K08_CONSERVATIVE_NICHE_ANNOTATIONS.tsv	TRUE
+analysis script	scripts/1011_l3_k8_spatial_architecture.R	TRUE
+aggregate input	NOT READ	FALSE
