@@ -1,0 +1,6 @@
+role	project_relative_path	used
+frozen Reference18 UMI>=50 input	results/reanalysis/REFERENCE18_UMI50_VOLTRON_PER_CHIP_NICHE_20261005_153036/J2/01_FROZEN_REFERENCE18_INPUT.tsv.gz	TRUE
+saved VoltRon object with radius50 graph and Niche assay	/mnt/d/bb/博士课题组资料/新建文件夹/自己课题相关/Lung ST/codex agent/stereo_seq/stereo_seq/results/reanalysis/J2_UNBIASED_NICHE_RESOLUTION_20261008_110522/14_VOLTRON_OBJECT_RADIUS50_CLR.rds	TRUE
+independently selected primary-K assignments	/mnt/d/bb/博士课题组资料/新建文件夹/自己课题相关/Lung ST/codex agent/stereo_seq/stereo_seq/results/reanalysis/J2_UNBIASED_NICHE_RESOLUTION_20261008_110522/K05/02_BIN_NICHE_ASSIGNMENTS.tsv.gz	TRUE
+analysis script	scripts/1014_j2_primaryk_composition_consistency.R	TRUE
+aggregate input	NOT READ	FALSE

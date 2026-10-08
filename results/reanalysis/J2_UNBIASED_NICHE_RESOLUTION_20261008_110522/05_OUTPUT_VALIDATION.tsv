@@ -1,0 +1,10 @@
+check	observed	expected	passed
+eligible input Bin count	58840	58840	TRUE
+primary-K assignment Bin count	58772	58772	TRUE
+patient count	7	7	TRUE
+Reference18 state count	18	18	TRUE
+patient-niche-state row count	630	630	TRUE
+enrichment row count	630	630	TRUE
+neighbor weights sum to one	1.88737914186277e-15	0	TRUE
+all patients have all four niches	1	1	TRUE
+aggregate labels not read	1	1	TRUE

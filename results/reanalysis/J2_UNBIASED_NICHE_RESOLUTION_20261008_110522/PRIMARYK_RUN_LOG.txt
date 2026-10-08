@@ -1,0 +1,12 @@
+[2026-10-08T11:18:55+02:00] START J2 primary-K composition and UMI sensitivity
+[J2 primary-K composition] read_fixed_inputs
+[J2 primary-K composition] build_bin_level_neighborhood_weights: 58772 Bins x 18 states
+[J2 primary-K composition] summarize_patient_niche_composition: expected 630 rows
+[J2 primary-K composition] compute_umi_sensitivity: 630 one-versus-rest comparisons
+[J2 primary-K composition] cross_patient_summary
+[J2 primary-K composition] write_tables
+[J2 primary-K composition] draw_figures
+[J2 primary-K composition] validation
+[J2 primary-K composition] complete: 630 patient-niche-state comparisons
+Completed J2 primary-K patient-specific Reference18 composition analysis.
+[2026-10-08T11:20:04+02:00] COMPLETE J2 primary-K composition and UMI sensitivity

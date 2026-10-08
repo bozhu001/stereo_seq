@@ -1,0 +1,13 @@
+parameter	value
+chip	J2
+K	5
+radius_um	50
+center_bin_included	FALSE
+patient_n	7
+state_n	18
+enrichment_baseline	target niche mean minus Bin-weighted mean across all other niches in the same patient
+UMI_model	per patient/niche/state linear model: neighbor weight ~ niche indicator + scaled log1p(Bin UMI)
+UMI_stratification	within-patient UMI quintiles; require >=10 target and >=10 other Bins per valid stratum; equal mean across valid strata
+single_patient_driver_rule	maximum absolute patient contribution >=50% of total absolute enrichment
+aggregate_handling	not read or used
+disease_testing	none

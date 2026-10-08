@@ -1,0 +1,31 @@
+
+
+processing file: 1017_j2_unbiased_niche_resolution_report.qmd
+  |                                               |                                       |   0%  |                                               |.                                      |   4%                                 |                                               |...                                    |   7% [setup]                         |                                               |....                                   |  11%                                 |                                               |......                                 |  15% [input_audit_table]             |                                               |.......                                |  19%                                 |                                               |.........                              |  22% [neighborhood_audit_table]      |                                               |..........                             |  26%                                 |                                               |............                           |  30% [k_resolution_figure]           |                                               |.............                          |  33%                                 |                                               |..............                         |  37% [recommendation_table]          |                                               |................                       |  41%                                 |                                               |.................                      |  44% [composition_figure]            |                                               |...................                    |  48%                                 |                                               |....................                   |  52% [annotation_table]              |                                               |......................                 |  56%                                 |                                               |.......................                |  59% [patient_enrichment_figure]     |                                               |.........................              |  63%                                 |                                               |..........................             |  67% [direction_consistency_figure]  |                                               |...........................            |  70%                                 |                                               |.............................          |  74% [core_consistency_table]        |                                               |..............................         |  78%                                 |                                               |................................       |  81% [umi_sensitivity_figure]        |                                               |.................................      |  85%                                 |                                               |...................................    |  89% [final_audit_table]             |                                               |....................................   |  93%                                 |                                               |...................................... |  96% [session_info]                  |                                               |.......................................| 100%                                                                                                                                                        
+output file: 1017_j2_unbiased_niche_resolution_report.knit.md
+
+pandoc 
+  to: html
+  output-file: 1017_j2_unbiased_niche_resolution_report.html
+  standalone: true
+  embed-resources: true
+  section-divs: true
+  html-math-method: mathjax
+  wrap: none
+  default-image-extension: png
+  toc: true
+  variables: {}
+  
+metadata
+  document-css: false
+  link-citations: true
+  date-format: long
+  lang: en
+  title: J2 Unbiased 50 um Neighborhood Niche Resolution
+  author: Codex
+  date: today
+  toc-float: true
+  theme: bootstrap
+  
+Output created: ..\results\1017_j2_unbiased_niche_resolution_report.html
+

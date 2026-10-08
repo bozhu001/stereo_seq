@@ -1,0 +1,14 @@
+item	value
+chip	J2
+reference_states	18
+all_eligible_bin_n	58840
+evaluable_nonempty_neighborhood_bin_n	58772
+zero_neighbor_bin_n	68
+patient_n	7
+radius_um	50
+center_bin_included	FALSE
+clustering_input	Existing VoltRon native CLR of radius50 Reference18 Niche assay
+aggregate_labels_read	FALSE
+aggregate_labels_used_for_clustering	FALSE
+aggregate_labels_used_for_k_selection	FALSE
+aggregate_labels_used_for_naming	FALSE

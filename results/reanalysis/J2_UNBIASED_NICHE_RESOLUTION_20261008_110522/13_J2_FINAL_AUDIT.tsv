@@ -1,0 +1,47 @@
+item	value	passed
+chip	Y40105J2	TRUE
+input_path	results/reanalysis/REFERENCE18_UMI50_VOLTRON_PER_CHIP_NICHE_20261005_153036/J2/01_FROZEN_REFERENCE18_INPUT.tsv.gz	TRUE
+Reference18_source	frozen Reference18 continuous weights	TRUE
+Bin50_threshold	UMI >= 50	TRUE
+total_umi50_bin_n	58840	TRUE
+evaluable_bin_n	58772	TRUE
+patient_n	7	TRUE
+disease_counts	HC=2;IPF=2;SSc-ILD=3	TRUE
+neighborhood_radius_um	50	TRUE
+center_bin_included	FALSE	TRUE
+CLR_method	VoltRon normalizeData(method='CLR'); no pseudocount; structural zeros retained	TRUE
+K_range	3-12	TRUE
+seeds_per_K	20	TRUE
+selected_primary_K	5	TRUE
+lower_comparator	3	TRUE
+higher_comparator	7	TRUE
+disease_used_in_clustering	FALSE	TRUE
+frozen_aggregate_used	FALSE	TRUE
+disease_significance	FALSE	TRUE
+DEG	FALSE	TRUE
+GSEA	FALSE	TRUE
+pathway	FALSE	TRUE
+cell_cell_communication	FALSE	TRUE
+output::00_J2_INPUT_AUDIT.tsv	D:\bb\博士课题组资料\新建文件夹\自己课题相关\Lung ST\codex agent\stereo_seq\stereo_seq\results\reanalysis\J2_UNBIASED_NICHE_RESOLUTION_20261008_110522/00_J2_INPUT_AUDIT.tsv	TRUE
+output::01_J2_NEIGHBORHOOD_AUDIT.tsv	D:\bb\博士课题组资料\新建文件夹\自己课题相关\Lung ST\codex agent\stereo_seq\stereo_seq\results\reanalysis\J2_UNBIASED_NICHE_RESOLUTION_20261008_110522/01_J2_NEIGHBORHOOD_AUDIT.tsv	TRUE
+output::02_J2_ALL_K_SEED_FIT_AUDIT.tsv.gz	D:\bb\博士课题组资料\新建文件夹\自己课题相关\Lung ST\codex agent\stereo_seq\stereo_seq\results\reanalysis\J2_UNBIASED_NICHE_RESOLUTION_20261008_110522/02_J2_ALL_K_SEED_FIT_AUDIT.tsv.gz	TRUE
+output::03_J2_K3_K12_RESOLUTION_SUMMARY.tsv	D:\bb\博士课题组资料\新建文件夹\自己课题相关\Lung ST\codex agent\stereo_seq\stereo_seq\results\reanalysis\J2_UNBIASED_NICHE_RESOLUTION_20261008_110522/03_J2_K3_K12_RESOLUTION_SUMMARY.tsv	TRUE
+output::04_J2_AUDITED_K_RECOMMENDATION.tsv	D:\bb\博士课题组资料\新建文件夹\自己课题相关\Lung ST\codex agent\stereo_seq\stereo_seq\results\reanalysis\J2_UNBIASED_NICHE_RESOLUTION_20261008_110522/04_J2_AUDITED_K_RECOMMENDATION.tsv	TRUE
+output::05_J2_K_RECOMMENDATION_ZH.md	D:\bb\博士课题组资料\新建文件夹\自己课题相关\Lung ST\codex agent\stereo_seq\stereo_seq\results\reanalysis\J2_UNBIASED_NICHE_RESOLUTION_20261008_110522/05_J2_K_RECOMMENDATION_ZH.md	TRUE
+output::06_J2_PRIMARYK_REFERENCE18_COMPOSITION.tsv	D:\bb\博士课题组资料\新建文件夹\自己课题相关\Lung ST\codex agent\stereo_seq\stereo_seq\results\reanalysis\J2_UNBIASED_NICHE_RESOLUTION_20261008_110522/06_J2_PRIMARYK_REFERENCE18_COMPOSITION.tsv	TRUE
+output::07_J2_PRIMARYK_PATIENT_NICHE_COMPOSITION.tsv	D:\bb\博士课题组资料\新建文件夹\自己课题相关\Lung ST\codex agent\stereo_seq\stereo_seq\results\reanalysis\J2_UNBIASED_NICHE_RESOLUTION_20261008_110522/07_J2_PRIMARYK_PATIENT_NICHE_COMPOSITION.tsv	TRUE
+output::08_J2_PRIMARYK_PATIENT_NICHE_ENRICHMENT.tsv	D:\bb\博士课题组资料\新建文件夹\自己课题相关\Lung ST\codex agent\stereo_seq\stereo_seq\results\reanalysis\J2_UNBIASED_NICHE_RESOLUTION_20261008_110522/08_J2_PRIMARYK_PATIENT_NICHE_ENRICHMENT.tsv	TRUE
+output::09_J2_PRIMARYK_CROSS_PATIENT_ENRICHMENT.tsv	D:\bb\博士课题组资料\新建文件夹\自己课题相关\Lung ST\codex agent\stereo_seq\stereo_seq\results\reanalysis\J2_UNBIASED_NICHE_RESOLUTION_20261008_110522/09_J2_PRIMARYK_CROSS_PATIENT_ENRICHMENT.tsv	TRUE
+output::10_J2_PRIMARYK_UMI_SENSITIVITY.tsv	D:\bb\博士课题组资料\新建文件夹\自己课题相关\Lung ST\codex agent\stereo_seq\stereo_seq\results\reanalysis\J2_UNBIASED_NICHE_RESOLUTION_20261008_110522/10_J2_PRIMARYK_UMI_SENSITIVITY.tsv	TRUE
+output::11_J2_PRIMARYK_CONSERVATIVE_ANNOTATIONS.tsv	D:\bb\博士课题组资料\新建文件夹\自己课题相关\Lung ST\codex agent\stereo_seq\stereo_seq\results\reanalysis\J2_UNBIASED_NICHE_RESOLUTION_20261008_110522/11_J2_PRIMARYK_CONSERVATIVE_ANNOTATIONS.tsv	TRUE
+output::12_J2_KEY_FINDINGS_ZH.md	D:\bb\博士课题组资料\新建文件夹\自己课题相关\Lung ST\codex agent\stereo_seq\stereo_seq\results\reanalysis\J2_UNBIASED_NICHE_RESOLUTION_20261008_110522/12_J2_KEY_FINDINGS_ZH.md	TRUE
+output::figures/01_J2_K_RESOLUTION_AUDIT_EN.pdf	D:\bb\博士课题组资料\新建文件夹\自己课题相关\Lung ST\codex agent\stereo_seq\stereo_seq\results\reanalysis\J2_UNBIASED_NICHE_RESOLUTION_20261008_110522/figures/01_J2_K_RESOLUTION_AUDIT_EN.pdf	TRUE
+output::figures/01_J2_K_RESOLUTION_AUDIT_EN.png	D:\bb\博士课题组资料\新建文件夹\自己课题相关\Lung ST\codex agent\stereo_seq\stereo_seq\results\reanalysis\J2_UNBIASED_NICHE_RESOLUTION_20261008_110522/figures/01_J2_K_RESOLUTION_AUDIT_EN.png	TRUE
+output::figures/02_J2_PRIMARYK_REFERENCE18_COMPOSITION_EN.pdf	D:\bb\博士课题组资料\新建文件夹\自己课题相关\Lung ST\codex agent\stereo_seq\stereo_seq\results\reanalysis\J2_UNBIASED_NICHE_RESOLUTION_20261008_110522/figures/02_J2_PRIMARYK_REFERENCE18_COMPOSITION_EN.pdf	TRUE
+output::figures/02_J2_PRIMARYK_REFERENCE18_COMPOSITION_EN.png	D:\bb\博士课题组资料\新建文件夹\自己课题相关\Lung ST\codex agent\stereo_seq\stereo_seq\results\reanalysis\J2_UNBIASED_NICHE_RESOLUTION_20261008_110522/figures/02_J2_PRIMARYK_REFERENCE18_COMPOSITION_EN.png	TRUE
+output::figures/03_J2_PRIMARYK_PATIENT_WISE_ENRICHMENT_EN.pdf	D:\bb\博士课题组资料\新建文件夹\自己课题相关\Lung ST\codex agent\stereo_seq\stereo_seq\results\reanalysis\J2_UNBIASED_NICHE_RESOLUTION_20261008_110522/figures/03_J2_PRIMARYK_PATIENT_WISE_ENRICHMENT_EN.pdf	TRUE
+output::figures/03_J2_PRIMARYK_PATIENT_WISE_ENRICHMENT_EN.png	D:\bb\博士课题组资料\新建文件夹\自己课题相关\Lung ST\codex agent\stereo_seq\stereo_seq\results\reanalysis\J2_UNBIASED_NICHE_RESOLUTION_20261008_110522/figures/03_J2_PRIMARYK_PATIENT_WISE_ENRICHMENT_EN.png	TRUE
+output::figures/04_J2_PRIMARYK_CROSS_PATIENT_DIRECTION_CONSISTENCY_EN.pdf	D:\bb\博士课题组资料\新建文件夹\自己课题相关\Lung ST\codex agent\stereo_seq\stereo_seq\results\reanalysis\J2_UNBIASED_NICHE_RESOLUTION_20261008_110522/figures/04_J2_PRIMARYK_CROSS_PATIENT_DIRECTION_CONSISTENCY_EN.pdf	TRUE
+output::figures/04_J2_PRIMARYK_CROSS_PATIENT_DIRECTION_CONSISTENCY_EN.png	D:\bb\博士课题组资料\新建文件夹\自己课题相关\Lung ST\codex agent\stereo_seq\stereo_seq\results\reanalysis\J2_UNBIASED_NICHE_RESOLUTION_20261008_110522/figures/04_J2_PRIMARYK_CROSS_PATIENT_DIRECTION_CONSISTENCY_EN.png	TRUE
+output::figures/05_J2_PRIMARYK_UMI_SENSITIVITY_EN.pdf	D:\bb\博士课题组资料\新建文件夹\自己课题相关\Lung ST\codex agent\stereo_seq\stereo_seq\results\reanalysis\J2_UNBIASED_NICHE_RESOLUTION_20261008_110522/figures/05_J2_PRIMARYK_UMI_SENSITIVITY_EN.pdf	TRUE
+output::figures/05_J2_PRIMARYK_UMI_SENSITIVITY_EN.png	D:\bb\博士课题组资料\新建文件夹\自己课题相关\Lung ST\codex agent\stereo_seq\stereo_seq\results\reanalysis\J2_UNBIASED_NICHE_RESOLUTION_20261008_110522/figures/05_J2_PRIMARYK_UMI_SENSITIVITY_EN.png	TRUE

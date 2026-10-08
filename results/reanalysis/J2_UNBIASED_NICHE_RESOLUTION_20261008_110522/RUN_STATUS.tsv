@@ -1,0 +1,31 @@
+timestamp	stage	detail
+2026-10-08 11:06:09 CEST	read_fixed_inputs	""
+2026-10-08 11:06:10 CEST	rebuild_official_radius50_object	saved J2 VoltRon object unavailable
+2026-10-08 11:06:47 CEST	fit_k3_to_k12	20 seeds per K
+2026-10-08 11:06:48 CEST	fit_k	K=3
+2026-10-08 11:07:07 CEST	fit_k	K=4
+2026-10-08 11:07:28 CEST	fit_k	K=5
+2026-10-08 11:07:51 CEST	fit_k	K=6
+2026-10-08 11:08:13 CEST	fit_k	K=7
+2026-10-08 11:08:40 CEST	fit_k	K=8
+2026-10-08 11:09:08 CEST	fit_k	K=9
+2026-10-08 11:09:36 CEST	fit_k	K=10
+2026-10-08 11:10:04 CEST	fit_k	K=11
+2026-10-08 11:10:33 CEST	fit_k	K=12
+2026-10-08 11:11:04 CEST	combine_and_score	""
+2026-10-08 11:11:06 CEST	complete	recommended K=3
+2026-10-08 11:15:13 CEST	read_fixed_inputs	""
+2026-10-08 11:15:19 CEST	build_bin_level_neighborhood_weights	58772 Bins x 18 states
+2026-10-08 11:15:20 CEST	summarize_patient_niche_composition	expected 630 rows
+2026-10-08 11:15:21 CEST	compute_umi_sensitivity	630 one-versus-rest comparisons
+2026-10-08 11:15:35 CEST	cross_patient_summary	""
+2026-10-08 11:15:35 CEST	write_tables	""
+2026-10-08 11:19:24 CEST	read_fixed_inputs	""
+2026-10-08 11:19:31 CEST	build_bin_level_neighborhood_weights	58772 Bins x 18 states
+2026-10-08 11:19:31 CEST	summarize_patient_niche_composition	expected 630 rows
+2026-10-08 11:19:33 CEST	compute_umi_sensitivity	630 one-versus-rest comparisons
+2026-10-08 11:19:49 CEST	cross_patient_summary	""
+2026-10-08 11:19:49 CEST	write_tables	""
+2026-10-08 11:19:50 CEST	draw_figures	""
+2026-10-08 11:19:57 CEST	validation	""
+2026-10-08 11:19:57 CEST	complete	630 patient-niche-state comparisons

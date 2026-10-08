@@ -1,0 +1,246 @@
+---
+title: "J2 Unbiased 50 um Neighborhood Niche Resolution"
+author: "Codex"
+date: today
+format:
+  html:
+    toc: true
+    toc-float: true
+    df-print: paged
+    code-fold: true
+    theme: bootstrap
+    embed-resources: true
+engine: knitr
+execute:
+  echo: true
+  warning: false
+  message: false
+---
+
+<!--
+Render command (PowerShell; set the timestamp immediately before rendering):
+& "D:/bb/RSTUDIO/resources/app/bin/quarto/bin/quarto.exe" render scripts/1017_j2_unbiased_niche_resolution_report.qmd --output-dir results --no-clean
+Rename the generated HTML to results/J2_UNBIASED_NICHE_RESOLUTION_REPORT_<YYMMDDHHMMSS>.html.
+-->
+
+```{r setup}
+library(data.table)
+library(knitr)
+
+script_dir <- dirname(knitr::current_input(dir = TRUE))
+project_dir <- normalizePath(file.path(script_dir, ".."), mustWork = TRUE)
+result_dir <- file.path(
+  project_dir,
+  "results/reanalysis/J2_UNBIASED_NICHE_RESOLUTION_20261008_110522"
+)
+
+input_audit <- fread(file.path(result_dir, "00_J2_INPUT_AUDIT.tsv"))
+neighborhood_audit <- fread(file.path(result_dir, "01_J2_NEIGHBORHOOD_AUDIT.tsv"))
+recommendation <- fread(file.path(result_dir, "04_J2_AUDITED_K_RECOMMENDATION.tsv"))
+annotations <- fread(file.path(result_dir, "11_J2_PRIMARYK_CONSERVATIVE_ANNOTATIONS.tsv"))
+cross_patient <- fread(file.path(result_dir, "09_J2_PRIMARYK_CROSS_PATIENT_ENRICHMENT.tsv"))
+final_audit <- fread(file.path(result_dir, "13_J2_FINAL_AUDIT.tsv"))
+
+primary <- recommendation[role == "primary"][1]
+lower <- recommendation[role == "lower-resolution comparator"][1]
+higher <- recommendation[role == "higher-resolution sensitivity"][1]
+
+audit_value <- function(item_name) {
+  final_audit[item == item_name, value][[1]]
+}
+```
+
+## Scope and provenance
+
+This report documents the completed, chip-specific discovery analysis for
+Y40105J2. It used frozen Reference18 continuous weights for Bin50 with UMI >= 50,
+the official 50 um radius neighborhood definition, native VoltRon CLR features,
+and independent K-means fits for K=3--12. The center Bin was excluded from its own
+neighborhood, matching the audited L3 framework.
+
+- UMI-eligible Bin50: `r format(as.integer(audit_value("total_umi50_bin_n")), big.mark = ",")`
+- Neighborhood-evaluable Bin50: `r format(as.integer(audit_value("evaluable_bin_n")), big.mark = ",")`
+- Patients: `r audit_value("patient_n")` (`r audit_value("disease_counts")`)
+- Reference18 states: 18
+- Radius: `r audit_value("neighborhood_radius_um")` um
+- Random seeds per K: `r audit_value("seeds_per_K")`
+
+Frozen lymphoid aggregate labels were not read. Disease labels were retained only
+as metadata and were not used for neighborhood construction, clustering, K
+selection, or niche annotation. This analysis did not perform disease-significance
+testing, DEG, GSEA, pathway analysis, or cell-cell communication analysis.
+
+```{r input_audit_table}
+kable(
+  input_audit[, .(
+    patient_id,
+    disease,
+    total_umi50_bin_n,
+    evaluable_radius50_bin_n,
+    roi_n,
+    missing_coordinate_n,
+    missing_reference18_weight_n
+  )],
+  caption = "J2 patient-level input audit"
+)
+```
+
+```{r neighborhood_audit_table}
+kable(neighborhood_audit, caption = "Audited 50 um neighborhood definition")
+```
+
+## K=3--12 resolution audit
+
+```{r k_resolution_figure, echo=FALSE, out.width="100%"}
+knitr::include_graphics(file.path(
+  result_dir,
+  "figures/01_J2_K_RESOLUTION_AUDIT_EN.png"
+))
+```
+
+```{r recommendation_table}
+kable(
+  recommendation[, .(
+    k,
+    role,
+    converged_seed_n,
+    seed_fit_n,
+    repeat_ari_median,
+    repeat_nmi_median,
+    betweenss_fraction,
+    min_niche_fraction,
+    min_patient_coverage_n,
+    below_one_percent_niche_n,
+    single_patient_niche_n,
+    within_patient_umi_eta_squared,
+    audited_reason
+  )],
+  digits = 3,
+  caption = "Audited J2 resolution recommendation and comparators"
+)
+```
+
+K=`r primary$k` is the audited primary resolution. It converged in
+`r primary$converged_seed_n`/`r primary$seed_fit_n` fits, had median pairwise ARI
+`r sprintf("%.3f", primary$repeat_ari_median)`, covered all seven patients in every
+niche, and had a smallest niche fraction of
+`r sprintf("%.1f%%", 100 * primary$min_niche_fraction)`. K=`r lower$k` is retained
+as an under-resolution comparator; K=`r higher$k` is retained only as a
+higher-resolution sensitivity analysis. Disease separation was not a K-selection
+criterion.
+
+## Primary-K Reference18 composition
+
+```{r composition_figure, echo=FALSE, out.width="100%"}
+knitr::include_graphics(file.path(
+  result_dir,
+  "figures/02_J2_PRIMARYK_REFERENCE18_COMPOSITION_EN.png"
+))
+```
+
+```{r annotation_table}
+kable(
+  annotations[, .(
+    niche,
+    proposed_annotation,
+    core_positive_states,
+    positive_patient_consistency,
+    umi_robust,
+    any_state_single_patient_driven,
+    core_state_single_patient_driven,
+    confidence,
+    interpretation_limit
+  )],
+  caption = "Conservative primary-K niche annotations"
+)
+```
+
+The five niches represent mixed neighborhood-composition gradients rather than
+pure cell types. The most reproducible axes include AT1 enrichment in N1, B
+enrichment in N2, lymphatic-endothelial enrichment in N4, and blood-endothelial
+enrichment in N5. N3 has a broader mixed airway/stromal/immune profile. No core
+state was classified as single-patient-driven.
+
+## Cross-patient consistency
+
+```{r patient_enrichment_figure, echo=FALSE, out.width="100%"}
+knitr::include_graphics(file.path(
+  result_dir,
+  "figures/03_J2_PRIMARYK_PATIENT_WISE_ENRICHMENT_EN.png"
+))
+```
+
+```{r direction_consistency_figure, echo=FALSE, out.width="100%"}
+knitr::include_graphics(file.path(
+  result_dir,
+  "figures/04_J2_PRIMARYK_CROSS_PATIENT_DIRECTION_CONSISTENCY_EN.png"
+))
+```
+
+```{r core_consistency_table}
+core_states <- unique(unlist(strsplit(
+  paste(annotations$core_positive_states, collapse = ";"),
+  ";\\s*"
+)))
+core_summary <- cross_patient[
+  reference18_state %in% core_states & positive_patient_n >= 6,
+  .(
+    niche,
+    reference18_state,
+    median_enrichment,
+    positive_patient_n,
+    evaluable_patient_count,
+    loo_direction_stable,
+    single_patient_driven
+  )
+]
+kable(
+  core_summary[order(niche, -median_enrichment)],
+  digits = 4,
+  caption = "Cross-patient consistency for recurrent core-state enrichments"
+)
+```
+
+`any_state_single_patient_driven` and `core_state_single_patient_driven` are
+reported separately so that a weak peripheral state cannot invalidate a stable
+core composition axis.
+
+## UMI sensitivity
+
+```{r umi_sensitivity_figure, echo=FALSE, out.width="100%"}
+knitr::include_graphics(file.path(
+  result_dir,
+  "figures/05_J2_PRIMARYK_UMI_SENSITIVITY_EN.png"
+))
+```
+
+The core directions were retained after adjustment for scaled log1p(Bin UMI) and
+within-patient UMI-quantile stratification. These checks assess sensitivity; they
+do not establish that UMI effects have been completely removed.
+
+## Interpretation boundaries
+
+J2 independently recapitulated broad B-enriched, alveolar-associated,
+endothelial-associated, airway-associated, and stromal/immune mixed themes. This
+is a blind descriptive comparison with L3, not a formal cross-chip alignment.
+Niche numbers are chip-specific and cannot be mapped across chips by number.
+
+The analysis supports proceeding to a separate J2 spatial architecture audit and
+then an independently fitted Y40102K8 analysis. Cross-chip consensus and biological
+pathway analyses remain outside this report.
+
+## Output validation
+
+```{r final_audit_table}
+kable(final_audit, caption = "Final J2 output audit")
+```
+
+All saved audit rows passed. The analysis directory also contains seed-level fit
+diagnostics, all-K assignments, patient-specific composition tables, and complete
+session information.
+
+## Session information
+
+```{r session_info}
+sessionInfo()
+```

@@ -1,0 +1,15 @@
+item	value
+chip	J2
+K	5
+eligible_input_bin_n	58840
+evaluable_assignment_bin_n	58772
+patient_n	7
+Reference18_state_n	18
+patient_niche_state_row_n	630
+enrichment_row_n	630
+radius_um	50
+center_bin_included	FALSE
+composition_quantity	mean raw Reference18 weight across actual radius50 neighboring Bins
+enrichment_baseline	all other evaluable Bin neighborhoods in the same patient, Bin-weighted
+aggregate_labels_read	FALSE
+disease_testing	none

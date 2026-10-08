@@ -1,0 +1,4 @@
+k	niche	bin_n	full_chip_fraction	patient_coverage_n	disease_coverage_n	median_umi	mean_umi	q25_umi	q75_umi	below_one_percent	single_patient_only
+3	N3	18726	0.318621112094195	7	3	118	169.284417387589	83	176	FALSE	FALSE
+3	N2	16577	0.282056081127067	7	3	120	157.875731435121	85	179	FALSE	FALSE
+3	N1	23469	0.399322806778738	7	3	145	213.832417231241	97	237	FALSE	FALSE
