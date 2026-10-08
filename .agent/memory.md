@@ -695,3 +695,37 @@
   ID/URL exists because `ELABFTW_API_KEY` is unavailable.
 - Session summary:
   `.agent/l3_k8_spatial_architecture_wrapup_261008105343.md`.
+
+## 2026-10-08 – J2 unbiased neighborhood niche resolution
+
+- Independently analyzed Y40105J2 using 58,840 UMI>=50 Bin50, frozen
+  Reference18 continuous weights, official 50 µm radius neighborhoods, native
+  VoltRon CLR, and K-means K=3–12 with 20 seeds per K.
+- 58,772 Bin50 had non-empty neighborhoods; 68 were retained as not
+  evaluable. The graph had 325,776 edges and no cross-patient/ROI edges.
+- The audited primary resolution is K=5, with K=3 as the lower-resolution
+  comparator and K=7 as the higher-resolution sensitivity. K=5 converged in
+  20/20 fits, median ARI 0.988, median NMI 0.979, and every niche covered all
+  seven patients.
+- Conservative K=5 themes are alveolar-associated, B-enriched,
+  airway-associated, lymphatic-endothelial-associated, and
+  blood-endothelial-associated mixed niches. Core axes were not
+  single-patient-driven and retained direction in UMI sensitivity checks.
+- Frozen aggregates and disease labels were not used in discovery; no disease
+  significance, DEG/GSEA, pathway, communication, or cross-chip consensus was
+  performed.
+- Final directory:
+  `results/reanalysis/J2_UNBIASED_NICHE_RESOLUTION_20261008_110522/`.
+- Rendered HTML:
+  `results/J2_UNBIASED_NICHE_RESOLUTION_REPORT_261008113930.html`.
+- Analysis/report commit: `cb6b321`.
+- Approved local ELN:
+  `elab/J2_unbiased_neighborhood_niche_resolution_261008113930.md`; no remote
+  entry ID/URL because `ELABFTW_API_KEY` is unavailable.
+- The user approved promoting the per-chip L3/J2/Y40102K8 framework to a
+  recurring workflow. The candidate was filed as GitHub issue #1:
+  `https://github.com/bozhu001/stereo_seq/issues/1`; the submitted draft is
+  preserved at
+  `.agent/voltron_unbiased_neighborhood_skill_candidate_261008115210.md`.
+- Session summary:
+  `.agent/j2_unbiased_niche_resolution_wrapup_261008115210.md`.
