@@ -365,6 +365,259 @@
   unique productive clonotypes: 26 singleton, 22 technical, 6 moderate and one
   formal reliable-rule hit. Seven clonotypes had at least two corrected CID-UMI
   molecules; maximum corrected expansion was three molecules.
+- `SSC/05957/17B` had no repeated clonotype. `SSC/07998/15A` had one
+  three-molecule IGK moderate candidate with 2 CID and 2 Bin, not a reliable
+  expanded clonotype.
+- `SSC_15491_14_TRUST4_0003` is restricted to **provisional expanded IGH
+  candidate**, never confirmed clonal expansion: although it had 3 corrected
+  molecules, 3 CID, 3 Bin and sufficient fragment support, all 6 supporting
+  reads carried the anomalously frequent `CGCTTGGCCT` motif and its exact CDR3
+  had a cross-patient warning.
+- Identical-threshold comparison: J2 had 94 corrected molecules, 68 clonotypes,
+  9 repeated corrected-molecule clonotypes and zero reliable-rule hits; L3 had
+  65, 55, 7 and one provisional formal hit. Approved overall conclusion: the
+  current unenriched Stereo-seq data provide no reliable evidence of B-cell
+  clonal expansion in J2 or L3, but do not prove biological expansion is absent.
+- Final report:
+  `results/reanalysis/l3_all7_bcr_cdr3_completion_260828_004934/L3_ALL7_FINAL_METRICS_REPORT_260828132341.html`
+  (SHA-256
+  `1B4F2942D635C4D15762F5086F742B59F590A5723D1278CB417C65A0BF2F8C9E`).
+- Analysis/report commit: `c4897b8`.
+- Approved local ELN draft:
+  `elab/DRAFT_L3_7of7_BCR_CDR3_finalization_260828132341.md`. It was not
+  submitted because the real eLabFTW project tag is not yet confirmed; the tag
+  is omitted and no placeholder is used.
+- Scripts 453/454 are retained as a project-reusable audit workflow. Per user
+  decision, no general skill-candidate issue was created.
+- Session summary:
+  `.agent/l3_all7_bcr_cdr3_finalization_260828133100.md`.
+## 2026-08-28 — Fixed marker-based B-cell-containing immune aggregate rule
+
+- The project object is a **B-cell-containing immune aggregate**: reliable
+  conventional B-lineage marker support is required, but B cells need not be
+  the majority. Pure B-rich, B+T/NK, B+Macrophage/myeloid and mixed
+  B+T/NK+Macrophage/myeloid regions are eligible.
+- T/NK-only or Macrophage/myeloid-only regions are retained as non-B immune
+  controls and excluded from primary B-aggregate counts. Candidates must never
+  be called TLS or interpreted as confirmed B-cell clonal expansion.
+- Raw integer marker counts plus within-sample depth correction define
+  candidate bins and regions. Auxiliary HLA/CD74/LYZ/cathepsin/B2M or
+  immunoglobulin signals cannot establish a B aggregate alone.
+- Primary regions require at least three connected candidate-positive Bin50 on
+  the eight-neighbour graph, at least one high-confidence bin, at least three
+  distinct immune-core markers, and immune enrichment BH-FDR q<0.05 against at
+  least 1,000 same-size, same-sample, UMI-matched random connected regions.
+- Primary B eligibility requires either spatially supported conventional B
+  evidence in at least two adjacent bins or a focal multi-marker B bin embedded
+  in at least two connected T/NK or Macrophage/myeloid-supported bins, plus
+  region-level B enrichment BH-FDR q<0.05.
+- Report size as Bin50 count, area (`n_bins × 625 µm²`) and equivalent
+  diameter; do not report estimated immune-cell count or size categories.
+- Coarse14 is composition-only after marker-defined regions are fixed. The 23
+  prior abundance-threshold calls are relabelled **depth-confounded preliminary
+  abundance-based calls** and used only for overlap comparison.
+- Full operational definition:
+  `results/reanalysis/marker_based_B_aggregate_pilot_260828_220532/B_AGGREGATE_DEFINITION.md`.
+
+## 2026-08-28 — Marker-based B-aggregate three-sample pilot result
+
+- The valid computational run is
+  `results/reanalysis/marker_based_B_aggregate_pilot_260828_222020_attempt2/`;
+  it completed with exit code 0 and final status `PASS_WITH_DEPTH_CAUTION`.
+  The earlier `..._220532/` attempt is preserved and explicitly marked invalid
+  because its signed residual implementation increased depth dependence and
+  its random-region matching was incomplete.
+- The main method used raw integer counts and within-sample Poisson-offset
+  residual enrichment (`>2`) without a forced top-percentile positive call.
+  Median absolute marker-depth Spearman changed from 0.175 raw to 0.168 after
+  correction. Residual depth dependence therefore remains, especially for
+  IPF macrophage/combined signal, but it is far below the prior Coarse14
+  abundance-depth confounding.
+- Of 101 tested connected regions, 93 passed immune-region BH-FDR q<0.05 and
+  25 met the stored non-B immune aggregate control definition. No region passed
+  B-region BH-FDR q<0.05 (minimum B q=0.0865), so the main definition and all
+  four sensitivity variants produced zero B-cell-containing immune aggregates,
+  zero robust calls and zero B-focal mixed calls.
+- Five near-candidate regions had at least two conventional B-core markers with
+  adjacent B-marker bins, but all failed the B-region FDR gate. Four regions
+  were plasma-associated; none had qualifying conventional-B support. The 936
+  B-low rows are evidence-insufficient records, not 936 independent regions.
+- Ten of the old 23 depth-confounded preliminary abundance-based calls
+  overlapped marker-supported immune regions (HC 6, IPF 1, SSC 3); none
+  overlapped a primary B aggregate because no primary B aggregate passed.
+- Do not expand this exact calling rule to 21 samples yet. The zero-call result
+  indicates limited B-marker power and/or an overly stringent region-level
+  B-FDR gate at Bin50. Do not relax it silently; any calibration or change of
+  inferential unit requires an explicitly approved follow-up analysis.
+- No Cell2location/reference training, NMF, K8 BCR/CDR3 scan or 21-sample
+  expansion was run. Coarse14 was used only for post-call composition
+  description, never for aggregate eligibility or estimated cell counts.
+- Recovery/session summary:
+  `.agent/marker_based_b_aggregate_pilot_recovery_260828224951.md`.
+
+## 2026-08-28 — Marker-based B-aggregate locked validation
+
+- Reclassified fixed attempt2 immune aggregates without rereading raw counts
+  or recomputing discovery/FDR. After retaining the unchanged >=3-Bin immune
+  aggregate gate, development calls were two HC/NL-55 B-containing,
+  B-suggestive regions and zero in the other two pilot samples.
+- Locked definition SHA-256:
+  `41D7C3318AF89D385CD8D76DBDDE65E8C2C77B30C22A51554698FB63EC8814D9`.
+  Immune q defines immune aggregate status, spatial multi-marker B evidence
+  defines B-containing status, and B q only defines enrichment class.
+- Independent raw-count validation used IPF/FO23-1-06168, SSC/15491/14 and
+  same-chip B-low control IPF/FO23-1-06170. B-containing counts were 3, 9 and
+  3; B-enriched counts were 2, 6 and 3, respectively.
+- Old strict-B overlap into new B-containing regions was 7/37 for
+  IPF/FO23-1-06168, 17/65 for SSC/15491/14 and 0/8 for the control.
+- Median absolute marker-depth Spearman was 0.1923 raw and 0.1841 adjusted;
+  severe depth recurrence was not detected. Positive-sample counts at the
+  >=2/>=3/>=4 Bin gates were 14/12/8.
+- Do not expand to 21 samples: the B-low control produced three
+  B-containing/B-enriched calls and the size-sensitivity stability criterion
+  failed. The locked definition was not modified.
+- Results:
+  `results/reanalysis/marker_based_B_aggregate_locked_validation_260828_230422/`.
+- Session summary:
+  `.agent/marker_based_b_aggregate_locked_validation_260828234038.md`.
+- No GitHub issue, Git commit/push or eLabFTW operation was performed.
+
+## 2026-08-29 — Locked marker-based B-aggregate all21 analysis
+
+- Completed all 21 Bin50 samples (9 SSc-ILD, 6 IPF, 6 HC; K8/J2/L3) using the
+  frozen marker panel and locked definition. Final results are under
+  `results/reanalysis/marker_based_B_aggregate_all21_locked_260828_235537/final_all21/`.
+- Preserved the first 15 completed upstream results. Corrected all 45 regions
+  previously sampled with replacement using unique UMI-matched connected
+  backgrounds without replacement; no >=3-Bin primary region had fewer than
+  100 unique backgrounds.
+- Resumed only samples 16-21. One HC/NL-72 two-Bin sensitivity region retained
+  `insufficient_matching_background` with NA P/q; no primary matching failure
+  occurred.
+- Final counts: 152,640 Bin rows, 1,038 tested regions, 551 immune aggregates,
+  and 195 B-containing aggregates (82 enriched, 72 suggestive, 41 present but
+  not enriched). Disease totals were HC 56, IPF 59 and SSc-ILD 80.
+- Patient-level median B-containing density/mm2 was HC 1.3256, IPF 0.7833 and
+  SSc-ILD 0.1785. No disease or descriptive chip-effect comparison survived
+  BH correction. K8 nevertheless contributed 151/195 calls and should remain
+  a descriptive chip-concentration caution.
+- Sensitivity totals were 239/195/145 at >=2/>=3/>=4 Bin; all primary calls
+  matched >=2 and 145/195 also met >=4.
+- Median absolute depth rho was 0.1731 raw and 0.1609 adjusted; maximum
+  adjusted absolute rho was 0.3999 (<0.5 stop threshold).
+- Final QA passed, including 21 sample maps, unique region IDs, matching state,
+  reports and required tables. No Cell2location, NMF, BCR, K8 scan or CDR3
+  overlay ran.
+- Session summary:
+  `.agent/marker_based_b_aggregate_all21_locked_260829010557.md`.
+- No GitHub issue, Git commit/push or eLabFTW operation was performed, per the
+  user's explicit instruction.
+
+## 2026-08-29 — B-marker specificity audit of fixed all21 aggregates
+
+- Held all 551 marker-supported immune aggregates and their Bin memberships
+  fixed. Recomputed B evidence using only CD79A, CD79B, MS4A1, CD22 and CD19;
+  CD37/CD83 were supportive-only and excluded from score, spatial evidence and
+  B-region inference.
+- Of the original 195 B-containing calls, 73 retained anchor-confirmed status:
+  16 Primary B-enriched, 36 B-suggestive and 21 B-present_not_enriched.
+  Seventeen original calls were downgraded specifically as CD37/CD83-only.
+- Size labels are now 73 `primary_3bin` and 59 `stable_4bin`; the previous
+  >=2-based `robust` terminology is not used in this audit.
+- K8/J2/L3 anchor-confirmed counts were 56/4/13 and enriched counts 13/0/3.
+  K8 anchor density remained 11.86-fold the mean J2/L3 density, but K8 also had
+  7.82-fold UMI/mm2 and 7.22-fold median n_genes/Bin; patient-level density
+  correlated 0.804 with UMI/mm2 and 0.761 with n_genes. All five anchor rates
+  were broadly elevated on K8. Treat K8 concentration as strongly depth/chip
+  entangled, not unadjusted disease biology.
+- Final valid output:
+  `results/reanalysis/B_marker_specificity_audit_260829_013112_attempt2/`.
+  QA passed for 551 unchanged regions, 21 samples, 152,640 Bin rows, unique
+  no-replacement backgrounds and 30 manual review figures.
+- Disease comparison is only conditionally suitable with patient-level chip
+  stratification/depth control. CDR3 overlay is suitable for anchor-confirmed,
+  especially enriched stable_4bin regions, but was not run.
+- Session summary:
+  `.agent/b_marker_specificity_audit_all21_260829015234.md`.
+- No immune discovery, Cell2location, NMF, BCR, K8 scan, CDR3 overlay, GitHub,
+  Git commit/push or eLabFTW operation was performed.
+
+## 2026-08-29 — L3 CDR3 overlap with fixed marker-based B aggregates
+
+- Used the completed Y40105L3 all-seven quality-corrected CDR3 support and the
+  immutable `B_marker_specificity_audit_260829_013112_attempt2` boundaries.
+  No FASTQ, BCR caller, Cell2location, aggregate discovery or anchor-panel
+  modification was performed.
+- Reconstructed 65 corrected molecules from 462 supporting reads with the
+  frozen `sample+chain+CDR3 nt+CID+corrected UMI` key. All 65 uniquely matched
+  the frozen sample mask; 60 mapped exactly to marker-analysis Bin rows. Five
+  HC/NL-66 mask-valid bins absent from the marker table were explicitly left
+  aggregate-unassigned.
+- All three prespecified Level A enriched stable_4bin regions had 0 CDR3
+  molecules and 0 clonotypes. All 13 L3 anchor-confirmed Level B regions and
+  all 71 Level C anchor-detected downgraded regions also had 0 CDR3 molecules.
+- L3 globally contained seven repeated primary clonotypes, four cross-Bin;
+  none overlapped any fixed marker-supported immune aggregate. The prior
+  SSC/15491/14 three-CID/three-Bin IGH candidate lies outside the fixed regions.
+- Final output:
+  `results/reanalysis/L3_CDR3_marker_B_aggregate_overlap_260829_022556_attempt6/`.
+  QA passed, exit code 0, empty stderr, and three Level A figures were created.
+- K8 reads can be CID/spatially restricted during streaming, but no K8 cache
+  exists and FASTQ is not spatially random-accessible, so a future run would
+  still require one whole-chip sequential scan. The L3 0/13 overlap is not by
+  itself a scientific rationale to start it; no K8 access occurred.
+- Session summary:
+  `.agent/l3_cdr3_marker_b_aggregate_overlap_260829024100.md`.
+- No GitHub issue, Git commit/push or eLabFTW operation was performed, following
+  the user's explicit scope restrictions.
+
+## 2026-08-29 — L3 repeated CDR3 spatial-position audit
+
+- Kept all 65 quality-corrected L3 molecules, the frozen primary clonotype key,
+  551 immune boundaries, 73 anchor-confirmed B boundaries, 13 L3 anchor regions,
+  and 71 L3 Level C regions unchanged.
+- Used the ALL21 manifest-authoritative raw integer matrix and true member-Bin
+  distances. Sixty molecules mapped exactly; five HC/NL-66 records remained
+  protected exclusions. No molecule was inside a fixed immune aggregate.
+- The seven repeated clonotypes comprised three same-Bin spatially clustered
+  marker-weak records and four spatially dispersed molecular-only records.
+  Boundary-associated=0, B-anchor-supported=0, and repeats across distinct
+  Bin50 positions within three steps=0.
+- SSC/15491/14 L3P_e2181118f0348020 had 3 distinct CIDs/3 Bins but one UMI
+  sequence, no same/adjacent anchor, nearest immune boundary 127.5 um (5 steps),
+  and was classified spatially dispersed molecular-only—not confirmed expansion.
+- Final output:
+  `results/reanalysis/L3_repeated_CDR3_spatial_audit_260829_025518_attempt7/`;
+  QA passed with 13 non-empty figures and empty stderr.
+- K8 scanning was not started and is not recommended from this audit alone.
+- Session summary:
+  `.agent/l3_repeated_cdr3_spatial_audit_260829032200.md`.
+- No GitHub, git commit/push, eLabFTW, PPT, K8/J2 scan, Cell2location, NMF, or
+  disease comparison was performed.
+
+## 2026-09-07 - IGH/CDR3 continuous cellular-context overlay recovery
+
+- Recovered the interrupted workflow in the existing fixed directory
+  `results/reanalysis/IGH_CDR3_CURRENT_PROJECT/05_IGH_CONTINUOUS_CONTEXT_OVERLAY/`;
+  no parallel result directory was created and frozen inputs were unchanged.
+- The actual task script is `scripts/605_igh_continuous_context_overlay.py`;
+  number 604 is occupied by the upstream RCTD continuous-context QC script.
+- Final counts passed: 79/68/11/9 clonotypes and 69 deduplicated positions,
+  split into 54 direct-RCTD and 15 context-only positions.
+- Completed matched controls, 10,000 within-sample permutations,
+  sensitivities, 11 evidence cards, figures, report, final validation, and a
+  74-row hash-validated manifest.
+- No all79 result reached BH-FDR <0.05. Four singleton-stratum FDR hits had
+  cluster-bootstrap CIs crossing zero and do not support a robust overall
+  claim. Direction-only robustness retained lower T/NK, B+Plasma/immune, and
+  T/NK/immune.
+- Multiple resume invocations and an invalid K8-flag result were isolated under
+  `RUN_HISTORY/20260907_172500/INVALID_K8_FLAG_RUN`; only the corrected run is
+  formal output.
+- Session summary:
+  `.agent/igh_continuous_context_overlay_recovery_260907173407.md`.
+- No Git, eLabFTW, PPT, program analysis, or remote operation was performed.
+
 ## 2026-09-12 — CDR3 per-Bin Top20 heatmaps
 
 - Continued from the existing frozen per-Bin Top20 inputs without reading a
@@ -395,29 +648,50 @@
   exists because `ELABFTW_API_KEY` was unavailable.
 - Session summary:
   `.agent/cdr3_per_bin_top20_heatmaps_wrapup_260912143417.md`.
-- `SSC/05957/17B` had no repeated clonotype. `SSC/07998/15A` had one
-  three-molecule IGK moderate candidate with 2 CID and 2 Bin, not a reliable
-  expanded clonotype.
-- `SSC_15491_14_TRUST4_0003` is restricted to **provisional expanded IGH
-  candidate**, never confirmed clonal expansion: although it had 3 corrected
-  molecules, 3 CID, 3 Bin and sufficient fragment support, all 6 supporting
-  reads carried the anomalously frequent `CGCTTGGCCT` motif and its exact CDR3
-  had a cross-patient warning.
-- Identical-threshold comparison: J2 had 94 corrected molecules, 68 clonotypes,
-  9 repeated corrected-molecule clonotypes and zero reliable-rule hits; L3 had
-  65, 55, 7 and one provisional formal hit. Approved overall conclusion: the
-  current unenriched Stereo-seq data provide no reliable evidence of B-cell
-  clonal expansion in J2 or L3, but do not prove biological expansion is absent.
-- Final report:
-  `results/reanalysis/l3_all7_bcr_cdr3_completion_260828_004934/L3_ALL7_FINAL_METRICS_REPORT_260828132341.html`
-  (SHA-256
-  `1B4F2942D635C4D15762F5086F742B59F590A5723D1278CB417C65A0BF2F8C9E`).
-- Analysis/report commit: `c4897b8`.
-- Approved local ELN draft:
-  `elab/DRAFT_L3_7of7_BCR_CDR3_finalization_260828132341.md`. It was not
-  submitted because the real eLabFTW project tag is not yet confirmed; the tag
-  is omitted and no placeholder is used.
-- Scripts 453/454 are retained as a project-reusable audit workflow. Per user
-  decision, no general skill-candidate issue was created.
+
+## 2026-09-30 — Reference18 LYMPHOID annotation-consistency audit
+
+- Audited all 238 frozen LYMPHOID regions in all 12 detected patients without changing boundaries or rerunning upstream models.
+- Found a display-only but biologically important column-order error in the previous Chinese atlas: it used the state-definition row order rather than HDF5 `/states`. Its T/NK panel was actually B + Basal-like epithelial, and its Fibroblast panel was actually NK + T. Frozen region membership is unaffected because the generating script used `/states` correctly.
+- With corrected mapping, 205/238 regions were B/Plasma-dominant (164/194 small; 41/44 large), 30 mixed, and 3 small regions T/NK-dominant. Three regions had prespecified weight-versus-expression discordance.
+- No coordinate-registered B-cell stain/observation exists in the project records; historical B/plasma ROI labels are expression-module-derived, so sampling observation versus RCTD conflict is not directly assessable.
+- Final directory: `results/reanalysis/REFERENCE18_LYMPHOID_ANNOTATION_CONSISTENCY_AUDIT_20260930_003136/`.
+- Corrected English atlas: `pdf/REFERENCE18_LYMPHOID_DETECTED12_SPATIAL_ATLAS_EN_CORRECTED.pdf`; 12 page PNGs passed visual text/layout QA.
+- HTML report: `REFERENCE18_LYMPHOID_ANNOTATION_CONSISTENCY_AUDIT_20260930_005517.html`.
+- Session summary: `.agent/reference18_lymphoid_annotation_consistency_20260930_005900.md`.
+- No eLabFTW submission, commit, push, or GitHub issue was performed; the worktree was already extensively dirty and `.agent/memory.md` had pre-existing edits.
+
+## 2026-09-30 — Reference18 HDF5 state-order root-cause audit
+
+- Traced the previous 12-patient atlas error to `scripts/894_reference18_lymphoid_spatial_atlas.py`: it interpreted `weights_normalized` columns using the state-definition biological order instead of HDF5 `/states`.
+- The error affected only the atlas Reference18 weight panels, large-region layer-weight table, and weight-derived narratives. Frozen regions, mainline Level-1 composition, raw-count module/gene expression, disease detection/burden comparisons, and disease conclusions do not consume those erroneous atlas values and are unaffected.
+- Revalidated frozen counts: LYMPHOID 238 regions/12 patients (194 small, 44 large); BP 43 regions/6 patients. All 331 BP member Bin50 satisfy B + Plasma >= 0.40, minimum 0.4003641195; all frozen coordinates match tissue H5AD.
+- Corrected independent output: `results/reanalysis/REFERENCE18_H5_STATE_ORDER_ROOT_CAUSE_AUDIT_20260930_124304/`; the prior erroneous atlas remains preserved.
+- Corrected English PDF contains 12 patient pages and passed 12/12 visual QA. Timestamped HTML root-cause report was rendered successfully.
+- Session summary: `.agent/reference18_h5_state_order_root_cause_audit_20260930_130626.md`.
+- No eLabFTW submission (per user instruction), commit, push, or GitHub issue was performed.
+
+## 2026-10-08 – L3 K8 unbiased-niche spatial architecture
+
+- Reused the frozen L3 K=8 assignment and analyzed all eight niches and all 28
+  heterotypic pairs symmetrically; no clustering, RCTD, aggregate analysis, or
+  disease significance test was rerun.
+- The patient/ROI-specific Queen graph contained 39,982 evaluable Bin50s from
+  seven patients/seven ROIs and 149,193 unique undirected edges. The null used
+  999 label permutations within patient/ROI.
+- N7, N4 and N5 were the most spatially continuous. N3 was comparatively
+  fragmented (median largest-component fraction 0.065).
+- N5–N6 showed recurrent positive adjacency enrichment in 6/7 patients;
+  N4–N7, N2–N7 and N7–N8 were negative in 7/7 patients. These are spatial
+  associations only: K8 labels derive from overlapping 50 µm neighborhoods,
+  and the permutation null disrupts endogenous autocorrelation.
+- Final directory:
+  `results/reanalysis/L3_UNBIASED_NICHE_RESOLUTION_20261007_085730/K08_SPATIAL_ARCHITECTURE_20261007_121357/`.
+- Rendered HTML:
+  `results/L3_K8_SPATIAL_ARCHITECTURE_REPORT_261008104540.html`.
+- Analysis/report commit: `f0d0d1a`.
+- The user approved the ELN draft on 2026-10-08. Approved local copy:
+  `elab/L3_K8_spatial_niche_architecture_261008104540.md`. No remote entry
+  ID/URL exists because `ELABFTW_API_KEY` is unavailable.
 - Session summary:
-  `.agent/l3_all7_bcr_cdr3_finalization_260828133100.md`.
+  `.agent/l3_k8_spatial_architecture_wrapup_261008105343.md`.
