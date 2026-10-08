@@ -1,0 +1,24 @@
+timestamp	stage	detail
+2026-10-08 12:01:54 CEST	read_and_validate_inputs	""
+2026-10-08 12:01:55 CEST	build_queen_adjacency	same patient/ROI; four unique 25 um offsets
+2026-10-08 12:01:55 CEST	all_patient_spatial_maps	7 patient pages
+2026-10-08 12:01:58 CEST	connected_components	symmetric patient-by-niche continuity
+2026-10-08 12:02:00 CEST	direct_niche_adjacency	""
+2026-10-08 12:02:01 CEST	permutation_null	999 label permutations within patient and ROI
+2026-10-08 12:02:03 CEST	permutation_patient_complete	1/7: HC/NL-55
+2026-10-08 12:02:04 CEST	permutation_patient_complete	2/7: HC/NL-63
+2026-10-08 12:02:05 CEST	permutation_patient_complete	3/7: IPF/FO23-1-03100
+2026-10-08 12:02:05 CEST	permutation_patient_complete	4/7: IPF/FO23-1-09473
+2026-10-08 12:02:08 CEST	permutation_patient_complete	5/7: SSC/23-105334B1
+2026-10-08 12:02:09 CEST	permutation_patient_complete	6/7: SSC/FO20-I-08293B1
+2026-10-08 12:02:10 CEST	permutation_patient_complete	7/7: SSC/FO21-1-01756B1
+2026-10-08 12:02:10 CEST	cross_patient_spatial_consistency	""
+2026-10-08 12:04:31 CEST	read_and_validate_inputs	""
+2026-10-08 12:04:32 CEST	build_queen_adjacency	same patient/ROI; four unique 25 um offsets
+2026-10-08 12:04:32 CEST	all_patient_spatial_maps	7 patient pages
+2026-10-08 12:04:35 CEST	connected_components	symmetric patient-by-niche continuity
+2026-10-08 12:04:38 CEST	direct_niche_adjacency	""
+2026-10-08 12:04:39 CEST	permutation_null	999 label permutations within patient and ROI
+2026-10-08 12:04:39 CEST	permutation_checkpoint_reused	complete 7-patient table
+2026-10-08 12:04:39 CEST	cross_patient_spatial_consistency	""
+2026-10-08 12:04:41 CEST	complete	output_dir=/mnt/d/bb/博士课题组资料/新建文件夹/自己课题相关/Lung ST/codex agent/stereo_seq/stereo_seq/results/reanalysis/J2_UNBIASED_NICHE_RESOLUTION_20261008_110522/K05_SPATIAL_ARCHITECTURE_20261008_120148

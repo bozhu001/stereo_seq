@@ -1,0 +1,9 @@
+[J2 K5 spatial architecture] read_and_validate_inputs
+[J2 K5 spatial architecture] build_queen_adjacency: same patient/ROI; four unique 25 um offsets
+[J2 K5 spatial architecture] all_patient_spatial_maps: 7 patient pages
+[J2 K5 spatial architecture] connected_components: symmetric patient-by-niche continuity
+[J2 K5 spatial architecture] direct_niche_adjacency
+[J2 K5 spatial architecture] permutation_null: 999 label permutations within patient and ROI
+[J2 K5 spatial architecture] permutation_checkpoint_reused: complete 7-patient table
+[J2 K5 spatial architecture] cross_patient_spatial_consistency
+[J2 K5 spatial architecture] complete: output_dir=/mnt/d/bb/博士课题组资料/新建文件夹/自己课题相关/Lung ST/codex agent/stereo_seq/stereo_seq/results/reanalysis/J2_UNBIASED_NICHE_RESOLUTION_20261008_110522/K05_SPATIAL_ARCHITECTURE_20261008_120148

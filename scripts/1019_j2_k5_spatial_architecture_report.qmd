@@ -1,0 +1,177 @@
+---
+title: "J2 K=5 Spatial Niche Architecture Audit"
+author: "Codex"
+date: today
+format:
+  html:
+    toc: true
+    toc-float: true
+    df-print: paged
+    code-fold: true
+    theme: bootstrap
+    embed-resources: true
+engine: knitr
+execute:
+  echo: true
+  warning: false
+  message: false
+---
+
+<!--
+Render command (PowerShell; set the timestamp immediately before rendering):
+& "D:/bb/RSTUDIO/resources/app/bin/quarto/bin/quarto.exe" render scripts/1019_j2_k5_spatial_architecture_report.qmd --output-dir results --no-clean
+Rename the generated HTML to results/J2_K5_SPATIAL_ARCHITECTURE_REPORT_<YYMMDDHHMMSS>.html.
+-->
+
+```{r setup}
+library(data.table)
+library(knitr)
+
+script_dir <- dirname(knitr::current_input(dir = TRUE))
+project_dir <- normalizePath(file.path(script_dir, ".."), mustWork = TRUE)
+result_dir <- file.path(
+  project_dir,
+  "results/reanalysis/J2_UNBIASED_NICHE_RESOLUTION_20261008_110522",
+  "K05_SPATIAL_ARCHITECTURE_20261008_120148"
+)
+
+continuity <- fread(file.path(result_dir, "01_K05_NICHE_SPATIAL_CONTINUITY.tsv"))
+adjacency_counts <- fread(file.path(result_dir, "02_K05_NICHE_ADJACENCY_COUNTS.tsv"))
+patient_enrichment <- fread(file.path(
+  result_dir,
+  "04_K05_PATIENT_NICHE_ADJACENCY_ENRICHMENT.tsv"
+))
+cross_patient <- fread(file.path(
+  result_dir,
+  "05_K05_CROSS_PATIENT_ADJACENCY_SUMMARY.tsv"
+))
+continuity_summary <- fread(file.path(
+  result_dir,
+  "06_K05_CROSS_PATIENT_CONTINUITY_SUMMARY.tsv"
+))
+audit <- fread(file.path(
+  result_dir,
+  "08_K05_SPATIAL_ARCHITECTURE_FINAL_AUDIT.tsv"
+))
+evaluable_bin_n <- continuity[, unique(patient_evaluable_bin_n), by = patient_id][, sum(V1)]
+unique_edge_n <- adjacency_counts[scope == "all_J2", unique(total_unique_edge_n)]
+```
+
+## Scope and provenance
+
+This audit reuses the frozen Y40105J2 K=5 assignment. It does not rerun
+clustering or RCTD. The analysis includes all five niches symmetrically and all
+10 heterotypic niche pairs.
+
+- Neighborhood-evaluable Bin50: `r format(evaluable_bin_n, big.mark = ",")`
+- Patients: `r uniqueN(continuity$patient_id)`
+- Patient/ROI-specific Queen edges: `r format(unique_edge_n, big.mark = ",")`
+- Direct adjacency: same patient and ROI, `abs(dx) <= 25 um` and `abs(dy) <= 25 um`, excluding self-pairs
+- Null: 999 niche-label permutations within each patient and ROI
+
+Frozen aggregate labels and boundaries were not read. Disease labels were used
+only for patient labels in figures. No disease-significance, DEG/GSEA, pathway,
+CellChat, ligand-receptor, or cross-chip consensus analysis was performed.
+
+## Spatial niche maps
+
+The complete seven-page map is stored at
+`figures/01_K05_ALL_PATIENT_SPATIAL_NICHE_MAPS_EN.pdf`. Each page uses the same
+K=5 color key, actual Bin50 coordinates, and a 25 x 25 um tile size.
+
+## Connected components and fragmentation
+
+```{r continuity_table}
+kable(
+  continuity_summary,
+  digits = 3,
+  caption = "Cross-patient median K=5 spatial-continuity metrics"
+)
+```
+
+```{r component_figure, echo=FALSE, out.width="100%"}
+knitr::include_graphics(file.path(
+  result_dir,
+  "figures/02_K05_NICHE_COMPONENT_SIZE_EN.png"
+))
+```
+
+```{r largest_component_figure, echo=FALSE, out.width="100%"}
+knitr::include_graphics(file.path(
+  result_dir,
+  "figures/03_K05_NICHE_LARGEST_COMPONENT_FRACTION_EN.png"
+))
+```
+
+N2 had the highest cross-patient median largest-component fraction, followed by
+N4 and N1. Absolute largest-component fractions remained modest, indicating
+that every K=5 label occurred in multiple disconnected patches rather than one
+continuous tissue compartment.
+
+## Direct niche adjacency
+
+```{r adjacency_figure, echo=FALSE, out.width="100%"}
+knitr::include_graphics(file.path(
+  result_dir,
+  "figures/04_K05_NICHE_ADJACENCY_HEATMAP_EN.png"
+))
+```
+
+The diagonal captures strong homotypic adjacency. Because K=5 labels derive
+from overlapping 50 um neighborhood-composition profiles, high self-adjacency
+is expected and is not treated as independent biological validation.
+
+## Cross-patient spatial consistency
+
+```{r cross_patient_table}
+kable(
+  cross_patient[, .(
+    niche_pair,
+    median_log2_enrichment,
+    positive_patient_n,
+    negative_patient_n,
+    evaluable_patient_n,
+    direction_consistency,
+    max_absolute_share,
+    single_patient_driven
+  )],
+  digits = 3,
+  caption = "All 10 heterotypic K=5 niche-pair results"
+)
+```
+
+```{r cross_patient_figure, echo=FALSE, out.width="100%"}
+knitr::include_graphics(file.path(
+  result_dir,
+  "figures/05_K05_CROSS_PATIENT_ADJACENCY_ENRICHMENT_EN.png"
+))
+```
+
+Nine of 10 heterotypic pairs retained a negative observed/expected direction in
+at least six of seven patients. No heterotypic pair showed recurrent positive
+enrichment. N1--N3 had the largest negative median displacement. These results
+describe spatial separation relative to an exchangeable-label null; they do not
+demonstrate cell-cell communication or causal exclusion.
+
+## Validation and limitations
+
+```{r validation_table}
+kable(audit, caption = "Final spatial-architecture output audit")
+```
+
+All 30 audit rows passed. The permutation checkpoint contains 105 patient-pair
+rows: seven patients multiplied by 15 total pair types, including 70 patient by
+heterotypic-pair observations. The initial run completed all seven permutation
+blocks and stopped during a downstream sort; the corrected continuation reused
+the saved complete permutation table and did not repeat the null calculation.
+
+The label-permutation null disrupts endogenous spatial autocorrelation and does
+not preserve the overlap among adjacent 50 um input neighborhoods. Consequently,
+the audit supports organized niche-label fields and interface preferences, not
+independent validation of cell identities or interactions.
+
+## Session information
+
+```{r session_info}
+sessionInfo()
+```

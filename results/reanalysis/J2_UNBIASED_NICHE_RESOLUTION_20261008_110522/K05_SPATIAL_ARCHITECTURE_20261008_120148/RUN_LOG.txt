@@ -1,0 +1,23 @@
+[2026-10-08T12:01:48+02:00] START
+SCRIPT=scripts/1018_j2_k5_spatial_architecture.R
+OUTPUT_DIR=results/reanalysis/J2_UNBIASED_NICHE_RESOLUTION_20261008_110522/K05_SPATIAL_ARCHITECTURE_20261008_120148
+[J2 K5 spatial architecture] read_and_validate_inputs
+[J2 K5 spatial architecture] build_queen_adjacency: same patient/ROI; four unique 25 um offsets
+[J2 K5 spatial architecture] all_patient_spatial_maps: 7 patient pages
+null device 
+          1 
+[J2 K5 spatial architecture] connected_components: symmetric patient-by-niche continuity
+[J2 K5 spatial architecture] direct_niche_adjacency
+[J2 K5 spatial architecture] permutation_null: 999 label permutations within patient and ROI
+[J2 K5 spatial architecture] permutation_patient_complete: 1/7: HC/NL-55
+[J2 K5 spatial architecture] permutation_patient_complete: 2/7: HC/NL-63
+[J2 K5 spatial architecture] permutation_patient_complete: 3/7: IPF/FO23-1-03100
+[J2 K5 spatial architecture] permutation_patient_complete: 4/7: IPF/FO23-1-09473
+[J2 K5 spatial architecture] permutation_patient_complete: 5/7: SSC/23-105334B1
+[J2 K5 spatial architecture] permutation_patient_complete: 6/7: SSC/FO20-I-08293B1
+[J2 K5 spatial architecture] permutation_patient_complete: 7/7: SSC/FO21-1-01756B1
+[J2 K5 spatial architecture] cross_patient_spatial_consistency
+Error in setorderv(x, cols, order, na.last) : 
+  some columns are not in the data.table: [pmax, abs]
+Calls: setorder -> setorderv -> stopf -> raise_condition -> signal
+Execution halted

@@ -1,0 +1,31 @@
+item	value	passed
+chip	Y40105J2	TRUE
+K assignment source	/mnt/d/bb/博士课题组资料/新建文件夹/自己课题相关/Lung ST/codex agent/stereo_seq/stereo_seq/results/reanalysis/J2_UNBIASED_NICHE_RESOLUTION_20261008_110522/K05/02_BIN_NICHE_ASSIGNMENTS.tsv.gz	TRUE
+evaluable Bin50	58772	TRUE
+not-evaluable Bin50	68	TRUE
+patients	7	TRUE
+ROIs	7	TRUE
+adjacency definition	Queen: same patient/ROI; |dx|<=25 um; |dy|<=25 um; no self-edge	TRUE
+unique adjacency edges	218614	TRUE
+heterotypic pair count	10	TRUE
+permutation number	999	TRUE
+permutation seed	2026100811	TRUE
+frozen aggregate used	FALSE	TRUE
+disease used in spatial definition	FALSE	TRUE
+disease significance	FALSE	TRUE
+DEG/GSEA	FALSE	TRUE
+pathway	FALSE	TRUE
+cell-cell communication	FALSE	TRUE
+output::01_K05_NICHE_SPATIAL_CONTINUITY.tsv	/mnt/d/bb/博士课题组资料/新建文件夹/自己课题相关/Lung ST/codex agent/stereo_seq/stereo_seq/results/reanalysis/J2_UNBIASED_NICHE_RESOLUTION_20261008_110522/K05_SPATIAL_ARCHITECTURE_20261008_120148/01_K05_NICHE_SPATIAL_CONTINUITY.tsv	TRUE
+output::02_K05_NICHE_ADJACENCY_COUNTS.tsv	/mnt/d/bb/博士课题组资料/新建文件夹/自己课题相关/Lung ST/codex agent/stereo_seq/stereo_seq/results/reanalysis/J2_UNBIASED_NICHE_RESOLUTION_20261008_110522/K05_SPATIAL_ARCHITECTURE_20261008_120148/02_K05_NICHE_ADJACENCY_COUNTS.tsv	TRUE
+output::03_K05_NICHE_ADJACENCY_FRACTIONS.tsv	/mnt/d/bb/博士课题组资料/新建文件夹/自己课题相关/Lung ST/codex agent/stereo_seq/stereo_seq/results/reanalysis/J2_UNBIASED_NICHE_RESOLUTION_20261008_110522/K05_SPATIAL_ARCHITECTURE_20261008_120148/03_K05_NICHE_ADJACENCY_FRACTIONS.tsv	TRUE
+output::04_K05_PATIENT_NICHE_ADJACENCY_ENRICHMENT.tsv	/mnt/d/bb/博士课题组资料/新建文件夹/自己课题相关/Lung ST/codex agent/stereo_seq/stereo_seq/results/reanalysis/J2_UNBIASED_NICHE_RESOLUTION_20261008_110522/K05_SPATIAL_ARCHITECTURE_20261008_120148/04_K05_PATIENT_NICHE_ADJACENCY_ENRICHMENT.tsv	TRUE
+output::05_K05_CROSS_PATIENT_ADJACENCY_SUMMARY.tsv	/mnt/d/bb/博士课题组资料/新建文件夹/自己课题相关/Lung ST/codex agent/stereo_seq/stereo_seq/results/reanalysis/J2_UNBIASED_NICHE_RESOLUTION_20261008_110522/K05_SPATIAL_ARCHITECTURE_20261008_120148/05_K05_CROSS_PATIENT_ADJACENCY_SUMMARY.tsv	TRUE
+output::06_K05_CROSS_PATIENT_CONTINUITY_SUMMARY.tsv	/mnt/d/bb/博士课题组资料/新建文件夹/自己课题相关/Lung ST/codex agent/stereo_seq/stereo_seq/results/reanalysis/J2_UNBIASED_NICHE_RESOLUTION_20261008_110522/K05_SPATIAL_ARCHITECTURE_20261008_120148/06_K05_CROSS_PATIENT_CONTINUITY_SUMMARY.tsv	TRUE
+output::07_K05_SPATIAL_ARCHITECTURE_FINDINGS_ZH.md	/mnt/d/bb/博士课题组资料/新建文件夹/自己课题相关/Lung ST/codex agent/stereo_seq/stereo_seq/results/reanalysis/J2_UNBIASED_NICHE_RESOLUTION_20261008_110522/K05_SPATIAL_ARCHITECTURE_20261008_120148/07_K05_SPATIAL_ARCHITECTURE_FINDINGS_ZH.md	TRUE
+output::README_ZH.md	/mnt/d/bb/博士课题组资料/新建文件夹/自己课题相关/Lung ST/codex agent/stereo_seq/stereo_seq/results/reanalysis/J2_UNBIASED_NICHE_RESOLUTION_20261008_110522/K05_SPATIAL_ARCHITECTURE_20261008_120148/README_ZH.md	TRUE
+output::figures/01_K05_ALL_PATIENT_SPATIAL_NICHE_MAPS_EN.pdf	/mnt/d/bb/博士课题组资料/新建文件夹/自己课题相关/Lung ST/codex agent/stereo_seq/stereo_seq/results/reanalysis/J2_UNBIASED_NICHE_RESOLUTION_20261008_110522/K05_SPATIAL_ARCHITECTURE_20261008_120148/figures/01_K05_ALL_PATIENT_SPATIAL_NICHE_MAPS_EN.pdf	TRUE
+output::figures/02_K05_NICHE_COMPONENT_SIZE_EN.pdf	/mnt/d/bb/博士课题组资料/新建文件夹/自己课题相关/Lung ST/codex agent/stereo_seq/stereo_seq/results/reanalysis/J2_UNBIASED_NICHE_RESOLUTION_20261008_110522/K05_SPATIAL_ARCHITECTURE_20261008_120148/figures/02_K05_NICHE_COMPONENT_SIZE_EN.pdf	TRUE
+output::figures/03_K05_NICHE_LARGEST_COMPONENT_FRACTION_EN.pdf	/mnt/d/bb/博士课题组资料/新建文件夹/自己课题相关/Lung ST/codex agent/stereo_seq/stereo_seq/results/reanalysis/J2_UNBIASED_NICHE_RESOLUTION_20261008_110522/K05_SPATIAL_ARCHITECTURE_20261008_120148/figures/03_K05_NICHE_LARGEST_COMPONENT_FRACTION_EN.pdf	TRUE
+output::figures/04_K05_NICHE_ADJACENCY_HEATMAP_EN.pdf	/mnt/d/bb/博士课题组资料/新建文件夹/自己课题相关/Lung ST/codex agent/stereo_seq/stereo_seq/results/reanalysis/J2_UNBIASED_NICHE_RESOLUTION_20261008_110522/K05_SPATIAL_ARCHITECTURE_20261008_120148/figures/04_K05_NICHE_ADJACENCY_HEATMAP_EN.pdf	TRUE
+output::figures/05_K05_CROSS_PATIENT_ADJACENCY_ENRICHMENT_EN.pdf	/mnt/d/bb/博士课题组资料/新建文件夹/自己课题相关/Lung ST/codex agent/stereo_seq/stereo_seq/results/reanalysis/J2_UNBIASED_NICHE_RESOLUTION_20261008_110522/K05_SPATIAL_ARCHITECTURE_20261008_120148/figures/05_K05_CROSS_PATIENT_ADJACENCY_ENRICHMENT_EN.pdf	TRUE

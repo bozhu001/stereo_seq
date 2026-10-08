@@ -1,0 +1,31 @@
+
+
+processing file: 1019_j2_k5_spatial_architecture_report.qmd
+  |                                                   |                                           |   0%  |                                                   |..                                         |   5%                             |                                                   |.....                                      |  11% [setup]                     |                                                   |.......                                    |  16%                             |                                                   |.........                                  |  21% [continuity_table]          |                                                   |...........                                |  26%                             |                                                   |..............                             |  32% [component_figure]          |                                                   |................                           |  37%                             |                                                   |..................                         |  42% [largest_component_figure]  |                                                   |....................                       |  47%                             |                                                   |.......................                    |  53% [adjacency_figure]          |                                                   |.........................                  |  58%                             |                                                   |...........................                |  63% [cross_patient_table]       |                                                   |.............................              |  68%                             |                                                   |................................           |  74% [cross_patient_figure]      |                                                   |..................................         |  79%                             |                                                   |....................................       |  84% [validation_table]          |                                                   |......................................     |  89%                             |                                                   |.........................................  |  95% [session_info]              |                                                   |...........................................| 100%                                                                                                                                                
+output file: 1019_j2_k5_spatial_architecture_report.knit.md
+
+pandoc 
+  to: html
+  output-file: 1019_j2_k5_spatial_architecture_report.html
+  standalone: true
+  embed-resources: true
+  section-divs: true
+  html-math-method: mathjax
+  wrap: none
+  default-image-extension: png
+  toc: true
+  variables: {}
+  
+metadata
+  document-css: false
+  link-citations: true
+  date-format: long
+  lang: en
+  title: J2 K=5 Spatial Niche Architecture Audit
+  author: Codex
+  date: today
+  toc-float: true
+  theme: bootstrap
+  
+Output created: ..\results\1019_j2_k5_spatial_architecture_report.html
+
