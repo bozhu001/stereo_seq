@@ -755,3 +755,33 @@
   authorized no further J2 analysis.
 - Session summary:
   `.agent/j2_k5_spatial_architecture_wrapup_261008122000.md`.
+
+## 2026-10-10 — Extended Immune Marker Library and RNA detectability audit
+
+- Audited `BI_PF_ILD_atlas_v1` and recovered the workbook's full data despite
+  a stale `A1` worksheet dimension; the source Excel was not modified.
+- The immune hierarchy contained 9 Level 1 and 29 Level 2 categories, with
+  1,450 marker records and 692 unique genes. The conservative library retained
+  27 strict lineage-core and 209 eligible extended non-core genes.
+- Used sparse raw `uint32` counts for all qualified Bin50 from 21 patients on
+  L3, J2 and Y40102K8. In total, 667 assessed genes were present and detected
+  at least once. Extended panels added 193 detectable lineage-panel entries
+  relative to the prior small panels.
+- The result supports improved detection coverage only, not improved immune-cell
+  identification accuracy. No RCTD, clustering, K selection, neighborhood
+  scoring, disease testing, DEG/GSEA, CellChat or frozen aggregate analysis ran.
+- Final directory:
+  `results/reanalysis/EXTENDED_IMMUNE_MARKER_LIBRARY_20261010/`.
+- Standalone HTML:
+  `reports/EXTENDED_IMMUNE_MARKER_LIBRARY_REPORT_261010185546.html` within the
+  final directory; SHA256
+  `367FBA538F808A092475A9A29B5A884AFECFFA542013B876214AAB25474BCA5A`.
+- Analysis/report commit:
+  `64a30fee048c59430354f7c7c814832ca0e1389c`.
+- The user separately approved the ELN draft. Approved local copy:
+  `elab/Extended_Immune_Marker_Library_and_Stereo-seq_RNA_Detectability_Audit_261010185546.md`.
+  No remote ID/URL exists because `ELABFTW_API_KEY` was unavailable.
+- Script-review classification remains pending; no skill-candidate issue was
+  filed.
+- Session summary:
+  `.agent/extended_immune_marker_library_wrapup_261010190419.md`.
