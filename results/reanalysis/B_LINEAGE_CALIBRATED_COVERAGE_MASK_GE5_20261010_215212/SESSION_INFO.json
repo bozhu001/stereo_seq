@@ -1,0 +1,10 @@
+{
+  "primary_definition": "q90 patient/UMI-matched score, >=2 informative genes, connected component >=5",
+  "sensitivity_definitions": [
+    "q90 patient/UMI-matched score, >=2 informative genes, connected component >=3",
+    "q95 patient/UMI-matched score, >=2 informative genes, connected component >=5"
+  ],
+  "interpretation": "B-lineage RNA coverage region; not a B-cell identity or TLS call",
+  "disease_labels_used": false,
+  "stochastic_steps": false
+}
