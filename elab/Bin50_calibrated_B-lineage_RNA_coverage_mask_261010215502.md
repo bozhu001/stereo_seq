@@ -4,7 +4,7 @@
 - Tags: `Stereo-seq`, `Bin50`, `B-lineage`, `extended-marker`, `RNA-coverage`, `spatial-QC`
 - Approval: user approved the ELN draft on 2026-10-10
 - Remote eLabFTW ID/URL: unavailable; `ELABFTW_API_KEY` was not provisioned in the agent environment
-- Report attachment for manual upload: `results/B_LINEAGE_CALIBRATED_COVERAGE_REPORT_261010215502.html`
+- Report attachment for manual upload: `results/B_LINEAGE_CALIBRATED_COVERAGE_REPORT_261010220705.html`
 
 ## Goal
 
@@ -46,22 +46,20 @@ Key parameters and constraints:
 - patient/UMI-matched background q90;
 - at least two informative extended B genes detected per center-excluded
   50 µm neighborhood;
-- primary spatial criterion: at least five connected positive Bin50;
-- at least three connected bins retained as a sensitivity result;
+- spatial criterion: at least five connected positive Bin50;
 - core B genes provide corroboration but do not veto extended coverage;
 - disease labels were not used;
 - RCTD, graph construction, clustering, and K selection were not rerun.
 
 Analysis/report commit:
-`b857c3c223288b693f530dea5fc2eb314f41adb2`
-(`https://github.com/bozhu001/stereo_seq/commit/b857c3c223288b693f530dea5fc2eb314f41adb2`).
+`10c7b3c48071e660bd3a49222c903d85b9c69911`
+(`https://github.com/bozhu001/stereo_seq/commit/10c7b3c48071e660bd3a49222c903d85b9c69911`).
 
 ## Output summary
 
 - Candidate Bin50: 29,645.
 - q90 and multi-gene-supported bins before connectivity: 5,376.
-- Primary component ≥5 mask: 2,669 Bin50.
-- Component ≥3 sensitivity mask: 3,429 Bin50.
+- Final component ≥5 mask: 2,669 Bin50.
 - Primary extended gain beyond the core-only comparator: 1,514 Bin50.
 - Primary bins with core-marker corroboration: 1,811.
 - Primary component ≥5 coverage by chip: J2 545/11,893 (4.58%), L3
@@ -69,13 +67,13 @@ Analysis/report commit:
 - All automated final-mask audit checks passed.
 
 Final output directory:
-`results/reanalysis/B_LINEAGE_CALIBRATED_COVERAGE_MASK_GE5_20261010_215212/`.
+`results/reanalysis/B_LINEAGE_CALIBRATED_COVERAGE_MASK_GE5_ONLY_20261010_220617/`.
 
 Final mask:
-`results/reanalysis/B_LINEAGE_CALIBRATED_COVERAGE_MASK_GE5_20261010_215212/01_FINAL_CALIBRATED_B_COVERAGE_MASK.tsv.gz`;
-SHA256 `F7F9A83A00F74E79AEFB547B0891CA9B0574E9BCBDE86CE9CE2975302CAA2658`.
+`results/reanalysis/B_LINEAGE_CALIBRATED_COVERAGE_MASK_GE5_ONLY_20261010_220617/01_FINAL_CALIBRATED_B_COVERAGE_MASK.tsv.gz`;
+SHA256 `1D8D7E389E1A25EF69FCDEE54F44835ECE3A79DAED873CD820EDF20CA3F8970A`.
 
 Rendered HTML:
-`results/B_LINEAGE_CALIBRATED_COVERAGE_REPORT_261010215502.html`;
-2,158,828 bytes; SHA256
-`5BD96C947CA7174627FAE06F4148BC8E26E1E0EF3BF94539DEA1CDD6E2771A9D`.
+`results/B_LINEAGE_CALIBRATED_COVERAGE_REPORT_261010220705.html`;
+2,156,727 bytes; SHA256
+`D141923BF0506DB26352AD5755601EBEBF56729CFB91B8EA21D3D7C465FE9D87`.

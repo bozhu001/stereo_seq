@@ -800,22 +800,23 @@
 - The user approved the primary rule: matched-background q90, at least two
   informative extended genes detected in the center-excluded 50 µm
   neighborhood, and a connected component of at least five positive Bin50.
-  Components ≥3 remain a sensitivity result; core B genes corroborate but do
-  not veto extended support.
-- Primary component ≥5 mask: 2,669 Bin50; component ≥3 sensitivity: 3,429;
-  primary extended gain beyond core-only: 1,514; primary core-corroborated:
-  1,811.
+  The user subsequently froze ≥5 as the only downstream connectivity rule;
+  core B genes corroborate but do not veto extended support.
+- Final component ≥5 mask: 2,669 Bin50; extended gain beyond core-only: 1,514;
+  core-corroborated: 1,811.
 - Final directory:
-  `results/reanalysis/B_LINEAGE_CALIBRATED_COVERAGE_MASK_GE5_20261010_215212/`.
+  `results/reanalysis/B_LINEAGE_CALIBRATED_COVERAGE_MASK_GE5_ONLY_20261010_220617/`.
 - Rendered HTML:
-  `results/B_LINEAGE_CALIBRATED_COVERAGE_REPORT_261010215502.html`; SHA256
-  `5BD96C947CA7174627FAE06F4148BC8E26E1E0EF3BF94539DEA1CDD6E2771A9D`.
+  `results/B_LINEAGE_CALIBRATED_COVERAGE_REPORT_261010220705.html`; SHA256
+  `D141923BF0506DB26352AD5755601EBEBF56729CFB91B8EA21D3D7C465FE9D87`.
 - Analysis/report commit:
-  `b857c3c223288b693f530dea5fc2eb314f41adb2`.
+  `10c7b3c48071e660bd3a49222c903d85b9c69911`.
 - The user separately approved the ELN draft. Approved local copy:
   `elab/Bin50_calibrated_B-lineage_RNA_coverage_mask_261010215502.md`. No
   remote ID/URL exists because `ELABFTW_API_KEY` is unavailable.
 - Script-review classification remains pending; no skill-candidate issue was
   filed.
+- Earlier outputs containing a ≥3 sensitivity definition are superseded and
+  must not be used for downstream comparisons.
 - Session summary:
   `.agent/bin50_calibrated_b_lineage_coverage_wrapup_261010215845.md`.

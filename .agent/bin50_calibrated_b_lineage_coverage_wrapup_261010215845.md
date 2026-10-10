@@ -35,8 +35,8 @@ identity.
    center-excluded 50 µm neighborhood. q95 was retained as a score-threshold
    sensitivity.
 4. `1053_finalize_calibrated_b_coverage_mask.py` imposed spatial connectivity.
-   The user approved a primary minimum component size of five positive Bin50;
-   component size three was retained as a sensitivity field.
+   The user froze a minimum component size of five positive Bin50 as the only
+   connectivity definition for subsequent analysis.
 
 ## Frozen interpretation
 
@@ -51,7 +51,6 @@ identity.
 ## Results
 
 - q90 multi-gene-supported before connectivity: 5,376 Bin50.
-- Component ≥3 sensitivity: 3,429 Bin50.
 - Component ≥5 primary mask: 2,669 Bin50.
 - Primary extended gain beyond core-only: 1,514 Bin50.
 - Primary core-corroborated: 1,811 Bin50.
@@ -63,14 +62,16 @@ identity.
 ## Outputs and provenance
 
 - Final directory:
-  `results/reanalysis/B_LINEAGE_CALIBRATED_COVERAGE_MASK_GE5_20261010_215212/`.
+  `results/reanalysis/B_LINEAGE_CALIBRATED_COVERAGE_MASK_GE5_ONLY_20261010_220617/`.
 - HTML report:
-  `results/B_LINEAGE_CALIBRATED_COVERAGE_REPORT_261010215502.html`.
+  `results/B_LINEAGE_CALIBRATED_COVERAGE_REPORT_261010220705.html`.
 - Analysis/report commit:
-  `b857c3c223288b693f530dea5fc2eb314f41adb2`.
+  `10c7b3c48071e660bd3a49222c903d85b9c69911`.
 - Approved local ELN copy:
   `elab/Bin50_calibrated_B-lineage_RNA_coverage_mask_261010215502.md`.
 - No remote ELN ID/URL is available because `ELABFTW_API_KEY` was not
   provisioned.
+- Earlier ≥3-containing outputs are superseded and are not a downstream
+  analysis endpoint.
 - Script-review classification remains pending user choice between recurring
   workflow and one-off analysis; no skill-candidate issue was filed.
