@@ -7,7 +7,7 @@ set -euo pipefail
 
 project_root="$(pwd)"
 python_bin="/home/bozhu/miniconda3/envs/stereo/bin/python"
-result_dir="$project_root/results/reanalysis/B_LINEAGE_CALIBRATED_COVERAGE_MASK_GE5_20261010_215212"
+result_dir="$project_root/results/reanalysis/B_LINEAGE_CALIBRATED_COVERAGE_MASK_GE5_ONLY_20261010_220617"
 rule_audit_dir="$project_root/results/reanalysis/B_LINEAGE_BIN_COVERAGE_RULE_AUDIT_20261010_212159"
 tstamp="$(date +'%y%m%d%H%M%S')"
 output_name="B_LINEAGE_CALIBRATED_COVERAGE_REPORT_${tstamp}.html"

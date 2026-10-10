@@ -17,7 +17,6 @@ QUANTILES = (0.90, 0.95)
 MIN_DETECTED_GENE_N = 2
 PRIMARY_QUANTILE = 0.90
 PRIMARY_MIN_REGION_COMPONENT_N = 5
-SENSITIVITY_MIN_REGION_COMPONENT_N = 3
 
 
 class UnionFind:
@@ -151,12 +150,6 @@ def add_components(
         ).astype(int)
     result[f"component_id_{suffix}"] = component_ids
     result[f"component_size_{suffix}"] = component_sizes
-    result[f"b_region_support_{suffix}_ge3"] = (
-        result[call_column]
-        & result[f"component_size_{suffix}"].ge(
-            SENSITIVITY_MIN_REGION_COMPONENT_N
-        )
-    )
     result[f"b_region_support_{suffix}_ge5"] = (
         result[call_column]
         & result[f"component_size_{suffix}"].ge(
@@ -172,7 +165,6 @@ def summarize(table: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
     for quantile in QUANTILES:
         suffix = f"q{int(100 * quantile)}"
         call = f"b_bin_support_{suffix}"
-        region_ge3 = f"b_region_support_{suffix}_ge3"
         region_ge5 = f"b_region_support_{suffix}_ge5"
         for keys, frame in table.groupby(["chip", "anchor_class"], sort=False):
             rows.append(
@@ -183,8 +175,6 @@ def summarize(table: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
                     "bin_n": len(frame),
                     "called_n": int(frame[call].sum()),
                     "called_fraction": float(frame[call].mean()),
-                    "region_supported_ge3_n": int(frame[region_ge3].sum()),
-                    "region_supported_ge3_fraction": float(frame[region_ge3].mean()),
                     "region_supported_ge5_n": int(frame[region_ge5].sum()),
                     "region_supported_ge5_fraction": float(frame[region_ge5].mean()),
                     "called_in_ge5_region_fraction": float(
@@ -201,8 +191,6 @@ def summarize(table: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
                     "candidate_bin_n": len(frame),
                     "called_n": int(frame[call].sum()),
                     "called_fraction": float(frame[call].mean()),
-                    "region_supported_ge3_n": int(frame[region_ge3].sum()),
-                    "region_supported_ge3_fraction": float(frame[region_ge3].mean()),
                     "region_supported_ge5_n": int(frame[region_ge5].sum()),
                     "region_supported_ge5_fraction": float(frame[region_ge5].mean()),
                 }
@@ -220,7 +208,7 @@ def plot_spatial(table: pd.DataFrame, path: Path) -> None:
                 called = frame[frame[f"b_bin_support_{suffix}"]]
                 ax.scatter(called["x_um"], called["y_um"], s=4, c="#F2A900", rasterized=True, label="bin support")
                 region = frame[frame[f"b_region_support_{suffix}_ge5"]]
-                ax.scatter(region["x_um"], region["y_um"], s=5, c="#1479B8", rasterized=True, label="component >=3")
+                ax.scatter(region["x_um"], region["y_um"], s=5, c="#1479B8", rasterized=True, label="component >=5")
                 ax.set_title(f"{suffix}: {len(region):,} bins in components >=5")
                 ax.set_aspect("equal")
                 ax.invert_yaxis()
@@ -347,19 +335,17 @@ def main() -> None:
                 "outside_candidate_neighbors_excluded_explicitly",
                 "primary_quantile", "minimum_informative_gene_n",
                 "primary_minimum_component_n",
-                "sensitivity_minimum_component_n", "disease_labels_unused",
-                "ge5_is_subset_of_ge3",
+                "disease_labels_unused",
                 "q90_is_superset_of_q95_bin_calls",
             ],
             "observed": [
                 table["internal_id"].nunique(), bool(len(edges) > 0), True,
                 PRIMARY_QUANTILE,
                 MIN_DETECTED_GENE_N, PRIMARY_MIN_REGION_COMPONENT_N,
-                SENSITIVITY_MIN_REGION_COMPONENT_N, True,
-                bool((~table["b_region_support_q90_ge5"] | table["b_region_support_q90_ge3"]).all()),
+                True,
                 bool((~table["b_bin_support_q95"] | table["b_bin_support_q90"]).all()),
             ],
-            "expected": [29645, True, True, 0.90, 2, 5, 3, True, True, True],
+            "expected": [29645, True, True, 0.90, 2, 5, True, True],
         }
     )
     audit["passed"] = audit["observed"].astype(str).eq(audit["expected"].astype(str))
@@ -369,10 +355,7 @@ def main() -> None:
 
     session = {
         "primary_definition": "q90 patient/UMI-matched score, >=2 informative genes, connected component >=5",
-        "sensitivity_definitions": [
-            "q90 patient/UMI-matched score, >=2 informative genes, connected component >=3",
-            "q95 patient/UMI-matched score, >=2 informative genes, connected component >=5",
-        ],
+        "score_threshold_sensitivity": "q95 patient/UMI-matched score, >=2 informative genes, connected component >=5",
         "interpretation": "B-lineage RNA coverage region; not a B-cell identity or TLS call",
         "disease_labels_used": False,
         "stochastic_steps": False,

@@ -1,0 +1,5 @@
+[NbConvertApp] Converting notebook /mnt/d/Lung ST/codex agent/stereo_seq/stereo_seq/scripts/1054_b_lineage_coverage_report.ipynb to html
+/home/bozhu/miniconda3/envs/stereo/lib/python3.10/site-packages/nbformat/__init__.py:96: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.
+  validate(nb)
+[NbConvertApp] WARNING | Alternative text is missing on 3 image(s).
+[NbConvertApp] Writing 2156697 bytes to /mnt/d/Lung ST/codex agent/stereo_seq/stereo_seq/results/B_LINEAGE_CALIBRATED_COVERAGE_REPORT_261010220705.html
