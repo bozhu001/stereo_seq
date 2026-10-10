@@ -1,0 +1,1492 @@
+{
+  "project_root": "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq",
+  "output_dir": "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\reanalysis\\EXTENDED_IMMUNE_MARKER_LIBRARY_20261010",
+  "primary_atlas_candidates": [
+    "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\reanalysis\\bin50_input\\BI_PF_ILD_atlas_marker_gene_table_260709213053.xlsx",
+    "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\visium way\\06_hvg_audit\\BI_PF_ILD_atlas_marker_gene_table_260709213053.xlsx"
+  ],
+  "primary_atlas_hashes": {
+    "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\reanalysis\\bin50_input\\BI_PF_ILD_atlas_marker_gene_table_260709213053.xlsx": "b6c17a25dd9da4f73b108f3cf3b964397e787b6c08ba97208295f6c38f9c81b8",
+    "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\visium way\\06_hvg_audit\\BI_PF_ILD_atlas_marker_gene_table_260709213053.xlsx": "b6c17a25dd9da4f73b108f3cf3b964397e787b6c08ba97208295f6c38f9c81b8"
+  },
+  "primary_copies_identical": true,
+  "secondary_atlas_candidates": [],
+  "atlas_workbooks": {
+    "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\reanalysis\\bin50_input\\BI_PF_ILD_atlas_marker_gene_table_260709213053.xlsx": {
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "title": "Sheet 1",
+          "reported_dimension": "A1:A1",
+          "recovered_row_count": 4500,
+          "recovered_column_count": 8,
+          "columns": [
+            "organ",
+            "reference",
+            "level",
+            "celltype",
+            "marker_gene",
+            "fold_change",
+            "pct_positive",
+            "auc"
+          ],
+          "level_counts": {
+            "cell_subtype": 2950,
+            "cell_type": 1550
+          },
+          "celltype_counts": [
+            {
+              "level": "cell_subtype",
+              "celltype": "AT1",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "AT2",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Aberrant basaloid",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Activated NK XCL1+",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Adventital fibroblast",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Alveolar fibroblast",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Artery",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "B cell",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "B cell LRMP+",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Basal",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Basophil/Mast",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Bronchial Vessel",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Bronchial Vessel CXCL12+",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Bronchial Vessel SELE+",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "CD8+ Naive T",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "COPD Ciliated",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Capillary",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Capillary Aerocyte",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Ciliated",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Ciliated & Club",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Club",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Club & AT1",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Cytotoxic T",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "DC CXCL2+/CD14+/CD1C-",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "DC LAMP3+/CCR7+",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "DC1 CLEC9A+",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "DC2 C1QC+",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "DC2 CD1A+/CD1E+",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "DC2 CLEC10A+",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Fib COL13A1+",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Ionocyte",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Lipofibroblast",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Lymphatic",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Macrophage C1Q hi",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Macrophage CHI3L1+/CD9 hi/",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Macrophage FABP4+",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Macrophage FABP4+/PDE4C+",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Macrophage IL1B+",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Macrophage LYVE1+",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Macrophage RETN+/VCAN+",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Mesothelial",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Monocytes CD14+",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Monocytes CD14+/IL1B",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Monocytes CD16+",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Mucous",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Myofibroblast",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "NK",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Peribronchial",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Pericyte",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Plasma B",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Smooth Muscle",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "T CD4+ JUN+",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "T regulatory",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Vein",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "dividing AT2",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "helper T CD4+",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "helper T CD4+ CDR7+",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "pDC",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "pre AT2",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "AT1",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "AT2",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "Aberrant basaloid",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "Adventital fibroblast",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "Alveolar fibroblast",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "Artery",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "B/Plasma",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "Basal",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "Basophil/Mast",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "Bronchial Vessel",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "Capillary",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "Capillary Aerocyte",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "Ciliated",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "Ciliated & Club",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "Club",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "Club & AT1",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "Dendritic",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "Ionocyte",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "Lymphatic",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "Macrophage",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "Macrophage FABP4+",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "Mesothelial",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "Monocyte",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "Mucous",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "Myofibroblast",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "NK",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "Pericyte",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "Smooth Muscle",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "T cell",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "Vein",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "pDC",
+              "record_n": "50"
+            }
+          ],
+          "preview_first_15_rows_first_20_columns": [
+            [
+              "organ",
+              "reference",
+              "level",
+              "celltype",
+              "marker_gene",
+              "fold_change",
+              "pct_positive",
+              "auc"
+            ],
+            [
+              "Lung",
+              "BI_PF_ILD_atlas_v1",
+              "cell_type",
+              "AT1",
+              "EMP2",
+              3.36319390307095,
+              98.224043715847,
+              0.975805586821543
+            ],
+            [
+              "Lung",
+              "BI_PF_ILD_atlas_v1",
+              "cell_type",
+              "AT1",
+              "AGER",
+              5.75627087976388,
+              92.4408014571949,
+              0.957762460455894
+            ],
+            [
+              "Lung",
+              "BI_PF_ILD_atlas_v1",
+              "cell_type",
+              "AT1",
+              "CAV1",
+              2.58095743996753,
+              95.856102003643,
+              0.95244187238213
+            ],
+            [
+              "Lung",
+              "BI_PF_ILD_atlas_v1",
+              "cell_type",
+              "AT1",
+              "LMO7",
+              2.55882978783473,
+              95.6739526411658,
+              0.952376904840826
+            ],
+            [
+              "Lung",
+              "BI_PF_ILD_atlas_v1",
+              "cell_type",
+              "AT1",
+              "GPRC5A",
+              2.12815037453947,
+              96.5391621129326,
+              0.950195813786647
+            ],
+            [
+              "Lung",
+              "BI_PF_ILD_atlas_v1",
+              "cell_type",
+              "AT1",
+              "KRT7",
+              2.49015278784251,
+              93.3515482695811,
+              0.936571994650032
+            ],
+            [
+              "Lung",
+              "BI_PF_ILD_atlas_v1",
+              "cell_type",
+              "AT1",
+              "HOPX",
+              1.78137269572264,
+              92.9872495446266,
+              0.911711134783177
+            ],
+            [
+              "Lung",
+              "BI_PF_ILD_atlas_v1",
+              "cell_type",
+              "AT1",
+              "KRT19",
+              0.859289298639054,
+              92.7595628415301,
+              0.903661920425394
+            ],
+            [
+              "Lung",
+              "BI_PF_ILD_atlas_v1",
+              "cell_type",
+              "AT1",
+              "LIMCH1",
+              1.91601471049495,
+              87.3406193078324,
+              0.896368338006079
+            ],
+            [
+              "Lung",
+              "BI_PF_ILD_atlas_v1",
+              "cell_type",
+              "AT1",
+              "CAV2",
+              2.28399760570686,
+              84.8360655737705,
+              0.8959005396822
+            ],
+            [
+              "Lung",
+              "BI_PF_ILD_atlas_v1",
+              "cell_type",
+              "AT1",
+              "TSPAN13",
+              2.20076319425551,
+              85.4280510018215,
+              0.895411519605273
+            ],
+            [
+              "Lung",
+              "BI_PF_ILD_atlas_v1",
+              "cell_type",
+              "AT1",
+              "CEACAM6",
+              2.3090162626429,
+              83.3788706739526,
+              0.892859369192419
+            ],
+            [
+              "Lung",
+              "BI_PF_ILD_atlas_v1",
+              "cell_type",
+              "AT1",
+              "CLDN18",
+              2.65814966841721,
+              82.8324225865209,
+              0.886809391819676
+            ],
+            [
+              "Lung",
+              "BI_PF_ILD_atlas_v1",
+              "cell_type",
+              "AT1",
+              "SFTA2",
+              0.892664807369719,
+              89.6630236794171,
+              0.885710959962036
+            ]
+          ]
+        }
+      ]
+    },
+    "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\visium way\\06_hvg_audit\\BI_PF_ILD_atlas_marker_gene_table_260709213053.xlsx": {
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "title": "Sheet 1",
+          "reported_dimension": "A1:A1",
+          "recovered_row_count": 4500,
+          "recovered_column_count": 8,
+          "columns": [
+            "organ",
+            "reference",
+            "level",
+            "celltype",
+            "marker_gene",
+            "fold_change",
+            "pct_positive",
+            "auc"
+          ],
+          "level_counts": {
+            "cell_subtype": 2950,
+            "cell_type": 1550
+          },
+          "celltype_counts": [
+            {
+              "level": "cell_subtype",
+              "celltype": "AT1",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "AT2",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Aberrant basaloid",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Activated NK XCL1+",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Adventital fibroblast",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Alveolar fibroblast",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Artery",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "B cell",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "B cell LRMP+",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Basal",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Basophil/Mast",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Bronchial Vessel",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Bronchial Vessel CXCL12+",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Bronchial Vessel SELE+",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "CD8+ Naive T",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "COPD Ciliated",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Capillary",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Capillary Aerocyte",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Ciliated",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Ciliated & Club",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Club",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Club & AT1",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Cytotoxic T",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "DC CXCL2+/CD14+/CD1C-",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "DC LAMP3+/CCR7+",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "DC1 CLEC9A+",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "DC2 C1QC+",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "DC2 CD1A+/CD1E+",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "DC2 CLEC10A+",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Fib COL13A1+",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Ionocyte",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Lipofibroblast",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Lymphatic",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Macrophage C1Q hi",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Macrophage CHI3L1+/CD9 hi/",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Macrophage FABP4+",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Macrophage FABP4+/PDE4C+",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Macrophage IL1B+",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Macrophage LYVE1+",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Macrophage RETN+/VCAN+",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Mesothelial",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Monocytes CD14+",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Monocytes CD14+/IL1B",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Monocytes CD16+",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Mucous",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Myofibroblast",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "NK",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Peribronchial",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Pericyte",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Plasma B",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Smooth Muscle",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "T CD4+ JUN+",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "T regulatory",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "Vein",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "dividing AT2",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "helper T CD4+",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "helper T CD4+ CDR7+",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "pDC",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_subtype",
+              "celltype": "pre AT2",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "AT1",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "AT2",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "Aberrant basaloid",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "Adventital fibroblast",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "Alveolar fibroblast",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "Artery",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "B/Plasma",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "Basal",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "Basophil/Mast",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "Bronchial Vessel",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "Capillary",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "Capillary Aerocyte",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "Ciliated",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "Ciliated & Club",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "Club",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "Club & AT1",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "Dendritic",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "Ionocyte",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "Lymphatic",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "Macrophage",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "Macrophage FABP4+",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "Mesothelial",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "Monocyte",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "Mucous",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "Myofibroblast",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "NK",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "Pericyte",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "Smooth Muscle",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "T cell",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "Vein",
+              "record_n": "50"
+            },
+            {
+              "level": "cell_type",
+              "celltype": "pDC",
+              "record_n": "50"
+            }
+          ],
+          "preview_first_15_rows_first_20_columns": [
+            [
+              "organ",
+              "reference",
+              "level",
+              "celltype",
+              "marker_gene",
+              "fold_change",
+              "pct_positive",
+              "auc"
+            ],
+            [
+              "Lung",
+              "BI_PF_ILD_atlas_v1",
+              "cell_type",
+              "AT1",
+              "EMP2",
+              3.36319390307095,
+              98.224043715847,
+              0.975805586821543
+            ],
+            [
+              "Lung",
+              "BI_PF_ILD_atlas_v1",
+              "cell_type",
+              "AT1",
+              "AGER",
+              5.75627087976388,
+              92.4408014571949,
+              0.957762460455894
+            ],
+            [
+              "Lung",
+              "BI_PF_ILD_atlas_v1",
+              "cell_type",
+              "AT1",
+              "CAV1",
+              2.58095743996753,
+              95.856102003643,
+              0.95244187238213
+            ],
+            [
+              "Lung",
+              "BI_PF_ILD_atlas_v1",
+              "cell_type",
+              "AT1",
+              "LMO7",
+              2.55882978783473,
+              95.6739526411658,
+              0.952376904840826
+            ],
+            [
+              "Lung",
+              "BI_PF_ILD_atlas_v1",
+              "cell_type",
+              "AT1",
+              "GPRC5A",
+              2.12815037453947,
+              96.5391621129326,
+              0.950195813786647
+            ],
+            [
+              "Lung",
+              "BI_PF_ILD_atlas_v1",
+              "cell_type",
+              "AT1",
+              "KRT7",
+              2.49015278784251,
+              93.3515482695811,
+              0.936571994650032
+            ],
+            [
+              "Lung",
+              "BI_PF_ILD_atlas_v1",
+              "cell_type",
+              "AT1",
+              "HOPX",
+              1.78137269572264,
+              92.9872495446266,
+              0.911711134783177
+            ],
+            [
+              "Lung",
+              "BI_PF_ILD_atlas_v1",
+              "cell_type",
+              "AT1",
+              "KRT19",
+              0.859289298639054,
+              92.7595628415301,
+              0.903661920425394
+            ],
+            [
+              "Lung",
+              "BI_PF_ILD_atlas_v1",
+              "cell_type",
+              "AT1",
+              "LIMCH1",
+              1.91601471049495,
+              87.3406193078324,
+              0.896368338006079
+            ],
+            [
+              "Lung",
+              "BI_PF_ILD_atlas_v1",
+              "cell_type",
+              "AT1",
+              "CAV2",
+              2.28399760570686,
+              84.8360655737705,
+              0.8959005396822
+            ],
+            [
+              "Lung",
+              "BI_PF_ILD_atlas_v1",
+              "cell_type",
+              "AT1",
+              "TSPAN13",
+              2.20076319425551,
+              85.4280510018215,
+              0.895411519605273
+            ],
+            [
+              "Lung",
+              "BI_PF_ILD_atlas_v1",
+              "cell_type",
+              "AT1",
+              "CEACAM6",
+              2.3090162626429,
+              83.3788706739526,
+              0.892859369192419
+            ],
+            [
+              "Lung",
+              "BI_PF_ILD_atlas_v1",
+              "cell_type",
+              "AT1",
+              "CLDN18",
+              2.65814966841721,
+              82.8324225865209,
+              0.886809391819676
+            ],
+            [
+              "Lung",
+              "BI_PF_ILD_atlas_v1",
+              "cell_type",
+              "AT1",
+              "SFTA2",
+              0.892664807369719,
+              89.6630236794171,
+              0.885710959962036
+            ]
+          ]
+        }
+      ]
+    }
+  },
+  "raw_h5ad": {
+    "path": "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\reanalysis\\bin50_input\\BIN50_joint_reanalysis_tissue_raw_counts_common_genes.h5ad",
+    "shape": [
+      178044,
+      27618
+    ],
+    "obs_columns": [
+      "total_counts",
+      "n_genes_by_counts",
+      "pct_counts_mt",
+      "leiden",
+      "orig.ident",
+      "x",
+      "y",
+      "sample_id",
+      "chip_id",
+      "roi_overlap_count",
+      "mapping_vote_fraction",
+      "nearest_bin20_distance",
+      "mapping_review_flag",
+      "group",
+      "in_tissue_roi",
+      "source_obs_name",
+      "source_index",
+      "all_zero_after_common_genes",
+      "n_genes_common_raw",
+      "total_counts_common_raw"
+    ],
+    "var_columns": [],
+    "obs_head": [
+      {
+        "obs_names": "Y40102K8|2362232022650",
+        "total_counts": "1",
+        "n_genes_by_counts": "1",
+        "pct_counts_mt": "0.0",
+        "leiden": "4",
+        "orig.ident": "sample",
+        "x": "550",
+        "y": "9850",
+        "sample_id": "SSC/3342/13",
+        "chip_id": "Y40102K8",
+        "roi_overlap_count": "1",
+        "mapping_vote_fraction": "0.6666667",
+        "nearest_bin20_distance": "31.622776",
+        "mapping_review_flag": "True",
+        "group": "SSc-ILD",
+        "in_tissue_roi": "True",
+        "source_obs_name": "2362232022650",
+        "source_index": "266",
+        "all_zero_after_common_genes": "False",
+        "n_genes_common_raw": "1",
+        "total_counts_common_raw": "1"
+      },
+      {
+        "obs_names": "Y40102K8|2576980386550",
+        "total_counts": "2",
+        "n_genes_by_counts": "2",
+        "pct_counts_mt": "0.0",
+        "leiden": "4",
+        "orig.ident": "sample",
+        "x": "600",
+        "y": "8950",
+        "sample_id": "SSC/3342/13",
+        "chip_id": "Y40102K8",
+        "roi_overlap_count": "1",
+        "mapping_vote_fraction": "0.6666667",
+        "nearest_bin20_distance": "22.36068",
+        "mapping_review_flag": "True",
+        "group": "SSc-ILD",
+        "in_tissue_roi": "True",
+        "source_obs_name": "2576980386550",
+        "source_index": "285",
+        "all_zero_after_common_genes": "False",
+        "n_genes_common_raw": "2",
+        "total_counts_common_raw": "2"
+      },
+      {
+        "obs_names": "Y40102K8|2576980386800",
+        "total_counts": "1",
+        "n_genes_by_counts": "1",
+        "pct_counts_mt": "0.0",
+        "leiden": "4",
+        "orig.ident": "sample",
+        "x": "600",
+        "y": "9200",
+        "sample_id": "SSC/3342/13",
+        "chip_id": "Y40102K8",
+        "roi_overlap_count": "1",
+        "mapping_vote_fraction": "0.6666667",
+        "nearest_bin20_distance": "0.0",
+        "mapping_review_flag": "True",
+        "group": "SSc-ILD",
+        "in_tissue_roi": "True",
+        "source_obs_name": "2576980386800",
+        "source_index": "286",
+        "all_zero_after_common_genes": "False",
+        "n_genes_common_raw": "1",
+        "total_counts_common_raw": "1"
+      },
+      {
+        "obs_names": "Y40102K8|2576980387250",
+        "total_counts": "1",
+        "n_genes_by_counts": "1",
+        "pct_counts_mt": "0.0",
+        "leiden": "10",
+        "orig.ident": "sample",
+        "x": "600",
+        "y": "9650",
+        "sample_id": "SSC/3342/13",
+        "chip_id": "Y40102K8",
+        "roi_overlap_count": "1",
+        "mapping_vote_fraction": "0.6666667",
+        "nearest_bin20_distance": "22.36068",
+        "mapping_review_flag": "True",
+        "group": "SSc-ILD",
+        "in_tissue_roi": "True",
+        "source_obs_name": "2576980387250",
+        "source_index": "287",
+        "all_zero_after_common_genes": "False",
+        "n_genes_common_raw": "1",
+        "total_counts_common_raw": "1"
+      },
+      {
+        "obs_names": "Y40102K8|2576980387300",
+        "total_counts": "2",
+        "n_genes_by_counts": "2",
+        "pct_counts_mt": "0.0",
+        "leiden": "4",
+        "orig.ident": "sample",
+        "x": "600",
+        "y": "9700",
+        "sample_id": "SSC/3342/13",
+        "chip_id": "Y40102K8",
+        "roi_overlap_count": "1",
+        "mapping_vote_fraction": "0.7777778",
+        "nearest_bin20_distance": "20.0",
+        "mapping_review_flag": "False",
+        "group": "SSc-ILD",
+        "in_tissue_roi": "True",
+        "source_obs_name": "2576980387300",
+        "source_index": "288",
+        "all_zero_after_common_genes": "False",
+        "n_genes_common_raw": "2",
+        "total_counts_common_raw": "2"
+      }
+    ],
+    "var_head": [
+      {
+        "var_names": "ENSG00000000003"
+      },
+      {
+        "var_names": "ENSG00000000005"
+      },
+      {
+        "var_names": "ENSG00000000419"
+      },
+      {
+        "var_names": "ENSG00000000457"
+      },
+      {
+        "var_names": "ENSG00000000460"
+      }
+    ],
+    "obs_names_unique": true,
+    "var_names_unique": true,
+    "x_storage": "_CSRDataset"
+  },
+  "gene_map": {
+    "path": "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\reanalysis\\bin50_representation_benchmark\\ensembl_gene_symbol_mapping.csv",
+    "columns": [
+      "ensembl_var_name",
+      "gene_symbol",
+      "mapped",
+      "conflict",
+      "symbols_seen"
+    ],
+    "head": [
+      {
+        "ensembl_var_name": "ENSG00000000003",
+        "gene_symbol": "TSPAN6",
+        "mapped": "True",
+        "conflict": "False",
+        "symbols_seen": "TSPAN6"
+      },
+      {
+        "ensembl_var_name": "ENSG00000000005",
+        "gene_symbol": "TNMD",
+        "mapped": "True",
+        "conflict": "False",
+        "symbols_seen": "TNMD"
+      },
+      {
+        "ensembl_var_name": "ENSG00000000419",
+        "gene_symbol": "DPM1",
+        "mapped": "True",
+        "conflict": "False",
+        "symbols_seen": "DPM1"
+      },
+      {
+        "ensembl_var_name": "ENSG00000000457",
+        "gene_symbol": "SCYL3",
+        "mapped": "True",
+        "conflict": "False",
+        "symbols_seen": "SCYL3"
+      },
+      {
+        "ensembl_var_name": "ENSG00000000460",
+        "gene_symbol": "C1orf112",
+        "mapped": "True",
+        "conflict": "False",
+        "symbols_seen": "C1orf112"
+      }
+    ]
+  },
+  "legacy_small_marker_panel_source": {
+    "path": "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\scripts\\1049_prepare_immune_subniche_validation.R",
+    "sha256": "c7d44cd87c5a5e08012656f8f96a4bf9aa3aaf02cd6cec5b3deace23b5753992"
+  }
+}

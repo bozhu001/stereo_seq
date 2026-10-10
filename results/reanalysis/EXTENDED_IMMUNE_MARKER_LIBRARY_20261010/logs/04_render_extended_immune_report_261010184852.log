@@ -1,0 +1,26 @@
+﻿COMMAND	& 'D:\Positron\resources\app\quarto\bin\quarto.exe' render 'D:\Lung ST\codex agent\stereo_seq\stereo_seq\results\reanalysis\EXTENDED_IMMUNE_MARKER_LIBRARY_20261010\scripts\03_extended_immune_marker_report.qmd' --output 'EXTENDED_IMMUNE_MARKER_LIBRARY_REPORT_261010184852.html' --output-dir 'D:\Lung ST\codex agent\stereo_seq\stereo_seq\results\reanalysis\EXTENDED_IMMUNE_MARKER_LIBRARY_20261010\reports'
+QUARTO_VERSION	1.10.18
+POWERSHELL_VERSION	5.1.26100.9549
+pandoc --output EXTENDED_IMMUNE_MARKER_LIBRARY_REPORT_261010184852.html
+  to: html
+  standalone: true
+  embed-resources: true
+  section-divs: true
+  html-math-method: mathjax
+  wrap: none
+  default-image-extension: png
+  toc: true
+  
+metadata
+  document-css: false
+  link-citations: true
+  date-format: long
+  lang: en
+  title: Extended Immune Marker Library and Stereo-seq RNA Detectability Audit
+  author: Stereo-seq analysis team
+  date: today
+  toc-float: true
+  theme: bootstrap
+  
+Output created: ..\reports\EXTENDED_IMMUNE_MARKER_LIBRARY_REPORT_261010184852.html
+

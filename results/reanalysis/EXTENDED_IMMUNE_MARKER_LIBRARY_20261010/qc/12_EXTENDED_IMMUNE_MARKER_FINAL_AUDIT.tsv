@@ -1,0 +1,14 @@
+audit_check	observed	status	detail
+original_marker_file_unmodified	True	PASS	b6c17a25dd9da4f73b108f3cf3b964397e787b6c08ba97208295f6c38f9c81b8
+level1_level2_mapping_complete	True	PASS	59 Level2 labels
+duplicate_and_shared_markers_audited	True	PASS	692 unique immune genes
+patient_coverage_complete	True	PASS	21/21 patients
+all_three_chips_included	True	PASS	J2;L3;Y40102K8
+raw_integer_counts_used	True	PASS	Audited sparse uint32 H5AD X; no normalized matrix used
+sparse_processing_no_full_dense_matrix	True	PASS	Chunk size 4096; only marker subset materialized
+no_reclustering	True	PASS	No clustering input or function read
+disease_labels_not_used_for_marker_selection	True	PASS	Group retained as metadata only
+niche_enrichment_not_used_to_optimize_signatures	True	PASS	No niche files read
+all_figures_complete	True	PASS	01_ATLAS_IMMUNE_CELLTYPE_MARKER_COVERAGE_EN.pdf;02_MARKER_DETECTION_BY_CHIP_EN.pdf;03_IMMUNE_MARKER_PATIENT_COVERAGE_EN.pdf;04_CORE_VS_EXTENDED_MARKER_COVERAGE_EN.pdf;05_IMMUNE_SIGNATURE_OVERLAP_EN.pdf
+secondary_260723_atlas_available	False	NOT_AVAILABLE	Not found; not substituted
+reference18_source_overlap	False	UNCONFIRMED	Atlas workbook contains no provenance sufficient to assess source overlap

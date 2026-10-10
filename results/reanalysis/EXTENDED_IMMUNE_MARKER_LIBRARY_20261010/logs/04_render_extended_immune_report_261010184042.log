@@ -1,0 +1,15 @@
+﻿COMMAND	& 'D:\Positron\resources\app\quarto\bin\quarto.exe' render 'D:\Lung ST\codex agent\stereo_seq\stereo_seq\results\reanalysis\EXTENDED_IMMUNE_MARKER_LIBRARY_20261010\scripts\03_extended_immune_marker_report.qmd' --output 'EXTENDED_IMMUNE_MARKER_LIBRARY_REPORT_261010184042.html' --output-dir 'D:\Lung ST\codex agent\stereo_seq\stereo_seq\results\reanalysis\EXTENDED_IMMUNE_MARKER_LIBRARY_20261010\reports'
+QUARTO_VERSION	1.10.18
+POWERSHELL_VERSION	5.1.26100.9549
+quarto.exe : pandoc --output ..\..\..\..\EXTENDED_IMMUNE_MARKER_LIBRARY_REPORT_
+261010184042.html
+所在位置 D:\Lung ST\codex agent\stereo_seq\stereo_seq\results\reanalysis\EXTENDED_I
+MMUNE_MARKER_LIBRARY_20261010\scripts\04_render_extended_immune_report.ps1:27 字
+符: 5
++     & $quarto render $source --output $htmlName --output-dir $reports ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (pandoc --output...1010184042.html 
+   :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+

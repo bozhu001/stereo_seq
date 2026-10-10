@@ -1,0 +1,15 @@
+audit_item	observed_value	status	detail
+input_file	D:\Lung ST\codex agent\stereo_seq\stereo_seq\results\reanalysis\bin50_input\BI_PF_ILD_atlas_marker_gene_table_260709213053.xlsx	PASS	Primary source opened read-only
+source_sheet_n	1	PASS	Sheet 1
+atlas_name_version	BI_PF_ILD_atlas_v1	PASS	From source reference column
+organ	Lung	PASS	From source organ column
+record_n	4500	PASS	All cells recovered after in-memory dimension reset
+level1_cell_type_n	31	PASS	Source level=cell_type
+level2_cell_subtype_n	59	PASS	Source level=cell_subtype
+unique_marker_gene_n	1278	PASS	Across all source records
+exact_duplicate_record_n	0	PASS	Key: organ/reference/level/celltype/marker_gene
+genes_repeated_across_records_n	936	PASS	Expected when genes recur across cell types/levels
+statistical_columns	fold_change;pct_positive;auc	PASS	No other source statistical columns observed
+fold_change_definition	unknown	LIMITATION	Workbook does not state whether fold_change is log2FC
+specificity_data_scope	positive top markers only	LIMITATION	No complete non-target expression matrix
+worksheet_dimension_issue	A1:A1	RECOVERED	XML contains data beyond stale A1 dimension; source was not modified

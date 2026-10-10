@@ -1,0 +1,49 @@
+﻿COMMAND	& 'D:\Positron\resources\app\quarto\bin\quarto.exe' render 'D:\Lung ST\codex agent\stereo_seq\stereo_seq\results\reanalysis\EXTENDED_IMMUNE_MARKER_LIBRARY_20261010\scripts\03_extended_immune_marker_report.qmd' --output 'EXTENDED_IMMUNE_MARKER_LIBRARY_REPORT_261010184809.html' --output-dir 'D:\Lung ST\codex agent\stereo_seq\stereo_seq\results\reanalysis\EXTENDED_IMMUNE_MARKER_LIBRARY_20261010\reports'
+QUARTO_VERSION	1.10.18
+POWERSHELL_VERSION	5.1.26100.9549
+pandoc --output ..\..\..\..\EXTENDED_IMMUNE_MARKER_LIBRARY_REPORT_261010184809.html
+  to: html
+  standalone: true
+  embed-resources: true
+  section-divs: true
+  html-math-method: mathjax
+  wrap: none
+  default-image-extension: png
+  toc: true
+  
+metadata
+  document-css: false
+  link-citations: true
+  date-format: long
+  lang: en
+  title: Extended Immune Marker Library and Stereo-seq RNA Detectability Audit
+  author: Stereo-seq analysis team
+  date: today
+  toc-float: true
+  theme: bootstrap
+  
+ERROR: NotFound: 绯荤粺鎵句笉鍒版寚瀹氱殑璺緞銆?(os error 3): readfile 'D:\Lung ST\codex agent\stereo_seq\stereo_seq\03_extended_immune_marker_report_files\libs\quarto-html\quarto.js'
+Path: D:\Lung ST\codex agent\stereo_seq\stereo_seq\03_extended_immune_marker_report_files\libs\quarto-html\quarto.js
+
+Stack trace:
+    at readTextFileSync (ext:deno_fs/30_fs.js:800:10)
+    at Object.Deno.readTextFileSync (file:///D:/Positron/resources/app/quarto/bin/quarto.js:98667:21)
+    at bundleModules (file:///D:/Positron/resources/app/quarto/bin/quarto.js:130950:14)
+    at pandocIngestSelfContainedContent (file:///D:/Positron/resources/app/quarto/bin/quarto.js:130972:9)
+    at async file:///D:/Positron/resources/app/quarto/bin/quarto.js:131172:11
+    at async withTimingAsync (file:///D:/Positron/resources/app/quarto/bin/quarto.js:15994:21)
+    at async Object.complete (file:///D:/Positron/resources/app/quarto/bin/quarto.js:131163:7)
+    at async Object.onPostProcess (file:///D:/Positron/resources/app/quarto/bin/quarto.js:137196:28)
+    at async renderFileInternal (file:///D:/Positron/resources/app/quarto/bin/quarto.js:137180:3)
+    at async renderFiles (file:///D:/Positron/resources/app/quarto/bin/quarto.js:136884:9)
+Quarto exited with code 1
+所在位置 D:\Lung ST\codex agent\stereo_seq\stereo_seq\results\reanalysis\EXTENDED_I
+MMUNE_MARKER_LIBRARY_20261010\scripts\04_render_extended_immune_report.ps1:56 字
+符: 9
++         throw "Quarto exited with code $($process.ExitCode)"
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (Quarto exited with code 1:Str 
+   ing) [], RuntimeException
+    + FullyQualifiedErrorId : Quarto exited with code 1
+ 
+

@@ -1,0 +1,26 @@
+check	status	detail
+all_expected_tables_exist	PASS	01_ATLAS_MARKER_INPUT_AUDIT.tsv;02_ATLAS_CELLTYPE_HIERARCHY.tsv;03_EXTENDED_IMMUNE_MARKER_LIBRARY.tsv;04_MARKER_SPECIFICITY_AND_OVERLAP_AUDIT.tsv;05_ATLAS_TO_REFERENCE18_MAPPING.tsv;06_STEREOSEQ_MARKER_DETECTABILITY_BY_PATIENT.tsv;07_STEREOSEQ_MARKER_DETECTABILITY_BY_CHIP.tsv;08_CORE_VS_EXTENDED_MARKER_COVERAGE.tsv;09_EXTENDED_IMMUNE_SIGNATURE_CANDIDATES.tsv;10_SIGNATURE_DETECTABILITY_SUMMARY.tsv
+all_expected_pdfs_exist	PASS	01_ATLAS_IMMUNE_CELLTYPE_MARKER_COVERAGE_EN.pdf;02_MARKER_DETECTION_BY_CHIP_EN.pdf;03_IMMUNE_MARKER_PATIENT_COVERAGE_EN.pdf;04_CORE_VS_EXTENDED_MARKER_COVERAGE_EN.pdf;05_IMMUNE_SIGNATURE_OVERLAP_EN.pdf
+atlas_level2_count	PASS	rows=59
+immune_library_records	PASS	rows=1450, subtypes=29
+immune_library_unique_genes	PASS	library=692, audit=692
+marker_class_complete	PASS	{'D. Shared/functional markers': 801, 'B. Extended lineage markers': 449, 'C. State-associated markers': 130, 'A. Lineage-core': 70}
+reference18_mapping_states_nonempty	PASS	rows=38
+patient_table_cartesian	PASS	rows=14616, genes=696
+chip_table_cartesian	PASS	rows=2088, genes=696
+patient_count	PASS	21
+chip_set	PASS	J2;L3;Y40102K8
+all_patient_gene_keys_unique	PASS	gene x chip x patient
+all_chip_gene_keys_unique	PASS	gene x chip
+fractions_bounded	PASS	0 <= fraction <= 1
+unavailable_counts_zero	PASS	rows=609
+available_status_not_unavailable	PASS	rows=14007
+raw_counts_integer_nonnegative	PASS	patient totals
+coverage_scope	PASS	{'patient': 504, 'all_21_patients': 24}
+three_signature_tiers	PASS	1. Reference-based core signature;2. Extended exploratory signature;3. Stereo-seq detectable subset
+pdf_page_count_01_ATLAS_IMMUNE_CELLTYPE_MARKER_COVERAGE_EN.pdf	PASS	pages=1
+pdf_page_count_02_MARKER_DETECTION_BY_CHIP_EN.pdf	PASS	pages=1
+pdf_page_count_03_IMMUNE_MARKER_PATIENT_COVERAGE_EN.pdf	PASS	pages=1
+pdf_page_count_04_CORE_VS_EXTENDED_MARKER_COVERAGE_EN.pdf	PASS	pages=1
+pdf_page_count_05_IMMUNE_SIGNATURE_OVERLAP_EN.pdf	PASS	pages=1
+all_pdf_renders_nonempty	PASS	renders=5

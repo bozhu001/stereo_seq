@@ -1,0 +1,60 @@
+atlas_name	level1	level2	level2_marker_record_n	mapped_parent_overlap_gene_n	mapped_parent_jaccard	best_overlap_level1	best_overlap_gene_n	best_overlap_jaccard	second_overlap_level1	second_overlap_gene_n	second_overlap_jaccard	mapping_status	mapping_basis	is_immune_level2
+BI_PF_ILD_atlas_v1	AT1	AT1	50	50	1.0	AT1	50	1.0	Club & AT1	20	0.25	verified_exact_label	exact atlas label match	False
+BI_PF_ILD_atlas_v1	AT2	AT2	50	47	0.8867924528301887	AT2	47	0.8867924528301887	Club & AT1	27	0.3698630136986301	verified_exact_label	exact atlas label match	False
+BI_PF_ILD_atlas_v1	AT2	dividing AT2	50	24	0.3157894736842105	Club	24	0.3157894736842105	AT2	24	0.3157894736842105	inferred_nonimmune_hierarchy	nomenclature plus top-50 marker overlap	False
+BI_PF_ILD_atlas_v1	AT2	pre AT2	50	35	0.5384615384615384	AT2	35	0.5384615384615384	Club & AT1	26	0.35135135135135137	inferred_nonimmune_hierarchy	nomenclature plus top-50 marker overlap	False
+BI_PF_ILD_atlas_v1	Aberrant basaloid	Aberrant basaloid	50	50	1.0	Aberrant basaloid	50	1.0	Club	27	0.3698630136986301	verified_exact_label	exact atlas label match	False
+BI_PF_ILD_atlas_v1	Adventital fibroblast	Adventital fibroblast	50	48	0.9230769230769231	Adventital fibroblast	48	0.9230769230769231	Alveolar fibroblast	25	0.3333333333333333	verified_exact_label	exact atlas label match	False
+BI_PF_ILD_atlas_v1	Adventital fibroblast	Fib COL13A1+	50	31	0.4492753623188406	Adventital fibroblast	31	0.4492753623188406	Myofibroblast	30	0.42857142857142855	inferred_nonimmune_hierarchy	best top-50 marker overlap; no explicit parent column in source	False
+BI_PF_ILD_atlas_v1	Alveolar fibroblast	Alveolar fibroblast	50	50	1.0	Alveolar fibroblast	50	1.0	Adventital fibroblast	26	0.35135135135135137	verified_exact_label	exact atlas label match	False
+BI_PF_ILD_atlas_v1	Alveolar fibroblast	Lipofibroblast	50	27	0.3698630136986301	Adventital fibroblast	30	0.42857142857142855	Myofibroblast	27	0.3698630136986301	inferred_nonimmune_hierarchy	nomenclature plus top-50 marker overlap	False
+BI_PF_ILD_atlas_v1	Artery	Artery	50	50	1.0	Artery	50	1.0	Vein	27	0.3698630136986301	verified_exact_label	exact atlas label match	False
+BI_PF_ILD_atlas_v1	B/Plasma	B cell	50	46	0.8518518518518519	B/Plasma	46	0.8518518518518519	T cell	9	0.0989010989010989	verified_immune_hierarchy	immune nomenclature mapping checked against marker overlap	True
+BI_PF_ILD_atlas_v1	B/Plasma	B cell LRMP+	50	19	0.2345679012345679	B/Plasma	19	0.2345679012345679	pDC	6	0.06382978723404255	verified_immune_hierarchy	immune nomenclature mapping checked against marker overlap	True
+BI_PF_ILD_atlas_v1	B/Plasma	Plasma B	50	8	0.08695652173913043	B/Plasma	8	0.08695652173913043	pDC	5	0.05263157894736842	verified_immune_hierarchy	immune nomenclature mapping checked against marker overlap	True
+BI_PF_ILD_atlas_v1	Basal	Basal	50	50	1.0	Basal	50	1.0	Club	19	0.2345679012345679	verified_exact_label	exact atlas label match	False
+BI_PF_ILD_atlas_v1	Basophil/Mast	Basophil/Mast	50	50	1.0	Basophil/Mast	50	1.0	Dendritic	5	0.05263157894736842	verified_exact_label	exact atlas label match	True
+BI_PF_ILD_atlas_v1	Bronchial Vessel	Bronchial Vessel	50	37	0.5873015873015873	Bronchial Vessel	37	0.5873015873015873	Vein	26	0.35135135135135137	verified_exact_label	exact atlas label match	False
+BI_PF_ILD_atlas_v1	Bronchial Vessel	Bronchial Vessel CXCL12+	50	39	0.639344262295082	Bronchial Vessel	39	0.639344262295082	Vein	28	0.3888888888888889	inferred_nonimmune_hierarchy	nomenclature plus top-50 marker overlap	False
+BI_PF_ILD_atlas_v1	Bronchial Vessel	Bronchial Vessel SELE+	50	43	0.7543859649122807	Bronchial Vessel	43	0.7543859649122807	Vein	30	0.42857142857142855	inferred_nonimmune_hierarchy	nomenclature plus top-50 marker overlap	False
+BI_PF_ILD_atlas_v1	Capillary	Capillary	50	50	1.0	Capillary	50	1.0	Capillary Aerocyte	32	0.47058823529411764	verified_exact_label	exact atlas label match	False
+BI_PF_ILD_atlas_v1	Capillary Aerocyte	Capillary Aerocyte	50	50	1.0	Capillary Aerocyte	50	1.0	Capillary	32	0.47058823529411764	verified_exact_label	exact atlas label match	False
+BI_PF_ILD_atlas_v1	Ciliated	COPD Ciliated	50	16	0.19047619047619047	Ciliated	16	0.19047619047619047	Ciliated & Club	4	0.041666666666666664	inferred_nonimmune_hierarchy	nomenclature plus top-50 marker overlap	False
+BI_PF_ILD_atlas_v1	Ciliated	Ciliated	50	38	0.6129032258064516	Ciliated	38	0.6129032258064516	Ciliated & Club	31	0.4492753623188406	verified_exact_label	exact atlas label match	False
+BI_PF_ILD_atlas_v1	Ciliated & Club	Ciliated & Club	50	50	1.0	Ciliated & Club	50	1.0	Ciliated	27	0.3698630136986301	verified_exact_label	exact atlas label match	False
+BI_PF_ILD_atlas_v1	Club	Club	50	50	1.0	Club	50	1.0	Club & AT1	30	0.42857142857142855	verified_exact_label	exact atlas label match	False
+BI_PF_ILD_atlas_v1	Club & AT1	Club & AT1	50	50	1.0	Club & AT1	50	1.0	Club	30	0.42857142857142855	verified_exact_label	exact atlas label match	False
+BI_PF_ILD_atlas_v1	Dendritic	DC CXCL2+/CD14+/CD1C-	50	33	0.4925373134328358	Dendritic	33	0.4925373134328358	Monocyte	13	0.14942528735632185	verified_immune_hierarchy	immune nomenclature mapping checked against marker overlap	True
+BI_PF_ILD_atlas_v1	Dendritic	DC LAMP3+/CCR7+	50	7	0.07526881720430108	Dendritic	7	0.07526881720430108	T cell	3	0.030927835051546393	verified_immune_hierarchy	immune nomenclature mapping checked against marker overlap	True
+BI_PF_ILD_atlas_v1	Dendritic	DC1 CLEC9A+	50	16	0.19047619047619047	Dendritic	16	0.19047619047619047	Macrophage FABP4+	6	0.06382978723404255	verified_immune_hierarchy	immune nomenclature mapping checked against marker overlap	True
+BI_PF_ILD_atlas_v1	Dendritic	DC2 C1QC+	50	24	0.3157894736842105	Dendritic	24	0.3157894736842105	Macrophage FABP4+	11	0.12359550561797752	verified_immune_hierarchy	immune nomenclature mapping checked against marker overlap	True
+BI_PF_ILD_atlas_v1	Dendritic	DC2 CD1A+/CD1E+	50	20	0.25	Dendritic	20	0.25	Macrophage FABP4+	7	0.07526881720430108	verified_immune_hierarchy	immune nomenclature mapping checked against marker overlap	True
+BI_PF_ILD_atlas_v1	Dendritic	DC2 CLEC10A+	50	36	0.5625	Dendritic	36	0.5625	Monocyte	7	0.07526881720430108	verified_immune_hierarchy	immune nomenclature mapping checked against marker overlap	True
+BI_PF_ILD_atlas_v1	Ionocyte	Ionocyte	50	50	1.0	Ionocyte	50	1.0	Basal	13	0.14942528735632185	verified_exact_label	exact atlas label match	False
+BI_PF_ILD_atlas_v1	Lymphatic	Lymphatic	50	50	1.0	Lymphatic	50	1.0	Vein	20	0.25	verified_exact_label	exact atlas label match	False
+BI_PF_ILD_atlas_v1	Macrophage	Macrophage C1Q hi	50	21	0.26582278481012656	Macrophage	21	0.26582278481012656	Macrophage FABP4+	14	0.16279069767441862	verified_immune_hierarchy	immune nomenclature mapping checked against marker overlap	True
+BI_PF_ILD_atlas_v1	Macrophage	Macrophage CHI3L1+/CD9 hi/	50	26	0.35135135135135137	Macrophage	26	0.35135135135135137	Macrophage FABP4+	10	0.1111111111111111	verified_immune_hierarchy	immune nomenclature mapping checked against marker overlap	True
+BI_PF_ILD_atlas_v1	Macrophage	Macrophage IL1B+	50	14	0.16279069767441862	Macrophage	14	0.16279069767441862	Monocyte	13	0.14942528735632185	verified_immune_hierarchy	immune nomenclature mapping checked against marker overlap	True
+BI_PF_ILD_atlas_v1	Macrophage	Macrophage LYVE1+	50	10	0.1111111111111111	Monocyte	12	0.13636363636363635	Macrophage	10	0.1111111111111111	verified_immune_hierarchy	immune nomenclature mapping checked against marker overlap	True
+BI_PF_ILD_atlas_v1	Macrophage	Macrophage RETN+/VCAN+	50	30	0.42857142857142855	Macrophage	30	0.42857142857142855	Monocyte	10	0.1111111111111111	verified_immune_hierarchy	immune nomenclature mapping checked against marker overlap	True
+BI_PF_ILD_atlas_v1	Macrophage FABP4+	Macrophage FABP4+	50	50	1.0	Macrophage FABP4+	50	1.0	Macrophage	11	0.12359550561797752	verified_exact_label	exact atlas label match	True
+BI_PF_ILD_atlas_v1	Macrophage FABP4+	Macrophage FABP4+/PDE4C+	50	19	0.2345679012345679	Macrophage FABP4+	19	0.2345679012345679	Dendritic	5	0.05263157894736842	verified_immune_hierarchy	immune nomenclature mapping checked against marker overlap	True
+BI_PF_ILD_atlas_v1	Mesothelial	Mesothelial	50	50	1.0	Mesothelial	50	1.0	Adventital fibroblast	19	0.2345679012345679	verified_exact_label	exact atlas label match	False
+BI_PF_ILD_atlas_v1	Monocyte	Monocytes CD14+	50	33	0.4925373134328358	Monocyte	33	0.4925373134328358	Macrophage	9	0.0989010989010989	verified_immune_hierarchy	immune nomenclature mapping checked against marker overlap	True
+BI_PF_ILD_atlas_v1	Monocyte	Monocytes CD14+/IL1B	50	28	0.3888888888888889	Monocyte	28	0.3888888888888889	Dendritic	10	0.1111111111111111	verified_immune_hierarchy	immune nomenclature mapping checked against marker overlap	True
+BI_PF_ILD_atlas_v1	Monocyte	Monocytes CD16+	50	32	0.47058823529411764	Monocyte	32	0.47058823529411764	Dendritic	12	0.13636363636363635	verified_immune_hierarchy	immune nomenclature mapping checked against marker overlap	True
+BI_PF_ILD_atlas_v1	Mucous	Mucous	50	50	1.0	Mucous	50	1.0	Club	25	0.3333333333333333	verified_exact_label	exact atlas label match	False
+BI_PF_ILD_atlas_v1	Myofibroblast	Myofibroblast	50	49	0.9607843137254902	Myofibroblast	49	0.9607843137254902	Alveolar fibroblast	24	0.3157894736842105	verified_exact_label	exact atlas label match	False
+BI_PF_ILD_atlas_v1	Myofibroblast	Peribronchial	50	24	0.3157894736842105	Myofibroblast	24	0.3157894736842105	Alveolar fibroblast	24	0.3157894736842105	inferred_nonimmune_hierarchy	best top-50 marker overlap; no explicit parent column in source	False
+BI_PF_ILD_atlas_v1	NK	Activated NK XCL1+	50	26	0.35135135135135137	NK	26	0.35135135135135137	T cell	16	0.19047619047619047	verified_immune_hierarchy	immune nomenclature mapping checked against marker overlap	True
+BI_PF_ILD_atlas_v1	NK	NK	50	50	1.0	NK	50	1.0	T cell	17	0.20481927710843373	verified_exact_label	exact atlas label match	True
+BI_PF_ILD_atlas_v1	Pericyte	Pericyte	50	50	1.0	Pericyte	50	1.0	Smooth Muscle	22	0.28205128205128205	verified_exact_label	exact atlas label match	False
+BI_PF_ILD_atlas_v1	Smooth Muscle	Smooth Muscle	50	50	1.0	Smooth Muscle	50	1.0	Pericyte	22	0.28205128205128205	verified_exact_label	exact atlas label match	False
+BI_PF_ILD_atlas_v1	T cell	CD8+ Naive T	50	39	0.639344262295082	T cell	39	0.639344262295082	NK	21	0.26582278481012656	verified_immune_hierarchy	immune nomenclature mapping checked against marker overlap	True
+BI_PF_ILD_atlas_v1	T cell	Cytotoxic T	50	32	0.47058823529411764	NK	33	0.4925373134328358	T cell	32	0.47058823529411764	verified_immune_hierarchy	immune nomenclature mapping checked against marker overlap	True
+BI_PF_ILD_atlas_v1	T cell	T CD4+ JUN+	50	38	0.6129032258064516	T cell	38	0.6129032258064516	NK	13	0.14942528735632185	verified_immune_hierarchy	immune nomenclature mapping checked against marker overlap	True
+BI_PF_ILD_atlas_v1	T cell	T regulatory	50	29	0.4084507042253521	T cell	29	0.4084507042253521	NK	9	0.0989010989010989	verified_immune_hierarchy	immune nomenclature mapping checked against marker overlap	True
+BI_PF_ILD_atlas_v1	T cell	helper T CD4+	50	38	0.6129032258064516	T cell	38	0.6129032258064516	NK	15	0.17647058823529413	verified_immune_hierarchy	immune nomenclature mapping checked against marker overlap	True
+BI_PF_ILD_atlas_v1	T cell	helper T CD4+ CDR7+	50	34	0.5151515151515151	T cell	34	0.5151515151515151	NK	12	0.13636363636363635	verified_immune_hierarchy	immune nomenclature mapping checked against marker overlap	True
+BI_PF_ILD_atlas_v1	Vein	Vein	50	50	1.0	Vein	50	1.0	Bronchial Vessel	31	0.4492753623188406	verified_exact_label	exact atlas label match	False
+BI_PF_ILD_atlas_v1	pDC	pDC	50	50	1.0	pDC	50	1.0	B/Plasma	6	0.06382978723404255	verified_exact_label	exact atlas label match	True

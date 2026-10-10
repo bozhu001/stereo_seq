@@ -1,0 +1,39 @@
+atlas_level1	atlas_level2	reference18_state	mapping_type	interpretation	reference18_state_present
+B/Plasma		B;Plasma	Level 1 requires Level 2 split	Combined atlas Level 1 cannot map one-to-one to separate Reference18 B and Plasma.	True
+B/Plasma	B cell	B	direct major lineage; Level 2 states merged	Reference18 B does not resolve the atlas B subtypes.	True
+B/Plasma	B cell LRMP+	B	direct major lineage; Level 2 states merged	Reference18 B does not resolve the atlas B subtypes.	True
+B/Plasma	Plasma B	Plasma	direct major lineage	Atlas plasma state maps to Reference18 Plasma; subtype resolution is not implied.	True
+Basophil/Mast		Mast/Basophil	direct combined major lineage	Neither system separates mast from basophil in this mapping.	True
+Basophil/Mast	Basophil/Mast	Mast/Basophil	direct combined major lineage	Neither system separates mast from basophil in this mapping.	True
+Dendritic		Dendritic cell	major lineage; Level 2 states merged	Reference18 has no separate DC1/DC2/LAMP3/pDC state.	True
+Dendritic	DC CXCL2+/CD14+/CD1C-	Dendritic cell	major lineage; Level 2 states merged	Reference18 has no separate DC1/DC2/LAMP3/pDC state.	True
+Dendritic	DC LAMP3+/CCR7+	Dendritic cell	major lineage; Level 2 states merged	Reference18 has no separate DC1/DC2/LAMP3/pDC state.	True
+Dendritic	DC1 CLEC9A+	Dendritic cell	major lineage; Level 2 states merged	Reference18 has no separate DC1/DC2/LAMP3/pDC state.	True
+Dendritic	DC2 C1QC+	Dendritic cell	major lineage; Level 2 states merged	Reference18 has no separate DC1/DC2/LAMP3/pDC state.	True
+Dendritic	DC2 CD1A+/CD1E+	Dendritic cell	major lineage; Level 2 states merged	Reference18 has no separate DC1/DC2/LAMP3/pDC state.	True
+Dendritic	DC2 CLEC10A+	Dendritic cell	major lineage; Level 2 states merged	Reference18 has no separate DC1/DC2/LAMP3/pDC state.	True
+Macrophage		Alveolar/resident macrophage;Inflammatory monocyte/macrophage	not reliably one-to-one	Broad atlas macrophage Level 1 spans both Reference18 macrophage axes.	True
+Macrophage	Macrophage C1Q hi	Alveolar/resident macrophage	best biological major-lineage correspondence	Reference18 merges resident macrophage states.	True
+Macrophage	Macrophage CHI3L1+/CD9 hi/	Inflammatory monocyte/macrophage	best biological state correspondence	Reference18 does not separately resolve these inflammatory macrophage states.	True
+Macrophage	Macrophage IL1B+	Inflammatory monocyte/macrophage	best biological state correspondence	Reference18 does not separately resolve these inflammatory macrophage states.	True
+Macrophage	Macrophage LYVE1+	Alveolar/resident macrophage	best biological major-lineage correspondence	Reference18 merges resident macrophage states.	True
+Macrophage	Macrophage RETN+/VCAN+	Inflammatory monocyte/macrophage	best biological state correspondence	Reference18 does not separately resolve these inflammatory macrophage states.	True
+Macrophage FABP4+		Alveolar/resident macrophage	best biological major-lineage correspondence	Reference18 merges resident macrophage states.	True
+Macrophage FABP4+	Macrophage FABP4+	Alveolar/resident macrophage	best biological major-lineage correspondence	Reference18 merges resident macrophage states.	True
+Macrophage FABP4+	Macrophage FABP4+/PDE4C+	Alveolar/resident macrophage	best biological major-lineage correspondence	Reference18 merges resident macrophage states.	True
+Monocyte		Inflammatory monocyte/macrophage	major lineage merged with inflammatory macrophage	Reference18 does not retain atlas CD14/CD16 monocyte subtypes separately.	True
+Monocyte	Monocytes CD14+	Inflammatory monocyte/macrophage	major lineage merged with inflammatory macrophage	Reference18 does not retain atlas CD14/CD16 monocyte subtypes separately.	True
+Monocyte	Monocytes CD14+/IL1B	Inflammatory monocyte/macrophage	major lineage merged with inflammatory macrophage	Reference18 does not retain atlas CD14/CD16 monocyte subtypes separately.	True
+Monocyte	Monocytes CD16+	Inflammatory monocyte/macrophage	major lineage merged with inflammatory macrophage	Reference18 does not retain atlas CD14/CD16 monocyte subtypes separately.	True
+NK		NK	direct major lineage; activation state merged	Activated NK XCL1+ is not a separate Reference18 state.	True
+NK	Activated NK XCL1+	NK	direct major lineage; activation state merged	Activated NK XCL1+ is not a separate Reference18 state.	True
+NK	NK	NK	direct major lineage; activation state merged	Activated NK XCL1+ is not a separate Reference18 state.	True
+T cell		T	direct major lineage; Level 2 states merged	Reference18 has no separate CD4, CD8, regulatory, naive, JUN+, or cytotoxic T state.	True
+T cell	CD8+ Naive T	T	direct major lineage; Level 2 states merged	Reference18 has no separate CD4, CD8, regulatory, naive, JUN+, or cytotoxic T state.	True
+T cell	Cytotoxic T	T	direct major lineage; Level 2 states merged	Reference18 has no separate CD4, CD8, regulatory, naive, JUN+, or cytotoxic T state.	True
+T cell	T CD4+ JUN+	T	direct major lineage; Level 2 states merged	Reference18 has no separate CD4, CD8, regulatory, naive, JUN+, or cytotoxic T state.	True
+T cell	T regulatory	T	direct major lineage; Level 2 states merged	Reference18 has no separate CD4, CD8, regulatory, naive, JUN+, or cytotoxic T state.	True
+T cell	helper T CD4+	T	direct major lineage; Level 2 states merged	Reference18 has no separate CD4, CD8, regulatory, naive, JUN+, or cytotoxic T state.	True
+T cell	helper T CD4+ CDR7+	T	direct major lineage; Level 2 states merged	Reference18 has no separate CD4, CD8, regulatory, naive, JUN+, or cytotoxic T state.	True
+pDC		Dendritic cell	major lineage; Level 2 states merged	Reference18 has no separate DC1/DC2/LAMP3/pDC state.	True
+pDC	pDC	Dendritic cell	major lineage; Level 2 states merged	Reference18 has no separate DC1/DC2/LAMP3/pDC state.	True
