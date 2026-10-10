@@ -820,3 +820,35 @@
   must not be used for downstream comparisons.
 - Session summary:
   `.agent/bin50_calibrated_b_lineage_coverage_wrapup_261010215845.md`.
+
+## 2026-10-10 — B-lineage coverage mapping to immune subniches
+
+- Reused the frozen 29,645-bin Strategy C immune candidate pool, frozen
+  K=3/4/5 assignments, and final 2,669-bin B-lineage RNA coverage mask.
+- Mapped B coverage at chip × patient × K × cluster resolution without
+  rerunning RCTD, graph construction, clustering, K selection, marker
+  calibration, or disease comparison. Patient was the biological replicate.
+- L3 B-enriched lineage: K3 I1 → K4 I4 → K5 I3; 6/7 patients were
+  directionally enriched, K3 captured 74.5% of the L3 B mask, and the median
+  patient enrichment ratio was 3.08.
+- J2 B-enriched lineage: K3 I3 → K4 I1 → K5 I3; 6/7 patients were
+  directionally enriched, K3 captured 45.7% of the J2 B mask, and the median
+  patient enrichment ratio was 1.91.
+- Y40102K8 B-enriched lineage: K3 I1 → K4 I4 → K5 I3; 5/7 patients were
+  directionally enriched and K3 captured 99.5% of the chip B mask, but the
+  result was strongly patient-imbalanced.
+- Mapping labels are not final immune-subniche names. Final naming should wait
+  for lineage-specific T, NK, Plasma, Myeloid, and Mast/Basophil audits.
+- Final directory:
+  `results/reanalysis/B_LINEAGE_SUBNICHE_MAPPING_20261010_225151/`.
+- Rendered HTML:
+  `results/B_LINEAGE_SUBNICHE_MAPPING_REPORT_261010225750.html`; SHA256
+  `F94F68D53E8D85095306B32083C694F96B7C291EDE5C24300BC106232D3558D1`.
+- Analysis/report commit: `6e94986`.
+- The user separately approved the ELN draft. Approved local copy:
+  `elab/B-lineage_coverage_mapping_to_immune_subniches_261010225750.md`. No
+  remote ID/URL exists because `ELABFTW_API_KEY` is unavailable.
+- Script-review classification remains pending; no skill-candidate issue was
+  filed.
+- Session summary:
+  `.agent/b_lineage_subniche_mapping_wrapup_261010230705.md`.
