@@ -785,3 +785,37 @@
   filed.
 - Session summary:
   `.agent/extended_immune_marker_library_wrapup_261010190419.md`.
+
+## 2026-10-10 — Calibrated Bin50 B-lineage RNA coverage mask
+
+- Reused the frozen 29,645-bin immune candidate pool, frozen K=3/4/5 immune
+  assignments, center-excluded 50 µm neighborhoods, and raw-integer-count
+  marker scores; no RCTD, graph construction, clustering, K selection, or
+  disease testing was rerun.
+- Rejected the naive ≥2-extended-gene detection rule because it called
+  24,480/29,645 candidate bins (82.58%) and was strongly depth-sensitive.
+- Disease-blind multi-resolution B anchors plus patient/UMI-matched background
+  calibration retained ten informative extended genes: ARHGAP24, ITSN2,
+  MAP4K4, MGAT5, NCOA3, PRDM2, RBM6, SAMD12, USP34, and ZCCHC7.
+- The user approved the primary rule: matched-background q90, at least two
+  informative extended genes detected in the center-excluded 50 µm
+  neighborhood, and a connected component of at least five positive Bin50.
+  Components ≥3 remain a sensitivity result; core B genes corroborate but do
+  not veto extended support.
+- Primary component ≥5 mask: 2,669 Bin50; component ≥3 sensitivity: 3,429;
+  primary extended gain beyond core-only: 1,514; primary core-corroborated:
+  1,811.
+- Final directory:
+  `results/reanalysis/B_LINEAGE_CALIBRATED_COVERAGE_MASK_GE5_20261010_215212/`.
+- Rendered HTML:
+  `results/B_LINEAGE_CALIBRATED_COVERAGE_REPORT_261010215502.html`; SHA256
+  `5BD96C947CA7174627FAE06F4148BC8E26E1E0EF3BF94539DEA1CDD6E2771A9D`.
+- Analysis/report commit:
+  `b857c3c223288b693f530dea5fc2eb314f41adb2`.
+- The user separately approved the ELN draft. Approved local copy:
+  `elab/Bin50_calibrated_B-lineage_RNA_coverage_mask_261010215502.md`. No
+  remote ID/URL exists because `ELABFTW_API_KEY` is unavailable.
+- Script-review classification remains pending; no skill-candidate issue was
+  filed.
+- Session summary:
+  `.agent/bin50_calibrated_b_lineage_coverage_wrapup_261010215845.md`.
