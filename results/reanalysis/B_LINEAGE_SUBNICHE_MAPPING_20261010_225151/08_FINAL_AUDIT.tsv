@@ -1,0 +1,8 @@
+audit_item	value	passed
+input checks passed	True	True
+mapping row count	88935	True
+no missing cluster labels	0	True
+primary B count reproduced at each K	8007	True
+patient-level summaries complete	244	True
+disease comparison performed	False	True
+clustering or K selection performed	False	True

@@ -1,0 +1,24 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261010225408
+Username: WIN-UEJRRBB9QD4\Administrator
+RunAs User: WIN-UEJRRBB9QD4\Administrator
+Configuration Name: 
+Machine: WIN-UEJRRBB9QD4 (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -File scripts/1055_run_b_lineage_subniche_mapping.ps1 -OutputDir results/reanalysis/B_LINEAGE_SUBNICHE_MAPPING_20261010_225151
+Process ID: 7948
+PSVersion: 5.1.26100.9549
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9549
+BuildVersion: 10.0.26100.9549
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is D:\Lung ST\codex agent\stereo_seq\stereo_seq\results\reanalysis\B_LINEAGE_SUBNICHE_MAPPING_20261010_225151\logs\1055_b_lineage_subniche_mapping.log
+
+**********************
+Windows PowerShell transcript end
+End time: 20261010225425
+**********************

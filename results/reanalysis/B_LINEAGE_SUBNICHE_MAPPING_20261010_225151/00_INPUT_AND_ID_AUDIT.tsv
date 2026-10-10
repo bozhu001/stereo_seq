@@ -1,0 +1,16 @@
+chip	audit_item	observed	expected	passed
+L3	candidate_count	14839	14839	True
+L3	primary_b_count	1386	1386	True
+L3	patient_count	7	7	True
+L3	assignment_count	44517	44517	True
+L3	assignment_id_count	14839	14839	True
+J2	candidate_count	11893	11893	True
+J2	primary_b_count	545	545	True
+J2	patient_count	7	7	True
+J2	assignment_count	35679	35679	True
+J2	assignment_id_count	11893	11893	True
+Y40102K8	candidate_count	2913	2913	True
+Y40102K8	primary_b_count	738	738	True
+Y40102K8	patient_count	7	7	True
+Y40102K8	assignment_count	8739	8739	True
+Y40102K8	assignment_id_count	2913	2913	True

@@ -1,0 +1,8 @@
+{
+  "mask": "/mnt/d/Lung ST/codex agent/stereo_seq/stereo_seq/results/reanalysis/B_LINEAGE_CALIBRATED_COVERAGE_MASK_GE5_ONLY_20261010_220617/01_FINAL_CALIBRATED_B_COVERAGE_MASK.tsv.gz",
+  "assignments": "/mnt/d/Lung ST/codex agent/stereo_seq/stereo_seq/results/reanalysis/EXTENDED_IMMUNE_SIGNATURE_VALIDATION_20261010_192044/work/01_FROZEN_K345_ASSIGNMENTS.tsv.gz",
+  "candidate_n": 29645,
+  "primary_b_n": 2669,
+  "mapping_row_n": 88935,
+  "recurrent_b_enriched_n": 8
+}
