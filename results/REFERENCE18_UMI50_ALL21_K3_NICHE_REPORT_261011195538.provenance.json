@@ -1,0 +1,66 @@
+{
+  "report": "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\REFERENCE18_UMI50_ALL21_K3_NICHE_REPORT_261011195538.html",
+  "timestamp": "261011195538",
+  "inputs": {
+    "method": {
+      "path": "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\reanalysis\\ALL21_SHARED_UNBIASED_DISCRETE_NICHE_ATLAS_20261011_191652_attempt4\\00_METHOD_AND_INPUT_LOCK.tsv",
+      "sha256": "cb9bfad6b0890f69ccfd6a7d37e597018cd5c92d2fc5263b766472a10c5ec8a7"
+    },
+    "k_audit": {
+      "path": "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\reanalysis\\ALL21_SHARED_UNBIASED_DISCRETE_NICHE_ATLAS_20261011_191652_attempt4\\03_K_SELECTION_AUDIT.tsv",
+      "sha256": "fb2a8ed7c326cf9b164675435c70081dab098bd2f4fdcdef690f1238f3cf4e87"
+    },
+    "composition": {
+      "path": "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\reanalysis\\ALL21_SHARED_UNBIASED_DISCRETE_NICHE_ATLAS_20261011_191652_attempt4\\05_SELECTED_K_NICHE_COMPOSITION.tsv",
+      "sha256": "683d531563eaf47acc7345665420bc4322e98efe4fba57e8e30d2536dad49d2a"
+    },
+    "patient_abundance": {
+      "path": "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\reanalysis\\ALL21_SHARED_UNBIASED_DISCRETE_NICHE_ATLAS_20261011_191652_attempt4\\06_PATIENT_NICHE_ABUNDANCE.tsv",
+      "sha256": "0d3dfc73fd7c22707378841615896310de3bf935865b3637463ccb520dd84930"
+    },
+    "disease_tests": {
+      "path": "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\reanalysis\\ALL21_SHARED_UNBIASED_DISCRETE_NICHE_ATLAS_20261011_191652_attempt4\\09_NICHE_DISEASE_TESTS.tsv",
+      "sha256": "25c15259bdb60ab87ce1c8e3b5393a13029e804247a1609f38758a6e95a08a81"
+    },
+    "atlas_validation": {
+      "path": "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\reanalysis\\ALL21_SHARED_UNBIASED_DISCRETE_NICHE_ATLAS_20261011_191652_attempt4\\15_FINAL_VALIDATION.tsv",
+      "sha256": "99891a0a5228927447e67ae38dc2b5dfb69d9fb49af3bd89ad9b587549418ee6"
+    },
+    "celltype_heatmap": {
+      "path": "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\reanalysis\\ALL21_K3_NICHE_HEATMAP_DISEASE_COMPARISON_20261011_192920_attempt2\\figures\\FIG01_K3_NICHE_X_CELLTYPE_HEATMAP.png",
+      "sha256": "a57dbfb0a36aba2f836f22514a5b8abb126edf1783e601b9ddd83b4c51a852ed"
+    },
+    "disease_distribution": {
+      "path": "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\reanalysis\\ALL21_K3_NICHE_HEATMAP_DISEASE_COMPARISON_20261011_192920_attempt2\\figures\\FIG02_PATIENT_NICHE_FRACTION_BY_DISEASE.png",
+      "sha256": "1040b18780cf4826d5bc66b52e94c0622550911e796fb5eff37385534d8cc229"
+    },
+    "disease_effect": {
+      "path": "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\reanalysis\\ALL21_K3_NICHE_HEATMAP_DISEASE_COMPARISON_20261011_192920_attempt2\\figures\\FIG03_DISEASE_EFFECT_HEATMAP.png",
+      "sha256": "0514dc4a47abf5e5f0fb1d8903c028f280a7486b892135c0f28bf26a1591bb3c"
+    },
+    "spatial_atlas": {
+      "path": "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\reanalysis\\ALL21_SHARED_UNBIASED_DISCRETE_NICHE_ATLAS_20261011_191652_attempt4\\figures\\FIG03_ALL21_SPATIAL_NICHE_ATLAS.png",
+      "sha256": "471cb3fce7410c85719547eba3d9f1865fc307d488a6e1a60567f2dcf438f99d"
+    },
+    "adjacency_table": {
+      "path": "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\reanalysis\\ALL21_K3_DIFFERENTIAL_NICHE_ADJACENCY_20261011_195242\\03_DIFFERENTIAL_NICHE_ADJACENCY.tsv",
+      "sha256": "ced977fd88d94e947bcbc9a2c497ce7bd41f8ca77869090aa1b2048673f95784"
+    },
+    "adjacency_distribution": {
+      "path": "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\reanalysis\\ALL21_K3_DIFFERENTIAL_NICHE_ADJACENCY_20261011_195242\\figures\\FIG01_PATIENT_K3_NICHE_ADJACENCY_BY_DISEASE.png",
+      "sha256": "9108a8eca21f3ad48a730f77a259e7ca624ac9af786777b0daf7cc478fe3952e"
+    },
+    "adjacency_effect": {
+      "path": "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\reanalysis\\ALL21_K3_DIFFERENTIAL_NICHE_ADJACENCY_20261011_195242\\figures\\FIG02_DIFFERENTIAL_K3_NICHE_ADJACENCY_HEATMAP.png",
+      "sha256": "f732779bd9e5d6d40584ace0c591f4f7d06c02ad590179a578f0e543417eebc1"
+    },
+    "adjacency_validation": {
+      "path": "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\reanalysis\\ALL21_K3_DIFFERENTIAL_NICHE_ADJACENCY_20261011_195242\\04_FINAL_VALIDATION.tsv",
+      "sha256": "231220a289dabdb79fc51533bdcabbf9a8eff7af8f197b6b78a1badc76a12af4"
+    }
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "numpy": "2.4.6",
+  "pandas": "3.0.5"
+}
