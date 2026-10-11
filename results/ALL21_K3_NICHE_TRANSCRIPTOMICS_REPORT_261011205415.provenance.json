@@ -1,0 +1,111 @@
+{
+  "report": "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\ALL21_K3_NICHE_TRANSCRIPTOMICS_REPORT_261011205415.html",
+  "timestamp": "261011205415",
+  "command": "envs/stereo_seq_py/Scripts/python.exe scripts/1080_render_k3_niche_transcriptomics_report.py --analysis-dir results/reanalysis/ALL21_K3_NICHE_PSEUDOBULK_DEG_20261011_201008 --output-dir results",
+  "inputs": {
+    "input_manifest": {
+      "path": "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\reanalysis\\ALL21_K3_NICHE_PSEUDOBULK_DEG_20261011_201008\\00_INPUT_MANIFEST.tsv",
+      "sha256": "2a6151b6e0335ed4245dd1a3a49517c5c10dba74ae00862e9f637649a862b2d0"
+    },
+    "sample_metadata": {
+      "path": "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\reanalysis\\ALL21_K3_NICHE_PSEUDOBULK_DEG_20261011_201008\\01_PSEUDOBULK_SAMPLE_METADATA.tsv",
+      "sha256": "cf06e7c03dcb60de0b3f8d01d012f23e0e5bb1aed50448ec4a95899e9d7103e6"
+    },
+    "preparation_validation": {
+      "path": "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\reanalysis\\ALL21_K3_NICHE_PSEUDOBULK_DEG_20261011_201008\\04_PREPARATION_VALIDATION.tsv",
+      "sha256": "4cc3a4952615d1e07b0dc84450b52280de838e92f1b0e369fdb97185ca62995c"
+    },
+    "program_tests": {
+      "path": "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\reanalysis\\ALL21_K3_NICHE_PSEUDOBULK_DEG_20261011_201008\\09_PROGRAM_DISEASE_TESTS.tsv",
+      "sha256": "234ba0d2a56256f4740b7929a1b24bfde1c54c7103165431ef5fb7ee7f0f4eb0"
+    },
+    "deg_summary": {
+      "path": "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\reanalysis\\ALL21_K3_NICHE_PSEUDOBULK_DEG_20261011_201008\\12_DEG_SUMMARY.tsv",
+      "sha256": "3abe4528bfabb74ed72d9e7354aa5d8c28fb3173d39eb50e90f52939af9f6379"
+    },
+    "model_validation": {
+      "path": "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\reanalysis\\ALL21_K3_NICHE_PSEUDOBULK_DEG_20261011_201008\\14_FINAL_VALIDATION.tsv",
+      "sha256": "b88b4b45541c185f6150e0795b214bb9f4909d3418d6acd6df7ffa0628f4c7e6"
+    },
+    "robustness": {
+      "path": "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\reanalysis\\ALL21_K3_NICHE_PSEUDOBULK_DEG_20261011_201008\\17_DEG_ROBUSTNESS_SUMMARY.tsv",
+      "sha256": "fb65f22e8033e510d691b7f1d0dd664cbacac63822c71d4abb7bdb028cbc97b1"
+    },
+    "composition_tests": {
+      "path": "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\reanalysis\\ALL21_K3_NICHE_PSEUDOBULK_DEG_20261011_201008\\22_RCTD_COMPOSITION_DISEASE_TESTS.tsv",
+      "sha256": "ff4de9be421e4b847cf65274c20b38c5c528a0f8267444941ed02d54ade3c750"
+    },
+    "composition_adjusted": {
+      "path": "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\reanalysis\\ALL21_K3_NICHE_PSEUDOBULK_DEG_20261011_201008\\23_COMPOSITION_ADJUSTED_ROBUST_DEG.tsv",
+      "sha256": "263fb26adff7c8b2779c7ad7c18484c889d0e889e39f63bc201aa5d3c1c4fc2d"
+    },
+    "composition_summary": {
+      "path": "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\reanalysis\\ALL21_K3_NICHE_PSEUDOBULK_DEG_20261011_201008\\27_COMPOSITION_VS_STATE_SUMMARY.tsv",
+      "sha256": "dba63c2111a243bd290a83ada1f344480b339e8d68d106fd117802177dd55002"
+    },
+    "composition_validation": {
+      "path": "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\reanalysis\\ALL21_K3_NICHE_PSEUDOBULK_DEG_20261011_201008\\28_COMPOSITION_VS_STATE_VALIDATION.tsv",
+      "sha256": "fbd2ad5ed6bbfd247c6a7104c3fe8399b558f33c27f76d1d658521437a3a6d1b"
+    },
+    "technical_summary": {
+      "path": "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\reanalysis\\ALL21_K3_NICHE_PSEUDOBULK_DEG_20261011_201008\\36_TECHNICAL_PATIENT_CONSISTENCY_SUMMARY.tsv",
+      "sha256": "1f085db9ddbd4a6dc05bf31acd5aaa0af5ced753b0f32df1bc2b5e2510d5a71d"
+    },
+    "technical_validation": {
+      "path": "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\reanalysis\\ALL21_K3_NICHE_PSEUDOBULK_DEG_20261011_201008\\37_TECHNICAL_PATIENT_CONSISTENCY_VALIDATION.tsv",
+      "sha256": "e7a4b1230475b88c07b9b72d8fbded4a9410f5a92820eb47536fada1447dc89f"
+    },
+    "evidence_tiers": {
+      "path": "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\reanalysis\\ALL21_K3_NICHE_PSEUDOBULK_DEG_20261011_201008\\38_TECHNICAL_EVIDENCE_TIER_ASSIGNMENT.tsv",
+      "sha256": "c8729c993ac2081e22a0289f88fde0b13e90bdb15f3a8ec60ff9ff1f78b7746b"
+    },
+    "program_figure": {
+      "path": "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\reanalysis\\ALL21_K3_NICHE_PSEUDOBULK_DEG_20261011_201008\\figures\\FIG01_PROGRAM_DISEASE_EFFECT_HEATMAP.png",
+      "sha256": "a82c22f49a81aa75da26d35e59990c6652a69c57aaafe65972d006629426e30f"
+    },
+    "volcano_figure": {
+      "path": "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\reanalysis\\ALL21_K3_NICHE_PSEUDOBULK_DEG_20261011_201008\\figures\\FIG02_NICHE_DISEASE_DEG_VOLCANO.png",
+      "sha256": "30229b4d5e5a51c5b4fb6495ae9744bbf88742575ddb308b374fc18955ef51f1"
+    },
+    "sensitivity_figure": {
+      "path": "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\reanalysis\\ALL21_K3_NICHE_PSEUDOBULK_DEG_20261011_201008\\figures\\FIG03_PRIMARY_VS_LOW_BIN_EXCLUSION_DEG.png",
+      "sha256": "5814bbe1231c0386f17c1818e5fec21a62f4d0da319c96f3b5f359379f2453b7"
+    },
+    "composition_figure": {
+      "path": "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\reanalysis\\ALL21_K3_NICHE_PSEUDOBULK_DEG_20261011_201008\\figures\\FIG04_CILIATED_COMPOSITION_BY_DISEASE.png",
+      "sha256": "98852443e2f40b842e1cafcc8b32859d7176e2b2cb7d8664800f0f8b7c2060e6"
+    },
+    "adjusted_figure": {
+      "path": "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\reanalysis\\ALL21_K3_NICHE_PSEUDOBULK_DEG_20261011_201008\\figures\\FIG05_ORIGINAL_VS_COMPOSITION_ADJUSTED_DEG.png",
+      "sha256": "0bb4af6f423dc5e7a2bea4a6fa055b5c2fdc8e11330947c2ef6e5cba494bfb0d"
+    },
+    "chip_figure": {
+      "path": "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\reanalysis\\ALL21_K3_NICHE_PSEUDOBULK_DEG_20261011_201008\\figures\\FIG06_CHIP_SPECIFIC_GENE_EFFECT_HEATMAP.png",
+      "sha256": "b2d190754a28773ddaf40beeb0719283664acb54b2deb8d4d78086e637d4bc60"
+    },
+    "attenuation_figure": {
+      "path": "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\reanalysis\\ALL21_K3_NICHE_PSEUDOBULK_DEG_20261011_201008\\figures\\FIG07_TECHNICAL_COVARIATE_ATTENUATION_HEATMAP.png",
+      "sha256": "670533b722d999947a6f3002a7627c27c0ee788100940c74be5d4ed7f54c45e9"
+    },
+    "spatial_ms4a8": {
+      "path": "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\reanalysis\\ALL21_K3_NICHE_PSEUDOBULK_DEG_20261011_201008\\figures\\FIG08_SPATIAL_MS4A8_CN3.png",
+      "sha256": "95b4f6d7246c00ac1c7a3e10a24ff0aa02ec50d475e967122ca283ba8ddc66f9"
+    },
+    "spatial_nwd1": {
+      "path": "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\reanalysis\\ALL21_K3_NICHE_PSEUDOBULK_DEG_20261011_201008\\figures\\FIG08_SPATIAL_NWD1_CN3.png",
+      "sha256": "2b25bffdbb463cacd7cfa9abfd911fd1270bd7ed0272bb7f84cfafa288afc159"
+    },
+    "session_info": {
+      "path": "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\reanalysis\\ALL21_K3_NICHE_PSEUDOBULK_DEG_20261011_201008\\SESSION_INFO.txt",
+      "sha256": "2c1d213e0c3f43c30058a9d79012febc9f157e552ffafb57695db481598cbb91"
+    },
+    "composition_session_info": {
+      "path": "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\reanalysis\\ALL21_K3_NICHE_PSEUDOBULK_DEG_20261011_201008\\SESSION_INFO_COMPOSITION_VS_STATE.txt",
+      "sha256": "2c1d213e0c3f43c30058a9d79012febc9f157e552ffafb57695db481598cbb91"
+    }
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "numpy": "2.4.6",
+  "pandas": "3.0.5"
+}
