@@ -1,0 +1,13 @@
+check	pass	observed
+input_shape_126449_by_18	True	(126449, 18)
+composition_finite	True	all finite
+composition_rows_sum_to_one	True	0.9999999
+twenty_one_patients	True	21
+balanced_chip_disease_design	True	"{""HC"":{""Y40102K8"":2,""Y40105J2"":2,""Y40105L3"":2},""IPF"":{""Y40102K8"":2,""Y40105J2"":2,""Y40105L3"":2},""SSc-ILD"":{""Y40102K8"":3,""Y40105J2"":3,""Y40105L3"":3}}"
+reference_size_10500	True	10500
+anchors_after_refinement	True	679
+primary_neighborhood_exact_size	True	500
+primary_tested_neighborhoods	True	262
+permutation_p_resolution	True	0.021097890210978902
+finite_primary_effects	True	all finite
+membership_has_overlap	True	77

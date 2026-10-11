@@ -1,0 +1,22 @@
+parameter	value
+input_h5	D:\Lung ST\codex agent\stereo_seq\stereo_seq\results\reanalysis\REFERENCE18_UMI50_VOLTRON_NICHE_ASSAY_20260929_000834_attempt3\02_REFERENCE18_UMI50_NICHE_ASSAY_50_100UM.h5
+input_sha256	30ab575242744b62b8049791c68fa406406cd5b9c3eea700b2eb1d289814033b
+reference	six-dataset Reference18
+umi_min	50
+spatial_radius_um	50
+center_bin	included (inherited frozen assay)
+feature	18-state local spatial-neighborhood composition
+transform	exact frozen-workflow VoltRon zero-safe CLR
+patients	21
+reference_per_patient	500
+reference_k	100
+anchor_proportion	0.1
+anchor_refinement	random disease-blind reference vertices -> median of reference-kNN -> nearest observed reference bin -> deduplicate
+primary_membership_k	500
+sensitivity_membership_k	300;800
+support_filter	>=5 bins in >=6 patients; >=2 patients in >=2 chips; max patient fraction <=0.8
+primary_model	HC3 OLS on corrected-logit patient fraction: chip + disease
+permutations	10000 disease-label permutations within chip
+multiple_testing	BH within contrast and globally across all three contrasts
+supported_finding_rule	global HC3 FDR<0.05 AND global permutation FDR<0.05 AND depth-adjusted same direction AND LOO direction fraction>=0.80
+seed	20261011
