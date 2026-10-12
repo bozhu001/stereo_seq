@@ -1,0 +1,15 @@
+{
+  "created_at": "2026-10-13T00:30:35.786093",
+  "elapsed_seconds": 15.346376657485962,
+  "python": "3.11.15 (main, Jun 11 2026, 15:20:16) [GCC 14.3.0]",
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "seed": 20261013,
+  "high_usage_quantile": 0.9,
+  "low_usage_candidate_quantile": 0.5,
+  "spatial_edge_radius_um": 36.0,
+  "expression_neighborhood_radius_um": 50.0,
+  "raw_h5ad_shape": [
+    147160,
+    27618
+  ]
+}

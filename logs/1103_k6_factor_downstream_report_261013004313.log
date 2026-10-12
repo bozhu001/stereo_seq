@@ -1,0 +1,84 @@
+[NbConvertApp] Converting notebook /mnt/d/Lung ST/codex agent/stereo_seq/stereo_seq/scripts/1103_k6_factor_downstream_report.ipynb to html
+/home/bozhu/miniconda3/envs/stereo/lib/python3.10/site-packages/nbformat/__init__.py:96: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.
+  validate(nb)
+Traceback (most recent call last):
+  File "/home/bozhu/miniconda3/envs/stereo/bin/jupyter-nbconvert", line 6, in <module>
+    sys.exit(main())
+  File "/home/bozhu/miniconda3/envs/stereo/lib/python3.10/site-packages/jupyter_core/application.py", line 284, in launch_instance
+    super().launch_instance(argv=argv, **kwargs)
+  File "/home/bozhu/miniconda3/envs/stereo/lib/python3.10/site-packages/traitlets/config/application.py", line 1082, in launch_instance
+    app.start()
+  File "/home/bozhu/miniconda3/envs/stereo/lib/python3.10/site-packages/nbconvert/nbconvertapp.py", line 420, in start
+    self.convert_notebooks()
+  File "/home/bozhu/miniconda3/envs/stereo/lib/python3.10/site-packages/nbconvert/nbconvertapp.py", line 597, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "/home/bozhu/miniconda3/envs/stereo/lib/python3.10/site-packages/nbconvert/nbconvertapp.py", line 563, in convert_single_notebook
+    output, resources = self.export_single_notebook(
+  File "/home/bozhu/miniconda3/envs/stereo/lib/python3.10/site-packages/nbconvert/nbconvertapp.py", line 487, in export_single_notebook
+    output, resources = self.exporter.from_filename(
+  File "/home/bozhu/miniconda3/envs/stereo/lib/python3.10/site-packages/nbconvert/exporters/templateexporter.py", line 390, in from_filename
+    return super().from_filename(filename, resources, **kw)  # type:ignore[return-value]
+  File "/home/bozhu/miniconda3/envs/stereo/lib/python3.10/site-packages/nbconvert/exporters/exporter.py", line 201, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+  File "/home/bozhu/miniconda3/envs/stereo/lib/python3.10/site-packages/nbconvert/exporters/templateexporter.py", line 396, in from_file
+    return super().from_file(file_stream, resources, **kw)  # type:ignore[return-value]
+  File "/home/bozhu/miniconda3/envs/stereo/lib/python3.10/site-packages/nbconvert/exporters/exporter.py", line 220, in from_file
+    return self.from_notebook_node(
+  File "/home/bozhu/miniconda3/envs/stereo/lib/python3.10/site-packages/nbconvert/exporters/html.py", line 286, in from_notebook_node
+    html, resources = super().from_notebook_node(nb, resources, **kw)
+  File "/home/bozhu/miniconda3/envs/stereo/lib/python3.10/site-packages/nbconvert/exporters/templateexporter.py", line 412, in from_notebook_node
+    nb_copy, resources = super().from_notebook_node(nb, resources, **kw)
+  File "/home/bozhu/miniconda3/envs/stereo/lib/python3.10/site-packages/nbconvert/exporters/exporter.py", line 154, in from_notebook_node
+    nb_copy, resources = self._preprocess(nb_copy, resources)
+  File "/home/bozhu/miniconda3/envs/stereo/lib/python3.10/site-packages/nbconvert/exporters/exporter.py", line 353, in _preprocess
+    nbc, resc = preprocessor(nbc, resc)
+  File "/home/bozhu/miniconda3/envs/stereo/lib/python3.10/site-packages/nbconvert/preprocessors/base.py", line 48, in __call__
+    return self.preprocess(nb, resources)
+  File "/home/bozhu/miniconda3/envs/stereo/lib/python3.10/site-packages/nbconvert/preprocessors/execute.py", line 103, in preprocess
+    self.preprocess_cell(cell, resources, index)
+  File "/home/bozhu/miniconda3/envs/stereo/lib/python3.10/site-packages/nbconvert/preprocessors/execute.py", line 124, in preprocess_cell
+    cell = self.execute_cell(cell, index, store_history=True)
+  File "/home/bozhu/miniconda3/envs/stereo/lib/python3.10/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+  File "/home/bozhu/miniconda3/envs/stereo/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/home/bozhu/miniconda3/envs/stereo/lib/python3.10/site-packages/nbclient/client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/home/bozhu/miniconda3/envs/stereo/lib/python3.10/site-packages/nbclient/client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+from pathlib import Path
+import pandas as pd
+from IPython.display import Image, Markdown, display
+
+project_root = Path.cwd()
+if not (project_root / 'results').exists():
+    project_root = project_root.parent
+run_dir = project_root / 'results/reanalysis/REFERENCE18_K6_FACTOR_DOWNSTREAM_20261013_003020'
+assert (run_dir / 'COMPLETE.ok').exists(), run_dir
+
+manifest = pd.read_csv(run_dir / '00_INPUT_MANIFEST.tsv', sep='\t')
+factor_definitions = pd.read_csv(run_dir / '01_FACTOR_DEFINITIONS.tsv', sep='\t')
+patient_metrics = pd.read_csv(run_dir / '02_PATIENT_FACTOR_METRICS.tsv', sep='\t')
+patient_expression = pd.read_csv(run_dir / '03_PATIENT_FACTOR_RAW_EXPRESSION_VALIDATION.tsv', sep='\t')
+expression_summary = pd.read_csv(run_dir / '04_FACTOR_RAW_EXPRESSION_SUMMARY.tsv', sep='\t')
+marker_audit = pd.read_csv(run_dir / '05_MARKER_PANEL_AUDIT.tsv', sep='\t')
+factor_table = pd.read_csv(run_dir / '06_FINAL_FACTOR_ANALYSIS_TABLE.tsv', sep='\t')
+validation = pd.read_csv(run_dir / '08_VALIDATION.tsv', sep='\t')
+pd.set_option('display.max_rows', 200)
+pd.set_option('display.max_columns', 50)
+------------------
+
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mAssertionError[0m                            Traceback (most recent call last)
+Cell [0;32mIn[1], line 9[0m
+[1;32m      7[0m     project_root [38;5;241m=[39m project_root[38;5;241m.[39mparent
+[1;32m      8[0m run_dir [38;5;241m=[39m project_root [38;5;241m/[39m [38;5;124m'[39m[38;5;124mresults/reanalysis/REFERENCE18_K6_FACTOR_DOWNSTREAM_20261013_003020[39m[38;5;124m'[39m
+[0;32m----> 9[0m [38;5;28;01massert[39;00m (run_dir [38;5;241m/[39m [38;5;124m'[39m[38;5;124mCOMPLETE.ok[39m[38;5;124m'[39m)[38;5;241m.[39mexists(), run_dir
+[1;32m     11[0m manifest [38;5;241m=[39m pd[38;5;241m.[39mread_csv(run_dir [38;5;241m/[39m [38;5;124m'[39m[38;5;124m00_INPUT_MANIFEST.tsv[39m[38;5;124m'[39m, sep[38;5;241m=[39m[38;5;124m'[39m[38;5;130;01m\t[39;00m[38;5;124m'[39m)
+[1;32m     12[0m factor_definitions [38;5;241m=[39m pd[38;5;241m.[39mread_csv(run_dir [38;5;241m/[39m [38;5;124m'[39m[38;5;124m01_FACTOR_DEFINITIONS.tsv[39m[38;5;124m'[39m, sep[38;5;241m=[39m[38;5;124m'[39m[38;5;130;01m\t[39;00m[38;5;124m'[39m)
+
+[0;31mAssertionError[0m: /mnt/d/Lung ST/codex agent/stereo_seq/stereo_seq/scripts/results/reanalysis/REFERENCE18_K6_FACTOR_DOWNSTREAM_20261013_003020
+

@@ -1,0 +1,8 @@
+Script: scripts/1101_validate_k6_factor_expression_and_patient_metrics.py
+Command: /home/bozhu/miniconda3/envs/banksy_stereo/bin/python scripts/1101_validate_k6_factor_expression_and_patient_metrics.py --output-root results/reanalysis
+NMF refit: no
+RCTD refit: no
+Disease comparison: no
+Frozen lymphoid aggregates accessed: no
+Output: /mnt/d/Lung ST/codex agent/stereo_seq/stereo_seq/results/reanalysis/REFERENCE18_K6_FACTOR_DOWNSTREAM_20261013_003020
+Status: PASS

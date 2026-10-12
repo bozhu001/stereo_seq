@@ -1,0 +1,21 @@
+check	status	detail
+factor definitions: 18 unique chip-factor rows	PASS	rows=18; unique_pairs=18
+expression summary: 18 unique chip-factor rows	PASS	rows=18; unique_pairs=18
+final table: 18 unique chip-factor rows	PASS	rows=18; unique_pairs=18
+patient metrics: all factors represented	PASS	unique_pairs=18
+patient metrics: 18 factors x 7 patients	PASS	rows=126
+patient metrics: seven patients per factor	PASS	range=7-7
+patient expression: all factors represented	PASS	unique_pairs=18
+patient expression: 18 factors x 7 patients	PASS	rows=126
+patient expression: seven patients per factor	PASS	range=7-7
+all 21 patients represented	PASS	n=21
+three chips represented	PASS	J2,K8,L3
+marker audit has 18 Reference18 states	PASS	rows=18
+every marker panel has raw-count genes	PASS	minimum=3
+critical patient metrics are finite	PASS	missing_values=0
+critical raw-expression metrics are finite	PASS	missing_values=0
+usage metrics have valid ranges	PASS	expected range 0-1
+four non-empty English audit figures	PASS	n=4
+run completion marker exists	PASS	/mnt/d/Lung ST/codex agent/stereo_seq/stereo_seq/results/reanalysis/REFERENCE18_K6_FACTOR_DOWNSTREAM_20261013_003020/COMPLETE.ok
+input manifest exists	PASS	/mnt/d/Lung ST/codex agent/stereo_seq/stereo_seq/results/reanalysis/REFERENCE18_K6_FACTOR_DOWNSTREAM_20261013_003020/00_INPUT_MANIFEST.tsv
+no disease-comparison or aggregate output created	PASS	none
