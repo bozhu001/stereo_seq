@@ -1,0 +1,6 @@
+/mnt/d/Lung ST/codex agent/stereo_seq/stereo_seq/scripts/1106_audit_b_associated_largest_component.py:475: UserWarning: 
+
+The `join` parameter is deprecated and will be removed in v0.15.0. You can remove the line between points with `linestyle='none'`.
+
+  sns.pointplot(
+/mnt/d/Lung ST/codex agent/stereo_seq/stereo_seq/results/reanalysis/B_ASSOC_LARGEST_COMPONENT_AUDIT_20261013_122714
