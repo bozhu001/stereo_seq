@@ -1,0 +1,10 @@
+check	passed	severity
+three_non_b_families_only	True	error
+b_family_absent	True	error
+all_18_states	True	error
+all_21_patients_primary	True	error
+all_three_chips_primary	True	error
+disease_not_used_in_summary_groups	True	error
+primary_test_count_54	True	error
+finite_primary_rho	True	error
+candidate_and_unresolved_partition	True	error

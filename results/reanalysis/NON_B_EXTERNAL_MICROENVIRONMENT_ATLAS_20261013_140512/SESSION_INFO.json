@@ -1,0 +1,12 @@
+{
+  "created_at": "2026-10-13T14:07:59.960122",
+  "elapsed_seconds": 165.4961016178131,
+  "seed": 20261013,
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "numpy": "2.4.6",
+  "pandas": "3.0.5",
+  "scipy": "1.18.0",
+  "primary_ring_um": "100-200",
+  "primary_block_um": 200.0
+}
