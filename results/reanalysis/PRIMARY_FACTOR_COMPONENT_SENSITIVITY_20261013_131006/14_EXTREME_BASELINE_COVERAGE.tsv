@@ -1,0 +1,7 @@
+family_id	family_label	chip	factor	patient_id	disease	threshold_scheme	threshold_rule	target_quantile	high_usage_threshold	valid_bin_n	high_usage_bin_n	high_usage_fraction	high_component_n	largest_component_bin_n	largest_component_area_mm2	largest_component_over_high	largest_component_over_valid	largest_component_spans_tissue_components
+B_ASSOC	B-associated	K8	F02	IPF/FO22-1-09404	IPF	chip_median_patient_q90	chip_balanced	0.9	0.2673327386379242	6253	5723	0.9152406844714537	10	5698	3.5612500000000002	0.9956316617158832	0.9112426035502958	False
+CILIATED	Ciliated-associated	K8	F03	IPF/FO23-1-06474	IPF	chip_median_patient_q90	chip_balanced	0.9	0.11083425581455236	992	916	0.9233870967741935	1	916	0.5725	1.0	0.9233870967741935	False
+CILIATED	Ciliated-associated	K8	F03	SSC/15275/13	SSc-ILD	chip_median_patient_q90	chip_balanced	0.9	0.11083425581455236	1171	941	0.8035866780529461	11	864	0.54	0.9181721572794899	0.7378309137489325	False
+CILIATED	Ciliated-associated	K8	F03	SSC/3342/13	SSc-ILD	chip_median_patient_q90	chip_balanced	0.9	0.11083425581455236	495	482	0.9737373737373738	6	471	0.294375	0.9771784232365145	0.9515151515151515	False
+FIBROBLAST	Fibroblast-associated	K8	F04	HC/NL-50	HC	chip_median_patient_q90	chip_balanced	0.9	0.2950425982475281	4837	3622	0.7488112466404796	35	2476	1.5475	0.6836002208724462	0.5118875335952037	False
+FIBROBLAST	Fibroblast-associated	K8	F04	SSC/24-1-18170A2	SSc-ILD	chip_median_patient_q90	chip_balanced	0.9	0.2950425982475281	11270	7073	0.6275953859804791	195	4716	2.9475000000000002	0.6667609218153542	0.4184560780834073	False
