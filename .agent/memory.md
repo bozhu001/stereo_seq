@@ -852,3 +852,38 @@
   filed.
 - Session summary:
   `.agent/b_lineage_subniche_mapping_wrapup_261010230705.md`.
+
+## 2026-10-13 — Non-B Neighborhood NMF external microenvironment atlas
+
+- Reused frozen six-dataset Reference18 Bin50 proportions and frozen per-chip
+  K=6 center-excluded 50 µm Neighborhood NMF continuous usages for 21 patients.
+- Built a disease-blind 100–200 µm external atlas for Ciliated, Fibroblast and
+  Lymphatic factor families only. Annuli stayed within patient, ROI and tissue
+  component; 200 µm spatial blocks were primary, with 150/250 µm sensitivity.
+- All 21 patients entered the primary analysis. Patient-level valid-center
+  coverage was 0.919–1.000 (median 0.994).
+- Nine of 54 relationships were cross-chip reproducible and seven were partial.
+  Same-state spatial continuity dominated. Ciliated–NK was a weaker
+  FDR-significant non-self positive candidate; Ciliated–Secretory and
+  Fibroblast–AT2/transitional were partial positive candidates.
+- Negative associations are closure-sensitive relative depletion patterns and
+  are not interpreted as biological exclusion. Absolute 100–200 µm composition
+  differences were small, supporting repeated gradients rather than a strong
+  annular multicellular niche.
+- Final directory:
+  `results/reanalysis/NON_B_EXTERNAL_MICROENVIRONMENT_ATLAS_20261013_140512/`.
+- Rendered HTML:
+  `results/1108_non_b_external_microenvironment_atlas_report_261013141630.html`;
+  SHA256 `72251F97E4FABCC87D5E7B9AD2CA9B7297BE6D92DCE7F7413F98EB75726F3FD7`.
+- Analysis/report commit: `fbf009a`.
+- The user separately approved the ELN draft. Approved local copy:
+  `elab/Disease-blind_external_Reference18_microenvironment_atlas_261013141630.md`.
+  No remote ID/URL exists because `ELABFTW_API_KEY` is unavailable.
+- Script review classified the workflow as bespoke/project-specific; per the
+  user's prior instruction, no skill-candidate issue was filed.
+- Next analysis: patient × factor weighted raw-expression pseudobulk for
+  disease remodeling within the frozen Ciliated, Fibroblast and Lymphatic
+  regions, with chip adjustment and within-chip label permutation. B remains
+  out of scope.
+- Session summary:
+  `.agent/non_b_external_microenvironment_wrapup_261013142402.md`.
