@@ -1,0 +1,10 @@
+family_scope	evidence_tier	candidate_n
+three-chip primary	Cross-chip supported	5
+three-chip primary	Directionally consistent	1
+three-chip primary	Heterogeneous or patient-sensitive	4
+three-chip primary	Unresolved / within-model only	2
+two-chip secondary	Cross-chip robust	2
+two-chip secondary	Cross-chip supported	3
+two-chip secondary	Directionally consistent	1
+two-chip secondary	Heterogeneous or patient-sensitive	1
+two-chip secondary	Unresolved / within-model only	1

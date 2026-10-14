@@ -1,0 +1,12 @@
+{
+  "python": "3.12.14",
+  "pandas": "3.0.5",
+  "numpy": "2.4.6",
+  "scipy": "1.18.0",
+  "matplotlib": "3.11.1",
+  "source": "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\reanalysis\\K6_FACTOR_INTERNAL_DISEASE_20261013_143952",
+  "output": "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\reanalysis\\CROSS_CHIP_EDGER_STAGE1_CLOSEOUT_20261014_065410",
+  "candidate_n": 20,
+  "meta_test_n": 85491,
+  "meta_global_fdr_n": 23
+}

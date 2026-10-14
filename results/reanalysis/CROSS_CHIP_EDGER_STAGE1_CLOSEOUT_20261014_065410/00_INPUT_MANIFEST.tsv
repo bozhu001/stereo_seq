@@ -1,0 +1,6 @@
+input	source_directory
+01_FACTOR_FAMILY_MAP.tsv	D:\Lung ST\codex agent\stereo_seq\stereo_seq\results\reanalysis\K6_FACTOR_INTERNAL_DISEASE_20261013_143952
+22_FAMILY_CODING_RNA_DISEASE_TESTS.tsv.gz	D:\Lung ST\codex agent\stereo_seq\stereo_seq\results\reanalysis\K6_FACTOR_INTERNAL_DISEASE_20261013_143952
+23_CHIP_FACTOR_CODING_RNA_DISEASE_TESTS.tsv.gz	D:\Lung ST\codex agent\stereo_seq\stereo_seq\results\reanalysis\K6_FACTOR_INTERNAL_DISEASE_20261013_143952
+24_FAMILY_CODING_RNA_CANDIDATES.tsv	D:\Lung ST\codex agent\stereo_seq\stereo_seq\results\reanalysis\K6_FACTOR_INTERNAL_DISEASE_20261013_143952
+19_GLOBAL_SIGNAL_CROSS_CHIP_LOO_AUDIT.tsv	D:\Lung ST\codex agent\stereo_seq\stereo_seq\results\reanalysis\K6_FACTOR_INTERNAL_DISEASE_20261013_143952

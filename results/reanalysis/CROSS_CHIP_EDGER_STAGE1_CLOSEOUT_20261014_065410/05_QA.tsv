@@ -1,0 +1,8 @@
+check	passed	detail
+endpoint_is_paired	True	paired_high_minus_control
+candidate_count_matches_existing	True	20
+all_meta_have_at_least_two_chips	True	2
+all_meta_se_positive	True	0
+all_q_nonnegative	True	8.676269338397935e-13
+all_i2_in_range	True	0.000 to 97.503
+no_upstream_refit	True	read-only frozen edgeR tables
