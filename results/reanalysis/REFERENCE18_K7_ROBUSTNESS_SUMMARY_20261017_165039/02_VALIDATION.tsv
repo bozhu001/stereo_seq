@@ -1,0 +1,6 @@
+check	pass	detail
+all_evidence_decisions_pass	True	[True, True, True, True, True, True]
+seven_primary_families	True	(7, 18)
+all_cross_chip_cosines_ge_0_80	True	minimum=0.912426
+all_three_formats_nonempty	True	[1100548, 60518, 316327]
+disease_blind	True	No disease field used in plotting decisions

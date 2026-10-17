@@ -1,0 +1,7 @@
+Script: scripts/1146_plot_reference18_k7_robustness_summary.py
+Command: D:\Lung ST\codex agent\stereo_seq\stereo_seq\envs\stereo_seq_py\Scripts\python.exe scripts/1146_plot_reference18_k7_robustness_summary.py --output-dir D:\Lung ST\codex agent\stereo_seq\stereo_seq\results\reanalysis\REFERENCE18_K7_ROBUSTNESS_SUMMARY_20261017_165039
+Python: 3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]
+Platform: Windows-11-10.0.26200-SP0
+NMF refit: no
+Disease used: no
+Status: PASS

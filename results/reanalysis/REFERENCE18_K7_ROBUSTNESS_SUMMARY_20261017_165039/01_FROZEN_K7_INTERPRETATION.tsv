@@ -1,0 +1,9 @@
+decision	frozen_value
+primary_cross_chip_rank	K=7 for K8, J2, and L3
+higher_rank_models	deferred; revisit only if common K=7 fails a downstream requirement
+primary_families	LEC-associated;Blood-endothelial;AT1-associated;Perivascular-stromal;B-enriched/mixed-immune;Ciliated-associated;Fibroblast-associated
+B_label	B-enriched/mixed-immune; retained as a primary immune-focused neighborhood factor, not pure B-cell abundance
+LEC_label	LEC-associated; upstream RCTD evidence is weak and interpretation is sensitivity-qualified
+T_NK_interpretation	signals are present but do not form separate primary K=7 factors; absence of a factor is not absence of biology
+gene_expression_use	independent corroboration for biological naming; not required to define the RCTD-composition NMF factors
+disease_use_in_discovery	none

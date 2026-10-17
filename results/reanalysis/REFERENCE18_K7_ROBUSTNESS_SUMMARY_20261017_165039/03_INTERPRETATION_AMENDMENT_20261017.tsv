@@ -1,0 +1,4 @@
+decision	frozen_value
+analysis_priority	B-enriched/mixed-immune is retained as a primary immune-focused neighborhood factor for downstream spatial, patient-level, and molecular analysis
+interpretation_boundary	The factor score represents an immune neighborhood composition axis and must not be reported as pure B-cell abundance
+planned_characterization	Use B/T/NK/Mast/myeloid expression evidence to resolve internal immune composition while retaining the frozen K=7 factor

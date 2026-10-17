@@ -1,0 +1,6 @@
+Script: scripts/1148_render_reference18_k7_robustness_report.sh
+Notebook: scripts/1147_reference18_k7_robustness_report.ipynb
+Command: /home/bozhu/miniconda3/envs/stereo/bin/python -m jupyter nbconvert --to html --execute /mnt/d/Lung ST/codex agent/stereo_seq/stereo_seq/scripts/1147_reference18_k7_robustness_report.ipynb --output REFERENCE18_K7_ROBUSTNESS_REPORT_261017165550.html --output-dir /mnt/d/Lung ST/codex agent/stereo_seq/stereo_seq/results/reanalysis/REFERENCE18_K7_ROBUSTNESS_REPORT_20261017_165550 --ExecutePreprocessor.timeout=600 --TemplateExporter.exclude_input=True
+Log: /mnt/d/Lung ST/codex agent/stereo_seq/stereo_seq/logs/reference18_k7_robustness_report_261017165550.log
+Report: /mnt/d/Lung ST/codex agent/stereo_seq/stereo_seq/results/reanalysis/REFERENCE18_K7_ROBUSTNESS_REPORT_20261017_165550/REFERENCE18_K7_ROBUSTNESS_REPORT_261017165550.html
+Status: PASS
