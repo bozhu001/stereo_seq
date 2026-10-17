@@ -887,3 +887,37 @@
   out of scope.
 - Session summary:
   `.agent/non_b_external_microenvironment_wrapup_261013142402.md`.
+
+## 2026-10-17 — Harmonized K=7 Reference18 Neighborhood NMF robustness
+
+- Froze K=7 as the disease-blind common coarse Neighborhood NMF resolution for
+  K8, J2 and L3. J2/L3 K=12 was deferred and will be revisited only if K=7
+  fails a downstream requirement.
+- The seven shared families were LEC-associated, Blood-endothelial,
+  AT1-associated, Perivascular-stromal, B-enriched/mixed-immune,
+  Ciliated-associated and Fibroblast-associated; minimum pairwise cross-chip
+  loading cosine was 0.912.
+- State-removal sensitivities refitted K=7 after removing Basal+LEC or B. The
+  six expected retained families had minimum independent loading cosine 0.926,
+  minimum median-patient Bin50 score Spearman 0.852, and minimum median-patient
+  Q90 hotspot Jaccard 0.526.
+- K8 20,000-iteration extensions converged in all restarts and reproduced the
+  5,000-step factors with minimum cosine 0.9986.
+- After B removal, the primary B-enriched factor had no coherent single T/NK
+  successor. The user froze `B-enriched/mixed-immune` as the primary
+  immune-focused neighborhood factor; its score is not pure B-cell abundance.
+  LEC remains sensitivity-qualified, and absence of separate T/NK/Mast/Basal/
+  AT2 factors at K=7 is not interpreted as absence of those signals.
+- Final figure directory:
+  `results/reanalysis/REFERENCE18_K7_ROBUSTNESS_SUMMARY_20261017_165039/`.
+- Final HTML:
+  `results/reanalysis/REFERENCE18_K7_ROBUSTNESS_REPORT_20261017_165550/REFERENCE18_K7_ROBUSTNESS_REPORT_261017165550.html`;
+  SHA-256 `25875d2c41ca164542338b644d8b6a1a069251e8a4d94a8f0feae2f57f931cca`.
+- Analysis/report commit: `f2ce760d6b2c0ce85905ce0b88815969cc272864`.
+- The user separately approved the ELN draft. Approved local copy:
+  `elab/Harmonized_K7_Reference18_Neighborhood_NMF_robustness_261017165550.md`.
+  No remote ID/URL exists because `ELABFTW_API_KEY` is unavailable.
+- Script-review classification remains pending; no skill-candidate issue was
+  filed.
+- Session summary:
+  `.agent/reference18_k7_robustness_wrapup_261017171646.md`.
