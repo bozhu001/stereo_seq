@@ -1,0 +1,23 @@
+{
+  "patient_n": 21,
+  "disease_patient_counts": {
+    "HC": 6,
+    "IPF": 6,
+    "SSc-ILD": 9
+  },
+  "mapped_bin50_n": 126199,
+  "family_n": 7,
+  "families": [
+    "Lymphatic-endothelial-associated",
+    "Blood-endothelial-associated",
+    "AT1-associated",
+    "Perivascular-stromal-associated",
+    "B-enriched/mixed-immune",
+    "Ciliated-associated",
+    "Fibroblast-associated"
+  ],
+  "minimum_inside_ssdna_fraction": 1.0,
+  "four_figures_exist_and_nonempty": true,
+  "nmf_or_rctd_refit": false,
+  "disease_test": false
+}
