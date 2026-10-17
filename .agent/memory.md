@@ -921,3 +921,30 @@
   filed.
 - Session summary:
   `.agent/reference18_k7_robustness_wrapup_261017171646.md`.
+
+## 2026-10-17 — Harmonized K=7 neighborhood-factor maps on ssDNA
+
+- Reused frozen disease-blind K=7 models, the frozen cross-chip family map,
+  frozen Reference18 Bin50 metadata, original K8/J2/L3 ssDNA TIFFs and the
+  previously validated chip-specific affine transforms. No RCTD/NMF refitting
+  or disease hypothesis test was performed.
+- Mapped 126,199 Bin50 from 21 patients (HC 6, IPF 6, SSc-ILD 9). The
+  inside-ssDNA coordinate fraction was 1.0 for K8, J2 and L3.
+- Produced an all-patient dominant K=7 family map and an all-patient continuous
+  B-enriched/mixed-immune usage map, each in PNG and PDF format. The user
+  approved and froze both figures; later changes are deferred pending group
+  feedback.
+- Final directory:
+  `results/reanalysis/REFERENCE18_K7_SSDNA_MAPS_261017220004/`.
+- Rendered HTML:
+  `results/reanalysis/REFERENCE18_K7_SSDNA_MAPS_261017220004/reports/REFERENCE18_K7_SSDNA_MAPS_REPORT_261017222140.html`;
+  SHA-256 `4fd3ccd1117ebe490dcd9b7c1b86b0937c3a7d64f98875c6b542d86933a68a4e`.
+- Analysis/report commit:
+  `2f7cf0b5241af4f927658052e5cde034ce08d858`.
+- The user separately approved the ELN draft. Approved local copy:
+  `elab/Harmonized_K7_neighborhood-factor_maps_on_ssDNA_261017222140.md`.
+  No remote ID/URL exists because `ELABFTW_API_KEY` is unavailable.
+- Script-review recurring-versus-one-off classification remains pending; no
+  skill-candidate issue was filed.
+- Session summary:
+  `.agent/reference18_k7_ssdna_mapping_wrapup_261017222737.md`.
