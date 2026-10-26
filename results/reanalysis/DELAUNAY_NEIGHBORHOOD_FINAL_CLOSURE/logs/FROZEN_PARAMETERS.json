@@ -1,0 +1,59 @@
+{
+  "status": "DELAUNAY_ANALYSIS_CLOSURE_READY",
+  "scope": "project-specific frozen analysis; not a default workflow and not applied automatically to BANKSY",
+  "formal_qc": {
+    "nGene_min": 15,
+    "nUMI_min": 50,
+    "formal_bin_count": 126449
+  },
+  "bin50_physical_size_um": [
+    25,
+    25
+  ],
+  "delaunay_max_edge_um": 35.36,
+  "graph_boundaries": [
+    "patient",
+    "ROI",
+    "tissue_component"
+  ],
+  "frozen_outputs": [
+    "PN labels",
+    "connected regions",
+    "interior/boundary/surroundings"
+  ],
+  "region_strata_bins": [
+    "1",
+    "2-4",
+    "5-9",
+    ">=10"
+  ],
+  "outside_rings_um": [
+    "immediate outside",
+    "0-50",
+    "50-100"
+  ],
+  "retained_limitations": [
+    "chip-associated variation",
+    "region fragmentation",
+    "overlapping rings",
+    "RNA-depth sensitivity",
+    "no disease contrasts at BH-FDR < 0.05",
+    "9/21 patients with validated ssDNA alignment"
+  ],
+  "prohibited_in_this_freeze": [
+    "K optimization",
+    "reclustering",
+    "spatial co-occurrence",
+    "new batch correction",
+    "BANKSY execution",
+    "RCTD",
+    "NMF",
+    "edgeR",
+    "GSEA",
+    "LR"
+  ],
+  "banksy_status": "READY_NOT_RUN",
+  "timestamped_html_review": "report\\DELAUNAY_NEIGHBORHOOD_FINAL_CLOSURE_REVIEW_261026175526.html",
+  "random_seed": "preserved in source scripts where stochastic operations occurred; no new stochastic analysis in wrap-up",
+  "generated_utc": "2026-10-26T16:56:58.162406+00:00"
+}

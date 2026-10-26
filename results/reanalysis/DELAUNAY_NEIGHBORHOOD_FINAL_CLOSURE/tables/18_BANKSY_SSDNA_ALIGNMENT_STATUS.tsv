@@ -1,0 +1,22 @@
+patient_id	chip_label	disease	ssDNA_source_file	whether_alignment_directly_available	comments	ssdna_alignment_status
+HC/NL-55	J2	HC	D:\Lung ST\chip\chip 2\QC\Y40105J2_20260520_160413\Y40105J2_SC_20260520_160413_4.2.2\ssDNA\Y40105J2.tif	yes	Reused validated chip-specific affine transform; pilot transformed-center inside-image fraction=1.000000.	VALIDATED_GLOBAL_GEOMETRY
+HC/NL-63	J2	HC			No validated ssDNA mapping in the current closure; do not infer or fabricate alignment.	SSDNA_NOT_AVAILABLE
+IPF/FO23-1-03100	J2	IPF	D:\Lung ST\chip\chip 2\QC\Y40105J2_20260520_160413\Y40105J2_SC_20260520_160413_4.2.2\ssDNA\Y40105J2.tif	yes	Reused validated chip-specific affine transform; pilot transformed-center inside-image fraction=1.000000.	VALIDATED_GLOBAL_GEOMETRY
+IPF/FO23-1-09473	J2	IPF			No validated ssDNA mapping in the current closure; do not infer or fabricate alignment.	SSDNA_NOT_AVAILABLE
+SSC/23-105334B1	J2	SSc-ILD			No validated ssDNA mapping in the current closure; do not infer or fabricate alignment.	SSDNA_NOT_AVAILABLE
+SSC/FO20-I-08293B1	J2	SSc-ILD			No validated ssDNA mapping in the current closure; do not infer or fabricate alignment.	SSDNA_NOT_AVAILABLE
+SSC/FO21-1-01756B1	J2	SSc-ILD	D:\Lung ST\chip\chip 2\QC\Y40105J2_20260520_160413\Y40105J2_SC_20260520_160413_4.2.2\ssDNA\Y40105J2.tif	yes	Reused validated chip-specific affine transform; pilot transformed-center inside-image fraction=1.000000.	VALIDATED_GLOBAL_GEOMETRY
+HC/NL-50	K8	HC	D:\Lung ST\chip\chip 1\QC\Y40102K8_20260428_204657\Y40102K8_SC_20260428_204657_4.2.2\ssDNA\Experiment-64-ApoTome-01-Stitching-02_ORG.tif	yes	Reused validated chip-specific affine transform; pilot transformed-center inside-image fraction=1.000000.	VALIDATED_GLOBAL_GEOMETRY
+HC/NL-53	K8	HC			No validated ssDNA mapping in the current closure; do not infer or fabricate alignment.	SSDNA_NOT_AVAILABLE
+IPF/FO22-1-09404	K8	IPF	D:\Lung ST\chip\chip 1\QC\Y40102K8_20260428_204657\Y40102K8_SC_20260428_204657_4.2.2\ssDNA\Experiment-64-ApoTome-01-Stitching-02_ORG.tif	yes	Reused validated chip-specific affine transform; pilot transformed-center inside-image fraction=1.000000.	VALIDATED_GLOBAL_GEOMETRY
+IPF/FO23-1-06474	K8	IPF			No validated ssDNA mapping in the current closure; do not infer or fabricate alignment.	SSDNA_NOT_AVAILABLE
+SSC/15275/13	K8	SSc-ILD	D:\Lung ST\chip\chip 1\QC\Y40102K8_20260428_204657\Y40102K8_SC_20260428_204657_4.2.2\ssDNA\Experiment-64-ApoTome-01-Stitching-02_ORG.tif	yes	Reused validated chip-specific affine transform; pilot transformed-center inside-image fraction=1.000000.	VALIDATED_GLOBAL_GEOMETRY
+SSC/24-1-18170A2	K8	SSc-ILD			No validated ssDNA mapping in the current closure; do not infer or fabricate alignment.	SSDNA_NOT_AVAILABLE
+SSC/3342/13	K8	SSc-ILD			No validated ssDNA mapping in the current closure; do not infer or fabricate alignment.	SSDNA_NOT_AVAILABLE
+HC/NL-66	L3	HC	D:\Lung ST\chip\chip 3\QC\Y40105L3_20260522_205054\Y40105L3_SC_20260522_205054_4.2.2\ssDNA\YY40105L3.tif	yes	Reused validated chip-specific affine transform; pilot transformed-center inside-image fraction=1.000000.	VALIDATED_GLOBAL_GEOMETRY
+HC/NL-72	L3	HC			No validated ssDNA mapping in the current closure; do not infer or fabricate alignment.	SSDNA_NOT_AVAILABLE
+IPF/FO23-1-06168	L3	IPF	D:\Lung ST\chip\chip 3\QC\Y40105L3_20260522_205054\Y40105L3_SC_20260522_205054_4.2.2\ssDNA\YY40105L3.tif	yes	Reused validated chip-specific affine transform; pilot transformed-center inside-image fraction=1.000000.	VALIDATED_GLOBAL_GEOMETRY
+IPF/FO23-1-06170	L3	IPF			No validated ssDNA mapping in the current closure; do not infer or fabricate alignment.	SSDNA_NOT_AVAILABLE
+SSC/05957/17B	L3	SSc-ILD			No validated ssDNA mapping in the current closure; do not infer or fabricate alignment.	SSDNA_NOT_AVAILABLE
+SSC/07998/15A	L3	SSc-ILD	D:\Lung ST\chip\chip 3\QC\Y40105L3_20260522_205054\Y40105L3_SC_20260522_205054_4.2.2\ssDNA\YY40105L3.tif	yes	Reused validated chip-specific affine transform; pilot transformed-center inside-image fraction=1.000000.	VALIDATED_GLOBAL_GEOMETRY
+SSC/15491/14	L3	SSc-ILD			No validated ssDNA mapping in the current closure; do not infer or fabricate alignment.	SSDNA_NOT_AVAILABLE

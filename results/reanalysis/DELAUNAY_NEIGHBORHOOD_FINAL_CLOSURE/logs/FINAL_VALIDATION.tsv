@@ -1,0 +1,54 @@
+check	status	observed	expected
+region row count	PASS	29750	29750
+region IDs unique	PASS	29750	29750
+region Bin50 total	PASS	125471	125471
+formal predicted PN Bin50 total	PASS	125471	125471
+component membership reconciles	PASS	125471	125471
+area equals bin count x 625	PASS	0.0	0
+regions >=5	PASS	6947	6947
+regions >=10	PASS	2282	2282
+internal zone rows	PASS	20841	20841
+surrounding zone rows	PASS	9128	9128
+unique internal region-zone	PASS	0	0
+unique surrounding region-zone	PASS	0	0
+full-zone QC rows	PASS	2282	2282
+full-zone evaluable count	PASS	505	505
+patient-PN summary coverage	PASS	168	168
+disease models patient-level	PASS	['patient']	['patient']
+disease FDR significant count	PASS	0	0
+validated ssDNA representative patients	PASS	9	9
+ssDNA chip coverage	PASS	['J2', 'K8', 'L3']	['J2', 'K8', 'L3']
+required table prefix 01_	PASS	['01_INPUT_AND_VERSION_AUDIT.tsv']	at least one file
+required table prefix 02_	PASS	['02_EXISTING_ANALYSIS_COMPLETENESS.tsv']	at least one file
+required table prefix 03_	PASS	['03_NEIGHBORHOOD_CLASSIFICATION_SUMMARY.tsv']	at least one file
+required table prefix 04_	PASS	['04_ALL_LOCAL_CONNECTED_REGIONS.tsv.gz']	at least one file
+required table prefix 05_	PASS	['05_LOCAL_REGION_SIZE_STRATA.tsv']	at least one file
+required table prefix 06_	PASS	['06_REGION_INTERNAL_COMPOSITION.tsv']	at least one file
+required table prefix 07_	PASS	['07_REGION_BOUNDARY_AND_SURROUNDINGS.tsv']	at least one file
+required table prefix 08_	PASS	['08_SSDNA_REGION_REVIEW.tsv']	at least one file
+required table prefix 09_	PASS	['09_DELAUNAY_VS_NMF_SUMMARY.tsv']	at least one file
+required table prefix 10_	PASS	['10_CHIP_AWARE_PATIENT_SUMMARY.tsv']	at least one file
+required table prefix 11_	PASS	['11_FINAL_EVIDENCE_CLASSIFICATION.tsv']	at least one file
+report exists and UTF-8 12_MAIN_FINDINGS_ZH.md	PASS	4185	>500 chars, no replacement character
+report exists and UTF-8 13_METHODS_AND_LIMITATIONS_ZH.md	PASS	1323	>500 chars, no replacement character
+report exists and UTF-8 14_BANKSY_HANDOFF_ZH.md	PASS	952	>500 chars, no replacement character
+figure PDF count	PASS	8	8
+figure PNG count	PASS	8	8
+readable single-page PDF FIGURE_1_SPATIAL_GRAPH_AND_INPUT_QC.pdf	PASS	1	1
+readable single-page PDF FIGURE_2_NEIGHBORHOOD_COMPOSITION_AND_MARKER_CONCORDANCE.pdf	PASS	1	1
+readable single-page PDF FIGURE_3_SPATIAL_NEIGHBORHOOD_MAPS_ACROSS_PATIENTS.pdf	PASS	1	1
+readable single-page PDF FIGURE_4_LOCAL_CONNECTED_REGION_SIZE_AND_FRAGMENTATION.pdf	PASS	1	1
+readable single-page PDF FIGURE_5_CONNECTED_REGIONS_OVERLAID_ON_SSDNA.pdf	PASS	1	1
+readable single-page PDF FIGURE_6_REGION_INTERIOR_BOUNDARY_AND_SURROUNDING_COMPOSITION.pdf	PASS	1	1
+readable single-page PDF FIGURE_7_DELAUNAY_AND_FROZEN_NMF_K7_COMPARISON.pdf	PASS	1	1
+readable single-page PDF FIGURE_8_CHIP_AWARE_PATIENT_LEVEL_SUMMARY.pdf	PASS	1	1
+readable high-resolution PNG FIGURE_1_SPATIAL_GRAPH_AND_INPUT_QC.png	PASS	3280x2373 RGBA	min dimension >=1000; RGB/RGBA
+readable high-resolution PNG FIGURE_2_NEIGHBORHOOD_COMPOSITION_AND_MARKER_CONCORDANCE.png	PASS	4038x2224 RGBA	min dimension >=1000; RGB/RGBA
+readable high-resolution PNG FIGURE_3_SPATIAL_NEIGHBORHOOD_MAPS_ACROSS_PATIENTS.png	PASS	5324x2542 RGBA	min dimension >=1000; RGB/RGBA
+readable high-resolution PNG FIGURE_4_LOCAL_CONNECTED_REGION_SIZE_AND_FRAGMENTATION.png	PASS	4180x1373 RGBA	min dimension >=1000; RGB/RGBA
+readable high-resolution PNG FIGURE_5_CONNECTED_REGIONS_OVERLAID_ON_SSDNA.png	PASS	3556x3571 RGBA	min dimension >=1000; RGB/RGBA
+readable high-resolution PNG FIGURE_6_REGION_INTERIOR_BOUNDARY_AND_SURROUNDING_COMPOSITION.png	PASS	4106x2371 RGBA	min dimension >=1000; RGB/RGBA
+readable high-resolution PNG FIGURE_7_DELAUNAY_AND_FROZEN_NMF_K7_COMPARISON.png	PASS	3963x1636 RGBA	min dimension >=1000; RGB/RGBA
+readable high-resolution PNG FIGURE_8_CHIP_AWARE_PATIENT_LEVEL_SUMMARY.png	PASS	3729x2078 RGBA	min dimension >=1000; RGB/RGBA
+atlas page count	PASS	8	8
+atlas rendered page count	PASS	8	8

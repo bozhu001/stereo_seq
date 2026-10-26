@@ -1,0 +1,89 @@
+---
+title: "Delaunay Neighborhood Final Closure Review"
+subtitle: "Frozen project-specific analysis and BANKSY read-only handoff"
+date: last-modified
+lang: zh
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    toc-location: left
+    embed-resources: true
+    code-fold: true
+    code-tools: true
+    theme: cosmo
+    fig-responsive: true
+    df-print: paged
+execute:
+  echo: true
+  warning: false
+  error: false
+---
+
+## 审阅状态
+
+**DELAUNAY_ANALYSIS_CLOSURE_READY**
+
+本报告是已批准科学分析的时间戳审阅版本。它冻结当前PN标签、Connected Regions以及Interior/Boundary/Surroundings结果，仅适用于本项目。它不是后续全部空间分析的默认流程，也不自动应用于BANKSY。本次没有重新选择K、重新聚类、执行Spatial Co-occurrence或新批次校正。
+
+## 主要结论
+
+{{< include ../12_MAIN_FINDINGS_ZH.md >}}
+
+## 方法与局限性
+
+{{< include ../13_METHODS_AND_LIMITATIONS_ZH.md >}}
+
+## BANKSY交接说明
+
+{{< include ../14_BANKSY_HANDOFF_ZH.md >}}
+
+## BANKSY输入只读审核
+
+{{< include ../report/BANKSY_INPUT_HANDOFF_AUDIT_ZH.md >}}
+
+## BANKSY分析方案（未执行）
+
+{{< include ../report/BANKSY_ANALYSIS_PLAN_ZH.md >}}
+
+## Figure atlas
+
+### Figure 1. Spatial Graph and Input QC
+
+![](../figures/FIGURE_1_SPATIAL_GRAPH_AND_INPUT_QC.png){fig-alt="Spatial graph and input quality control"}
+
+### Figure 2. Neighborhood Composition and Marker Concordance
+
+![](../figures/FIGURE_2_NEIGHBORHOOD_COMPOSITION_AND_MARKER_CONCORDANCE.png){fig-alt="Neighborhood composition and marker concordance"}
+
+### Figure 3. Spatial Neighborhood Maps Across Patients
+
+![](../figures/FIGURE_3_SPATIAL_NEIGHBORHOOD_MAPS_ACROSS_PATIENTS.png){fig-alt="Spatial neighborhood maps across patients"}
+
+### Figure 4. Local Connected Region Size and Fragmentation
+
+![](../figures/FIGURE_4_LOCAL_CONNECTED_REGION_SIZE_AND_FRAGMENTATION.png){fig-alt="Connected region size and fragmentation"}
+
+### Figure 5. Connected Regions Overlaid on ssDNA
+
+![](../figures/FIGURE_5_CONNECTED_REGIONS_OVERLAID_ON_SSDNA.png){fig-alt="Connected regions overlaid on ssDNA"}
+
+### Figure 6. Region Interior, Boundary and Surrounding Composition
+
+![](../figures/FIGURE_6_REGION_INTERIOR_BOUNDARY_AND_SURROUNDING_COMPOSITION.png){fig-alt="Region interior boundary and surrounding composition"}
+
+### Figure 7. Delaunay and Frozen NMF K7 Comparison
+
+![](../figures/FIGURE_7_DELAUNAY_AND_FROZEN_NMF_K7_COMPARISON.png){fig-alt="Delaunay and frozen NMF K7 comparison"}
+
+### Figure 8. Chip-aware Patient-level Summary
+
+![](../figures/FIGURE_8_CHIP_AWARE_PATIENT_LEVEL_SUMMARY.png){fig-alt="Chip-aware patient-level summary"}
+
+## Reproducibility
+
+正式执行脚本、输入哈希、参数及输出哈希均保存在本收尾目录。BANKSY输入仅完成只读交接审核，状态为 `READY_NOT_RUN`。
+
+<!-- Render command:
+& 'D:\bb\RSTUDIO\resources\app\bin\quarto\bin\quarto.cmd' render 'results\reanalysis\DELAUNAY_NEIGHBORHOOD_FINAL_CLOSURE\scripts\1274_delaunay_closure_review.qmd' --output-dir '..\report' --output 'DELAUNAY_NEIGHBORHOOD_FINAL_CLOSURE_REVIEW_<YYMMDDHHMMSS>.html'
+-->

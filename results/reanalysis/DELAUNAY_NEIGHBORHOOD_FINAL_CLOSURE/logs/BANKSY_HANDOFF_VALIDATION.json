@@ -1,0 +1,38 @@
+{
+  "status": "PASS_READY_NOT_RUN",
+  "formal_bins": 126449,
+  "raw_h5ad_shape": [
+    178044,
+    27618
+  ],
+  "raw_matrix": {
+    "class": "_CSRDataset",
+    "dtype": "uint32"
+  },
+  "metadata_mismatches": {
+    "patient_id_vs_sample_id": 0,
+    "chip_id_vs_chip_id": 0,
+    "disease_vs_group": 0,
+    "x_raw_vs_x": 0,
+    "y_raw_vs_y": 0
+  },
+  "qc_field_differences": {
+    "formal_nUMI_vs_raw_common_counts": 126449,
+    "formal_nGene_vs_raw_common_genes": 126449
+  },
+  "naive_threshold_bins": 133026,
+  "naive_threshold_extra_bins": 6577,
+  "formal_missing_from_naive_threshold": 0,
+  "patients": 21,
+  "validated_ssdna_patients": 9,
+  "ssdna_not_available_patients": 12,
+  "banksy_started": false,
+  "input_sha256": {
+    "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\reanalysis\\bin50_input\\BIN50_joint_reanalysis_tissue_raw_counts_common_genes.h5ad": "3a9da66830f9214c879c0b638920078245ec23ad370fcadb58c105ca3a7b88da",
+    "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\reanalysis\\bin50_representation_benchmark\\ensembl_gene_symbol_mapping.csv": "7cc6e477dc648ab242959fe7c831ba668eb120f7827750616d87769c005452e9",
+    "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\reanalysis\\REFERENCE18_SPATIAL_GRAPH_NEIGHBORHOODS_V1\\SSDNA_OVERLAY_REVIEW\\00_INPUT_FILE_INDEX.tsv": "b779170f8eef307a0142e48dc110d2cde235ab7815390f7601474409ed9a4125",
+    "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\reanalysis\\REFERENCE18_UMI50_VOLTRON_PER_CHIP_NICHE_20261005_153036\\K8\\01_FROZEN_REFERENCE18_INPUT.tsv.gz": "7266c845603fdb0ee028df4a2269da247ff9904e49bb1a2bc28de8c262948601",
+    "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\reanalysis\\REFERENCE18_UMI50_VOLTRON_PER_CHIP_NICHE_20261005_153036\\J2\\01_FROZEN_REFERENCE18_INPUT.tsv.gz": "fea58920cb28fa6aeaff19782806135887743245ea03c72291d99bd43a4975b9",
+    "D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\reanalysis\\REFERENCE18_UMI50_VOLTRON_PER_CHIP_NICHE_20261005_153036\\L3\\01_FROZEN_REFERENCE18_INPUT.tsv.gz": "0613946cab1f86631ea8057cb9e991f6f1992a25387e02405402966b3d294d20"
+  }
+}
