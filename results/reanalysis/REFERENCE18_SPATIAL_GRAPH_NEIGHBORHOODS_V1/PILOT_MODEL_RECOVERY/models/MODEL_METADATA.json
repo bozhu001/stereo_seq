@@ -1,0 +1,20 @@
+{
+  "decision": "MODEL_RECOVERED_EXACT",
+  "timestamp": "2026-10-26T12:29:32.015674+01:00",
+  "exact_label_agreement": 1.0,
+  "matching_bin_n": 50972,
+  "mismatched_bin_n": 0,
+  "evaluable_bin_n": 50972,
+  "ari": 1.0,
+  "nmi": 1.0,
+  "training_bin_n": 21165,
+  "original_script_sha256": "7ad72791868600dd4dd2c824b672fde631dd2c2265ba1818191aec8cb57dd471",
+  "old_assignment_sha256": "459c9776d30b876b07b5276556d75cf59fd082da2f91286b396034df5dbb0959",
+  "old_delaunay_edges_sha256": "83901796408b1ee97b22de8575556a6fb4779bb74b048b5127f4db6d6611fc74",
+  "sklearn": "1.9.0",
+  "numpy": "2.4.6",
+  "pandas": "3.0.5",
+  "scipy": "1.18.0",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26300-SP0"
+}

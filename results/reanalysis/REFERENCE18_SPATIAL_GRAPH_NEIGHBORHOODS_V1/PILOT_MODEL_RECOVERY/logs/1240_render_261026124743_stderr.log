@@ -1,0 +1,52 @@
+
+Starting python3 kernel...Done
+
+Executing '1240_pilot_model_recovery_report.quarto_ipynb'
+  Cell 1/7: ''...ERROR: 
+
+An error occurred while executing the following cell:
+------------------
+from pathlib import Path
+import json
+import pandas as pd
+
+project = Path.cwd()
+recovery = project / "results/reanalysis/REFERENCE18_SPATIAL_GRAPH_NEIGHBORHOODS_V1/PILOT_MODEL_RECOVERY"
+if not recovery.exists():
+    raise RuntimeError(f"Recovery directory not found from {project}")
+
+provenance = pd.read_csv(recovery / "01_MODEL_PROVENANCE.tsv", sep="\t")
+parameters = pd.read_csv(recovery / "02_RECOVERED_MODEL_PARAMETERS.tsv", sep="\t")
+reproducibility = pd.read_csv(recovery / "03_PILOT_LABEL_REPRODUCIBILITY.tsv", sep="\t")
+confusion = pd.read_csv(recovery / "04_PN_CONFUSION_MATRIX.tsv", sep="\t")
+metadata = json.loads((recovery / "models/MODEL_METADATA.json").read_text(encoding="utf-8"))
+------------------
+
+
+[31m---------------------------------------------------------------------------[39m
+[31mRuntimeError[39m                              Traceback (most recent call last)
+[36mCell[39m[36m [39m[32mIn[1][39m[32m, line 8[39m
+[32m      4[39m 
+[32m      5[39m project = Path.cwd()
+[32m      6[39m recovery = project / [33m"results/reanalysis/REFERENCE18_SPATIAL_GRAPH_NEIGHBORHOODS_V1/PILOT_MODEL_RECOVERY"[39m
+[32m      7[39m [38;5;28;01mif[39;00m [38;5;28;01mnot[39;00m recovery.exists():
+[32m----> [39m[32m8[39m     [38;5;28;01mraise[39;00m RuntimeError(f"Recovery directory not found from {project}")
+[32m      9[39m 
+[32m     10[39m provenance = pd.read_csv(recovery / [33m"01_MODEL_PROVENANCE.tsv"[39m, sep=[33m"\t"[39m)
+[32m     11[39m parameters = pd.read_csv(recovery / [33m"02_RECOVERED_MODEL_PARAMETERS.tsv"[39m, sep=[33m"\t"[39m)
+
+[31mRuntimeError[39m: Recovery directory not found from D:\Lung ST\codex agent\stereo_seq\stereo_seq\results\reanalysis\REFERENCE18_SPATIAL_GRAPH_NEIGHBORHOODS_V1\PILOT_MODEL_RECOVERY\report
+
+ERROR: 另一个程序正在使用此文件，进程无法访问。 (os error 32): remove 'D:\Lung ST\codex agent\stereo_seq\stereo_seq\results\reanalysis\REFERENCE18_SPATIAL_GRAPH_NEIGHBORHOODS_V1\PILOT_MODEL_RECOVERY\report\.quarto'
+
+Stack trace:
+    at Object.removeSync (ext:deno_fs/30_fs.js:250:3)
+    at safeRemoveSync (file:///D:/bb/RSTUDIO/resources/app/bin/quarto/bin/quarto.js:2369:14)
+    at renderProject (file:///D:/bb/RSTUDIO/resources/app/bin/quarto/bin/quarto.js:87588:13)
+    at eventLoopTick (ext:core/01_core.js:175:7)
+    at async Command.actionHandler (file:///D:/bb/RSTUDIO/resources/app/bin/quarto/bin/quarto.js:91975:32)
+    at async Command.execute (file:///D:/bb/RSTUDIO/resources/app/bin/quarto/bin/quarto.js:8253:13)
+    at async Command.parseCommand (file:///D:/bb/RSTUDIO/resources/app/bin/quarto/bin/quarto.js:8143:20)
+    at async quarto (file:///D:/bb/RSTUDIO/resources/app/bin/quarto/bin/quarto.js:133948:9)
+    at async file:///D:/bb/RSTUDIO/resources/app/bin/quarto/bin/quarto.js:133978:9
+    at async file:///D:/bb/RSTUDIO/resources/app/bin/quarto/bin/quarto.js:133830:20

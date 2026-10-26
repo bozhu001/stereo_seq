@@ -1,0 +1,17 @@
+provenance_item	expected	observed	status	evidence
+original_script_sha256	7ad72791868600dd4dd2c824b672fde631dd2c2265ba1818191aec8cb57dd471	7ad72791868600dd4dd2c824b672fde631dd2c2265ba1818191aec8cb57dd471	PASS	scripts\1233_reference18_spatial_graph_neighborhoods_pilot.py
+formal_preexisting_serialized_model	recoverable original fitted object	candidate_n=0	NOT_FOUND	Search restricted to the authoritative analysis tree; no original model was found before refitting.
+frozen_input_rows	126449	126449	PASS	Current K8/J2/L3 frozen Reference18 inputs.
+pilot_patient_n	9	9	PASS	Representative patient selection rerun from the final script.
+pilot_bin_order	51243 rows in exact entity_key order	rows=51243; exact=True	PASS	Compared with 07_PILOT_NEIGHBORHOOD_ASSIGNMENTS.tsv.gz.
+delaunay_edge_set	145525 unique stored edges	generated=145525; exact=True	PASS	Rebuilt with final source, within patient/ROI/tissue component and maximum 25*sqrt(2) um.
+reference18_state_order	18 frozen columns in stored order	Alveolar/resident macrophage|Inflammatory monocyte/macrophage|Dendritic cell|T|NK|Mast/Basophil|B|Ciliated epithelial|AT2/alveolar transitional|Secretory/other airway epithelial|AT1|Blood endothelial|Perivascular/mesothelial stromal|Fibroblast|Lymphatic endothelial|Plasma|Basal-like epithelial|Myofibroblast	PASS	Column order read directly from frozen inputs.
+ego_and_hellinger	ego=(self+neighbor sum)/(degree+1); sqrt	exact final source implementation	PASS	Feature calculation duplicated and compared exactly to original local_features().
+patient_centering	subtract unlabeled within-patient Hellinger mean	9 patient-specific 18-vectors recovered	PASS	No PN labels used for centering.
+feature_standardization	pooled Pilot ddof=1 SD; zero guard 1e-8	18 scales; exact_feature_matrix=True; max_abs_diff=0	PASS	Compared elementwise with original local_features().
+eligible_bin_rule	Delaunay degree >= 2	eligible=50972; not_evaluable=271; degree_exact=True	PASS	Compared with final assignment graph degrees.
+balanced_training_bins	up to 2500 per patient using default_rng(20261025)	training_n=21165	PASS	Indices regenerated before the original validation draw.
+k	8	8	PASS	K selection was not rerun.
+random_seed	20261025	20261025	PASS	Used for balanced sample and KMeans random_state.
+kmeans_configuration	n_init=10; max_iter=500; algorithm=lloyd	n_init=10; max_iter=500; algorithm=lloyd	PASS	scikit-learn=1.9.0
+final_recovery_decision	100% exact agreement required	MODEL_RECOVERED_EXACT	PASS	No label permutation or post-hoc remapping was used.

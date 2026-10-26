@@ -1,0 +1,13 @@
+metric	scope	value	numerator	denominator
+exact_label_agreement	all_evaluable	1.0	50972	50972
+mismatched_bin_n	all_evaluable	0.0	0	50972
+adjusted_rand_index	all_evaluable	1.0		50972
+normalized_mutual_information	all_evaluable	1.0		50972
+per_old_pn_exact_agreement	PN1	1.0	4785	4785
+per_old_pn_exact_agreement	PN2	1.0	5988	5988
+per_old_pn_exact_agreement	PN3	1.0	14244	14244
+per_old_pn_exact_agreement	PN4	1.0	5823	5823
+per_old_pn_exact_agreement	PN5	1.0	5283	5283
+per_old_pn_exact_agreement	PN6	1.0	4579	4579
+per_old_pn_exact_agreement	PN7	1.0	4838	4838
+per_old_pn_exact_agreement	PN8	1.0	5432	5432

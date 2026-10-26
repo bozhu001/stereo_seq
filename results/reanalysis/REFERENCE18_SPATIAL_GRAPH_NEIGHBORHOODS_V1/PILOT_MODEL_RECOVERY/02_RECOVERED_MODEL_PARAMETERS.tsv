@@ -1,0 +1,351 @@
+parameter_type	pn	patient_id	reference18_state	value
+feature_raw_sd_ddof1			Alveolar/resident macrophage	0.06198515140842675
+feature_scale_divisor			Alveolar/resident macrophage	0.06198515140842675
+feature_raw_sd_ddof1			Inflammatory monocyte/macrophage	0.06404326811255807
+feature_scale_divisor			Inflammatory monocyte/macrophage	0.06404326811255807
+feature_raw_sd_ddof1			Dendritic cell	0.06776870415102042
+feature_scale_divisor			Dendritic cell	0.06776870415102042
+feature_raw_sd_ddof1			T	0.08327870705732705
+feature_scale_divisor			T	0.08327870705732705
+feature_raw_sd_ddof1			NK	0.0774938291903621
+feature_scale_divisor			NK	0.0774938291903621
+feature_raw_sd_ddof1			Mast/Basophil	0.07396407840244672
+feature_scale_divisor			Mast/Basophil	0.07396407840244672
+feature_raw_sd_ddof1			B	0.06480726935418199
+feature_scale_divisor			B	0.06480726935418199
+feature_raw_sd_ddof1			Ciliated epithelial	0.06186895503324131
+feature_scale_divisor			Ciliated epithelial	0.06186895503324131
+feature_raw_sd_ddof1			AT2/alveolar transitional	0.054049448277180355
+feature_scale_divisor			AT2/alveolar transitional	0.054049448277180355
+feature_raw_sd_ddof1			Secretory/other airway epithelial	0.056766511245011766
+feature_scale_divisor			Secretory/other airway epithelial	0.056766511245011766
+feature_raw_sd_ddof1			AT1	0.060681155645218615
+feature_scale_divisor			AT1	0.060681155645218615
+feature_raw_sd_ddof1			Blood endothelial	0.07274946551005042
+feature_scale_divisor			Blood endothelial	0.07274946551005042
+feature_raw_sd_ddof1			Perivascular/mesothelial stromal	0.07331016769610924
+feature_scale_divisor			Perivascular/mesothelial stromal	0.07331016769610924
+feature_raw_sd_ddof1			Fibroblast	0.06758160745792031
+feature_scale_divisor			Fibroblast	0.06758160745792031
+feature_raw_sd_ddof1			Lymphatic endothelial	0.07156266462204408
+feature_scale_divisor			Lymphatic endothelial	0.07156266462204408
+feature_raw_sd_ddof1			Plasma	0.031455286836019
+feature_scale_divisor			Plasma	0.031455286836019
+feature_raw_sd_ddof1			Basal-like epithelial	0.0879652173297449
+feature_scale_divisor			Basal-like epithelial	0.0879652173297449
+feature_raw_sd_ddof1			Myofibroblast	0.06683161994924905
+feature_scale_divisor			Myofibroblast	0.06683161994924905
+pilot_patient_hellinger_center		HC/NL-50	Alveolar/resident macrophage	0.06236092783846393
+pilot_patient_hellinger_center		HC/NL-50	Inflammatory monocyte/macrophage	0.05614382491191358
+pilot_patient_hellinger_center		HC/NL-50	Dendritic cell	0.0728457747128644
+pilot_patient_hellinger_center		HC/NL-50	T	0.11117100203866359
+pilot_patient_hellinger_center		HC/NL-50	NK	0.059177111256085706
+pilot_patient_hellinger_center		HC/NL-50	Mast/Basophil	0.10842713333652175
+pilot_patient_hellinger_center		HC/NL-50	B	0.3966479998058728
+pilot_patient_hellinger_center		HC/NL-50	Ciliated epithelial	0.1928502884289546
+pilot_patient_hellinger_center		HC/NL-50	AT2/alveolar transitional	0.06949168686254316
+pilot_patient_hellinger_center		HC/NL-50	Secretory/other airway epithelial	0.05406502195722481
+pilot_patient_hellinger_center		HC/NL-50	AT1	0.3259602919612476
+pilot_patient_hellinger_center		HC/NL-50	Blood endothelial	0.33908465272838473
+pilot_patient_hellinger_center		HC/NL-50	Perivascular/mesothelial stromal	0.3136750066219785
+pilot_patient_hellinger_center		HC/NL-50	Fibroblast	0.47584436654708523
+pilot_patient_hellinger_center		HC/NL-50	Lymphatic endothelial	0.38930819754624646
+pilot_patient_hellinger_center		HC/NL-50	Plasma	0.1181961025042462
+pilot_patient_hellinger_center		HC/NL-50	Basal-like epithelial	0.06752161173964182
+pilot_patient_hellinger_center		HC/NL-50	Myofibroblast	0.12045049175744592
+pilot_patient_hellinger_center		HC/NL-55	Alveolar/resident macrophage	0.07984008823644384
+pilot_patient_hellinger_center		HC/NL-55	Inflammatory monocyte/macrophage	0.08012019115430304
+pilot_patient_hellinger_center		HC/NL-55	Dendritic cell	0.10784119514571722
+pilot_patient_hellinger_center		HC/NL-55	T	0.15532490814050046
+pilot_patient_hellinger_center		HC/NL-55	NK	0.1099859700068967
+pilot_patient_hellinger_center		HC/NL-55	Mast/Basophil	0.1473517987154785
+pilot_patient_hellinger_center		HC/NL-55	B	0.3463271578125676
+pilot_patient_hellinger_center		HC/NL-55	Ciliated epithelial	0.2867287814975772
+pilot_patient_hellinger_center		HC/NL-55	AT2/alveolar transitional	0.16667906980596167
+pilot_patient_hellinger_center		HC/NL-55	Secretory/other airway epithelial	0.07426428125654432
+pilot_patient_hellinger_center		HC/NL-55	AT1	0.49998717251847963
+pilot_patient_hellinger_center		HC/NL-55	Blood endothelial	0.26367083634345495
+pilot_patient_hellinger_center		HC/NL-55	Perivascular/mesothelial stromal	0.23712156805709853
+pilot_patient_hellinger_center		HC/NL-55	Fibroblast	0.26469116124497033
+pilot_patient_hellinger_center		HC/NL-55	Lymphatic endothelial	0.3381917112484143
+pilot_patient_hellinger_center		HC/NL-55	Plasma	0.03528392632105857
+pilot_patient_hellinger_center		HC/NL-55	Basal-like epithelial	0.12584324815213715
+pilot_patient_hellinger_center		HC/NL-55	Myofibroblast	0.13403961009333537
+pilot_patient_hellinger_center		HC/NL-66	Alveolar/resident macrophage	0.07344729890527527
+pilot_patient_hellinger_center		HC/NL-66	Inflammatory monocyte/macrophage	0.07493432379598033
+pilot_patient_hellinger_center		HC/NL-66	Dendritic cell	0.11303577372261027
+pilot_patient_hellinger_center		HC/NL-66	T	0.17309237709829878
+pilot_patient_hellinger_center		HC/NL-66	NK	0.15508210967394354
+pilot_patient_hellinger_center		HC/NL-66	Mast/Basophil	0.18002661083765645
+pilot_patient_hellinger_center		HC/NL-66	B	0.357937604173675
+pilot_patient_hellinger_center		HC/NL-66	Ciliated epithelial	0.2843325503631308
+pilot_patient_hellinger_center		HC/NL-66	AT2/alveolar transitional	0.1673421603810794
+pilot_patient_hellinger_center		HC/NL-66	Secretory/other airway epithelial	0.07474750128894062
+pilot_patient_hellinger_center		HC/NL-66	AT1	0.4138195648845966
+pilot_patient_hellinger_center		HC/NL-66	Blood endothelial	0.23892975232848426
+pilot_patient_hellinger_center		HC/NL-66	Perivascular/mesothelial stromal	0.24308268704063354
+pilot_patient_hellinger_center		HC/NL-66	Fibroblast	0.2503064477864266
+pilot_patient_hellinger_center		HC/NL-66	Lymphatic endothelial	0.34471043094526466
+pilot_patient_hellinger_center		HC/NL-66	Plasma	0.06040884739122252
+pilot_patient_hellinger_center		HC/NL-66	Basal-like epithelial	0.07611960847299173
+pilot_patient_hellinger_center		HC/NL-66	Myofibroblast	0.12801552267891517
+pilot_patient_hellinger_center		IPF/FO22-1-09404	Alveolar/resident macrophage	0.04571285776027824
+pilot_patient_hellinger_center		IPF/FO22-1-09404	Inflammatory monocyte/macrophage	0.04383680789597886
+pilot_patient_hellinger_center		IPF/FO22-1-09404	Dendritic cell	0.06416659173112507
+pilot_patient_hellinger_center		IPF/FO22-1-09404	T	0.10482737091532057
+pilot_patient_hellinger_center		IPF/FO22-1-09404	NK	0.05290943262512842
+pilot_patient_hellinger_center		IPF/FO22-1-09404	Mast/Basophil	0.06260163324922016
+pilot_patient_hellinger_center		IPF/FO22-1-09404	B	0.4679808619637718
+pilot_patient_hellinger_center		IPF/FO22-1-09404	Ciliated epithelial	0.20456579415127113
+pilot_patient_hellinger_center		IPF/FO22-1-09404	AT2/alveolar transitional	0.05582384020826583
+pilot_patient_hellinger_center		IPF/FO22-1-09404	Secretory/other airway epithelial	0.047405765607687084
+pilot_patient_hellinger_center		IPF/FO22-1-09404	AT1	0.33902681733226436
+pilot_patient_hellinger_center		IPF/FO22-1-09404	Blood endothelial	0.31608771171483163
+pilot_patient_hellinger_center		IPF/FO22-1-09404	Perivascular/mesothelial stromal	0.30374740837615044
+pilot_patient_hellinger_center		IPF/FO22-1-09404	Fibroblast	0.45270594178489515
+pilot_patient_hellinger_center		IPF/FO22-1-09404	Lymphatic endothelial	0.4075134511973716
+pilot_patient_hellinger_center		IPF/FO22-1-09404	Plasma	0.06804782200663113
+pilot_patient_hellinger_center		IPF/FO22-1-09404	Basal-like epithelial	0.04664667648832645
+pilot_patient_hellinger_center		IPF/FO22-1-09404	Myofibroblast	0.0890396037290631
+pilot_patient_hellinger_center		IPF/FO23-1-03100	Alveolar/resident macrophage	0.07631374895296178
+pilot_patient_hellinger_center		IPF/FO23-1-03100	Inflammatory monocyte/macrophage	0.08235868162740916
+pilot_patient_hellinger_center		IPF/FO23-1-03100	Dendritic cell	0.1154353938278426
+pilot_patient_hellinger_center		IPF/FO23-1-03100	T	0.16463520239758378
+pilot_patient_hellinger_center		IPF/FO23-1-03100	NK	0.14259290257314933
+pilot_patient_hellinger_center		IPF/FO23-1-03100	Mast/Basophil	0.1562975831268653
+pilot_patient_hellinger_center		IPF/FO23-1-03100	B	0.3270897483783212
+pilot_patient_hellinger_center		IPF/FO23-1-03100	Ciliated epithelial	0.29323721701961186
+pilot_patient_hellinger_center		IPF/FO23-1-03100	AT2/alveolar transitional	0.19304576933351617
+pilot_patient_hellinger_center		IPF/FO23-1-03100	Secretory/other airway epithelial	0.0764981922620556
+pilot_patient_hellinger_center		IPF/FO23-1-03100	AT1	0.4621346204913021
+pilot_patient_hellinger_center		IPF/FO23-1-03100	Blood endothelial	0.26576105589473015
+pilot_patient_hellinger_center		IPF/FO23-1-03100	Perivascular/mesothelial stromal	0.23848195922556786
+pilot_patient_hellinger_center		IPF/FO23-1-03100	Fibroblast	0.2666167828785253
+pilot_patient_hellinger_center		IPF/FO23-1-03100	Lymphatic endothelial	0.32812270479122946
+pilot_patient_hellinger_center		IPF/FO23-1-03100	Plasma	0.033069781404557234
+pilot_patient_hellinger_center		IPF/FO23-1-03100	Basal-like epithelial	0.1421451300385015
+pilot_patient_hellinger_center		IPF/FO23-1-03100	Myofibroblast	0.13433817990488106
+pilot_patient_hellinger_center		IPF/FO23-1-06168	Alveolar/resident macrophage	0.08598557594315069
+pilot_patient_hellinger_center		IPF/FO23-1-06168	Inflammatory monocyte/macrophage	0.06793896995842465
+pilot_patient_hellinger_center		IPF/FO23-1-06168	Dendritic cell	0.1106460766595667
+pilot_patient_hellinger_center		IPF/FO23-1-06168	T	0.15979041940198596
+pilot_patient_hellinger_center		IPF/FO23-1-06168	NK	0.15204330267192281
+pilot_patient_hellinger_center		IPF/FO23-1-06168	Mast/Basophil	0.18035942945193478
+pilot_patient_hellinger_center		IPF/FO23-1-06168	B	0.438825649924973
+pilot_patient_hellinger_center		IPF/FO23-1-06168	Ciliated epithelial	0.25243418414501706
+pilot_patient_hellinger_center		IPF/FO23-1-06168	AT2/alveolar transitional	0.15657618348359797
+pilot_patient_hellinger_center		IPF/FO23-1-06168	Secretory/other airway epithelial	0.07043336912733575
+pilot_patient_hellinger_center		IPF/FO23-1-06168	AT1	0.4346197548750424
+pilot_patient_hellinger_center		IPF/FO23-1-06168	Blood endothelial	0.2341529262291668
+pilot_patient_hellinger_center		IPF/FO23-1-06168	Perivascular/mesothelial stromal	0.2284573364276572
+pilot_patient_hellinger_center		IPF/FO23-1-06168	Fibroblast	0.2601230205108026
+pilot_patient_hellinger_center		IPF/FO23-1-06168	Lymphatic endothelial	0.33271539648838394
+pilot_patient_hellinger_center		IPF/FO23-1-06168	Plasma	0.06099300262269588
+pilot_patient_hellinger_center		IPF/FO23-1-06168	Basal-like epithelial	0.08487018610600272
+pilot_patient_hellinger_center		IPF/FO23-1-06168	Myofibroblast	0.133322731817762
+pilot_patient_hellinger_center		SSC/07998/15A	Alveolar/resident macrophage	0.08476419536198294
+pilot_patient_hellinger_center		SSC/07998/15A	Inflammatory monocyte/macrophage	0.07091206544319394
+pilot_patient_hellinger_center		SSC/07998/15A	Dendritic cell	0.11430752161153465
+pilot_patient_hellinger_center		SSC/07998/15A	T	0.17561900200191768
+pilot_patient_hellinger_center		SSC/07998/15A	NK	0.12417998682430664
+pilot_patient_hellinger_center		SSC/07998/15A	Mast/Basophil	0.1764476263134151
+pilot_patient_hellinger_center		SSC/07998/15A	B	0.4492547972082249
+pilot_patient_hellinger_center		SSC/07998/15A	Ciliated epithelial	0.2498696525777203
+pilot_patient_hellinger_center		SSC/07998/15A	AT2/alveolar transitional	0.1451637223821501
+pilot_patient_hellinger_center		SSC/07998/15A	Secretory/other airway epithelial	0.06906546581127151
+pilot_patient_hellinger_center		SSC/07998/15A	AT1	0.45819722094297644
+pilot_patient_hellinger_center		SSC/07998/15A	Blood endothelial	0.23585722909382298
+pilot_patient_hellinger_center		SSC/07998/15A	Perivascular/mesothelial stromal	0.2214697682290329
+pilot_patient_hellinger_center		SSC/07998/15A	Fibroblast	0.2480183256224026
+pilot_patient_hellinger_center		SSC/07998/15A	Lymphatic endothelial	0.33429797638238445
+pilot_patient_hellinger_center		SSC/07998/15A	Plasma	0.06576475506945104
+pilot_patient_hellinger_center		SSC/07998/15A	Basal-like epithelial	0.1207683740723815
+pilot_patient_hellinger_center		SSC/07998/15A	Myofibroblast	0.12147959454498539
+pilot_patient_hellinger_center		SSC/15275/13	Alveolar/resident macrophage	0.06574328617493962
+pilot_patient_hellinger_center		SSC/15275/13	Inflammatory monocyte/macrophage	0.06772221366832543
+pilot_patient_hellinger_center		SSC/15275/13	Dendritic cell	0.10446614710947345
+pilot_patient_hellinger_center		SSC/15275/13	T	0.16204154642142984
+pilot_patient_hellinger_center		SSC/15275/13	NK	0.1554122712117109
+pilot_patient_hellinger_center		SSC/15275/13	Mast/Basophil	0.14601948299205245
+pilot_patient_hellinger_center		SSC/15275/13	B	0.39255279865936826
+pilot_patient_hellinger_center		SSC/15275/13	Ciliated epithelial	0.2732829809239329
+pilot_patient_hellinger_center		SSC/15275/13	AT2/alveolar transitional	0.08107380354883895
+pilot_patient_hellinger_center		SSC/15275/13	Secretory/other airway epithelial	0.06827430291003019
+pilot_patient_hellinger_center		SSC/15275/13	AT1	0.3269424691176899
+pilot_patient_hellinger_center		SSC/15275/13	Blood endothelial	0.32260826921211183
+pilot_patient_hellinger_center		SSC/15275/13	Perivascular/mesothelial stromal	0.29900484961329343
+pilot_patient_hellinger_center		SSC/15275/13	Fibroblast	0.3898919684806051
+pilot_patient_hellinger_center		SSC/15275/13	Lymphatic endothelial	0.3511099288468585
+pilot_patient_hellinger_center		SSC/15275/13	Plasma	0.09423475904565254
+pilot_patient_hellinger_center		SSC/15275/13	Basal-like epithelial	0.0949223028895437
+pilot_patient_hellinger_center		SSC/15275/13	Myofibroblast	0.13540261984946186
+pilot_patient_hellinger_center		SSC/FO21-1-01756B1	Alveolar/resident macrophage	0.07774742239478448
+pilot_patient_hellinger_center		SSC/FO21-1-01756B1	Inflammatory monocyte/macrophage	0.0756613540918434
+pilot_patient_hellinger_center		SSC/FO21-1-01756B1	Dendritic cell	0.11638627871934497
+pilot_patient_hellinger_center		SSC/FO21-1-01756B1	T	0.15350555296100618
+pilot_patient_hellinger_center		SSC/FO21-1-01756B1	NK	0.11266080987204793
+pilot_patient_hellinger_center		SSC/FO21-1-01756B1	Mast/Basophil	0.16239868111541633
+pilot_patient_hellinger_center		SSC/FO21-1-01756B1	B	0.3289179552880439
+pilot_patient_hellinger_center		SSC/FO21-1-01756B1	Ciliated epithelial	0.28931431553828624
+pilot_patient_hellinger_center		SSC/FO21-1-01756B1	AT2/alveolar transitional	0.19161542323006753
+pilot_patient_hellinger_center		SSC/FO21-1-01756B1	Secretory/other airway epithelial	0.07699310132510778
+pilot_patient_hellinger_center		SSC/FO21-1-01756B1	AT1	0.4732969323573044
+pilot_patient_hellinger_center		SSC/FO21-1-01756B1	Blood endothelial	0.2727447184505255
+pilot_patient_hellinger_center		SSC/FO21-1-01756B1	Perivascular/mesothelial stromal	0.23674015240052546
+pilot_patient_hellinger_center		SSC/FO21-1-01756B1	Fibroblast	0.26797468866624163
+pilot_patient_hellinger_center		SSC/FO21-1-01756B1	Lymphatic endothelial	0.33201407518819553
+pilot_patient_hellinger_center		SSC/FO21-1-01756B1	Plasma	0.03760097991172121
+pilot_patient_hellinger_center		SSC/FO21-1-01756B1	Basal-like epithelial	0.1453310823168011
+pilot_patient_hellinger_center		SSC/FO21-1-01756B1	Myofibroblast	0.13420784346955208
+standardized_cluster_center	PN1		Alveolar/resident macrophage	-0.16927487658277207
+standardized_cluster_center	PN1		Inflammatory monocyte/macrophage	-0.2821261543961232
+standardized_cluster_center	PN1		Dendritic cell	-0.3835313954006433
+standardized_cluster_center	PN1		T	-0.2547951360782477
+standardized_cluster_center	PN1		NK	-0.36728329525926734
+standardized_cluster_center	PN1		Mast/Basophil	-0.408887462628455
+standardized_cluster_center	PN1		B	0.7022625324617849
+standardized_cluster_center	PN1		Ciliated epithelial	1.1730400416862734
+standardized_cluster_center	PN1		AT2/alveolar transitional	-0.28859688456657834
+standardized_cluster_center	PN1		Secretory/other airway epithelial	0.6174806664421755
+standardized_cluster_center	PN1		AT1	-0.42268868333296755
+standardized_cluster_center	PN1		Blood endothelial	-0.24479042173005883
+standardized_cluster_center	PN1		Perivascular/mesothelial stromal	-0.3153902054776357
+standardized_cluster_center	PN1		Fibroblast	0.05343860539388007
+standardized_cluster_center	PN1		Lymphatic endothelial	0.2625735792611707
+standardized_cluster_center	PN1		Plasma	-0.38348668575067285
+standardized_cluster_center	PN1		Basal-like epithelial	-0.27525905483329155
+standardized_cluster_center	PN1		Myofibroblast	0.06027743803409586
+standardized_cluster_center	PN2		Alveolar/resident macrophage	-0.001551505164095074
+standardized_cluster_center	PN2		Inflammatory monocyte/macrophage	1.6701033410944235
+standardized_cluster_center	PN2		Dendritic cell	-0.2646850903368264
+standardized_cluster_center	PN2		T	-0.12905459043310769
+standardized_cluster_center	PN2		NK	-0.0005709670273894504
+standardized_cluster_center	PN2		Mast/Basophil	0.04731679209748946
+standardized_cluster_center	PN2		B	-0.09443504085882465
+standardized_cluster_center	PN2		Ciliated epithelial	-0.013844977795201855
+standardized_cluster_center	PN2		AT2/alveolar transitional	-0.05802115993663785
+standardized_cluster_center	PN2		Secretory/other airway epithelial	-0.07209932576613318
+standardized_cluster_center	PN2		AT1	0.13104386526484413
+standardized_cluster_center	PN2		Blood endothelial	0.10533005708520995
+standardized_cluster_center	PN2		Perivascular/mesothelial stromal	-0.23399460742740727
+standardized_cluster_center	PN2		Fibroblast	-0.03517125851732313
+standardized_cluster_center	PN2		Lymphatic endothelial	-0.057706580258261614
+standardized_cluster_center	PN2		Plasma	-0.0974282592297554
+standardized_cluster_center	PN2		Basal-like epithelial	-0.14614264878646882
+standardized_cluster_center	PN2		Myofibroblast	0.20523674615471219
+standardized_cluster_center	PN3		Alveolar/resident macrophage	-0.23907141126860754
+standardized_cluster_center	PN3		Inflammatory monocyte/macrophage	-0.19044041781240856
+standardized_cluster_center	PN3		Dendritic cell	0.06424703525713361
+standardized_cluster_center	PN3		T	-0.20930270154171782
+standardized_cluster_center	PN3		NK	0.07413171988079881
+standardized_cluster_center	PN3		Mast/Basophil	-0.12418787577219603
+standardized_cluster_center	PN3		B	0.17762058270047526
+standardized_cluster_center	PN3		Ciliated epithelial	-0.10878933970365193
+standardized_cluster_center	PN3		AT2/alveolar transitional	-0.10802073399764041
+standardized_cluster_center	PN3		Secretory/other airway epithelial	-0.11412153515000914
+standardized_cluster_center	PN3		AT1	0.2710602431232578
+standardized_cluster_center	PN3		Blood endothelial	-0.015974591944283547
+standardized_cluster_center	PN3		Perivascular/mesothelial stromal	0.023278179413683278
+standardized_cluster_center	PN3		Fibroblast	0.34561565723257287
+standardized_cluster_center	PN3		Lymphatic endothelial	0.18123352994912412
+standardized_cluster_center	PN3		Plasma	-0.21744683384600233
+standardized_cluster_center	PN3		Basal-like epithelial	-0.23151552262899208
+standardized_cluster_center	PN3		Myofibroblast	-0.4452607364349106
+standardized_cluster_center	PN4		Alveolar/resident macrophage	1.4736307991708473
+standardized_cluster_center	PN4		Inflammatory monocyte/macrophage	-0.36029557177459065
+standardized_cluster_center	PN4		Dendritic cell	0.011936518566817432
+standardized_cluster_center	PN4		T	0.3182322997344303
+standardized_cluster_center	PN4		NK	0.17572710314053502
+standardized_cluster_center	PN4		Mast/Basophil	-0.09087198086363103
+standardized_cluster_center	PN4		B	-0.5321719749885194
+standardized_cluster_center	PN4		Ciliated epithelial	-0.14146297985809467
+standardized_cluster_center	PN4		AT2/alveolar transitional	0.02555286176017345
+standardized_cluster_center	PN4		Secretory/other airway epithelial	0.12008095346343803
+standardized_cluster_center	PN4		AT1	0.2690851823904738
+standardized_cluster_center	PN4		Blood endothelial	0.0876161060318646
+standardized_cluster_center	PN4		Perivascular/mesothelial stromal	-0.04015675715217798
+standardized_cluster_center	PN4		Fibroblast	-0.08630725013325702
+standardized_cluster_center	PN4		Lymphatic endothelial	-0.04894940860261056
+standardized_cluster_center	PN4		Plasma	-0.060595464995239386
+standardized_cluster_center	PN4		Basal-like epithelial	-0.15124595399209118
+standardized_cluster_center	PN4		Myofibroblast	0.19168255858510683
+standardized_cluster_center	PN5		Alveolar/resident macrophage	-0.1856353265531655
+standardized_cluster_center	PN5		Inflammatory monocyte/macrophage	-0.09753814595719362
+standardized_cluster_center	PN5		Dendritic cell	0.04524197554145429
+standardized_cluster_center	PN5		T	0.21540825282995818
+standardized_cluster_center	PN5		NK	-0.16842120247107936
+standardized_cluster_center	PN5		Mast/Basophil	-0.0620491806666985
+standardized_cluster_center	PN5		B	0.03724459717522802
+standardized_cluster_center	PN5		Ciliated epithelial	-0.25097853697639594
+standardized_cluster_center	PN5		AT2/alveolar transitional	-0.16434617513158672
+standardized_cluster_center	PN5		Secretory/other airway epithelial	-0.016333328948078825
+standardized_cluster_center	PN5		AT1	0.014701220146749922
+standardized_cluster_center	PN5		Blood endothelial	0.16487150552148108
+standardized_cluster_center	PN5		Perivascular/mesothelial stromal	-0.2367868269742961
+standardized_cluster_center	PN5		Fibroblast	0.41707920043311253
+standardized_cluster_center	PN5		Lymphatic endothelial	-0.04282806890644644
+standardized_cluster_center	PN5		Plasma	1.618202739333126
+standardized_cluster_center	PN5		Basal-like epithelial	0.2220871908900954
+standardized_cluster_center	PN5		Myofibroblast	-0.1384882680859752
+standardized_cluster_center	PN6		Alveolar/resident macrophage	0.07783469869394206
+standardized_cluster_center	PN6		Inflammatory monocyte/macrophage	0.033911517897054815
+standardized_cluster_center	PN6		Dendritic cell	0.29237380405269525
+standardized_cluster_center	PN6		T	0.22895600335805924
+standardized_cluster_center	PN6		NK	0.05532804382503287
+standardized_cluster_center	PN6		Mast/Basophil	0.2294314657525985
+standardized_cluster_center	PN6		B	-0.12369885792693708
+standardized_cluster_center	PN6		Ciliated epithelial	-0.09405475989436098
+standardized_cluster_center	PN6		AT2/alveolar transitional	1.0085551410957134
+standardized_cluster_center	PN6		Secretory/other airway epithelial	-0.12693015136697136
+standardized_cluster_center	PN6		AT1	-1.4568433990026688
+standardized_cluster_center	PN6		Blood endothelial	0.1374641262858515
+standardized_cluster_center	PN6		Perivascular/mesothelial stromal	0.17106540170479329
+standardized_cluster_center	PN6		Fibroblast	-0.1738299385634933
+standardized_cluster_center	PN6		Lymphatic endothelial	0.18629809459468916
+standardized_cluster_center	PN6		Plasma	-0.35314094657537204
+standardized_cluster_center	PN6		Basal-like epithelial	1.0541281919545127
+standardized_cluster_center	PN6		Myofibroblast	-0.15214443254940416
+standardized_cluster_center	PN7		Alveolar/resident macrophage	-0.339091241312836
+standardized_cluster_center	PN7		Inflammatory monocyte/macrophage	-0.4098690916602157
+standardized_cluster_center	PN7		Dendritic cell	0.06911898668390132
+standardized_cluster_center	PN7		T	0.1051339108877434
+standardized_cluster_center	PN7		NK	-0.10986071422134175
+standardized_cluster_center	PN7		Mast/Basophil	0.3367329150319676
+standardized_cluster_center	PN7		B	0.15859049213678886
+standardized_cluster_center	PN7		Ciliated epithelial	-0.08987441091529282
+standardized_cluster_center	PN7		AT2/alveolar transitional	0.031178253008576247
+standardized_cluster_center	PN7		Secretory/other airway epithelial	-0.07447758532330966
+standardized_cluster_center	PN7		AT1	0.3381660427165615
+standardized_cluster_center	PN7		Blood endothelial	0.8672264656410732
+standardized_cluster_center	PN7		Perivascular/mesothelial stromal	0.3192540969025536
+standardized_cluster_center	PN7		Fibroblast	-0.1657920842085006
+standardized_cluster_center	PN7		Lymphatic endothelial	-1.402962354183318
+standardized_cluster_center	PN7		Plasma	-0.28396894855993
+standardized_cluster_center	PN7		Basal-like epithelial	-0.06982771182301932
+standardized_cluster_center	PN7		Myofibroblast	0.25077578686902
+standardized_cluster_center	PN8		Alveolar/resident macrophage	-0.36934716613679913
+standardized_cluster_center	PN8		Inflammatory monocyte/macrophage	-0.18978104597414103
+standardized_cluster_center	PN8		Dendritic cell	0.12511576999152757
+standardized_cluster_center	PN8		T	0.08860643476396575
+standardized_cluster_center	PN8		NK	0.19600236115491143
+standardized_cluster_center	PN8		Mast/Basophil	0.4660197450169721
+standardized_cluster_center	PN8		B	-0.3353428536466669
+standardized_cluster_center	PN8		Ciliated epithelial	-0.08903243836278917
+standardized_cluster_center	PN8		AT2/alveolar transitional	-0.0737215949437313
+standardized_cluster_center	PN8		Secretory/other airway epithelial	-0.04817473561918873
+standardized_cluster_center	PN8		AT1	0.06090999816737731
+standardized_cluster_center	PN8		Blood endothelial	-0.8870623309791964
+standardized_cluster_center	PN8		Perivascular/mesothelial stromal	0.4339089798498088
+standardized_cluster_center	PN8		Fibroblast	-0.8857046946653956
+standardized_cluster_center	PN8		Lymphatic endothelial	0.6044110434194918
+standardized_cluster_center	PN8		Plasma	0.08019154953420643
+standardized_cluster_center	PN8		Basal-like epithelial	0.1579523558944289
+standardized_cluster_center	PN8		Myofibroblast	0.797936652411624
+model_k				8.0
+model_seed				20261025.0
+model_n_init				10.0
+model_max_iter				500.0
+model_n_iter_observed				76.0
+model_inertia				316227.9410287279
+model_training_bin_n				21165.0
+model_eligible_bin_n				50972.0

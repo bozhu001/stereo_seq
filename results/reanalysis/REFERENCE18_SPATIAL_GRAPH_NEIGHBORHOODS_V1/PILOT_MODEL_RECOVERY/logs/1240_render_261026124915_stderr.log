@@ -1,0 +1,48 @@
+
+Starting python3 kernel...Done
+
+Executing '1240_pilot_model_recovery_report.quarto_ipynb'
+  Cell 1/7: ''...Done
+  Cell 2/7: ''...Done
+  Cell 3/7: ''...Done
+  Cell 4/7: ''...Done
+  Cell 5/7: ''...Done
+  Cell 6/7: ''...Done
+  Cell 7/7: ''...Done
+
+pandoc --output ..\..\..\..\..\1240_pilot_model_recovery_report_261026124915.html
+  to: html
+  standalone: true
+  embed-resources: true
+  section-divs: true
+  html-math-method: mathjax
+  wrap: none
+  default-image-extension: png
+  toc: true
+  variables: {}
+  
+metadata
+  document-css: false
+  link-citations: true
+  date-format: long
+  lang: en
+  title: Reference18 Spatial Graph Neighborhoods — Pilot Model Recovery
+  author: Codex
+  date: today
+  jupyter: python3
+  toc-float: true
+  theme: bootstrap
+  
+ERROR: 另一个程序正在使用此文件，进程无法访问。 (os error 32): remove 'D:\Lung ST\codex agent\stereo_seq\stereo_seq\results\reanalysis\REFERENCE18_SPATIAL_GRAPH_NEIGHBORHOODS_V1\PILOT_MODEL_RECOVERY\report\.quarto'
+
+Stack trace:
+    at Object.removeSync (ext:deno_fs/30_fs.js:250:3)
+    at safeRemoveSync (file:///D:/bb/RSTUDIO/resources/app/bin/quarto/bin/quarto.js:2369:14)
+    at renderProject (file:///D:/bb/RSTUDIO/resources/app/bin/quarto/bin/quarto.js:87588:13)
+    at eventLoopTick (ext:core/01_core.js:175:7)
+    at async Command.actionHandler (file:///D:/bb/RSTUDIO/resources/app/bin/quarto/bin/quarto.js:91975:32)
+    at async Command.execute (file:///D:/bb/RSTUDIO/resources/app/bin/quarto/bin/quarto.js:8253:13)
+    at async Command.parseCommand (file:///D:/bb/RSTUDIO/resources/app/bin/quarto/bin/quarto.js:8143:20)
+    at async quarto (file:///D:/bb/RSTUDIO/resources/app/bin/quarto/bin/quarto.js:133948:9)
+    at async file:///D:/bb/RSTUDIO/resources/app/bin/quarto/bin/quarto.js:133978:9
+    at async file:///D:/bb/RSTUDIO/resources/app/bin/quarto/bin/quarto.js:133830:20

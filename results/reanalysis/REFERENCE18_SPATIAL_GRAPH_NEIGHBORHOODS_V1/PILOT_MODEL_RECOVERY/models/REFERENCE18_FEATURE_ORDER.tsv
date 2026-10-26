@@ -1,0 +1,19 @@
+feature_index_zero_based	reference18_state	weight_column
+0	Alveolar/resident macrophage	weight__Alveolar/resident macrophage
+1	Inflammatory monocyte/macrophage	weight__Inflammatory monocyte/macrophage
+2	Dendritic cell	weight__Dendritic cell
+3	T	weight__T
+4	NK	weight__NK
+5	Mast/Basophil	weight__Mast/Basophil
+6	B	weight__B
+7	Ciliated epithelial	weight__Ciliated epithelial
+8	AT2/alveolar transitional	weight__AT2/alveolar transitional
+9	Secretory/other airway epithelial	weight__Secretory/other airway epithelial
+10	AT1	weight__AT1
+11	Blood endothelial	weight__Blood endothelial
+12	Perivascular/mesothelial stromal	weight__Perivascular/mesothelial stromal
+13	Fibroblast	weight__Fibroblast
+14	Lymphatic endothelial	weight__Lymphatic endothelial
+15	Plasma	weight__Plasma
+16	Basal-like epithelial	weight__Basal-like epithelial
+17	Myofibroblast	weight__Myofibroblast

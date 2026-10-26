@@ -1,0 +1,4 @@
+2026-10-26 12:29:17,278	INFO	Starting deterministic K=8 pilot model recovery
+2026-10-26 12:29:26,674	INFO	Fitting K=8 only on 21165 balanced Pilot bins
+2026-10-26 12:29:29,405	INFO	Label agreement=1.000000000000 ARI=1.000000000000 NMI=1.000000000000
+2026-10-26 12:29:32,187	INFO	Recovery decision: MODEL_RECOVERED_EXACT

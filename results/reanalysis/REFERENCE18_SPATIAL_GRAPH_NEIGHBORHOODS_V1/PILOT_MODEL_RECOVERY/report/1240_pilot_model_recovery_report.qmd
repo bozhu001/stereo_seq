@@ -1,0 +1,129 @@
+---
+title: "Reference18 Spatial Graph Neighborhoods — Pilot Model Recovery"
+author: "Codex"
+date: today
+format:
+  html:
+    toc: true
+    toc-float: true
+    df-print: paged
+    code-fold: true
+    theme: bootstrap
+    embed-resources: true
+jupyter: python3
+execute:
+  echo: true
+---
+
+<!--
+Render from the project root in a detachable process:
+QUARTO_PYTHON=envs/stereo_seq_py/Scripts/python.exe quarto render results/reanalysis/REFERENCE18_SPATIAL_GRAPH_NEIGHBORHOODS_V1/PILOT_MODEL_RECOVERY/report/1240_pilot_model_recovery_report.qmd --output 1240_pilot_model_recovery_report_<YYMMDDHHMMSS>.html --output-dir results/reanalysis/REFERENCE18_SPATIAL_GRAPH_NEIGHBORHOODS_V1/PILOT_MODEL_RECOVERY/report
+-->
+
+## Scope
+
+This report documents deterministic recovery of the PN1–PN8 K-means model.
+Only the original nine-patient Pilot was used. K was fixed at eight and no
+21-patient projection, RCTD, NMF, edgeR, GSEA, ligand–receptor, or Marker
+analysis was run.
+
+```{python}
+from pathlib import Path
+import json
+import pandas as pd
+
+working = Path.cwd()
+recovery = working.parent if working.name == "report" else working / "results/reanalysis/REFERENCE18_SPATIAL_GRAPH_NEIGHBORHOODS_V1/PILOT_MODEL_RECOVERY"
+if not (recovery / "01_MODEL_PROVENANCE.tsv").exists():
+    raise RuntimeError(f"Recovery directory not found from {working}")
+
+provenance = pd.read_csv(recovery / "01_MODEL_PROVENANCE.tsv", sep="\t")
+parameters = pd.read_csv(recovery / "02_RECOVERED_MODEL_PARAMETERS.tsv", sep="\t")
+reproducibility = pd.read_csv(recovery / "03_PILOT_LABEL_REPRODUCIBILITY.tsv", sep="\t")
+confusion = pd.read_csv(recovery / "04_PN_CONFUSION_MATRIX.tsv", sep="\t")
+metadata = json.loads((recovery / "models/MODEL_METADATA.json").read_text(encoding="utf-8"))
+```
+
+## Recovery decision
+
+```{python}
+pd.DataFrame(
+    {
+        "Metric": [
+            "Decision",
+            "Evaluable Pilot Bin50",
+            "Exact matches",
+            "Mismatches",
+            "Exact agreement",
+            "ARI",
+            "NMI",
+            "Training Bin50",
+        ],
+        "Value": [
+            metadata["decision"],
+            metadata["evaluable_bin_n"],
+            metadata["matching_bin_n"],
+            metadata["mismatched_bin_n"],
+            metadata["exact_label_agreement"],
+            metadata["ari"],
+            metadata["nmi"],
+            metadata["training_bin_n"],
+        ],
+    }
+)
+```
+
+The model is called `MODEL_RECOVERED_EXACT` only because all 50,972 evaluable
+Pilot bins reproduced their original PN labels without label permutation or
+post-hoc remapping.
+
+## Provenance checks
+
+```{python}
+provenance
+```
+
+No pre-existing serialized fitted model was found in the authoritative Pilot
+result tree. The final script, frozen inputs, graph, transformation, sampling,
+K=8, and seed 20261025 were therefore replayed once. The recovered graph edge
+set and standardized feature matrix matched the final implementation exactly.
+
+## Label reproducibility
+
+```{python}
+reproducibility
+```
+
+```{python}
+confusion
+```
+
+## Frozen deployment artifacts
+
+```{python}
+parameters.groupby("parameter_type", as_index=False).size()
+```
+
+The deployment bundle contains the 8 × 18 standardized cluster centers, the
+18-dimensional feature scale, the Reference18 order, the cluster-to-PN map,
+and the ordered 21,165-bin balanced training set. New-patient centering is
+defined from that patient's unlabeled Hellinger-transformed ego composition;
+new PN labels are not used for centering.
+
+## Environment
+
+```{python}
+pd.DataFrame(
+    {
+        "Item": ["Python", "Platform", "scikit-learn", "NumPy", "pandas", "SciPy"],
+        "Value": [
+            metadata["python"],
+            metadata["platform"],
+            metadata["sklearn"],
+            metadata["numpy"],
+            metadata["pandas"],
+            metadata["scipy"],
+        ],
+    }
+)
+```

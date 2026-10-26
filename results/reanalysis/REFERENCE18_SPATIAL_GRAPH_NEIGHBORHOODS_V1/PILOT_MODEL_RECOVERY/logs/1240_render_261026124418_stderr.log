@@ -1,0 +1,13 @@
+ERROR: Error executing 'CMD': 拒绝访问。 (os error 5)
+
+Stack trace:
+    at execProcess (file:///D:/bb/RSTUDIO/resources/app/bin/quarto/bin/quarto.js:4970:15)
+    at which (file:///D:/bb/RSTUDIO/resources/app/bin/quarto/bin/quarto.js:5084:27)
+    at ensureGitignore (file:///D:/bb/RSTUDIO/resources/app/bin/quarto/bin/quarto.js:41446:22)
+    at renderProject (file:///D:/bb/RSTUDIO/resources/app/bin/quarto/bin/quarto.js:87250:11)
+    at eventLoopTick (ext:core/01_core.js:175:7)
+    at async Command.actionHandler (file:///D:/bb/RSTUDIO/resources/app/bin/quarto/bin/quarto.js:91975:32)
+    at async Command.execute (file:///D:/bb/RSTUDIO/resources/app/bin/quarto/bin/quarto.js:8253:13)
+    at async Command.parseCommand (file:///D:/bb/RSTUDIO/resources/app/bin/quarto/bin/quarto.js:8143:20)
+    at async quarto (file:///D:/bb/RSTUDIO/resources/app/bin/quarto/bin/quarto.js:133948:9)
+    at async file:///D:/bb/RSTUDIO/resources/app/bin/quarto/bin/quarto.js:133978:9
