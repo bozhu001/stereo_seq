@@ -1,0 +1,5 @@
+﻿timestamp=261111155125
+qmd=D:\Lung ST\codex agent\stereo_seq\stereo_seq\scripts\cellbin_broadclass_pilot_21samples.qmd
+output_dir=D:\Lung ST\codex agent\stereo_seq\stereo_seq\results
+quarto_python=D:\Lung ST\codex agent\stereo_seq\stereo_seq\envs\stereo_seq_py\Scripts\python.exe
+command=quarto render <qmd> --output-dir <results> --execute-daemon 0 --no-clean --quiet

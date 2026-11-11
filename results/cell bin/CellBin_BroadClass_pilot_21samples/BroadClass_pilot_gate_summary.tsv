@@ -1,0 +1,13 @@
+check	value	status	interpretation
+pilot_input_output_id_match	True	PASS	10,500 IDs in identical order
+reference_donor_grouped_cv_accuracy	0.9988751406074241	PASS	>0.65 gate
+default_pruning_unknown_fraction	0.0	FAIL	zero Unknown means forced four-class labels
+query_median_max_score	0.05913498454010095	REVIEW	method-specific, not probability
+cv_correct_max_score_p05	0.36267706044499215	REVIEW	held-out donor reference profiles
+query_to_cv_score_domain_ratio	0.1630513506080158	FAIL	strong reference-query score-domain shift
+predicted_class_marker_ge2_fraction	0.32961904761904764	REVIEW	orthogonal support; not sole gate
+spearman_max_score_vs_nGenes	0.5636118929435723	REVIEW	moderate depth association
+spearman_max_score_vs_nUMI	0.5600102880255818	REVIEW	moderate depth association
+spearman_delta_vs_nGenes	0.35137465201253276	REVIEW	moderate/weak depth association
+spearman_delta_vs_nUMI	0.3478565273198151	REVIEW	moderate/weak depth association
+full_21_sample_expansion_authorized	False	STOP	pilot uncertainty gate failed

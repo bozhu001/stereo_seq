@@ -1,0 +1,154 @@
+---
+title: "Reference-guided Broad Cell-class Annotation Pilot — All 21 CellBin Samples"
+author: "Codex"
+date: today
+format:
+  html:
+    toc: true
+    toc-float: true
+    df-print: paged
+    code-fold: true
+    theme: bootstrap
+    embed-resources: true
+jupyter: python3
+execute:
+  echo: true
+---
+
+## Scope and decision
+
+This report documents a gated reference-guided pilot. All 21 patients entered
+the pilot, but the analysis stopped before full-cohort expansion because the
+predeclared uncertainty gate failed. Pilot labels are diagnostic only and were
+not promoted to formal provisional annotations.
+
+```{python}
+from pathlib import Path
+import platform
+import sys
+
+import pandas as pd
+from IPython.display import Image, display
+
+cwd = Path.cwd()
+root = cwd.parent if cwd.name == "scripts" else cwd
+out = root / "results/cell bin/CellBin_BroadClass_pilot_21samples"
+
+mapping = pd.read_csv(out / "Reference18_to_BroadClass_mapping.tsv", sep="\t")
+audit = pd.read_csv(out / "Reference18_input_audit.tsv", sep="\t")
+gate = pd.read_csv(out / "BroadClass_pilot_gate_summary.tsv", sep="\t")
+cv = pd.read_csv(out / "Pilot_reference_CV_summary.tsv", sep="\t")
+sample = pd.read_csv(out / "Pilot_summary_by_sample.tsv", sep="\t")
+```
+
+The primary method was SingleR 2.12.0 using donor × unchanged-Reference18-state
+pseudobulk profiles. The query pilot contained 500 G10/U20 CellBins from each
+sample (10,500 total), selected deterministically across each sample's nGenes
+range. See `BroadClass_method_selection.md` for the pre-execution rationale and
+gate definitions.
+
+## Frozen Reference18 mapping
+
+```{python}
+mapping[
+    [
+        "state_order",
+        "state18",
+        "n_reference_cells",
+        "broad_class",
+        "biological_basis",
+    ]
+]
+```
+
+All 18 original states remain unchanged. Only a traceable broad-class mapping
+was added.
+
+## Input audit
+
+```{python}
+audit
+```
+
+The reference contained 57,492 cells, 18 states, 18,966 raw-count genes, and
+124 donors. All 18,966 unique reference gene symbols were present in the Joint
+V1 gene union. Joint V1 and the QC Parquet had identical global CellBin ID
+order, and 359,329 assigned CellBins passed G10/U20.
+
+## Pilot gate
+
+```{python}
+gate
+```
+
+Key results:
+
+- donor-grouped Reference18 self-validation accuracy was 99.89%;
+- default SingleR pruning returned zero Unknown query CellBins;
+- the CellBin pilot maximum-score distribution was strongly separated from
+  held-out reference profiles (median query score 0.059 versus reference
+  correct-profile P5 0.363; scores are not probabilities);
+- only 32.96% of forced query labels had at least two independent canonical
+  markers for their predicted broad class;
+- maximum score was moderately associated with nGenes/nUMI (Spearman about
+  0.56), but depth was not the sole failure mechanism.
+
+```{python}
+for filename in [
+    "Pilot_reference_CV_and_score_domain_shift.png",
+    "Pilot_depth_and_sample_composition.png",
+]:
+    display(Image(filename=str(out / "pilot_figures" / filename)))
+```
+
+## Per-sample pilot diagnostics
+
+```{python}
+sample
+```
+
+These summaries describe balanced pilot subsets, not full-sample cell-class
+proportions. No spatial plausibility maps were promoted because the uncertainty
+gate failed before full-cohort prediction.
+
+## Interpretation
+
+The four broad Reference18 classes are internally separable, but the selected
+SingleR configuration does not provide a defensible abstention behavior for
+the sparse FFPE CellBins. Applying an arbitrary score cutoff or filling labels
+from spatial position would violate the analysis constraints. Therefore the
+pilot does not establish that all 21 samples currently support interpretable,
+spatially plausible, cross-sample-stable broad-class annotation.
+
+A possible next method-development step is target-depth synthetic reference
+downsampling with donor-held-out, class- and depth-stratified abstention
+calibration. That recovery analysis was not run automatically.
+
+## Output status
+
+Formal full-cohort files (`CellBin_BroadClass_predictions.parquet`, full
+sample uncertainty/marker/feasibility tables, 21 spatial prediction maps and
+three-chip comparison plots) were intentionally not created. Joint V1 was not
+modified.
+
+## Environment
+
+```{python}
+print(f"Python: {sys.version}")
+print(f"Platform: {platform.platform()}")
+print(f"Results directory: {out}")
+print((out / "work/pilot_R_sessionInfo.txt").read_text(encoding="utf-8"))
+```
+
+## Render command
+
+Render only after the separate analysis-approval gate required by `AGENTS.md`.
+The command must be launched inside a detachable tmux session.
+
+```{bash}
+#| eval: false
+TS=$(date +"%y%m%d%H%M%S")
+PROJ="/mnt/d/Lung ST/codex agent/stereo_seq/stereo_seq"
+tmux new -d -s cellbin_broadclass_report \
+  "powershell.exe -NoProfile -Command \"\$env:QUARTO_PYTHON='D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\envs\\stereo_seq_py\\Scripts\\python.exe'; quarto render 'D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\scripts\\cellbin_broadclass_pilot_21samples.qmd' --output-dir 'D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results' --execute-daemon 0 --no-clean --quiet *> 'D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\logs\\cellbin_broadclass_pilot_report_${TS}.log'; Move-Item -LiteralPath 'D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\cellbin_broadclass_pilot_21samples.html' -Destination 'D:\\Lung ST\\codex agent\\stereo_seq\\stereo_seq\\results\\cellbin_broadclass_pilot_21samples_${TS}.html'\""
+```

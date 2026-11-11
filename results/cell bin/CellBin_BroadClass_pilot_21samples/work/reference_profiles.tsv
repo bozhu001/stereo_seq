@@ -1,0 +1,890 @@
+donor_id	study	reference18_state	broad_class	profile_id	n_reference_cells	total_counts
+Habermann::THD0001	Habermann	AT1	Epithelial	reference_profile_0001	4	16116
+Habermann::THD0001	Habermann	AT2/alveolar transitional	Epithelial	reference_profile_0002	91	737226
+Habermann::THD0001	Habermann	Alveolar/resident macrophage	Immune	reference_profile_0003	359	3376542
+Habermann::THD0001	Habermann	B	Immune	reference_profile_0004	39	117147
+Habermann::THD0001	Habermann	Basal-like epithelial	Epithelial	reference_profile_0005	43	231598
+Habermann::THD0001	Habermann	Blood endothelial	Endothelial / vascular	reference_profile_0006	132	597243
+Habermann::THD0001	Habermann	Ciliated epithelial	Epithelial	reference_profile_0007	99	516427
+Habermann::THD0001	Habermann	Dendritic cell	Immune	reference_profile_0008	109	648023
+Habermann::THD0001	Habermann	Fibroblast	Stromal	reference_profile_0009	55	230295
+Habermann::THD0001	Habermann	Inflammatory monocyte/macrophage	Immune	reference_profile_0010	500	3078038
+Habermann::THD0001	Habermann	Lymphatic endothelial	Endothelial / vascular	reference_profile_0011	3	12796
+Habermann::THD0001	Habermann	Mast/Basophil	Immune	reference_profile_0012	30	103969
+Habermann::THD0001	Habermann	Myofibroblast	Stromal	reference_profile_0013	13	75705
+Habermann::THD0001	Habermann	NK	Immune	reference_profile_0014	11	33928
+Habermann::THD0001	Habermann	Perivascular/mesothelial stromal	Stromal	reference_profile_0015	31	113460
+Habermann::THD0001	Habermann	Secretory/other airway epithelial	Epithelial	reference_profile_0016	77	484750
+Habermann::THD0001	Habermann	T	Immune	reference_profile_0017	53	162223
+Habermann::THD0002	Habermann	AT1	Epithelial	reference_profile_0018	12	63915
+Habermann::THD0002	Habermann	AT2/alveolar transitional	Epithelial	reference_profile_0019	74	766729
+Habermann::THD0002	Habermann	Alveolar/resident macrophage	Immune	reference_profile_0020	292	3227481
+Habermann::THD0002	Habermann	B	Immune	reference_profile_0021	39	168647
+Habermann::THD0002	Habermann	Basal-like epithelial	Epithelial	reference_profile_0022	35	262869
+Habermann::THD0002	Habermann	Blood endothelial	Endothelial / vascular	reference_profile_0023	146	1013687
+Habermann::THD0002	Habermann	Ciliated epithelial	Epithelial	reference_profile_0024	91	704568
+Habermann::THD0002	Habermann	Dendritic cell	Immune	reference_profile_0025	75	672131
+Habermann::THD0002	Habermann	Fibroblast	Stromal	reference_profile_0026	45	320703
+Habermann::THD0002	Habermann	Inflammatory monocyte/macrophage	Immune	reference_profile_0027	332	2767737
+Habermann::THD0002	Habermann	Lymphatic endothelial	Endothelial / vascular	reference_profile_0028	12	87262
+Habermann::THD0002	Habermann	Mast/Basophil	Immune	reference_profile_0029	33	165270
+Habermann::THD0002	Habermann	Myofibroblast	Stromal	reference_profile_0030	9	71120
+Habermann::THD0002	Habermann	NK	Immune	reference_profile_0031	19	74509
+Habermann::THD0002	Habermann	Perivascular/mesothelial stromal	Stromal	reference_profile_0032	42	281560
+Habermann::THD0002	Habermann	Plasma	Immune	reference_profile_0033	4	36830
+Habermann::THD0002	Habermann	Secretory/other airway epithelial	Epithelial	reference_profile_0034	48	392046
+Habermann::THD0002	Habermann	T	Immune	reference_profile_0035	88	367958
+Habermann::THD0005	Habermann	AT1	Epithelial	reference_profile_0036	36	197676
+Habermann::THD0005	Habermann	AT2/alveolar transitional	Epithelial	reference_profile_0037	321	2855837
+Habermann::THD0005	Habermann	B	Immune	reference_profile_0038	19	88797
+Habermann::THD0005	Habermann	Basal-like epithelial	Epithelial	reference_profile_0039	67	491529
+Habermann::THD0005	Habermann	Blood endothelial	Endothelial / vascular	reference_profile_0040	376	2644377
+Habermann::THD0005	Habermann	Ciliated epithelial	Epithelial	reference_profile_0041	164	1212183
+Habermann::THD0005	Habermann	Fibroblast	Stromal	reference_profile_0042	112	760733
+Habermann::THD0005	Habermann	Lymphatic endothelial	Endothelial / vascular	reference_profile_0043	77	449715
+Habermann::THD0005	Habermann	Mast/Basophil	Immune	reference_profile_0044	2	10702
+Habermann::THD0005	Habermann	Myofibroblast	Stromal	reference_profile_0045	22	132114
+Habermann::THD0005	Habermann	NK	Immune	reference_profile_0046	20	78751
+Habermann::THD0005	Habermann	Perivascular/mesothelial stromal	Stromal	reference_profile_0047	110	650943
+Habermann::THD0005	Habermann	Plasma	Immune	reference_profile_0048	3	27089
+Habermann::THD0005	Habermann	Secretory/other airway epithelial	Epithelial	reference_profile_0049	123	947527
+Habermann::THD0005	Habermann	T	Immune	reference_profile_0050	146	587491
+Habermann::TILD001	Habermann	AT1	Epithelial	reference_profile_0051	6	46788
+Habermann::TILD001	Habermann	AT2/alveolar transitional	Epithelial	reference_profile_0052	176	1302144
+Habermann::TILD001	Habermann	B	Immune	reference_profile_0053	6	22962
+Habermann::TILD001	Habermann	Basal-like epithelial	Epithelial	reference_profile_0054	40	257680
+Habermann::TILD001	Habermann	Blood endothelial	Endothelial / vascular	reference_profile_0055	60	359638
+Habermann::TILD001	Habermann	Ciliated epithelial	Epithelial	reference_profile_0056	84	646311
+Habermann::TILD001	Habermann	Fibroblast	Stromal	reference_profile_0057	10	63877
+Habermann::TILD001	Habermann	Lymphatic endothelial	Endothelial / vascular	reference_profile_0058	5	25589
+Habermann::TILD001	Habermann	Myofibroblast	Stromal	reference_profile_0059	2	12321
+Habermann::TILD001	Habermann	NK	Immune	reference_profile_0060	81	307032
+Habermann::TILD001	Habermann	Perivascular/mesothelial stromal	Stromal	reference_profile_0061	11	74021
+Habermann::TILD001	Habermann	Secretory/other airway epithelial	Epithelial	reference_profile_0062	76	521664
+Habermann::TILD001	Habermann	T	Immune	reference_profile_0063	138	720109
+Habermann::TILD006	Habermann	Blood endothelial	Endothelial / vascular	reference_profile_0064	56	399980
+Habermann::TILD006	Habermann	Fibroblast	Stromal	reference_profile_0065	38	251986
+Habermann::TILD006	Habermann	Lymphatic endothelial	Endothelial / vascular	reference_profile_0066	11	77575
+Habermann::TILD006	Habermann	Mast/Basophil	Immune	reference_profile_0067	1	6984
+Habermann::TILD006	Habermann	Myofibroblast	Stromal	reference_profile_0068	8	59700
+Habermann::TILD006	Habermann	Perivascular/mesothelial stromal	Stromal	reference_profile_0069	7	48584
+Habermann::TILD015	Habermann	B	Immune	reference_profile_0070	4	16375
+Habermann::TILD015	Habermann	Blood endothelial	Endothelial / vascular	reference_profile_0071	142	1008375
+Habermann::TILD015	Habermann	Fibroblast	Stromal	reference_profile_0072	62	364318
+Habermann::TILD015	Habermann	Lymphatic endothelial	Endothelial / vascular	reference_profile_0073	11	61853
+Habermann::TILD015	Habermann	Mast/Basophil	Immune	reference_profile_0074	7	35413
+Habermann::TILD015	Habermann	Myofibroblast	Stromal	reference_profile_0075	28	274039
+Habermann::TILD015	Habermann	NK	Immune	reference_profile_0076	11	60952
+Habermann::TILD015	Habermann	Perivascular/mesothelial stromal	Stromal	reference_profile_0077	17	101287
+Habermann::TILD015	Habermann	Plasma	Immune	reference_profile_0078	2	10227
+Habermann::TILD015	Habermann	T	Immune	reference_profile_0079	68	370037
+Habermann::TILD019	Habermann	B	Immune	reference_profile_0080	14	67611
+Habermann::TILD019	Habermann	Blood endothelial	Endothelial / vascular	reference_profile_0081	328	2551671
+Habermann::TILD019	Habermann	Fibroblast	Stromal	reference_profile_0082	113	876979
+Habermann::TILD019	Habermann	Lymphatic endothelial	Endothelial / vascular	reference_profile_0083	70	448961
+Habermann::TILD019	Habermann	Mast/Basophil	Immune	reference_profile_0084	11	58235
+Habermann::TILD019	Habermann	Myofibroblast	Stromal	reference_profile_0085	18	135570
+Habermann::TILD019	Habermann	NK	Immune	reference_profile_0086	13	61149
+Habermann::TILD019	Habermann	Perivascular/mesothelial stromal	Stromal	reference_profile_0087	81	545455
+Habermann::TILD019	Habermann	Plasma	Immune	reference_profile_0088	3	27607
+Habermann::TILD019	Habermann	T	Immune	reference_profile_0089	65	319325
+Habermann::TILD028	Habermann	B	Immune	reference_profile_0090	11	57505
+Habermann::TILD028	Habermann	Blood endothelial	Endothelial / vascular	reference_profile_0091	268	1892840
+Habermann::TILD028	Habermann	Fibroblast	Stromal	reference_profile_0092	112	840373
+Habermann::TILD028	Habermann	Lymphatic endothelial	Endothelial / vascular	reference_profile_0093	54	305647
+Habermann::TILD028	Habermann	Mast/Basophil	Immune	reference_profile_0094	7	35590
+Habermann::TILD028	Habermann	Myofibroblast	Stromal	reference_profile_0095	12	96323
+Habermann::TILD028	Habermann	NK	Immune	reference_profile_0096	8	45630
+Habermann::TILD028	Habermann	Perivascular/mesothelial stromal	Stromal	reference_profile_0097	75	500041
+Habermann::TILD028	Habermann	Plasma	Immune	reference_profile_0098	3	27183
+Habermann::TILD028	Habermann	T	Immune	reference_profile_0099	49	244867
+Habermann::TILD030	Habermann	B	Immune	reference_profile_0100	2	10005
+Habermann::TILD030	Habermann	Blood endothelial	Endothelial / vascular	reference_profile_0101	204	1502440
+Habermann::TILD030	Habermann	Fibroblast	Stromal	reference_profile_0102	105	824328
+Habermann::TILD030	Habermann	Lymphatic endothelial	Endothelial / vascular	reference_profile_0103	48	275514
+Habermann::TILD030	Habermann	Mast/Basophil	Immune	reference_profile_0104	2	8809
+Habermann::TILD030	Habermann	Myofibroblast	Stromal	reference_profile_0105	12	85012
+Habermann::TILD030	Habermann	NK	Immune	reference_profile_0106	9	45239
+Habermann::TILD030	Habermann	Perivascular/mesothelial stromal	Stromal	reference_profile_0107	58	388012
+Habermann::TILD030	Habermann	T	Immune	reference_profile_0108	24	114315
+Habermann::VUHD66	Habermann	B	Immune	reference_profile_0109	10	53180
+Habermann::VUHD66	Habermann	Blood endothelial	Endothelial / vascular	reference_profile_0110	145	829253
+Habermann::VUHD66	Habermann	Fibroblast	Stromal	reference_profile_0111	8	62142
+Habermann::VUHD66	Habermann	Lymphatic endothelial	Endothelial / vascular	reference_profile_0112	21	121196
+Habermann::VUHD66	Habermann	Mast/Basophil	Immune	reference_profile_0113	19	77647
+Habermann::VUHD66	Habermann	Myofibroblast	Stromal	reference_profile_0114	3	37190
+Habermann::VUHD66	Habermann	NK	Immune	reference_profile_0115	30	134197
+Habermann::VUHD66	Habermann	Perivascular/mesothelial stromal	Stromal	reference_profile_0116	15	88478
+Habermann::VUHD66	Habermann	Plasma	Immune	reference_profile_0117	6	26114
+Habermann::VUHD66	Habermann	T	Immune	reference_profile_0118	155	684215
+Habermann::VUHD67	Habermann	B	Immune	reference_profile_0119	12	52572
+Habermann::VUHD67	Habermann	Blood endothelial	Endothelial / vascular	reference_profile_0120	182	856070
+Habermann::VUHD67	Habermann	Fibroblast	Stromal	reference_profile_0121	29	172194
+Habermann::VUHD67	Habermann	Lymphatic endothelial	Endothelial / vascular	reference_profile_0122	29	190099
+Habermann::VUHD67	Habermann	Mast/Basophil	Immune	reference_profile_0123	49	192458
+Habermann::VUHD67	Habermann	Myofibroblast	Stromal	reference_profile_0124	19	104676
+Habermann::VUHD67	Habermann	NK	Immune	reference_profile_0125	45	151118
+Habermann::VUHD67	Habermann	Perivascular/mesothelial stromal	Stromal	reference_profile_0126	24	146769
+Habermann::VUHD67	Habermann	Plasma	Immune	reference_profile_0127	11	55695
+Habermann::VUHD67	Habermann	T	Immune	reference_profile_0128	123	495560
+Habermann::VUHD68	Habermann	B	Immune	reference_profile_0129	4	16730
+Habermann::VUHD68	Habermann	Fibroblast	Stromal	reference_profile_0130	56	348070
+Habermann::VUHD68	Habermann	Mast/Basophil	Immune	reference_profile_0131	6	28841
+Habermann::VUHD68	Habermann	Myofibroblast	Stromal	reference_profile_0132	41	287513
+Habermann::VUHD68	Habermann	NK	Immune	reference_profile_0133	34	188177
+Habermann::VUHD68	Habermann	Perivascular/mesothelial stromal	Stromal	reference_profile_0134	21	133428
+Habermann::VUHD68	Habermann	Plasma	Immune	reference_profile_0135	5	30293
+Habermann::VUHD68	Habermann	T	Immune	reference_profile_0136	88	497255
+Habermann::VUHD69	Habermann	B	Immune	reference_profile_0137	7	30858
+Habermann::VUHD69	Habermann	Mast/Basophil	Immune	reference_profile_0138	4	24254
+Habermann::VUHD69	Habermann	NK	Immune	reference_profile_0139	21	111077
+Habermann::VUHD69	Habermann	Plasma	Immune	reference_profile_0140	6	46621
+Habermann::VUHD69	Habermann	T	Immune	reference_profile_0141	55	312324
+Habermann::VUHD70	Habermann	B	Immune	reference_profile_0142	5	14231
+Habermann::VUHD70	Habermann	Fibroblast	Stromal	reference_profile_0143	23	131703
+Habermann::VUHD70	Habermann	Mast/Basophil	Immune	reference_profile_0144	1	2269
+Habermann::VUHD70	Habermann	Myofibroblast	Stromal	reference_profile_0145	16	104474
+Habermann::VUHD70	Habermann	NK	Immune	reference_profile_0146	11	35683
+Habermann::VUHD70	Habermann	Perivascular/mesothelial stromal	Stromal	reference_profile_0147	10	50197
+Habermann::VUHD70	Habermann	T	Immune	reference_profile_0148	17	52137
+Habermann::VUHD71	Habermann	B	Immune	reference_profile_0149	5	23092
+Habermann::VUHD71	Habermann	Mast/Basophil	Immune	reference_profile_0150	11	48278
+Habermann::VUHD71	Habermann	NK	Immune	reference_profile_0151	40	163787
+Habermann::VUHD71	Habermann	Plasma	Immune	reference_profile_0152	5	31496
+Habermann::VUHD71	Habermann	T	Immune	reference_profile_0153	90	526703
+Habermann::VUILD53	Habermann	B	Immune	reference_profile_0154	2	10754
+Habermann::VUILD53	Habermann	Mast/Basophil	Immune	reference_profile_0155	10	64203
+Habermann::VUILD53	Habermann	NK	Immune	reference_profile_0156	19	103140
+Habermann::VUILD53	Habermann	Plasma	Immune	reference_profile_0157	1	3579
+Habermann::VUILD53	Habermann	T	Immune	reference_profile_0158	29	159041
+Habermann::VUILD54	Habermann	Mast/Basophil	Immune	reference_profile_0159	1	2826
+Habermann::VUILD55	Habermann	B	Immune	reference_profile_0160	12	45660
+Habermann::VUILD55	Habermann	Fibroblast	Stromal	reference_profile_0161	25	117191
+Habermann::VUILD55	Habermann	Mast/Basophil	Immune	reference_profile_0162	6	22609
+Habermann::VUILD55	Habermann	Myofibroblast	Stromal	reference_profile_0163	9	46564
+Habermann::VUILD55	Habermann	NK	Immune	reference_profile_0164	66	213875
+Habermann::VUILD55	Habermann	Perivascular/mesothelial stromal	Stromal	reference_profile_0165	11	31172
+Habermann::VUILD55	Habermann	Plasma	Immune	reference_profile_0166	1	10267
+Habermann::VUILD55	Habermann	T	Immune	reference_profile_0167	133	479864
+Habermann::VUILD57	Habermann	B	Immune	reference_profile_0168	8	39578
+Habermann::VUILD57	Habermann	Fibroblast	Stromal	reference_profile_0169	9	52381
+Habermann::VUILD57	Habermann	Mast/Basophil	Immune	reference_profile_0170	5	20462
+Habermann::VUILD57	Habermann	Myofibroblast	Stromal	reference_profile_0171	9	66077
+Habermann::VUILD57	Habermann	NK	Immune	reference_profile_0172	21	83732
+Habermann::VUILD57	Habermann	Perivascular/mesothelial stromal	Stromal	reference_profile_0173	5	43069
+Habermann::VUILD57	Habermann	Plasma	Immune	reference_profile_0174	3	14109
+Habermann::VUILD57	Habermann	T	Immune	reference_profile_0175	58	246027
+Habermann::VUILD58	Habermann	Fibroblast	Stromal	reference_profile_0176	22	232223
+Habermann::VUILD58	Habermann	Mast/Basophil	Immune	reference_profile_0177	3	25421
+Habermann::VUILD58	Habermann	Myofibroblast	Stromal	reference_profile_0178	9	96396
+Habermann::VUILD58	Habermann	Perivascular/mesothelial stromal	Stromal	reference_profile_0179	10	124576
+Habermann::VUILD59	Habermann	Fibroblast	Stromal	reference_profile_0180	33	398497
+Habermann::VUILD59	Habermann	Myofibroblast	Stromal	reference_profile_0181	10	123890
+Habermann::VUILD59	Habermann	Perivascular/mesothelial stromal	Stromal	reference_profile_0182	12	162223
+Habermann::VUILD60	Habermann	B	Immune	reference_profile_0183	5	34395
+Habermann::VUILD60	Habermann	Fibroblast	Stromal	reference_profile_0184	69	586187
+Habermann::VUILD60	Habermann	Mast/Basophil	Immune	reference_profile_0185	2	12710
+Habermann::VUILD60	Habermann	Myofibroblast	Stromal	reference_profile_0186	21	164885
+Habermann::VUILD60	Habermann	NK	Immune	reference_profile_0187	5	32304
+Habermann::VUILD60	Habermann	Perivascular/mesothelial stromal	Stromal	reference_profile_0188	12	93433
+Habermann::VUILD60	Habermann	Plasma	Immune	reference_profile_0189	3	21423
+Habermann::VUILD60	Habermann	T	Immune	reference_profile_0190	18	132345
+Habermann::VUILD61	Habermann	B	Immune	reference_profile_0191	6	41328
+Habermann::VUILD61	Habermann	Fibroblast	Stromal	reference_profile_0192	39	343413
+Habermann::VUILD61	Habermann	Mast/Basophil	Immune	reference_profile_0193	7	54918
+Habermann::VUILD61	Habermann	Myofibroblast	Stromal	reference_profile_0194	28	309647
+Habermann::VUILD61	Habermann	NK	Immune	reference_profile_0195	9	64612
+Habermann::VUILD61	Habermann	Perivascular/mesothelial stromal	Stromal	reference_profile_0196	15	135312
+Habermann::VUILD61	Habermann	Plasma	Immune	reference_profile_0197	1	6438
+Habermann::VUILD61	Habermann	T	Immune	reference_profile_0198	64	450946
+Habermann::VUILD62	Habermann	B	Immune	reference_profile_0199	30	147452
+Habermann::VUILD62	Habermann	Fibroblast	Stromal	reference_profile_0200	21	142518
+Habermann::VUILD62	Habermann	Mast/Basophil	Immune	reference_profile_0201	3	14207
+Habermann::VUILD62	Habermann	Myofibroblast	Stromal	reference_profile_0202	18	141135
+Habermann::VUILD62	Habermann	NK	Immune	reference_profile_0203	75	374271
+Habermann::VUILD62	Habermann	Perivascular/mesothelial stromal	Stromal	reference_profile_0204	22	167757
+Habermann::VUILD62	Habermann	Plasma	Immune	reference_profile_0205	1	11362
+Habermann::VUILD62	Habermann	T	Immune	reference_profile_0206	209	1289035
+Habermann::VUILD63	Habermann	B	Immune	reference_profile_0207	1	6357
+Habermann::VUILD63	Habermann	Mast/Basophil	Immune	reference_profile_0208	1	8185
+Habermann::VUILD63	Habermann	NK	Immune	reference_profile_0209	4	26655
+Habermann::VUILD63	Habermann	T	Immune	reference_profile_0210	34	267911
+Habermann::VUILD64	Habermann	B	Immune	reference_profile_0211	3	15067
+Habermann::VUILD64	Habermann	Fibroblast	Stromal	reference_profile_0212	15	85720
+Habermann::VUILD64	Habermann	Mast/Basophil	Immune	reference_profile_0213	15	63463
+Habermann::VUILD64	Habermann	Myofibroblast	Stromal	reference_profile_0214	3	25782
+Habermann::VUILD64	Habermann	NK	Immune	reference_profile_0215	5	14449
+Habermann::VUILD64	Habermann	Perivascular/mesothelial stromal	Stromal	reference_profile_0216	14	70101
+Habermann::VUILD64	Habermann	Plasma	Immune	reference_profile_0217	3	11503
+Habermann::VUILD64	Habermann	T	Immune	reference_profile_0218	48	188318
+Habermann::VUILD65	Habermann	B	Immune	reference_profile_0219	8	42942
+Habermann::VUILD65	Habermann	Fibroblast	Stromal	reference_profile_0220	55	386893
+Habermann::VUILD65	Habermann	Mast/Basophil	Immune	reference_profile_0221	7	33860
+Habermann::VUILD65	Habermann	Myofibroblast	Stromal	reference_profile_0222	9	63193
+Habermann::VUILD65	Habermann	NK	Immune	reference_profile_0223	5	27285
+Habermann::VUILD65	Habermann	Perivascular/mesothelial stromal	Stromal	reference_profile_0224	18	128888
+Habermann::VUILD65	Habermann	Plasma	Immune	reference_profile_0225	4	32748
+Habermann::VUILD65	Habermann	T	Immune	reference_profile_0226	38	207911
+Kaminski::EX338_001	Kaminski	AT1	Epithelial	reference_profile_0227	80	231060
+Kaminski::EX338_001	Kaminski	AT2/alveolar transitional	Epithelial	reference_profile_0228	411	3689092
+Kaminski::EX338_001	Kaminski	Alveolar/resident macrophage	Immune	reference_profile_0229	506	3578549
+Kaminski::EX338_001	Kaminski	B	Immune	reference_profile_0230	43	127265
+Kaminski::EX338_001	Kaminski	Basal-like epithelial	Epithelial	reference_profile_0231	3	21319
+Kaminski::EX338_001	Kaminski	Blood endothelial	Endothelial / vascular	reference_profile_0232	32	133212
+Kaminski::EX338_001	Kaminski	Ciliated epithelial	Epithelial	reference_profile_0233	30	173922
+Kaminski::EX338_001	Kaminski	Dendritic cell	Immune	reference_profile_0234	158	1197610
+Kaminski::EX338_001	Kaminski	Inflammatory monocyte/macrophage	Immune	reference_profile_0235	1003	5227626
+Kaminski::EX338_001	Kaminski	Lymphatic endothelial	Endothelial / vascular	reference_profile_0236	22	80102
+Kaminski::EX338_001	Kaminski	Mast/Basophil	Immune	reference_profile_0237	9	13904
+Kaminski::EX338_001	Kaminski	NK	Immune	reference_profile_0238	133	284163
+Kaminski::EX338_001	Kaminski	Plasma	Immune	reference_profile_0239	7	32012
+Kaminski::EX338_001	Kaminski	Secretory/other airway epithelial	Epithelial	reference_profile_0240	25	210477
+Kaminski::EX338_001	Kaminski	T	Immune	reference_profile_0241	332	761340
+Kaminski::EX338_002	Kaminski	AT1	Epithelial	reference_profile_0242	45	154237
+Kaminski::EX338_002	Kaminski	AT2/alveolar transitional	Epithelial	reference_profile_0243	42	282162
+Kaminski::EX338_002	Kaminski	B	Immune	reference_profile_0244	3	5811
+Kaminski::EX338_002	Kaminski	Basal-like epithelial	Epithelial	reference_profile_0245	19	89984
+Kaminski::EX338_002	Kaminski	Blood endothelial	Endothelial / vascular	reference_profile_0246	141	549409
+Kaminski::EX338_002	Kaminski	Ciliated epithelial	Epithelial	reference_profile_0247	80	339851
+Kaminski::EX338_002	Kaminski	Fibroblast	Stromal	reference_profile_0248	170	850872
+Kaminski::EX338_002	Kaminski	Lymphatic endothelial	Endothelial / vascular	reference_profile_0249	155	616315
+Kaminski::EX338_002	Kaminski	Myofibroblast	Stromal	reference_profile_0250	4	13989
+Kaminski::EX338_002	Kaminski	NK	Immune	reference_profile_0251	63	135494
+Kaminski::EX338_002	Kaminski	Perivascular/mesothelial stromal	Stromal	reference_profile_0252	3	10336
+Kaminski::EX338_002	Kaminski	Plasma	Immune	reference_profile_0253	2	3923
+Kaminski::EX338_002	Kaminski	Secretory/other airway epithelial	Epithelial	reference_profile_0254	18	112090
+Kaminski::EX338_002	Kaminski	T	Immune	reference_profile_0255	147	331763
+Kaminski::EX338_003	Kaminski	B	Immune	reference_profile_0256	22	98830
+Kaminski::EX338_003	Kaminski	NK	Immune	reference_profile_0257	7	22874
+Kaminski::EX338_003	Kaminski	T	Immune	reference_profile_0258	18	77459
+Kaminski::EX338_004	Kaminski	AT1	Epithelial	reference_profile_0259	2	6555
+Kaminski::EX338_004	Kaminski	AT2/alveolar transitional	Epithelial	reference_profile_0260	22	114008
+Kaminski::EX338_004	Kaminski	B	Immune	reference_profile_0261	56	193205
+Kaminski::EX338_004	Kaminski	Basal-like epithelial	Epithelial	reference_profile_0262	6	17565
+Kaminski::EX338_004	Kaminski	Ciliated epithelial	Epithelial	reference_profile_0263	57	267329
+Kaminski::EX338_004	Kaminski	Fibroblast	Stromal	reference_profile_0264	17	91152
+Kaminski::EX338_004	Kaminski	Mast/Basophil	Immune	reference_profile_0265	8	9683
+Kaminski::EX338_004	Kaminski	Myofibroblast	Stromal	reference_profile_0266	6	28617
+Kaminski::EX338_004	Kaminski	NK	Immune	reference_profile_0267	197	425290
+Kaminski::EX338_004	Kaminski	Perivascular/mesothelial stromal	Stromal	reference_profile_0268	1	1253
+Kaminski::EX338_004	Kaminski	Plasma	Immune	reference_profile_0269	5	37022
+Kaminski::EX338_004	Kaminski	Secretory/other airway epithelial	Epithelial	reference_profile_0270	22	137547
+Kaminski::EX338_004	Kaminski	T	Immune	reference_profile_0271	278	730101
+Kaminski::EX338_005	Kaminski	AT1	Epithelial	reference_profile_0272	4	8003
+Kaminski::EX338_005	Kaminski	AT2/alveolar transitional	Epithelial	reference_profile_0273	59	384711
+Kaminski::EX338_005	Kaminski	B	Immune	reference_profile_0274	127	315162
+Kaminski::EX338_005	Kaminski	Ciliated epithelial	Epithelial	reference_profile_0275	45	201041
+Kaminski::EX338_005	Kaminski	Fibroblast	Stromal	reference_profile_0276	21	190245
+Kaminski::EX338_005	Kaminski	Mast/Basophil	Immune	reference_profile_0277	5	18278
+Kaminski::EX338_005	Kaminski	Myofibroblast	Stromal	reference_profile_0278	2	18309
+Kaminski::EX338_005	Kaminski	NK	Immune	reference_profile_0279	126	232984
+Kaminski::EX338_005	Kaminski	Plasma	Immune	reference_profile_0280	3	12157
+Kaminski::EX338_005	Kaminski	Secretory/other airway epithelial	Epithelial	reference_profile_0281	6	27613
+Kaminski::EX338_005	Kaminski	T	Immune	reference_profile_0282	481	1038330
+Kaminski::EX338_006	Kaminski	AT1	Epithelial	reference_profile_0283	60	108482
+Kaminski::EX338_006	Kaminski	Ciliated epithelial	Epithelial	reference_profile_0284	9	35490
+Kaminski::EX338_007	Kaminski	AT1	Epithelial	reference_profile_0285	14	46179
+Kaminski::EX338_007	Kaminski	AT2/alveolar transitional	Epithelial	reference_profile_0286	61	362758
+Kaminski::EX338_007	Kaminski	B	Immune	reference_profile_0287	151	355492
+Kaminski::EX338_007	Kaminski	Basal-like epithelial	Epithelial	reference_profile_0288	20	76262
+Kaminski::EX338_007	Kaminski	Blood endothelial	Endothelial / vascular	reference_profile_0289	166	333110
+Kaminski::EX338_007	Kaminski	Ciliated epithelial	Epithelial	reference_profile_0290	96	459359
+Kaminski::EX338_007	Kaminski	Fibroblast	Stromal	reference_profile_0291	184	646158
+Kaminski::EX338_007	Kaminski	Lymphatic endothelial	Endothelial / vascular	reference_profile_0292	152	343668
+Kaminski::EX338_007	Kaminski	Mast/Basophil	Immune	reference_profile_0293	4	5602
+Kaminski::EX338_007	Kaminski	Myofibroblast	Stromal	reference_profile_0294	7	13857
+Kaminski::EX338_007	Kaminski	NK	Immune	reference_profile_0295	321	555215
+Kaminski::EX338_007	Kaminski	Perivascular/mesothelial stromal	Stromal	reference_profile_0296	13	37802
+Kaminski::EX338_007	Kaminski	Plasma	Immune	reference_profile_0297	4	14790
+Kaminski::EX338_007	Kaminski	Secretory/other airway epithelial	Epithelial	reference_profile_0298	19	107744
+Kaminski::EX338_007	Kaminski	T	Immune	reference_profile_0299	667	1189098
+Kaminski::EX338_008	Kaminski	B	Immune	reference_profile_0300	169	652089
+Kaminski::EX338_008	Kaminski	Fibroblast	Stromal	reference_profile_0301	23	88014
+Kaminski::EX338_008	Kaminski	Mast/Basophil	Immune	reference_profile_0302	6	20282
+Kaminski::EX338_008	Kaminski	Myofibroblast	Stromal	reference_profile_0303	5	22770
+Kaminski::EX338_008	Kaminski	NK	Immune	reference_profile_0304	175	523657
+Kaminski::EX338_008	Kaminski	Perivascular/mesothelial stromal	Stromal	reference_profile_0305	6	27039
+Kaminski::EX338_008	Kaminski	Plasma	Immune	reference_profile_0306	3	10601
+Kaminski::EX338_008	Kaminski	T	Immune	reference_profile_0307	785	2601891
+Kaminski::EX338_009	Kaminski	AT1	Epithelial	reference_profile_0308	9	32285
+Kaminski::EX338_009	Kaminski	AT2/alveolar transitional	Epithelial	reference_profile_0309	3	9192
+Kaminski::EX338_009	Kaminski	Basal-like epithelial	Epithelial	reference_profile_0310	1	2744
+Kaminski::EX338_009	Kaminski	Ciliated epithelial	Epithelial	reference_profile_0311	7	9875
+Kaminski::EX338_010	Kaminski	AT1	Epithelial	reference_profile_0312	7	31963
+Kaminski::EX338_010	Kaminski	AT2/alveolar transitional	Epithelial	reference_profile_0313	2	15724
+Kaminski::EX338_010	Kaminski	B	Immune	reference_profile_0314	5	16851
+Kaminski::EX338_010	Kaminski	Basal-like epithelial	Epithelial	reference_profile_0315	4	15421
+Kaminski::EX338_010	Kaminski	Blood endothelial	Endothelial / vascular	reference_profile_0316	211	687270
+Kaminski::EX338_010	Kaminski	Ciliated epithelial	Epithelial	reference_profile_0317	2	10854
+Kaminski::EX338_010	Kaminski	Fibroblast	Stromal	reference_profile_0318	21	92358
+Kaminski::EX338_010	Kaminski	Lymphatic endothelial	Endothelial / vascular	reference_profile_0319	70	286818
+Kaminski::EX338_010	Kaminski	Mast/Basophil	Immune	reference_profile_0320	5	7277
+Kaminski::EX338_010	Kaminski	Myofibroblast	Stromal	reference_profile_0321	2	13547
+Kaminski::EX338_010	Kaminski	NK	Immune	reference_profile_0322	14	32150
+Kaminski::EX338_010	Kaminski	Perivascular/mesothelial stromal	Stromal	reference_profile_0323	17	70361
+Kaminski::EX338_010	Kaminski	Plasma	Immune	reference_profile_0324	2	12230
+Kaminski::EX338_010	Kaminski	Secretory/other airway epithelial	Epithelial	reference_profile_0325	1	11383
+Kaminski::EX338_010	Kaminski	T	Immune	reference_profile_0326	30	73309
+Kaminski::EX338_011	Kaminski	B	Immune	reference_profile_0327	28	113878
+Kaminski::EX338_011	Kaminski	Mast/Basophil	Immune	reference_profile_0328	2	3739
+Kaminski::EX338_012	Kaminski	AT1	Epithelial	reference_profile_0329	73	266726
+Kaminski::EX338_012	Kaminski	AT2/alveolar transitional	Epithelial	reference_profile_0330	65	520716
+Kaminski::EX338_012	Kaminski	B	Immune	reference_profile_0331	69	239946
+Kaminski::EX338_012	Kaminski	Basal-like epithelial	Epithelial	reference_profile_0332	3	16601
+Kaminski::EX338_012	Kaminski	Blood endothelial	Endothelial / vascular	reference_profile_0333	174	458967
+Kaminski::EX338_012	Kaminski	Ciliated epithelial	Epithelial	reference_profile_0334	17	96835
+Kaminski::EX338_012	Kaminski	Fibroblast	Stromal	reference_profile_0335	93	403485
+Kaminski::EX338_012	Kaminski	Lymphatic endothelial	Endothelial / vascular	reference_profile_0336	42	181618
+Kaminski::EX338_012	Kaminski	Mast/Basophil	Immune	reference_profile_0337	35	86783
+Kaminski::EX338_012	Kaminski	Myofibroblast	Stromal	reference_profile_0338	7	40289
+Kaminski::EX338_012	Kaminski	Perivascular/mesothelial stromal	Stromal	reference_profile_0339	26	88967
+Kaminski::EX338_012	Kaminski	Plasma	Immune	reference_profile_0340	8	33023
+Kaminski::EX338_012	Kaminski	Secretory/other airway epithelial	Epithelial	reference_profile_0341	15	108817
+Kaminski::EX338_013	Kaminski	AT1	Epithelial	reference_profile_0342	9	31916
+Kaminski::EX338_013	Kaminski	AT2/alveolar transitional	Epithelial	reference_profile_0343	14	105294
+Kaminski::EX338_013	Kaminski	B	Immune	reference_profile_0344	5	12319
+Kaminski::EX338_013	Kaminski	Basal-like epithelial	Epithelial	reference_profile_0345	3	11648
+Kaminski::EX338_013	Kaminski	Blood endothelial	Endothelial / vascular	reference_profile_0346	38	94100
+Kaminski::EX338_013	Kaminski	Ciliated epithelial	Epithelial	reference_profile_0347	30	159069
+Kaminski::EX338_013	Kaminski	Fibroblast	Stromal	reference_profile_0348	36	205889
+Kaminski::EX338_013	Kaminski	Lymphatic endothelial	Endothelial / vascular	reference_profile_0349	13	58797
+Kaminski::EX338_013	Kaminski	Mast/Basophil	Immune	reference_profile_0350	13	21664
+Kaminski::EX338_013	Kaminski	Myofibroblast	Stromal	reference_profile_0351	4	27023
+Kaminski::EX338_013	Kaminski	Perivascular/mesothelial stromal	Stromal	reference_profile_0352	7	24279
+Kaminski::EX338_013	Kaminski	Plasma	Immune	reference_profile_0353	4	11468
+Kaminski::EX338_013	Kaminski	Secretory/other airway epithelial	Epithelial	reference_profile_0354	4	30357
+Kaminski::EX338_014	Kaminski	B	Immune	reference_profile_0355	12	36345
+Kaminski::EX338_015	Kaminski	AT1	Epithelial	reference_profile_0356	8	31672
+Kaminski::EX338_015	Kaminski	AT2/alveolar transitional	Epithelial	reference_profile_0357	2	14575
+Kaminski::EX338_015	Kaminski	B	Immune	reference_profile_0358	23	81249
+Kaminski::EX338_015	Kaminski	Basal-like epithelial	Epithelial	reference_profile_0359	1	4963
+Kaminski::EX338_015	Kaminski	Blood endothelial	Endothelial / vascular	reference_profile_0360	41	155233
+Kaminski::EX338_015	Kaminski	Ciliated epithelial	Epithelial	reference_profile_0361	15	63615
+Kaminski::EX338_015	Kaminski	Fibroblast	Stromal	reference_profile_0362	22	112956
+Kaminski::EX338_015	Kaminski	Lymphatic endothelial	Endothelial / vascular	reference_profile_0363	24	100741
+Kaminski::EX338_015	Kaminski	Mast/Basophil	Immune	reference_profile_0364	5	12150
+Kaminski::EX338_015	Kaminski	Myofibroblast	Stromal	reference_profile_0365	1	1536
+Kaminski::EX338_015	Kaminski	Perivascular/mesothelial stromal	Stromal	reference_profile_0366	3	9365
+Kaminski::EX338_015	Kaminski	Plasma	Immune	reference_profile_0367	10	75510
+Kaminski::EX338_015	Kaminski	Secretory/other airway epithelial	Epithelial	reference_profile_0368	3	14001
+Kaminski::EX338_016	Kaminski	B	Immune	reference_profile_0369	13	48635
+Kaminski::EX338_016	Kaminski	Mast/Basophil	Immune	reference_profile_0370	1	1068
+Kaminski::EX338_016	Kaminski	Plasma	Immune	reference_profile_0371	3	18102
+Kaminski::EX338_017	Kaminski	AT1	Epithelial	reference_profile_0372	11	19916
+Kaminski::EX338_017	Kaminski	AT2/alveolar transitional	Epithelial	reference_profile_0373	5	25260
+Kaminski::EX338_017	Kaminski	B	Immune	reference_profile_0374	15	25559
+Kaminski::EX338_017	Kaminski	Blood endothelial	Endothelial / vascular	reference_profile_0375	62	102544
+Kaminski::EX338_017	Kaminski	Ciliated epithelial	Epithelial	reference_profile_0376	22	80529
+Kaminski::EX338_017	Kaminski	Fibroblast	Stromal	reference_profile_0377	37	101915
+Kaminski::EX338_017	Kaminski	Lymphatic endothelial	Endothelial / vascular	reference_profile_0378	21	47872
+Kaminski::EX338_017	Kaminski	Mast/Basophil	Immune	reference_profile_0379	3	5662
+Kaminski::EX338_017	Kaminski	Myofibroblast	Stromal	reference_profile_0380	1	3134
+Kaminski::EX338_017	Kaminski	Perivascular/mesothelial stromal	Stromal	reference_profile_0381	28	92467
+Kaminski::EX338_017	Kaminski	Plasma	Immune	reference_profile_0382	29	75593
+Kaminski::EX338_017	Kaminski	Secretory/other airway epithelial	Epithelial	reference_profile_0383	8	46029
+Kaminski::EX338_018	Kaminski	AT1	Epithelial	reference_profile_0384	16	82388
+Kaminski::EX338_018	Kaminski	AT2/alveolar transitional	Epithelial	reference_profile_0385	12	83285
+Kaminski::EX338_018	Kaminski	B	Immune	reference_profile_0386	27	88506
+Kaminski::EX338_018	Kaminski	Basal-like epithelial	Epithelial	reference_profile_0387	4	11817
+Kaminski::EX338_018	Kaminski	Blood endothelial	Endothelial / vascular	reference_profile_0388	40	147344
+Kaminski::EX338_018	Kaminski	Ciliated epithelial	Epithelial	reference_profile_0389	22	117165
+Kaminski::EX338_018	Kaminski	Fibroblast	Stromal	reference_profile_0390	68	431716
+Kaminski::EX338_018	Kaminski	Lymphatic endothelial	Endothelial / vascular	reference_profile_0391	111	574178
+Kaminski::EX338_018	Kaminski	Mast/Basophil	Immune	reference_profile_0392	36	81180
+Kaminski::EX338_018	Kaminski	Perivascular/mesothelial stromal	Stromal	reference_profile_0393	3	15917
+Kaminski::EX338_018	Kaminski	Secretory/other airway epithelial	Epithelial	reference_profile_0394	3	15911
+Kaminski::EX338_019	Kaminski	AT1	Epithelial	reference_profile_0395	5	22007
+Kaminski::EX338_019	Kaminski	AT2/alveolar transitional	Epithelial	reference_profile_0396	5	23325
+Kaminski::EX338_019	Kaminski	Mast/Basophil	Immune	reference_profile_0397	1	1035
+Kaminski::EX338_019	Kaminski	Plasma	Immune	reference_profile_0398	3	13825
+Kaminski::EX338_019	Kaminski	Secretory/other airway epithelial	Epithelial	reference_profile_0399	1	3805
+Kaminski::EX338_020	Kaminski	B	Immune	reference_profile_0400	24	40472
+Kaminski::EX338_020	Kaminski	Blood endothelial	Endothelial / vascular	reference_profile_0401	19	24329
+Kaminski::EX338_020	Kaminski	Lymphatic endothelial	Endothelial / vascular	reference_profile_0402	50	133428
+Kaminski::EX338_020	Kaminski	Plasma	Immune	reference_profile_0403	2	10349
+Kaminski::EX338_021	Kaminski	B	Immune	reference_profile_0404	13	71902
+Kaminski::EX338_021	Kaminski	Mast/Basophil	Immune	reference_profile_0405	2	4598
+Kaminski::EX338_022	Kaminski	B	Immune	reference_profile_0406	95	330247
+Kaminski::EX338_022	Kaminski	Blood endothelial	Endothelial / vascular	reference_profile_0407	40	85746
+Kaminski::EX338_022	Kaminski	Fibroblast	Stromal	reference_profile_0408	25	93210
+Kaminski::EX338_022	Kaminski	Lymphatic endothelial	Endothelial / vascular	reference_profile_0409	40	132188
+Kaminski::EX338_022	Kaminski	Mast/Basophil	Immune	reference_profile_0410	9	29615
+Kaminski::EX338_022	Kaminski	Myofibroblast	Stromal	reference_profile_0411	8	22952
+Kaminski::EX338_022	Kaminski	Perivascular/mesothelial stromal	Stromal	reference_profile_0412	4	11558
+Kaminski::EX338_022	Kaminski	Plasma	Immune	reference_profile_0413	5	25192
+Kaminski::EX338_023	Kaminski	B	Immune	reference_profile_0414	2	7193
+Kaminski::EX338_023	Kaminski	Blood endothelial	Endothelial / vascular	reference_profile_0415	20	67722
+Kaminski::EX338_023	Kaminski	Lymphatic endothelial	Endothelial / vascular	reference_profile_0416	33	159771
+Kaminski::EX338_023	Kaminski	Plasma	Immune	reference_profile_0417	1	10312
+Kaminski::EX338_024	Kaminski	B	Immune	reference_profile_0418	3	14497
+Kaminski::EX338_024	Kaminski	Fibroblast	Stromal	reference_profile_0419	19	79879
+Kaminski::EX338_024	Kaminski	Mast/Basophil	Immune	reference_profile_0420	2	3364
+Kaminski::EX338_024	Kaminski	Perivascular/mesothelial stromal	Stromal	reference_profile_0421	3	6969
+Kaminski::EX338_025	Kaminski	B	Immune	reference_profile_0422	19	73132
+Kaminski::EX338_025	Kaminski	Plasma	Immune	reference_profile_0423	13	43020
+Kaminski::EX338_026	Kaminski	Mast/Basophil	Immune	reference_profile_0424	1	1561
+Kaminski::EX338_027	Kaminski	B	Immune	reference_profile_0425	24	99598
+Kaminski::EX338_027	Kaminski	Plasma	Immune	reference_profile_0426	1	8356
+Kaminski::EX338_028	Kaminski	Mast/Basophil	Immune	reference_profile_0427	1	926
+Kaminski::EX338_047	Kaminski	B	Immune	reference_profile_0428	91	261761
+Kaminski::EX338_047	Kaminski	Mast/Basophil	Immune	reference_profile_0429	2	2850
+Kaminski::EX338_048	Kaminski	B	Immune	reference_profile_0430	163	578441
+Kaminski::EX338_048	Kaminski	Fibroblast	Stromal	reference_profile_0431	67	324414
+Kaminski::EX338_048	Kaminski	Mast/Basophil	Immune	reference_profile_0432	17	47236
+Kaminski::EX338_048	Kaminski	Myofibroblast	Stromal	reference_profile_0433	2	14661
+Kaminski::EX338_048	Kaminski	Perivascular/mesothelial stromal	Stromal	reference_profile_0434	4	32501
+Kaminski::EX338_048	Kaminski	Plasma	Immune	reference_profile_0435	3	28054
+Kaminski::EX338_049	Kaminski	B	Immune	reference_profile_0436	54	206732
+Kaminski::EX338_049	Kaminski	Blood endothelial	Endothelial / vascular	reference_profile_0437	141	730035
+Kaminski::EX338_049	Kaminski	Fibroblast	Stromal	reference_profile_0438	161	906857
+Kaminski::EX338_049	Kaminski	Lymphatic endothelial	Endothelial / vascular	reference_profile_0439	21	93427
+Kaminski::EX338_049	Kaminski	Mast/Basophil	Immune	reference_profile_0440	9	22336
+Kaminski::EX338_049	Kaminski	Myofibroblast	Stromal	reference_profile_0441	19	107891
+Kaminski::EX338_049	Kaminski	Perivascular/mesothelial stromal	Stromal	reference_profile_0442	60	273606
+Kaminski::EX338_049	Kaminski	Plasma	Immune	reference_profile_0443	2	6551
+Kaminski::EX338_050	Kaminski	B	Immune	reference_profile_0444	98	291702
+Kaminski::EX338_050	Kaminski	Mast/Basophil	Immune	reference_profile_0445	9	24051
+Kaminski::EX338_051	Kaminski	B	Immune	reference_profile_0446	300	1127838
+Kaminski::EX338_051	Kaminski	Blood endothelial	Endothelial / vascular	reference_profile_0447	50	236358
+Kaminski::EX338_051	Kaminski	Fibroblast	Stromal	reference_profile_0448	26	127600
+Kaminski::EX338_051	Kaminski	Lymphatic endothelial	Endothelial / vascular	reference_profile_0449	14	44978
+Kaminski::EX338_051	Kaminski	Mast/Basophil	Immune	reference_profile_0450	29	91270
+Kaminski::EX338_051	Kaminski	Myofibroblast	Stromal	reference_profile_0451	8	24527
+Kaminski::EX338_051	Kaminski	Perivascular/mesothelial stromal	Stromal	reference_profile_0452	10	41191
+Kaminski::EX338_051	Kaminski	Plasma	Immune	reference_profile_0453	2	16863
+Kaminski::EX338_052	Kaminski	B	Immune	reference_profile_0454	28	45488
+Kaminski::EX338_052	Kaminski	Blood endothelial	Endothelial / vascular	reference_profile_0455	132	390019
+Kaminski::EX338_052	Kaminski	Fibroblast	Stromal	reference_profile_0456	56	180224
+Kaminski::EX338_052	Kaminski	Lymphatic endothelial	Endothelial / vascular	reference_profile_0457	31	66186
+Kaminski::EX338_052	Kaminski	Mast/Basophil	Immune	reference_profile_0458	20	29227
+Kaminski::EX338_052	Kaminski	Myofibroblast	Stromal	reference_profile_0459	11	52537
+Kaminski::EX338_052	Kaminski	Perivascular/mesothelial stromal	Stromal	reference_profile_0460	15	76506
+Kaminski::EX338_053	Kaminski	B	Immune	reference_profile_0461	300	1041716
+Kaminski::EX338_053	Kaminski	Blood endothelial	Endothelial / vascular	reference_profile_0462	43	189964
+Kaminski::EX338_053	Kaminski	Fibroblast	Stromal	reference_profile_0463	56	300565
+Kaminski::EX338_053	Kaminski	Lymphatic endothelial	Endothelial / vascular	reference_profile_0464	28	95497
+Kaminski::EX338_053	Kaminski	Mast/Basophil	Immune	reference_profile_0465	39	135068
+Kaminski::EX338_053	Kaminski	Myofibroblast	Stromal	reference_profile_0466	10	76045
+Kaminski::EX338_053	Kaminski	Perivascular/mesothelial stromal	Stromal	reference_profile_0467	8	42005
+Kaminski::EX338_053	Kaminski	Plasma	Immune	reference_profile_0468	4	27417
+Kaminski::EX338_054	Kaminski	B	Immune	reference_profile_0469	97	263109
+Kaminski::EX338_054	Kaminski	Mast/Basophil	Immune	reference_profile_0470	16	38040
+Kaminski::EX338_054	Kaminski	Plasma	Immune	reference_profile_0471	2	7698
+Kaminski::EX338_055	Kaminski	B	Immune	reference_profile_0472	93	304070
+Kaminski::EX338_055	Kaminski	Fibroblast	Stromal	reference_profile_0473	17	58379
+Kaminski::EX338_055	Kaminski	Mast/Basophil	Immune	reference_profile_0474	9	19061
+Kaminski::EX338_055	Kaminski	Myofibroblast	Stromal	reference_profile_0475	8	42963
+Kaminski::EX338_055	Kaminski	Perivascular/mesothelial stromal	Stromal	reference_profile_0476	34	146623
+Kaminski::EX338_056	Kaminski	B	Immune	reference_profile_0477	134	433810
+Kaminski::EX338_056	Kaminski	Mast/Basophil	Immune	reference_profile_0478	8	17795
+Kaminski::EX338_056	Kaminski	Plasma	Immune	reference_profile_0479	2	3786
+Kaminski::EX338_057	Kaminski	Mast/Basophil	Immune	reference_profile_0480	3	8140
+Kaminski::EX338_058	Kaminski	B	Immune	reference_profile_0481	235	647464
+Kaminski::EX338_058	Kaminski	Fibroblast	Stromal	reference_profile_0482	20	70373
+Kaminski::EX338_058	Kaminski	Mast/Basophil	Immune	reference_profile_0483	17	26941
+Kaminski::EX338_058	Kaminski	Perivascular/mesothelial stromal	Stromal	reference_profile_0484	1	4522
+Kaminski::EX338_058	Kaminski	Plasma	Immune	reference_profile_0485	3	8455
+Kaminski::EX338_059	Kaminski	B	Immune	reference_profile_0486	280	929260
+Kaminski::EX338_059	Kaminski	Blood endothelial	Endothelial / vascular	reference_profile_0487	44	160230
+Kaminski::EX338_059	Kaminski	Fibroblast	Stromal	reference_profile_0488	61	294084
+Kaminski::EX338_059	Kaminski	Lymphatic endothelial	Endothelial / vascular	reference_profile_0489	25	122810
+Kaminski::EX338_059	Kaminski	Mast/Basophil	Immune	reference_profile_0490	54	137111
+Kaminski::EX338_059	Kaminski	Myofibroblast	Stromal	reference_profile_0491	14	90477
+Kaminski::EX338_059	Kaminski	Perivascular/mesothelial stromal	Stromal	reference_profile_0492	11	70259
+Kaminski::EX338_059	Kaminski	Plasma	Immune	reference_profile_0493	3	11346
+Kaminski::EX338_060	Kaminski	B	Immune	reference_profile_0494	42	126388
+Kaminski::EX338_060	Kaminski	Blood endothelial	Endothelial / vascular	reference_profile_0495	115	558108
+Kaminski::EX338_060	Kaminski	Fibroblast	Stromal	reference_profile_0496	210	946267
+Kaminski::EX338_060	Kaminski	Lymphatic endothelial	Endothelial / vascular	reference_profile_0497	18	57952
+Kaminski::EX338_060	Kaminski	Mast/Basophil	Immune	reference_profile_0498	84	160785
+Kaminski::EX338_060	Kaminski	Myofibroblast	Stromal	reference_profile_0499	91	512924
+Kaminski::EX338_060	Kaminski	Perivascular/mesothelial stromal	Stromal	reference_profile_0500	133	529872
+Kaminski::EX338_061	Kaminski	B	Immune	reference_profile_0501	66	197226
+Kaminski::EX338_061	Kaminski	Mast/Basophil	Immune	reference_profile_0502	20	45251
+Kaminski::EX338_062	Kaminski	B	Immune	reference_profile_0503	12	47403
+Kaminski::EX338_062	Kaminski	Mast/Basophil	Immune	reference_profile_0504	1	2423
+Kaminski::EX338_063	Kaminski	B	Immune	reference_profile_0505	298	840820
+Kaminski::EX338_063	Kaminski	Mast/Basophil	Immune	reference_profile_0506	21	34553
+Kaminski::EX338_063	Kaminski	Plasma	Immune	reference_profile_0507	7	41511
+Kaminski::EX338_064	Kaminski	B	Immune	reference_profile_0508	16	38462
+Kaminski::EX338_065	Kaminski	B	Immune	reference_profile_0509	78	254929
+Kaminski::EX338_065	Kaminski	Mast/Basophil	Immune	reference_profile_0510	19	37092
+Kaminski::EX338_065	Kaminski	Plasma	Immune	reference_profile_0511	2	11634
+Kaminski::EX338_066	Kaminski	B	Immune	reference_profile_0512	7	24567
+Kaminski::EX338_066	Kaminski	Mast/Basophil	Immune	reference_profile_0513	2	3337
+Kaminski::EX338_066	Kaminski	Plasma	Immune	reference_profile_0514	4	18551
+Kaminski::EX338_067	Kaminski	B	Immune	reference_profile_0515	82	228804
+Kaminski::EX338_067	Kaminski	Mast/Basophil	Immune	reference_profile_0516	23	43131
+Kaminski::EX338_067	Kaminski	Plasma	Immune	reference_profile_0517	5	16438
+Kaminski::EX338_068	Kaminski	B	Immune	reference_profile_0518	81	280919
+Kaminski::EX338_068	Kaminski	Mast/Basophil	Immune	reference_profile_0519	1	2122
+Kaminski::EX338_068	Kaminski	Plasma	Immune	reference_profile_0520	4	8737
+Kaminski::EX338_069	Kaminski	B	Immune	reference_profile_0521	63	241354
+Kaminski::EX338_069	Kaminski	Mast/Basophil	Immune	reference_profile_0522	7	12995
+Kaminski::EX338_069	Kaminski	Plasma	Immune	reference_profile_0523	8	28962
+Kaminski::EX338_070	Kaminski	B	Immune	reference_profile_0524	71	267746
+Kaminski::EX338_070	Kaminski	Mast/Basophil	Immune	reference_profile_0525	2	9194
+Kaminski::EX338_070	Kaminski	Plasma	Immune	reference_profile_0526	2	8292
+Kaminski::EX338_071	Kaminski	B	Immune	reference_profile_0527	300	1133932
+Kaminski::EX338_071	Kaminski	Mast/Basophil	Immune	reference_profile_0528	2	7340
+Kaminski::EX338_071	Kaminski	Plasma	Immune	reference_profile_0529	2	13752
+Kaminski::EX338_072	Kaminski	B	Immune	reference_profile_0530	67	230977
+Kaminski::EX338_072	Kaminski	Plasma	Immune	reference_profile_0531	1	6328
+Kaminski::EX338_073	Kaminski	B	Immune	reference_profile_0532	59	284929
+Kaminski::EX338_073	Kaminski	Mast/Basophil	Immune	reference_profile_0533	3	8820
+Kaminski::EX338_073	Kaminski	Plasma	Immune	reference_profile_0534	1	5189
+Kaminski::EX338_074	Kaminski	Mast/Basophil	Immune	reference_profile_0535	1	1128
+Kaminski::EX338_074	Kaminski	Plasma	Immune	reference_profile_0536	1	3108
+Kaminski::EX338_075	Kaminski	B	Immune	reference_profile_0537	40	84766
+Kaminski::EX338_075	Kaminski	Mast/Basophil	Immune	reference_profile_0538	50	125512
+Kaminski::EX338_075	Kaminski	Plasma	Immune	reference_profile_0539	3	4795
+Kaminski::EX338_076	Kaminski	B	Immune	reference_profile_0540	145	664698
+Kaminski::EX338_076	Kaminski	Plasma	Immune	reference_profile_0541	1	6459
+Kaminski::EX338_077	Kaminski	B	Immune	reference_profile_0542	13	29708
+Kaminski::EX338_077	Kaminski	Mast/Basophil	Immune	reference_profile_0543	22	48031
+Kaminski::EX338_078	Kaminski	B	Immune	reference_profile_0544	1	4308
+Kaminski::EX338_078	Kaminski	Mast/Basophil	Immune	reference_profile_0545	2	5648
+Misharin::Donor1	Misharin	AT1	Epithelial	reference_profile_0546	84	980806
+Misharin::Donor1	Misharin	AT2/alveolar transitional	Epithelial	reference_profile_0547	300	4212490
+Misharin::Donor1	Misharin	Alveolar/resident macrophage	Immune	reference_profile_0548	255	4592546
+Misharin::Donor1	Misharin	B	Immune	reference_profile_0549	300	1702105
+Misharin::Donor1	Misharin	Basal-like epithelial	Epithelial	reference_profile_0550	302	3952277
+Misharin::Donor1	Misharin	Blood endothelial	Endothelial / vascular	reference_profile_0551	2	15224
+Misharin::Donor1	Misharin	Ciliated epithelial	Epithelial	reference_profile_0552	374	5249944
+Misharin::Donor1	Misharin	Dendritic cell	Immune	reference_profile_0553	422	5010007
+Misharin::Donor1	Misharin	Fibroblast	Stromal	reference_profile_0554	679	6179883
+Misharin::Donor1	Misharin	Inflammatory monocyte/macrophage	Immune	reference_profile_0555	990	9737594
+Misharin::Donor1	Misharin	Lymphatic endothelial	Endothelial / vascular	reference_profile_0556	73	266551
+Misharin::Donor1	Misharin	Mast/Basophil	Immune	reference_profile_0557	6	55557
+Misharin::Donor1	Misharin	Myofibroblast	Stromal	reference_profile_0558	95	718011
+Misharin::Donor1	Misharin	NK	Immune	reference_profile_0559	3	16544
+Misharin::Donor1	Misharin	Perivascular/mesothelial stromal	Stromal	reference_profile_0560	522	3220861
+Misharin::Donor1	Misharin	Plasma	Immune	reference_profile_0561	36	374816
+Misharin::Donor1	Misharin	Secretory/other airway epithelial	Epithelial	reference_profile_0562	490	7196085
+Misharin::Donor1	Misharin	T	Immune	reference_profile_0563	134	953678
+Misharin::TX_Donor	Misharin	AT1	Epithelial	reference_profile_0564	34	250216
+Misharin::TX_Donor	Misharin	AT2/alveolar transitional	Epithelial	reference_profile_0565	49	536736
+Misharin::TX_Donor	Misharin	B	Immune	reference_profile_0566	2	7628
+Misharin::TX_Donor	Misharin	Basal-like epithelial	Epithelial	reference_profile_0567	1	7808
+Misharin::TX_Donor	Misharin	Blood endothelial	Endothelial / vascular	reference_profile_0568	1	16041
+Misharin::TX_Donor	Misharin	Ciliated epithelial	Epithelial	reference_profile_0569	9	78802
+Misharin::TX_Donor	Misharin	Fibroblast	Stromal	reference_profile_0570	534	4843146
+Misharin::TX_Donor	Misharin	Lymphatic endothelial	Endothelial / vascular	reference_profile_0571	3	39657
+Misharin::TX_Donor	Misharin	Myofibroblast	Stromal	reference_profile_0572	132	1234697
+Misharin::TX_Donor	Misharin	NK	Immune	reference_profile_0573	1	3231
+Misharin::TX_Donor	Misharin	Perivascular/mesothelial stromal	Stromal	reference_profile_0574	47	229962
+Misharin::TX_Donor	Misharin	Plasma	Immune	reference_profile_0575	4	32698
+Misharin::TX_Donor	Misharin	Secretory/other airway epithelial	Epithelial	reference_profile_0576	24	238550
+Misharin::TX_Donor	Misharin	T	Immune	reference_profile_0577	1	3054
+Morse::SC14NOR	Morse	Alveolar/resident macrophage	Immune	reference_profile_0578	26	250369
+Morse::SC14NOR	Morse	Dendritic cell	Immune	reference_profile_0579	1	5008
+Morse::SC14NOR	Morse	Inflammatory monocyte/macrophage	Immune	reference_profile_0580	16	99678
+Morse::SC153IPFLOW	Morse	AT1	Epithelial	reference_profile_0581	1	9236
+Morse::SC153IPFLOW	Morse	AT2/alveolar transitional	Epithelial	reference_profile_0582	11	130417
+Morse::SC153IPFLOW	Morse	Alveolar/resident macrophage	Immune	reference_profile_0583	140	1503052
+Morse::SC153IPFLOW	Morse	Basal-like epithelial	Epithelial	reference_profile_0584	62	541859
+Morse::SC153IPFLOW	Morse	Blood endothelial	Endothelial / vascular	reference_profile_0585	284	2271421
+Morse::SC153IPFLOW	Morse	Ciliated epithelial	Epithelial	reference_profile_0586	97	915732
+Morse::SC153IPFLOW	Morse	Dendritic cell	Immune	reference_profile_0587	17	130793
+Morse::SC153IPFLOW	Morse	Fibroblast	Stromal	reference_profile_0588	65	454629
+Morse::SC153IPFLOW	Morse	Inflammatory monocyte/macrophage	Immune	reference_profile_0589	587	5452828
+Morse::SC153IPFLOW	Morse	Lymphatic endothelial	Endothelial / vascular	reference_profile_0590	4	20456
+Morse::SC153IPFLOW	Morse	Mast/Basophil	Immune	reference_profile_0591	1	5139
+Morse::SC153IPFLOW	Morse	Myofibroblast	Stromal	reference_profile_0592	7	61979
+Morse::SC153IPFLOW	Morse	Perivascular/mesothelial stromal	Stromal	reference_profile_0593	20	132344
+Morse::SC153IPFLOW	Morse	Secretory/other airway epithelial	Epithelial	reference_profile_0594	281	2677872
+Morse::SC154IPFUP	Morse	AT1	Epithelial	reference_profile_0595	3	26625
+Morse::SC154IPFUP	Morse	AT2/alveolar transitional	Epithelial	reference_profile_0596	27	294168
+Morse::SC154IPFUP	Morse	Alveolar/resident macrophage	Immune	reference_profile_0597	212	2510957
+Morse::SC154IPFUP	Morse	Basal-like epithelial	Epithelial	reference_profile_0598	23	214350
+Morse::SC154IPFUP	Morse	Blood endothelial	Endothelial / vascular	reference_profile_0599	251	2044398
+Morse::SC154IPFUP	Morse	Ciliated epithelial	Epithelial	reference_profile_0600	21	240753
+Morse::SC154IPFUP	Morse	Dendritic cell	Immune	reference_profile_0601	63	496989
+Morse::SC154IPFUP	Morse	Fibroblast	Stromal	reference_profile_0602	64	535799
+Morse::SC154IPFUP	Morse	Inflammatory monocyte/macrophage	Immune	reference_profile_0603	605	6559534
+Morse::SC154IPFUP	Morse	Lymphatic endothelial	Endothelial / vascular	reference_profile_0604	13	88614
+Morse::SC154IPFUP	Morse	Mast/Basophil	Immune	reference_profile_0605	1	5681
+Morse::SC154IPFUP	Morse	Myofibroblast	Stromal	reference_profile_0606	40	338911
+Morse::SC154IPFUP	Morse	Perivascular/mesothelial stromal	Stromal	reference_profile_0607	58	382484
+Morse::SC154IPFUP	Morse	Secretory/other airway epithelial	Epithelial	reference_profile_0608	59	619837
+Morse::SC155NORLOW	Morse	AT1	Epithelial	reference_profile_0609	4	23745
+Morse::SC155NORLOW	Morse	AT2/alveolar transitional	Epithelial	reference_profile_0610	86	781259
+Morse::SC155NORLOW	Morse	Blood endothelial	Endothelial / vascular	reference_profile_0611	61	553232
+Morse::SC155NORLOW	Morse	Ciliated epithelial	Epithelial	reference_profile_0612	40	354736
+Morse::SC155NORLOW	Morse	Fibroblast	Stromal	reference_profile_0613	23	174586
+Morse::SC155NORLOW	Morse	Lymphatic endothelial	Endothelial / vascular	reference_profile_0614	36	305337
+Morse::SC155NORLOW	Morse	Mast/Basophil	Immune	reference_profile_0615	2	10859
+Morse::SC155NORLOW	Morse	Perivascular/mesothelial stromal	Stromal	reference_profile_0616	1	5890
+Morse::SC155NORLOW	Morse	Secretory/other airway epithelial	Epithelial	reference_profile_0617	27	317940
+Morse::SC156NORUP	Morse	AT1	Epithelial	reference_profile_0618	9	51670
+Morse::SC156NORUP	Morse	AT2/alveolar transitional	Epithelial	reference_profile_0619	137	1085354
+Morse::SC156NORUP	Morse	Basal-like epithelial	Epithelial	reference_profile_0620	1	6161
+Morse::SC156NORUP	Morse	Blood endothelial	Endothelial / vascular	reference_profile_0621	139	920171
+Morse::SC156NORUP	Morse	Ciliated epithelial	Epithelial	reference_profile_0622	93	709814
+Morse::SC156NORUP	Morse	Fibroblast	Stromal	reference_profile_0623	50	303109
+Morse::SC156NORUP	Morse	Lymphatic endothelial	Endothelial / vascular	reference_profile_0624	61	345582
+Morse::SC156NORUP	Morse	Myofibroblast	Stromal	reference_profile_0625	4	37439
+Morse::SC156NORUP	Morse	Perivascular/mesothelial stromal	Stromal	reference_profile_0626	2	15097
+Morse::SC156NORUP	Morse	Secretory/other airway epithelial	Epithelial	reference_profile_0627	37	333642
+Morse::SC31DNOR	Morse	Mast/Basophil	Immune	reference_profile_0628	3	11061
+Morse::SC31NOR	Morse	B	Immune	reference_profile_0629	1	3466
+Morse::SC31NOR	Morse	Mast/Basophil	Immune	reference_profile_0630	1	3495
+Morse::SC31NOR	Morse	NK	Immune	reference_profile_0631	6	18554
+Morse::SC31NOR	Morse	T	Immune	reference_profile_0632	28	95112
+Morse::SC45NOR	Morse	AT1	Epithelial	reference_profile_0633	4	33412
+Morse::SC45NOR	Morse	AT2/alveolar transitional	Epithelial	reference_profile_0634	55	512754
+Morse::SC45NOR	Morse	Ciliated epithelial	Epithelial	reference_profile_0635	35	261321
+Morse::SC45NOR	Morse	Mast/Basophil	Immune	reference_profile_0636	4	17445
+Morse::SC45NOR	Morse	Secretory/other airway epithelial	Epithelial	reference_profile_0637	12	99107
+Morse::SC56NOR	Morse	AT1	Epithelial	reference_profile_0638	2	7690
+Morse::SC56NOR	Morse	AT2/alveolar transitional	Epithelial	reference_profile_0639	266	2151480
+Morse::SC56NOR	Morse	Basal-like epithelial	Epithelial	reference_profile_0640	2	23529
+Morse::SC56NOR	Morse	Blood endothelial	Endothelial / vascular	reference_profile_0641	61	313231
+Morse::SC56NOR	Morse	Ciliated epithelial	Epithelial	reference_profile_0642	19	126192
+Morse::SC56NOR	Morse	Fibroblast	Stromal	reference_profile_0643	27	128063
+Morse::SC56NOR	Morse	Lymphatic endothelial	Endothelial / vascular	reference_profile_0644	4	33131
+Morse::SC56NOR	Morse	Mast/Basophil	Immune	reference_profile_0645	12	40900
+Morse::SC56NOR	Morse	NK	Immune	reference_profile_0646	11	37087
+Morse::SC56NOR	Morse	Perivascular/mesothelial stromal	Stromal	reference_profile_0647	19	87818
+Morse::SC56NOR	Morse	Plasma	Immune	reference_profile_0648	3	34436
+Morse::SC56NOR	Morse	Secretory/other airway epithelial	Epithelial	reference_profile_0649	13	102072
+Morse::SC56NOR	Morse	T	Immune	reference_profile_0650	47	160577
+Morse::SC59NOR	Morse	AT1	Epithelial	reference_profile_0651	4	18941
+Morse::SC59NOR	Morse	AT2/alveolar transitional	Epithelial	reference_profile_0652	56	775650
+Morse::SC59NOR	Morse	Blood endothelial	Endothelial / vascular	reference_profile_0653	58	400001
+Morse::SC59NOR	Morse	Ciliated epithelial	Epithelial	reference_profile_0654	31	239070
+Morse::SC59NOR	Morse	Fibroblast	Stromal	reference_profile_0655	25	163544
+Morse::SC59NOR	Morse	Lymphatic endothelial	Endothelial / vascular	reference_profile_0656	58	386599
+Morse::SC59NOR	Morse	Mast/Basophil	Immune	reference_profile_0657	1	6024
+Morse::SC59NOR	Morse	Myofibroblast	Stromal	reference_profile_0658	3	21797
+Morse::SC59NOR	Morse	Perivascular/mesothelial stromal	Stromal	reference_profile_0659	5	38847
+Morse::SC59NOR	Morse	Secretory/other airway epithelial	Epithelial	reference_profile_0660	11	97810
+Morse::SC87IPFLOW	Morse	AT2/alveolar transitional	Epithelial	reference_profile_0661	14	129988
+Morse::SC87IPFLOW	Morse	B	Immune	reference_profile_0662	4	17284
+Morse::SC87IPFLOW	Morse	Basal-like epithelial	Epithelial	reference_profile_0663	28	220712
+Morse::SC87IPFLOW	Morse	Blood endothelial	Endothelial / vascular	reference_profile_0664	277	1767939
+Morse::SC87IPFLOW	Morse	Ciliated epithelial	Epithelial	reference_profile_0665	34	255758
+Morse::SC87IPFLOW	Morse	Fibroblast	Stromal	reference_profile_0666	305	2241772
+Morse::SC87IPFLOW	Morse	Lymphatic endothelial	Endothelial / vascular	reference_profile_0667	54	299148
+Morse::SC87IPFLOW	Morse	Mast/Basophil	Immune	reference_profile_0668	42	147699
+Morse::SC87IPFLOW	Morse	Myofibroblast	Stromal	reference_profile_0669	239	2091277
+Morse::SC87IPFLOW	Morse	NK	Immune	reference_profile_0670	9	28428
+Morse::SC87IPFLOW	Morse	Perivascular/mesothelial stromal	Stromal	reference_profile_0671	58	372459
+Morse::SC87IPFLOW	Morse	Secretory/other airway epithelial	Epithelial	reference_profile_0672	62	500391
+Morse::SC87IPFLOW	Morse	T	Immune	reference_profile_0673	69	237851
+Morse::SC88IPFUP	Morse	Blood endothelial	Endothelial / vascular	reference_profile_0674	410	2895919
+Morse::SC88IPFUP	Morse	Fibroblast	Stromal	reference_profile_0675	88	703742
+Morse::SC88IPFUP	Morse	Lymphatic endothelial	Endothelial / vascular	reference_profile_0676	43	292714
+Morse::SC88IPFUP	Morse	Mast/Basophil	Immune	reference_profile_0677	17	72663
+Morse::SC88IPFUP	Morse	Myofibroblast	Stromal	reference_profile_0678	87	856288
+Morse::SC88IPFUP	Morse	Perivascular/mesothelial stromal	Stromal	reference_profile_0679	18	136752
+Morse::SC89IPFLOW	Morse	B	Immune	reference_profile_0680	2	7390
+Morse::SC89IPFLOW	Morse	Blood endothelial	Endothelial / vascular	reference_profile_0681	235	2016429
+Morse::SC89IPFLOW	Morse	Fibroblast	Stromal	reference_profile_0682	266	2310236
+Morse::SC89IPFLOW	Morse	Lymphatic endothelial	Endothelial / vascular	reference_profile_0683	63	476835
+Morse::SC89IPFLOW	Morse	Mast/Basophil	Immune	reference_profile_0684	90	332940
+Morse::SC89IPFLOW	Morse	Myofibroblast	Stromal	reference_profile_0685	261	3216304
+Morse::SC89IPFLOW	Morse	NK	Immune	reference_profile_0686	3	10041
+Morse::SC89IPFLOW	Morse	Perivascular/mesothelial stromal	Stromal	reference_profile_0687	45	310298
+Morse::SC89IPFLOW	Morse	Plasma	Immune	reference_profile_0688	2	10911
+Morse::SC89IPFLOW	Morse	T	Immune	reference_profile_0689	55	203361
+Morse::SC93IPFLOW	Morse	Blood endothelial	Endothelial / vascular	reference_profile_0690	258	1882837
+Morse::SC93IPFLOW	Morse	Fibroblast	Stromal	reference_profile_0691	181	1282806
+Morse::SC93IPFLOW	Morse	Lymphatic endothelial	Endothelial / vascular	reference_profile_0692	9	55265
+Morse::SC93IPFLOW	Morse	Mast/Basophil	Immune	reference_profile_0693	28	142017
+Morse::SC93IPFLOW	Morse	Myofibroblast	Stromal	reference_profile_0694	18	125430
+Morse::SC93IPFLOW	Morse	Perivascular/mesothelial stromal	Stromal	reference_profile_0695	30	205146
+Morse::SC95IPFLOW	Morse	Mast/Basophil	Immune	reference_profile_0696	1	6886
+Reyfman::Cryobiopsy	Reyfman	AT1	Epithelial	reference_profile_0697	95	325406
+Reyfman::Cryobiopsy	Reyfman	AT2/alveolar transitional	Epithelial	reference_profile_0698	73	480561
+Reyfman::Cryobiopsy	Reyfman	Alveolar/resident macrophage	Immune	reference_profile_0699	99	607389
+Reyfman::Cryobiopsy	Reyfman	B	Immune	reference_profile_0700	4	6921
+Reyfman::Cryobiopsy	Reyfman	Basal-like epithelial	Epithelial	reference_profile_0701	7	50481
+Reyfman::Cryobiopsy	Reyfman	Blood endothelial	Endothelial / vascular	reference_profile_0702	260	621781
+Reyfman::Cryobiopsy	Reyfman	Ciliated epithelial	Epithelial	reference_profile_0703	13	58093
+Reyfman::Cryobiopsy	Reyfman	Dendritic cell	Immune	reference_profile_0704	66	285339
+Reyfman::Cryobiopsy	Reyfman	Fibroblast	Stromal	reference_profile_0705	63	188008
+Reyfman::Cryobiopsy	Reyfman	Inflammatory monocyte/macrophage	Immune	reference_profile_0706	45	143419
+Reyfman::Cryobiopsy	Reyfman	Lymphatic endothelial	Endothelial / vascular	reference_profile_0707	45	132814
+Reyfman::Cryobiopsy	Reyfman	Mast/Basophil	Immune	reference_profile_0708	80	133214
+Reyfman::Cryobiopsy	Reyfman	Myofibroblast	Stromal	reference_profile_0709	9	37613
+Reyfman::Cryobiopsy	Reyfman	NK	Immune	reference_profile_0710	71	102607
+Reyfman::Cryobiopsy	Reyfman	Perivascular/mesothelial stromal	Stromal	reference_profile_0711	37	101068
+Reyfman::Cryobiopsy	Reyfman	Plasma	Immune	reference_profile_0712	2	13252
+Reyfman::Cryobiopsy	Reyfman	Secretory/other airway epithelial	Epithelial	reference_profile_0713	40	193733
+Reyfman::Cryobiopsy	Reyfman	T	Immune	reference_profile_0714	186	346432
+Reyfman::Donor_01	Reyfman	AT1	Epithelial	reference_profile_0715	29	351866
+Reyfman::Donor_01	Reyfman	AT2/alveolar transitional	Epithelial	reference_profile_0716	316	3312221
+Reyfman::Donor_01	Reyfman	Alveolar/resident macrophage	Immune	reference_profile_0717	314	3339119
+Reyfman::Donor_01	Reyfman	Basal-like epithelial	Epithelial	reference_profile_0718	1	11278
+Reyfman::Donor_01	Reyfman	Ciliated epithelial	Epithelial	reference_profile_0719	5	46007
+Reyfman::Donor_01	Reyfman	Dendritic cell	Immune	reference_profile_0720	19	165201
+Reyfman::Donor_01	Reyfman	Inflammatory monocyte/macrophage	Immune	reference_profile_0721	12	108528
+Reyfman::Donor_01	Reyfman	Mast/Basophil	Immune	reference_profile_0722	3	30992
+Reyfman::Donor_01	Reyfman	Secretory/other airway epithelial	Epithelial	reference_profile_0723	6	69020
+Reyfman::Donor_02	Reyfman	AT1	Epithelial	reference_profile_0724	37	228392
+Reyfman::Donor_02	Reyfman	AT2/alveolar transitional	Epithelial	reference_profile_0725	146	1058061
+Reyfman::Donor_02	Reyfman	Alveolar/resident macrophage	Immune	reference_profile_0726	212	1499134
+Reyfman::Donor_02	Reyfman	Basal-like epithelial	Epithelial	reference_profile_0727	8	55089
+Reyfman::Donor_02	Reyfman	Ciliated epithelial	Epithelial	reference_profile_0728	14	88982
+Reyfman::Donor_02	Reyfman	Dendritic cell	Immune	reference_profile_0729	19	114012
+Reyfman::Donor_02	Reyfman	Inflammatory monocyte/macrophage	Immune	reference_profile_0730	21	125704
+Reyfman::Donor_02	Reyfman	Secretory/other airway epithelial	Epithelial	reference_profile_0731	12	87141
+Reyfman::Donor_03	Reyfman	AT1	Epithelial	reference_profile_0732	31	166211
+Reyfman::Donor_03	Reyfman	AT2/alveolar transitional	Epithelial	reference_profile_0733	337	1479321
+Reyfman::Donor_03	Reyfman	Alveolar/resident macrophage	Immune	reference_profile_0734	305	1367559
+Reyfman::Donor_03	Reyfman	Ciliated epithelial	Epithelial	reference_profile_0735	18	88216
+Reyfman::Donor_03	Reyfman	Dendritic cell	Immune	reference_profile_0736	1	3926
+Reyfman::Donor_03	Reyfman	Inflammatory monocyte/macrophage	Immune	reference_profile_0737	17	68910
+Reyfman::Donor_03	Reyfman	Mast/Basophil	Immune	reference_profile_0738	1	4032
+Reyfman::Donor_03	Reyfman	Secretory/other airway epithelial	Epithelial	reference_profile_0739	17	89962
+Reyfman::Donor_04	Reyfman	AT1	Epithelial	reference_profile_0740	16	94326
+Reyfman::Donor_04	Reyfman	AT2/alveolar transitional	Epithelial	reference_profile_0741	321	1653428
+Reyfman::Donor_04	Reyfman	Alveolar/resident macrophage	Immune	reference_profile_0742	303	1230587
+Reyfman::Donor_04	Reyfman	Basal-like epithelial	Epithelial	reference_profile_0743	4	32582
+Reyfman::Donor_04	Reyfman	Ciliated epithelial	Epithelial	reference_profile_0744	43	357288
+Reyfman::Donor_04	Reyfman	Inflammatory monocyte/macrophage	Immune	reference_profile_0745	2	7921
+Reyfman::Donor_04	Reyfman	Secretory/other airway epithelial	Epithelial	reference_profile_0746	33	202320
+Reyfman::Donor_05	Reyfman	AT1	Epithelial	reference_profile_0747	6	63836
+Reyfman::Donor_05	Reyfman	AT2/alveolar transitional	Epithelial	reference_profile_0748	35	366755
+Reyfman::Donor_05	Reyfman	Alveolar/resident macrophage	Immune	reference_profile_0749	215	2157116
+Reyfman::Donor_05	Reyfman	Dendritic cell	Immune	reference_profile_0750	4	38478
+Reyfman::Donor_05	Reyfman	Inflammatory monocyte/macrophage	Immune	reference_profile_0751	12	111460
+Reyfman::Donor_05	Reyfman	Secretory/other airway epithelial	Epithelial	reference_profile_0752	3	49707
+Reyfman::IPF_01	Reyfman	B	Immune	reference_profile_0753	300	898302
+Reyfman::IPF_01	Reyfman	Blood endothelial	Endothelial / vascular	reference_profile_0754	91	388165
+Reyfman::IPF_01	Reyfman	Fibroblast	Stromal	reference_profile_0755	11	43305
+Reyfman::IPF_01	Reyfman	Lymphatic endothelial	Endothelial / vascular	reference_profile_0756	8	40366
+Reyfman::IPF_01	Reyfman	Mast/Basophil	Immune	reference_profile_0757	58	188804
+Reyfman::IPF_01	Reyfman	Myofibroblast	Stromal	reference_profile_0758	3	12879
+Reyfman::IPF_01	Reyfman	NK	Immune	reference_profile_0759	315	743997
+Reyfman::IPF_01	Reyfman	Perivascular/mesothelial stromal	Stromal	reference_profile_0760	11	58950
+Reyfman::IPF_01	Reyfman	Plasma	Immune	reference_profile_0761	44	156767
+Reyfman::IPF_01	Reyfman	T	Immune	reference_profile_0762	579	1523235
+Reyfman::IPF_02	Reyfman	Fibroblast	Stromal	reference_profile_0763	4	22476
+Reyfman::IPF_02	Reyfman	Mast/Basophil	Immune	reference_profile_0764	15	65384
+Reyfman::IPF_02	Reyfman	Myofibroblast	Stromal	reference_profile_0765	1	6076
+Reyfman::IPF_02	Reyfman	Perivascular/mesothelial stromal	Stromal	reference_profile_0766	20	98360
+Reyfman::IPF_03	Reyfman	B	Immune	reference_profile_0767	2	8752
+Reyfman::IPF_03	Reyfman	NK	Immune	reference_profile_0768	1	6492
+Reyfman::IPF_03	Reyfman	Plasma	Immune	reference_profile_0769	300	1253569
+Reyfman::IPF_03	Reyfman	T	Immune	reference_profile_0770	3	13948
+Valenzi::SC108SSCLOW	Valenzi	AT1	Epithelial	reference_profile_0771	2	14921
+Valenzi::SC108SSCLOW	Valenzi	AT2/alveolar transitional	Epithelial	reference_profile_0772	113	1264271
+Valenzi::SC108SSCLOW	Valenzi	Alveolar/resident macrophage	Immune	reference_profile_0773	474	10403301
+Valenzi::SC108SSCLOW	Valenzi	Basal-like epithelial	Epithelial	reference_profile_0774	30	445066
+Valenzi::SC108SSCLOW	Valenzi	Blood endothelial	Endothelial / vascular	reference_profile_0775	290	2700018
+Valenzi::SC108SSCLOW	Valenzi	Ciliated epithelial	Epithelial	reference_profile_0776	17	322778
+Valenzi::SC108SSCLOW	Valenzi	Dendritic cell	Immune	reference_profile_0777	55	433253
+Valenzi::SC108SSCLOW	Valenzi	Fibroblast	Stromal	reference_profile_0778	28	311782
+Valenzi::SC108SSCLOW	Valenzi	Inflammatory monocyte/macrophage	Immune	reference_profile_0779	531	8838324
+Valenzi::SC108SSCLOW	Valenzi	Lymphatic endothelial	Endothelial / vascular	reference_profile_0780	17	114616
+Valenzi::SC108SSCLOW	Valenzi	Mast/Basophil	Immune	reference_profile_0781	5	25226
+Valenzi::SC108SSCLOW	Valenzi	Myofibroblast	Stromal	reference_profile_0782	23	328153
+Valenzi::SC108SSCLOW	Valenzi	Perivascular/mesothelial stromal	Stromal	reference_profile_0783	23	245637
+Valenzi::SC108SSCLOW	Valenzi	Secretory/other airway epithelial	Epithelial	reference_profile_0784	36	367534
+Valenzi::SC109SSCUP	Valenzi	AT1	Epithelial	reference_profile_0785	5	86454
+Valenzi::SC109SSCUP	Valenzi	AT2/alveolar transitional	Epithelial	reference_profile_0786	211	3481130
+Valenzi::SC109SSCUP	Valenzi	Alveolar/resident macrophage	Immune	reference_profile_0787	246	5703198
+Valenzi::SC109SSCUP	Valenzi	B	Immune	reference_profile_0788	3	15386
+Valenzi::SC109SSCUP	Valenzi	Basal-like epithelial	Epithelial	reference_profile_0789	6	110711
+Valenzi::SC109SSCUP	Valenzi	Blood endothelial	Endothelial / vascular	reference_profile_0790	347	3395144
+Valenzi::SC109SSCUP	Valenzi	Ciliated epithelial	Epithelial	reference_profile_0791	10	178757
+Valenzi::SC109SSCUP	Valenzi	Dendritic cell	Immune	reference_profile_0792	60	572717
+Valenzi::SC109SSCUP	Valenzi	Fibroblast	Stromal	reference_profile_0793	119	1578600
+Valenzi::SC109SSCUP	Valenzi	Inflammatory monocyte/macrophage	Immune	reference_profile_0794	300	5329664
+Valenzi::SC109SSCUP	Valenzi	Lymphatic endothelial	Endothelial / vascular	reference_profile_0795	73	630460
+Valenzi::SC109SSCUP	Valenzi	Mast/Basophil	Immune	reference_profile_0796	31	163990
+Valenzi::SC109SSCUP	Valenzi	Myofibroblast	Stromal	reference_profile_0797	89	1606598
+Valenzi::SC109SSCUP	Valenzi	NK	Immune	reference_profile_0798	120	431238
+Valenzi::SC109SSCUP	Valenzi	Perivascular/mesothelial stromal	Stromal	reference_profile_0799	85	920219
+Valenzi::SC109SSCUP	Valenzi	Secretory/other airway epithelial	Epithelial	reference_profile_0800	24	328320
+Valenzi::SC109SSCUP	Valenzi	T	Immune	reference_profile_0801	456	1747023
+Valenzi::SC135SSCLOW	Valenzi	AT1	Epithelial	reference_profile_0802	1	18365
+Valenzi::SC135SSCLOW	Valenzi	AT2/alveolar transitional	Epithelial	reference_profile_0803	22	202285
+Valenzi::SC135SSCLOW	Valenzi	B	Immune	reference_profile_0804	21	90500
+Valenzi::SC135SSCLOW	Valenzi	Basal-like epithelial	Epithelial	reference_profile_0805	112	1129691
+Valenzi::SC135SSCLOW	Valenzi	Blood endothelial	Endothelial / vascular	reference_profile_0806	349	2615260
+Valenzi::SC135SSCLOW	Valenzi	Ciliated epithelial	Epithelial	reference_profile_0807	351	3345460
+Valenzi::SC135SSCLOW	Valenzi	Fibroblast	Stromal	reference_profile_0808	65	392553
+Valenzi::SC135SSCLOW	Valenzi	Lymphatic endothelial	Endothelial / vascular	reference_profile_0809	9	71198
+Valenzi::SC135SSCLOW	Valenzi	Mast/Basophil	Immune	reference_profile_0810	27	107975
+Valenzi::SC135SSCLOW	Valenzi	Myofibroblast	Stromal	reference_profile_0811	3	26342
+Valenzi::SC135SSCLOW	Valenzi	NK	Immune	reference_profile_0812	10	41264
+Valenzi::SC135SSCLOW	Valenzi	Perivascular/mesothelial stromal	Stromal	reference_profile_0813	53	261780
+Valenzi::SC135SSCLOW	Valenzi	Secretory/other airway epithelial	Epithelial	reference_profile_0814	288	2545900
+Valenzi::SC135SSCLOW	Valenzi	T	Immune	reference_profile_0815	134	553825
+Valenzi::SC136SSCUP	Valenzi	AT1	Epithelial	reference_profile_0816	20	146937
+Valenzi::SC136SSCUP	Valenzi	AT2/alveolar transitional	Epithelial	reference_profile_0817	233	2630471
+Valenzi::SC136SSCUP	Valenzi	B	Immune	reference_profile_0818	19	85915
+Valenzi::SC136SSCUP	Valenzi	Basal-like epithelial	Epithelial	reference_profile_0819	4	34807
+Valenzi::SC136SSCUP	Valenzi	Blood endothelial	Endothelial / vascular	reference_profile_0820	264	1883562
+Valenzi::SC136SSCUP	Valenzi	Ciliated epithelial	Epithelial	reference_profile_0821	45	558086
+Valenzi::SC136SSCUP	Valenzi	Fibroblast	Stromal	reference_profile_0822	56	397421
+Valenzi::SC136SSCUP	Valenzi	Lymphatic endothelial	Endothelial / vascular	reference_profile_0823	23	137972
+Valenzi::SC136SSCUP	Valenzi	Mast/Basophil	Immune	reference_profile_0824	157	709398
+Valenzi::SC136SSCUP	Valenzi	Myofibroblast	Stromal	reference_profile_0825	27	196677
+Valenzi::SC136SSCUP	Valenzi	NK	Immune	reference_profile_0826	94	377615
+Valenzi::SC136SSCUP	Valenzi	Perivascular/mesothelial stromal	Stromal	reference_profile_0827	84	487692
+Valenzi::SC136SSCUP	Valenzi	Plasma	Immune	reference_profile_0828	3	24635
+Valenzi::SC136SSCUP	Valenzi	Secretory/other airway epithelial	Epithelial	reference_profile_0829	13	183021
+Valenzi::SC136SSCUP	Valenzi	T	Immune	reference_profile_0830	353	1348375
+Valenzi::SC277	Valenzi	AT1	Epithelial	reference_profile_0831	27	275452
+Valenzi::SC277	Valenzi	AT2/alveolar transitional	Epithelial	reference_profile_0832	60	1263452
+Valenzi::SC277	Valenzi	B	Immune	reference_profile_0833	13	82149
+Valenzi::SC277	Valenzi	Basal-like epithelial	Epithelial	reference_profile_0834	2	48791
+Valenzi::SC277	Valenzi	Blood endothelial	Endothelial / vascular	reference_profile_0835	223	2272146
+Valenzi::SC277	Valenzi	Ciliated epithelial	Epithelial	reference_profile_0836	20	161838
+Valenzi::SC277	Valenzi	Fibroblast	Stromal	reference_profile_0837	39	707012
+Valenzi::SC277	Valenzi	Lymphatic endothelial	Endothelial / vascular	reference_profile_0838	69	872082
+Valenzi::SC277	Valenzi	Mast/Basophil	Immune	reference_profile_0839	51	412262
+Valenzi::SC277	Valenzi	Myofibroblast	Stromal	reference_profile_0840	11	218147
+Valenzi::SC277	Valenzi	NK	Immune	reference_profile_0841	330	1186198
+Valenzi::SC277	Valenzi	Perivascular/mesothelial stromal	Stromal	reference_profile_0842	4	49827
+Valenzi::SC277	Valenzi	Plasma	Immune	reference_profile_0843	1	13674
+Valenzi::SC277	Valenzi	Secretory/other airway epithelial	Epithelial	reference_profile_0844	12	226642
+Valenzi::SC277	Valenzi	T	Immune	reference_profile_0845	559	2325021
+Valenzi::SC281	Valenzi	AT2/alveolar transitional	Epithelial	reference_profile_0846	1	20515
+Valenzi::SC281	Valenzi	B	Immune	reference_profile_0847	3	23407
+Valenzi::SC281	Valenzi	Blood endothelial	Endothelial / vascular	reference_profile_0848	166	3027233
+Valenzi::SC281	Valenzi	Fibroblast	Stromal	reference_profile_0849	313	4878865
+Valenzi::SC281	Valenzi	Lymphatic endothelial	Endothelial / vascular	reference_profile_0850	12	122512
+Valenzi::SC281	Valenzi	Mast/Basophil	Immune	reference_profile_0851	32	268493
+Valenzi::SC281	Valenzi	Myofibroblast	Stromal	reference_profile_0852	102	2222544
+Valenzi::SC281	Valenzi	NK	Immune	reference_profile_0853	1	6331
+Valenzi::SC281	Valenzi	Perivascular/mesothelial stromal	Stromal	reference_profile_0854	20	255389
+Valenzi::SC281	Valenzi	Plasma	Immune	reference_profile_0855	16	318547
+Valenzi::SC281	Valenzi	Secretory/other airway epithelial	Epithelial	reference_profile_0856	1	10820
+Valenzi::SC281	Valenzi	T	Immune	reference_profile_0857	19	151853
+Valenzi::SC284	Valenzi	Blood endothelial	Endothelial / vascular	reference_profile_0858	323	3743516
+Valenzi::SC284	Valenzi	Fibroblast	Stromal	reference_profile_0859	109	1127402
+Valenzi::SC284	Valenzi	Lymphatic endothelial	Endothelial / vascular	reference_profile_0860	44	416017
+Valenzi::SC284	Valenzi	Mast/Basophil	Immune	reference_profile_0861	2	30152
+Valenzi::SC284	Valenzi	Myofibroblast	Stromal	reference_profile_0862	31	373462
+Valenzi::SC284	Valenzi	Perivascular/mesothelial stromal	Stromal	reference_profile_0863	11	119021
+Valenzi::SC51SSCLOW	Valenzi	B	Immune	reference_profile_0864	1	1041
+Valenzi::SC51SSCLOW	Valenzi	Blood endothelial	Endothelial / vascular	reference_profile_0865	165	642896
+Valenzi::SC51SSCLOW	Valenzi	Fibroblast	Stromal	reference_profile_0866	44	155347
+Valenzi::SC51SSCLOW	Valenzi	Lymphatic endothelial	Endothelial / vascular	reference_profile_0867	5	17385
+Valenzi::SC51SSCLOW	Valenzi	Mast/Basophil	Immune	reference_profile_0868	41	77871
+Valenzi::SC51SSCLOW	Valenzi	Myofibroblast	Stromal	reference_profile_0869	8	32615
+Valenzi::SC51SSCLOW	Valenzi	NK	Immune	reference_profile_0870	8	11533
+Valenzi::SC51SSCLOW	Valenzi	Perivascular/mesothelial stromal	Stromal	reference_profile_0871	27	83936
+Valenzi::SC51SSCLOW	Valenzi	Plasma	Immune	reference_profile_0872	1	2888
+Valenzi::SC51SSCLOW	Valenzi	T	Immune	reference_profile_0873	88	133788
+Valenzi::SC52SSCUP	Valenzi	Fibroblast	Stromal	reference_profile_0874	46	172085
+Valenzi::SC52SSCUP	Valenzi	Mast/Basophil	Immune	reference_profile_0875	22	50992
+Valenzi::SC52SSCUP	Valenzi	Myofibroblast	Stromal	reference_profile_0876	14	43556
+Valenzi::SC52SSCUP	Valenzi	NK	Immune	reference_profile_0877	23	34396
+Valenzi::SC52SSCUP	Valenzi	Perivascular/mesothelial stromal	Stromal	reference_profile_0878	77	319752
+Valenzi::SC52SSCUP	Valenzi	T	Immune	reference_profile_0879	88	151689
+Valenzi::SC63SSCLOW	Valenzi	Fibroblast	Stromal	reference_profile_0880	9	117075
+Valenzi::SC63SSCLOW	Valenzi	Mast/Basophil	Immune	reference_profile_0881	25	97164
+Valenzi::SC63SSCLOW	Valenzi	Myofibroblast	Stromal	reference_profile_0882	70	1119883
+Valenzi::SC63SSCLOW	Valenzi	Perivascular/mesothelial stromal	Stromal	reference_profile_0883	116	1177537
+Valenzi::SC64SSCUP	Valenzi	Fibroblast	Stromal	reference_profile_0884	1	16040
+Valenzi::SC64SSCUP	Valenzi	Mast/Basophil	Immune	reference_profile_0885	17	51362
+Valenzi::SC64SSCUP	Valenzi	Myofibroblast	Stromal	reference_profile_0886	47	513544
+Valenzi::SC64SSCUP	Valenzi	NK	Immune	reference_profile_0887	19	43309
+Valenzi::SC64SSCUP	Valenzi	Perivascular/mesothelial stromal	Stromal	reference_profile_0888	63	565910
+Valenzi::SC64SSCUP	Valenzi	T	Immune	reference_profile_0889	50	172223

@@ -1,0 +1,19 @@
+state_order	state18	n_reference_cells	original_fine_labels	broad_class	biological_basis	mapping_status
+1	Alveolar/resident macrophage	3958	Macrophage C1Q hi;Macrophage FABP4+;Macrophage FABP4+/PDE4C+;Macrophage LYVE1+	Immune	Myeloid immune lineage.	Mapped without changing Reference18 label
+2	Inflammatory monocyte/macrophage	4973	Macrophage CHI3L1+/CD9 hi;Macrophage IL1B+;Macrophage RETN+/VCAN+;Monocyte CD14+;Monocyte CD14+/IL1B+;Monocyte CD16+	Immune	Monocyte/macrophage immune lineage.	Mapped without changing Reference18 label
+3	Dendritic cell	1069	DC CXCL2+/CD14+/CD1C-;DC LAMP3+/CCR7+;DC1 CLEC9A+;DC2 C1QC+;DC2 CD1A+/CD1E+;DC2 CLEC10A+;pDC	Immune	Antigen-presenting immune lineage.	Mapped without changing Reference18 label
+4	T	7377	CD8+ naive T;Cytotoxic T;Helper T CD4+;Helper T CD4+ CDR7+;Regulatory T;T CD4+ JUN+	Immune	Lymphoid immune lineage.	Mapped without changing Reference18 label
+5	NK	2623	Activated NK XCL1+;NK	Immune	Lymphoid immune lineage.	Mapped without changing Reference18 label
+6	Mast/Basophil	1659	Basophil/Mast	Immune	Granulocytic immune lineage.	Mapped without changing Reference18 label
+7	B	5189	B cell	Immune	Lymphoid immune lineage.	Mapped without changing Reference18 label
+8	Ciliated epithelial	2159	Ciliated;Ciliated/Club transitional	Epithelial	Airway epithelial lineage.	Mapped without changing Reference18 label
+9	AT2/alveolar transitional	4234	AT0/transitional epithelial;AT2;Cycling AT2	Epithelial	Alveolar epithelial lineage.	Mapped without changing Reference18 label
+10	Secretory/other airway epithelial	1950	Club;Ionocyte;Mucous	Epithelial	Airway epithelial lineage.	Mapped without changing Reference18 label
+11	AT1	815	AT1	Epithelial	Alveolar epithelial lineage.	Mapped without changing Reference18 label
+12	Blood endothelial	8063	Arterial endothelial;Bronchial vessel endothelial;Bronchial vessel endothelial CXCL12+;Bronchial vessel endothelial SELE+;Capillary aerocyte endothelial;Capillary endothelial;Venous endothelial	Endothelial / vascular	Blood-vessel endothelial lineage.	Mapped without changing Reference18 label
+13	Perivascular/mesothelial stromal	2467	Mesothelial cell;Pericyte;Smooth muscle cell	Stromal	Pericyte, smooth-muscle and mesothelial stromal lineages.	Mapped without changing Reference18 label
+14	Fibroblast	5680	Adventitial fibroblast;Alveolar fibroblast;Fibroblast COL13A1+;Lipofibroblast	Stromal	Mesenchymal stromal lineage.	Mapped without changing Reference18 label
+15	Lymphatic endothelial	1937	Lymphatic endothelial	Endothelial / vascular	Lymphatic endothelial lineage.	Mapped without changing Reference18 label
+16	Plasma	644	Plasma cell	Immune	Antibody-secreting immune lineage.	Mapped without changing Reference18 label
+17	Basal-like epithelial	842	Aberrant basaloid;Basal	Epithelial	Basal epithelial lineage.	Mapped without changing Reference18 label
+18	Myofibroblast	1853	Myofibroblast;Peribronchial fibroblast	Stromal	Contractile mesenchymal stromal lineage.	Mapped without changing Reference18 label

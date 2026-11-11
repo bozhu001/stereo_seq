@@ -1,0 +1,10 @@
+{
+  "reference_profiles": 889,
+  "reference_donors": 124,
+  "reference_cells_retained": 57492,
+  "pilot_query_cells": 10500,
+  "pilot_samples": 21,
+  "pilot_chips": 3,
+  "pilot_median_common_umi_fraction": 0.8701298701298701,
+  "full_dense_matrix_created": false
+}

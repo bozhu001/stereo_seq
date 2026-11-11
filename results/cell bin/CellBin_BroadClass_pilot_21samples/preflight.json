@@ -1,0 +1,13 @@
+{
+  "reference_cells": 57492,
+  "reference_states": 18,
+  "reference_genes": 18966,
+  "query_g10_u20_assigned": 359329,
+  "query_samples": 21,
+  "common_unique_gene_symbols": 18966,
+  "candidate_donor_columns": [
+    "donor_id"
+  ],
+  "joint_size_bytes": 183428028,
+  "joint_mtime_ns": 1794388172328082700
+}

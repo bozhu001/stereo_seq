@@ -1,0 +1,19 @@
+rctd_state	broad_class	n_reference_cells
+AT1	Epithelial	815
+AT2/alveolar transitional	Epithelial	4234
+Alveolar/resident macrophage	Immune	3958
+B	Immune	5189
+Basal-like epithelial	Epithelial	842
+Blood endothelial	Endothelial / vascular	8063
+Ciliated epithelial	Epithelial	2159
+Dendritic cell	Immune	1069
+Fibroblast	Stromal	5680
+Inflammatory monocyte/macrophage	Immune	4973
+Lymphatic endothelial	Endothelial / vascular	1937
+Mast/Basophil	Immune	1659
+Myofibroblast	Stromal	1853
+NK	Immune	2623
+Perivascular/mesothelial stromal	Stromal	2467
+Plasma	Immune	644
+Secretory/other airway epithelial	Epithelial	1950
+T	Immune	7377

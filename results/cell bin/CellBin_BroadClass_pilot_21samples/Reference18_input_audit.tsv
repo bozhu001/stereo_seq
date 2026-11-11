@@ -1,0 +1,21 @@
+check	value	status
+reference_cells	57492	PASS
+reference_states	18	PASS
+reference_genes	18966	PASS
+reference_sparse_encoding	csc_matrix	PASS
+reference_sparse_nnz	114089017	PASS
+reference_sample_nonnegative	True	PASS
+reference_sample_integer_like	True	PASS
+reference_mapping_id_order	True	PASS
+joint_shape	(799172, 32089)	PASS
+joint_sparse_encoding	csr_matrix	PASS
+joint_sample_nonnegative	True	PASS
+joint_sample_integer_like	True	PASS
+qc_joint_id_order	True	PASS
+assigned_g10_u20_cellbins	359329	PASS
+samples	21	PASS
+reference_unique_gene_symbols	18966	PASS
+joint_unique_gene_symbols	32069	PASS
+common_unique_gene_symbols	18966	PASS
+candidate_donor_metadata_columns	donor_id	REVIEW
+reference_h5_top_keys	genes;reference;reference_cells;spatial	PASS

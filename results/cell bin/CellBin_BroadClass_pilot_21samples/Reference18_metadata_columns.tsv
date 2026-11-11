@@ -1,0 +1,11 @@
+column	nonmissing	unique_values
+cell_id	57492	57492
+fine_celltype	57492	56
+core_celltype	57492	35
+broad_celltype	57492	12
+level1	57492	8
+study	57492	6
+gse_accession	57492	6
+donor_id	57492	124
+diagnosis_normalized	57492	3
+sampling_rule	57492	1
