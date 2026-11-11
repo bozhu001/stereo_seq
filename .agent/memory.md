@@ -948,3 +948,35 @@
   skill-candidate issue was filed.
 - Session summary:
   `.agent/reference18_k7_ssdna_mapping_wrapup_261017222737.md`.
+
+## 2026-11-11 — CellBin SingleR broad-class annotation pilot
+
+- Audited the frozen Reference18 source (57,492 cells, 18 unchanged states,
+  18,966 genes, 124 donors) and built 889 donor × state reference profiles.
+- Ran a gated SingleR 2.12.0 pilot on 10,500 assigned G10/U20 CellBins: 500
+  from each of all 21 samples. No patients were excluded.
+- Donor-grouped Reference18 self-validation accuracy was 99.8875%, but default
+  pruning produced no Unknown query CellBins. Query median maximum score was
+  0.0591 versus held-out correct-reference P5 0.3627 (ratio 0.163), and only
+  32.96% of forced labels had at least two independent matching markers.
+- The user approved the stop conclusion: do not expand to all 359,329
+  CellBins, and do not treat the pilot labels as formal cell types. Retain the
+  workflow as experimental and project-reusable, not as a frozen method.
+- Joint CellBin V1, Reference18, and G10/U20 results were not modified.
+- Final HTML:
+  `results/cellbin_broadclass_pilot_21samples_261111155125.html`; SHA-256
+  `B242ED2A2B8748272205508EFFAE975DFFF85C87124790FAD87D6AFDE3731744`.
+- Analysis/report commit:
+  `b36f44a98dd756cf3ccca27c409f8f97861e02b9`.
+- The user separately approved the ELN draft. Approved local copy:
+  `elab/Reference-guided_Broad_Cell-class_Annotation_Pilot_261111155125.md`.
+  No remote ID/URL exists because `ELABFTW_API_KEY` was unavailable in the
+  process, Windows user, and Windows machine environments.
+- Route A unsupervised G10/U20 CellBin clustering pilot is the next priority
+  and must be a separate task using one representative sample per chip. It
+  was not started in this session. Reference18 depth-matched validation also
+  remains deferred.
+- Script-review classification: experimental project-reusable workflow; no
+  cross-project skill-candidate issue was filed and the method was not frozen.
+- Session summary:
+  `.agent/cellbin_broadclass_singler_pilot_wrapup_261111160508.md`.
